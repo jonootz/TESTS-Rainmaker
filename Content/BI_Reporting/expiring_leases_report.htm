@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="4" MadCap:lastHeight="3280" MadCap:lastWidth="1119">
+    <head>
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="Expiring Leases Report" />Expiring Leases Report</h1>
+        <p>The Expiring Leases Report is opened from the Detail View of the <a href="Renewals_Report.htm">Renewals Report</a> or from the Expiring Leases section of the <a href="Portfolio_trends_dashboard.htm">Portfolio Trends Dashboard</a>. It gives you a way to get the details behind the information that is presented on those reports.</p>
+        <h2>Opening the Report</h2>
+        <p>To open the Expiring Leases Report from the Renewals Report:</p>
+        <ol>
+            <li>On the Detail View, select Hierarchy &amp;&#160;Community or Hierarchy, Community &amp; Unit Type as the Level to Display.</li>
+            <li>
+                <p>Click any of the renewal numbers for the desired community or community and unit type to view the leases that make up those numbers.</p>
+                <p>
+                    <img src="../Resources/Images/BI/detail_view_lease_details_renewals.png" />
+                </p>
+            </li>
+        </ol>
+        <div class="no_break">
+            <p>To open the Expiring Leases Report from the Portfolio Trends Dashboard, click on the Month on the Expiring Leases graph.</p>
+            <p>
+                <img src="../Resources/Images/BI/ptd_exp_leases_links.png" />
+            </p>
+        </div>
+        <h2>Input Controls</h2>
+        <p>You'll use the Input Controls to filter the report and set the Undecided Lease Alert. The input controls that appear are based on how you opened the Expiring Leases Report.</p>
+        <div class="no_break">
+            <p class="bold">Input Controls on report when opened from Renewals report</p>
+            <p>
+                <img src="../Resources/Images/BI/expiring_leases_IC.png" />
+            </p>
+        </div>
+        <div class="no_break">
+            <p class="bold">Input Controls on report when opened from Portfolio Trends Dashboard</p>
+            <p>
+                <img src="../Resources/Images/BI/expiring_leases_IC_2.png" />
+            </p>
+        </div>
+        <MadCap:snippetBlock src="../Resources/Snippets/input_controls_button.flsnp" />
+        <h3>Status Filter</h3>
+        <p class="less_space">The possible statuses the leases can have are:</p>
+        <ul>
+            <li>Given Notice</li>
+            <li>Renewed</li>
+            <li>Undecided</li>
+            <li>Month to Month (only available on report if opened from the Renewals report and the community/unit type has month to month leases)</li>
+        </ul>
+        <p>By default, the report will display information for all statuses, but you can use this filter to only display the information for a particular status.</p>
+        <h3>Undecided Lease Alert</h3>
+        <p>Use this alert to highlight undecided leases that expire within a certain number of days.</p>
+        <p>By default, the notation for your undecided leases will be highlighted if they expire in 15 days or less. </p>
+        <p class="note">  This only affects the Undecided leases information on the report.</p>
+        <p>Type the number of days in the Undecided Lease Alert text box and click <span class="bold">OK</span>. In the Undecided leases section, the Notation column will be highlighted in yellow for any leases that expire in that number of days or less.</p>
+        <p>
+            <img src="../Resources/Images/BI/expiring_leases_undec_alert.png" />
+        </p>
+        <h3>Group Leases By</h3>
+        <p>By default, the leases are grouped by status, then community, but you can group them by community, then status, if you want to. You would do this if you have opened the report and then refreshed it and selected to view multiple communities. By default, the information is only for the community for the renewals number you selected on the Renewals report.</p>
+        <p MadCap:conditions="Default.NotPrint">
+            <a href="#Tips">Learn about refreshing the report</a><![CDATA[    ]]></p>
+        <h3>New Lease Signed</h3>
+        <p>This allows you to filter the report to only show expiring leases which have a new lease signed or to only show expiring leases which do not have a new lease signed.</p>
+        <p class="note">This filter is only available on the report when opened from the Renewals report.</p>
+        <h2>Notations</h2>
+        <p>The report contains a Notations column that is used to give you additional information about the expiring leases depending on the status of the lease.</p>
+        <p>For Undecided Leases, the notation will display the number of days until the lease expires. The notation will be highlighted in yellow if the lease expires in the number of days specified on the Undecided Lease Alert or less. For expired leases, the notation will display the number of days since the lease expired highlighted in red.</p>
+        <p>
+            <img src="../Resources/Images/BI/expiring_leases_undec_notes.png">
+            </img>
+        </p>
+        <p>For leases with Given Notice and Moved Out status, the notation will display the new lease information if a new lease has been signed. If no new lease has been signed, the notation will be highlighted in orange.</p>
+        <p>
+            <img src="../Resources/Images/BI/expiring_leases_notice_notes.png">
+            </img>
+        </p>
+        <p>For leases that have been renewed, the notation will display the lease term and rent amount for the renewal.</p>
+        <p>
+            <img src="../Resources/Images/BI/expiring_leases_renew_notes.png">
+            </img>
+        </p>
+        <h2>
+            <a name="Tips">
+            </a>Tips</h2>
+        <p class="bold">Prompts</p>
+        <p>The Expiring Leases report shows information based on the report it was opened from. However, you can click the Refresh button and then use the Prompts screen to view different information on the report without returning to the originating report.</p>
+        <p>If you opened the Expiring Leases report from the Renewals report, you can use the Prompts screen to change the dates, reporting group (hierarchy), community, and unit type.</p>
+        <p>
+            <img src="../Resources/Images/BI/expiring_leases_refresh.png">
+            </img>
+        </p>
+        <p>If you opened the Expiring Leases report from the Portfolio Trends Dashboard, you can use the Prompts screen to change the reporting group (hierarchy), attribute, attribute value, community, and dates.</p>
+        <p>
+            <img src="../Resources/Images/BI/expiring_leases_refresh_2.png" />
+        </p>
+        <p class="note">If you are changing a date, enter it in the format shown on the Prompts screen.</p>
+        <p class="bold">Navigation Map</p>
+        <p>You can use the Navigation Map to easily move to different sections of the report.</p>
+        <p>
+            <img src="../Resources/Images/BI/expiring_leases_nav_map.png">
+            </img>
+        </p>
+        <MadCap:snippetBlock src="../Resources/Snippets/navigation_map_button.flsnp">
+        </MadCap:snippetBlock>
+        <p class="more_space">
+            <MadCap:relatedTopics>
+                <MadCap:relatedTopic src="Renewals_Report.htm" />
+                <MadCap:relatedTopic src="Portfolio_trends_dashboard.htm" />
+                <MadCap:relatedTopic src="reporting_tips.htm" />
+                <MadCap:relatedTopic src="Reporting_Basics.htm" />
+            </MadCap:relatedTopics>
+        </p>
+    </body>
+</html>

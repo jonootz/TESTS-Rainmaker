@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="4" MadCap:lastHeight="154" MadCap:lastWidth="1254">
+    <body>
+        <h3>Tip about Assigning Attribute Values to Properties</h3>
+        <ul MadCap:conditions="Default.NotPrint">
+            <li>If you want to assign attribute values to a single property, you should use the <a href="../../BI_Reporting/Admin_Setup_Property.htm#AssigningPropertyAttributes">Property Details screen</a>. </li>
+            <li>If you want to assign values for a single attribute to multiple properties, you should use the <a href="../../BI_Reporting/Admin_Setup_Property_Attributes.htm#AssignAttributesToProperties">Property Attribute Details screen</a>. </li>
+        </ul>
+    </body>
+</html>

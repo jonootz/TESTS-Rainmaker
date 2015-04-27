@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="4" MadCap:lastHeight="1905" MadCap:lastWidth="1183">
+    <head>
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="users:reporting access;reporting access:setting up" />Setting Up Users With Reporting Access</h1>
+        <p>The Business Intelligence reports are located under the Reporting tab. Setup for the Business Intelligence reports is under the Reporting Admin tab.</p>
+        <p>Following is how you set up users in the LRO system to have access to the Reporting tab and/or the Reporting Admin tab.</p>
+        <h2>Required for Access</h2>
+        <p class="less_space">To access the Reporting tab, a user must have the following:</p>
+        <ul>
+            <li>a valid email address</li>
+            <li>the REPORTING.MODULE right</li>
+            <li>the REPORTING Report Access All Properties right</li>
+        </ul>
+        <p class="note">If a user is part of a rights group with REPORTING Report Access All Properties, they will have the last two items on the list above.</p>
+        <p>If a user should have access to the Reporting Admin tab, they should also be given the REPORTINGADMIN.ReportingAdmin right.</p>
+        <h2><a name="Updating"></a>Updating Group Rights</h2>
+        <p>We recommend that user rights be managed at the Group level. This allows user rights changes to be made quickly and consistently across all users assigned to each Group.</p>
+        <h3>Setup for Rights Group</h3>
+        <p class="less_space">To set up Reporting access for a Rights Group (such as CORP, OPERATOR, or MANAGER):</p>
+        <ol>
+            <li>Go to <span class="bold">Admin</span>&gt;<span class="bold">Users</span>.</li>
+            <li>Click the pencil icon on the line for the Group you want to update.</li>
+            <li>Check the box for REPORTING.ReportsAllProps.</li>
+            <li>Click <span class="bold">Save</span>.</li>
+            <li>Make sure all users assigned to this Group have an email address entered. If they don't have an email address entered, they won't be able to access the Reporting tab even if they have the correct rights.</li>
+        </ol>
+        <p>These changes will take effect the next day. Users who are assigned to this Group will then have access to the Reporting tab. </p>
+        <p><span class="bold">Reporting data will only be available for the properties that users are assigned to in this Rights Group.</span>
+        </p>
+        <p class="note">Reporting Admin access cannot be assigned at the Rights Group level. It must be done at the Full Group or Individual level.</p>
+        <h3>Setup for Full Group</h3>
+        <p class="less_space">To set up Reporting and/or Reporting Admin access for a Full Group (such as ADMINISTRATOR or PRICINGANALYST):</p>
+        <ol>
+            <li>Go to <span class="bold">Admin</span>&gt;<span class="bold">Users</span>.</li>
+            <li>Click the pencil icon on the line for the Group you want to update.</li>
+            <li>
+                <p>For access to the Reporting tab, check the box for REPORTING.MODULE.</p>
+                <p>For access to the Reporting Admin tab, check the box for REPORTINGADMIN.ReportingAdmin.</p>
+            </li>
+            <li>Click the Property Rights link.</li>
+            <li>
+                <p>If the Group should be able to view all properties under Reporting, check the All Props box for REPORTING Report Access All Properties.</p>
+                <p>If the Group should only be able to view certain properties under Reporting, select those properties in the Properties list on the left side of the screen. Then check the Selected box to the right of REPORTING Report Access All Properties.</p>
+            </li>
+            <li>Click <span class="bold">OK</span>.</li>
+            <li>Click <span class="bold">Save</span>.</li>
+            <li>Make sure all users assigned to this Group have an email address entered. If they don't have an email address entered, they won't be able to access the Reporting tab or Reporting Admin tab even if they have the correct rights.</li>
+        </ol>
+        <p>These changes will take effect the next day. Users who are assigned to this Group will then have access to the Reporting tab and/or the Reporting Admin tab.</p>
+        <p>Users in this Group can view reporting data will be available for all properties unless you selected specific properties in step 5 above.</p>
+        <h2><a name="Updating2"></a>Updating Individual Rights</h2>
+        <p>If a user doesn't fall into a Group, you can set up their Reporting and/or Reporting Admin access at the individual user level.</p>
+        <ol>
+            <li>Go to <span class="bold">Admin</span>&gt;<span class="bold">Users</span>.</li>
+            <li>Click the pencil icon on the line for the user you want to update.</li>
+            <li>
+                <p>For access to the Reporting tab, check the box for REPORTING.MODULE.</p>
+                <p>For access to the Reporting Admin tab, check the box for REPORTINGADMIN.ReportingAdmin.</p>
+            </li>
+            <li>Click the Property Rights link.</li>
+            <li>
+                <p>If the user should be able to view all properties under Reporting, check the All Props box for REPORTING Report Access All Properties.</p>
+                <p>If the user should only be able to view certain properties under Reporting, select those properties in the Properties list on the left side of the screen. Then check the Selected box to the right of REPORTING Report Access All Properties.</p>
+            </li>
+            <li>Click <span class="bold">OK</span>.</li>
+            <li>Click <span class="bold">Save</span>.</li>
+            <li>Make sure the user has an email address entered. If they don't have an email address entered, they won't be able to access the Reporting tab or Reporting Admin tab even if they have the correct rights.</li>
+        </ol>
+        <p>These changes will take effect the next day. This user will then have access to the Reporting tab and/or the Reporting Admin tab.</p>
+        <p>This user can view reporting data will be available for all properties unless you selected specific properties in step 5 above.</p>
+        <h2>Troubleshooting Reporting Access Setup</h2>
+        <p><span class="bold">I set up the user's reporting access and ran a nightly process, but the user is getting an error message when they click on the Reporting tab and/or the Reporting Admin tab.</span>
+        </p>
+        <div class="indent">
+            <p>The task that updates user rights for Reporting and Reporting Admin runs once daily and is not associated with any property. It is necessary to wait one day for the user rights update to take effect.</p>
+        </div>
+        <p><span class="bold">It has been a full day since the user's reporting access was set up, but the user is getting an error message when they click on the Reporting tab and/or the Reporting Admin tab.</span>
+        </p>
+        <div class="indent">
+            <p>The user is probably missing one of the three required items for Reporting/Reporting Admin access. Check that the user has been set up with the required items or that they are assigned to a Group with the necessary rights and have an email address entered.</p>
+        </div>
+        <p><span class="bold">A user who should only be able to see reporting data for certain properties can see reporting data for the entire portfolio.</span>
+        </p>
+        <p>&#160;</p>
+        <p class="more_space">
+            <MadCap:relatedTopics>
+                <MadCap:relatedTopic src="../BI_Reporting/Introduction.htm" />
+            </MadCap:relatedTopics>
+        </p>
+    </body>
+</html>

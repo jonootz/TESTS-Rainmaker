@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="2" MadCap:lastHeight="104" MadCap:lastWidth="1280">
+    <body>
+        <p>Delineates the unit count at which a unit type will use its own exposure or that of the unit category in which it resides (&lt;=). </p>
+        <p>Values: Integer</p>
+        <p>Default: 17</p>
+    </body>
+</html>

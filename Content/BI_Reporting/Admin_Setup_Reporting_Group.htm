@@ -1,0 +1,234 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="5099" MadCap:lastWidth="1094">
+    <head>
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="reporting admin:reporting groups;reporting admin:hierarchies;business intelligence reporting admin:reporting groups;business intelligence reporting admin:hierarchies;business intelligence reporting setup:reporting groups;business intelligence reporting setup:hierarchies" />
+            <MadCap:conditionalText MadCap:conditions="Default.NotPrint">Business Intelligence Reporting </MadCap:conditionalText>Admin and Setup: Reporting Groups</h1>
+        <p>A reporting group (also known as a hierarchy) determines the information that appears on many of the reports and how that information can be filtered.</p>
+        <p class="note">Prior to release 14.11, you could set up a reporting hierarchy from the  Admin tab under Communities&gt;Hierarchy and if you had one set up there, it would initially show up as a reporting group under the Reporting Admin tab. Now, you can only set up hierarchies under the Reporting Admin tab.</p>
+        <MadCap:snippetBlock src="../Resources/Snippets/changes_made_after_daily_load.flsnp" />
+        <p>The reporting group is a group of attributes. Attributes values are assigned to your properties.  When you view some reports, you will select the reporting group you want to use. The reporting group determines which properties are included on the report and how you can filter the information.</p>
+        <p class="note" MadCap:conditions="Default.ExternalOnly">
+            <span class="bold">Make sure you give everyone using the reports a list of the attributes that make up each reporting group (in the correct order). Some reports can be filtered by levels which correspond to the order of the attributes in a reporting group. The report will just show "Level 1", "Level 2", etc. so you need to make sure everyone knows what each level is.</span>
+        </p>
+        <h3>View Reporting Groups</h3>
+        <div class="no_break">
+            <p>To view your reporting groups, go to<span class="bold"> Reporting Admin</span>&gt;<span class="bold">Reporting Group</span>.</p>
+            <p>
+                <img src="../Resources/Images/BI/RA_reporting_groups.png" title="Click to view larger" />
+            </p>
+        </div>
+        <h3>Add a Reporting Group</h3>
+        <ol>
+            <li>
+                <div class="no_break">
+                    <p>On the Reporting Groups screen, click <span class="bold">Add Reporting Group</span>.</p>
+                    <p>
+                        <img src="../Resources/Images/BI/RA_reporting_groups_add.png" title="Click to view larger" />
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="no_break">
+                    <p>On the Add Reporting Group dialog, enter the name for the reporting group.</p>
+                    <p>
+                        <img src="../Resources/Images/BI/RA_add_reporting_group.png" title="Click to view larger" />
+                    </p>
+                </div>
+            </li>
+            <li>
+                <p>Click <span class="bold">OK</span>.</p>
+                <p>Now you'll need to add attributes to the reporting group.</p>
+            </li>
+        </ol>
+        <div class="no_break">
+            <h3>Add Attributes to a Reporting Group</h3>
+            <ol>
+                <li>
+                    <div class="no_break">
+                        <p>On the Reporting Groups screen, click the name of the reporting group you want to add attributes to.</p>
+                        <p>
+                            <img src="../Resources/Images/BI/RA_reporting_group_name.png" title="Click to view larger" />
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div class="no_break">
+                        <p>On the Reporting Group Details screen, click <span class="bold">Add Attributes</span>.</p>
+                        <p>
+                            <img src="../Resources/Images/BI/RA_reporting_group_add_attributes.png" title="Click to view larger" />
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div class="no_break">
+                        <p>Check the checkbox next to each attribute you want to include in the reporting group.</p>
+                        <p>
+                            <img src="../Resources/Images/BI/RA_reporting_group_select_attributes.png" title="Click to view larger" />
+                        </p>
+                        <p class="note">The maximum number of attributes you can have in a reporting group is 10. If you select more than 10, only the first 10 in the group will be used.</p>
+                    </div>
+                </li>
+                <li>Click <span class="bold">OK</span>.</li>
+            </ol>
+        </div>
+        <h3>Edit  a Reporting Group's Name</h3>
+        <ol>
+            <li>
+                <div class="no_break">
+                    <p>On the Reporting Groups screen, click the <span class="bold">Edit</span> button on the line for the reporting group you want to edit.</p>
+                    <p>
+                        <img src="../Resources/Images/BI/RA_reporting_group_edit_button.png" title="Click to view larger" />
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="no_break">
+                    <p>Change the reporting group name on the Edit Reporting Group dialog.</p>
+                    <p>
+                        <img src="../Resources/Images/BI/RA_reporting_group_edit_name.png" title="Click to view larger" />
+                    </p>
+                </div>
+            </li>
+            <li>Click <span class="bold">OK</span>.</li>
+        </ol>
+        <h3>Remove Attributes from a Reporting Group</h3>
+        <ol>
+            <li>
+                <div class="no_break">
+                    <p>On the Reporting Groups screen, click the name of the reporting group you want to edit.</p>
+                    <p>
+                        <img src="../Resources/Images/BI/RA_reporting_group_name2.png" title="Click to view larger" />
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="no_break">
+                    <p>Click the <span class="bold">Remove</span> button on the line of the attribute you want to remove.</p>
+                    <p>
+                        <img src="../Resources/Images/BI/RA_reporting_group_remove_attribute.png" title="Click to view larger" />
+                    </p>
+                </div>
+            </li>
+            <li>Click <span class="bold">OK</span> on the message confirming you want to remove the attribute.</li>
+        </ol>
+        <p class="note">When you remove an attribute, the sort order  for the remaining attributes is not reordered. For example, if you have 4 attributes and you remove the third one, the sort order will show 1,2,4. When you view reports that use hierarchies, the attribute with sort order 4 will be level 3 so there is no gap between levels. If this happens, you can change the order of the attributes to make sure they match how they appear on the reports.</p>
+        <h3>Change the Order of the Attributes in a Reporting Group</h3>
+        <p>The sort order of the attributes for a reporting group determines the hierarchy levels when you are viewing a report that uses hierarchies. For example, the attribute with number 1 under sort order will be level 1 when you view reports that use hierarchies.</p>
+        <div class="no_break">
+            <p>To change the order of your attributes:</p>
+            <ol>
+                <li>
+                    <div class="no_break">
+                        <p>On the Reporting Groups screen, click the name of the reporting group you want to edit.</p>
+                        <p>
+                            <img src="../Resources/Images/BI/RA_reporting_group_name2.png" title="Click to view larger" />
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div class="no_break">
+                        <p>Click the drop-down arrow next to the Remove button on the line of the attribute you want to move in the list.</p>
+                        <p>
+                            <img src="../Resources/Images/BI/RA_reporting_group_remove_menu.png" title="Click to view larger" />
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <p>Select <span class="bold">Move Up</span> or <span class="bold">Move Down</span> to move the attribute to the correct location in the list.</p>
+                    <p>
+                        <img src="../Resources/Images/BI/RA_reporting_group_move_up_down.png" title="Click to view larger" />
+                    </p>
+                </li>
+                <li>Repeat steps 2 and 3 for each attribute you want to move in the list.</li>
+            </ol>
+        </div>
+        <h3>Delete a Reporting Group</h3>
+        <ol>
+            <li>
+                <div class="no_break">
+                    <p>On the Reporting Groups screen, click the drop-down arrow next to the Edit button on the line for the reporting group you want to delete.</p>
+                    <p>
+                        <img src="../Resources/Images/BI/RA_reporting_group_edit_menu.png" title="Click to view larger" />
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="no_break">
+                    <p>Select <span class="bold">Delete</span>.</p>
+                    <p>
+                        <img src="../Resources/Images/BI/RA_delete_reporting_group.png" title="Click to view larger" />
+                    </p>
+                </div>
+            </li>
+            <li>Click <span class="bold">OK</span> on the message confirming that you want to delete the reporting group.</li>
+        </ol>
+        <p class="note">If you only have one reporting group and you delete it, you will not see any data on your reports that use hierarchies.<br /></p>
+        <h3>Deactivate/Activate a Reporting Group</h3>
+        <p>When you add a reporting group, it is automatically set to be Active. If you don't want to use a reporting group, but you don't want to delete it, you can make it inactive. </p>
+        <div class="no_break">
+            <p class="less_space">To deactivate a reporting group:</p>
+            <ol>
+                <li>
+                    <div class="no_break">
+                        <p>On the Reporting Groups screen, click the drop-down arrow next to the Edit button on the line for the reporting group you want to deactivate.</p>
+                        <p>
+                            <img src="../Resources/Images/BI/RA_reporting_group_edit_menu.png" title="Click to view larger" />
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div class="no_break">
+                        <p>Select <span class="bold">Deactivate</span>.</p>
+                        <p>
+                            <img src="../Resources/Images/BI/RA_deactivate_reporting_group.png" title="Click to view larger" />
+                        </p>
+                    </div>
+                </li>
+                <li>Click <span class="bold">OK</span> on the message confirming that you want to deactivate the reporting group.</li>
+            </ol>
+        </div>
+        <p class="note">If you only have one reporting group and you deactivate it, you will not see any data on your reports that use hierarchies.<br /></p>
+        <div class="no_break">
+            <p class="less_space">To reactivate a reporting group:</p>
+            <ol>
+                <li>
+                    <div class="no_break">
+                        <p>On the Reporting Groups screen, click the drop-down arrow next to the Edit button on the line for the reporting group you want to activate.</p>
+                        <p>
+                            <img src="../Resources/Images/BI/RA_edit_inactive_reporting_group.png" title="Click to view larger" />
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div class="no_break">
+                        <p>Select <span class="bold">Activate</span>.</p>
+                        <p>
+                            <img src="../Resources/Images/BI/RA_activate_reporting_group.png" title="Click to view larger" />
+                        </p>
+                    </div>
+                </li>
+                <li>Click <span class="bold">OK</span> on the message confirming that you want to activate the reporting group.</li>
+            </ol>
+        </div>
+        <h2 MadCap:conditions="">Troubleshooting</h2>
+        <h3>I created a new reporting group, but I don't see it when I view my reports.</h3>
+        <MadCap:snippetBlock src="../Resources/Snippets/nightly_processes_for_reporting_group.flsnp" />
+        <h3>I made changes to an existing reporting group, but it still appears the old way when I view my reports.</h3>
+        <MadCap:snippetBlock src="../Resources/Snippets/nightly_processes_for_reporting_group.flsnp" />
+        <h3 MadCap:conditions="">Tip</h3>
+        <MadCap:snippetBlock src="../Resources/Snippets/audit_hierarchy_tip.flsnp" />
+        <MadCap:snippetBlock src="../Resources/Snippets/audit_hierarchy_uses.flsnp" />
+        <p class="more_space">
+            <MadCap:relatedTopics>
+                <MadCap:relatedTopic src="Admin_Setup_Overview.htm" />
+                <MadCap:relatedTopic src="Admin_Setup_Users.htm" />
+                <MadCap:relatedTopic src="Admin_Setup_Property_Attributes.htm" />
+                <MadCap:relatedTopic src="Admin_Setup_Property.htm" />
+                <MadCap:relatedTopic src="Audit_Hierarchy_Report.htm" />
+            </MadCap:relatedTopics>
+        </p>
+    </body>
+</html>

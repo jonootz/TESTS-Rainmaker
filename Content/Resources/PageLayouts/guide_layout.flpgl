@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<PageStyles>
+    <Page Name="Normal" Width="800" Height="800" Padding="1in" PageSize="Letter" PaddingLeft="0.88in" PaddingRight="0.75in" PaddingTop="1in" PaddingBottom="1in">
+        <Frame Flow="header" Height="0.6458333in" Right="36px" X="0px" Y="-0.75in" ColumnCount="1" Width="6.5in" Bottom="874px">
+            <Content>
+                <xhtml:html xmlns:xhtml="http://www.w3.org/1999/xhtml">
+                    <xhtml:body>
+                        <xhtml:table xhtml:style="width: 100%;">
+                            <xhtml:col />
+                            <xhtml:col />
+                            <xhtml:tbody>
+                                <xhtml:tr>
+                                    <xhtml:td xhtml:style="text-align: left;">
+                                        <xhtml:img xhtml:src="../Images/raindrops_logo/LROlogoSmall.png" MadCap:mediastyle="@media print { width: 1.02in;height: 0.47in; }" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xhtml:style="max-width: 1.02in;max-height: 0.47in;" />
+                                    </xhtml:td>
+                                    <xhtml:td xhtml:style="text-align: right;">
+                                        <xhtml:p xhtml:class="header">
+                                            <MadCap:variable xhtml:name="Heading.Level1" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+                                        </xhtml:p>
+                                    </xhtml:td>
+                                </xhtml:tr>
+                            </xhtml:tbody>
+                        </xhtml:table>
+                    </xhtml:body>
+                </xhtml:html>
+            </Content>
+        </Frame>
+        <Frame Flow="footer" Height="0.5in" Right="36px" Bottom="-72px" X="0px" Y="9.25in" Width="6.5in">
+            <Content>
+                <xhtml:html xmlns:xhtml="http://www.w3.org/1999/xhtml">
+                    <xhtml:body>
+                        <MadCap:snippetBlock xhtml:src="../Snippets/footer_copyright_page_number.flsnp" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+                    </xhtml:body>
+                </xhtml:html>
+            </Content>
+        </Frame>
+        <Frame Flow="body" ColumnCount="1" ColumnGap="0.25in" ColumnDivider="Solid 1pt Black" Width="6.5in" Height="8.75in" Right="36px" Bottom="4px" X="0px" Y="20px">
+        </Frame>
+    </Page>
+    <Page Width="800" Height="800" Padding="1in" PageSize="Letter" PaddingLeft="0.88in" PaddingRight="0.75in" PaddingTop="1in" PaddingBottom="1in" PageType="title" Name="Title">
+        <Frame X="-40px" Y="-60px" Width="730px" Height="980px" Flow="decoration" Anchors="" BorderLeftStyle="solid" BorderLeftWidth="2px" BorderLeftColor="#7fb072" BorderRightStyle="solid" BorderRightWidth="2px" BorderRightColor="#7fb072" BorderTopStyle="solid" BorderTopWidth="2px" BorderTopColor="#7fb072" BorderBottomStyle="solid" BorderBottomWidth="2px" BorderBottomColor="#7fb072" Right="-30px" Bottom="-56px" />
+        <Frame X="0px" Y="818px" Width="670px" Height="90px" Flow="footer" Right="-10px" Bottom="-44px">
+            <Content>
+                <xhtml:html xmlns:xhtml="http://www.w3.org/1999/xhtml">
+                    <xhtml:body>
+                        <MadCap:snippetBlock xhtml:src="../Snippets/copyright_long.flsnp" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+                        <xhtml:p xhtml:class="footer">The following are trademarks of <MadCap:variable xhtml:name="Variables.FullCompanyName" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" /> and its Affiliates: <MadCap:variable xhtml:name="Variables.ShortCompanyName" xhtml:class="bold" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" /><xhtml:span xhtml:class="bold">™</xhtml:span>, <MadCap:variable xhtml:name="Variables.LRO" xhtml:class="bold" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" /><xhtml:span xhtml:class="bold">®</xhtml:span></xhtml:p>
+                    </xhtml:body>
+                </xhtml:html>
+            </Content>
+        </Frame>
+        <Frame X="0px" Y="-30px" Width="660px" Height="810px" Flow="body" Right="0px" Bottom="84px" />
+    </Page>
+</PageStyles>

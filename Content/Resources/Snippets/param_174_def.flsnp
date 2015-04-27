@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="2" MadCap:lastHeight="125" MadCap:lastWidth="1280">
+    <body>
+        <p>Used when LEM is turned on (parameter 172=1). If Parameter 132=A, the final recommended rent for All pricing weeks gets smoothed over the previous post date's rent recommendation that is present in the Current_Rents table.  Note that the Current_Rents table has to be populated in order for this parameter to work. This is controlled by parameter 14.</p>
+        <p>Values: 0-1</p>
+        <p>Default: 0</p>
+    </body>
+</html>

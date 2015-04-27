@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <p class="note">If you select a unit type, the communities that have that unit type will be shown in the filter box next to Community Applied. It will still show "All values" in the Community filter on the left side of the screen (unless you have selected something in the Community filter).</p>
+    </body>
+</html>

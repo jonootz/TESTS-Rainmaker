@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="4" MadCap:lastHeight="138" MadCap:lastWidth="1116">
+    <head>
+    </head>
+    <body>
+        <p class="less_space" MadCap:conditions="">This report is helpful for:</p>
+        <ul>
+            <li>easily seeing how your reporting hierarchies have been set up</li>
+            <li>confirming which hierarchy attribute values have been assigned for each community</li>
+            <li>determining if a community does not have any hierarchy attribute values assigned</li>
+            <li>troubleshooting problems you may have with your reports</li>
+        </ul>
+    </body>
+</html>

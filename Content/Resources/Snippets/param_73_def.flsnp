@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="2" MadCap:lastHeight="125" MadCap:lastWidth="1280">
+    <body>
+        <p>Percentage increase over the prior reference rent that will be made if the correct business rule is invoked in the DRRC (New Pricing). This is used when exposure is low and is prorated over the shopper period.</p>
+        <p>Values: 0-100 %</p>
+        <p>Default: 2</p>
+    </body>
+</html>

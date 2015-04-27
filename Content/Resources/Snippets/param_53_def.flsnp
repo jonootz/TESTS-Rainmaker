@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="2" MadCap:lastHeight="104" MadCap:lastWidth="1280">
+    <body>
+        <p>The number of weeks prior to the lease start that  pre-leased units will be excluded from the supply forecast. This only applies to new leases. </p>
+        <p>Values: Integer</p>
+        <p>Default: 6</p>
+    </body>
+</html>

@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="5" MadCap:lastHeight="3205" MadCap:lastWidth="1104">
+    <head>
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="filtering:Availability &amp; Pricing Report;Availability &amp; Pricing Report:filtering;reports:filtering Availability and Pricing Report" />Filtering the Availability &amp; Pricing Report <MadCap:conditionalText MadCap:conditions="Default.NotPrint">(BI Reporting)</MadCap:conditionalText></h1>
+        <p>The Availability &amp; Pricing Report has two views, Overview and Detail. You can filter both of these views using Input Controls and by drilling down on the report to different hierarchy levels. </p>
+        <MadCap:snippetBlock src="../Resources/Snippets/input_controls_button.flsnp" />
+        <MadCap:snippetBlock src="../Resources/Snippets/input_controls_tips_link.flsnp" />
+        <h2>
+            <a name="Filterin2">
+            </a>Filtering the Overview</h2>
+        <p>The Overview page can be filtered by drilling down on the graph labels. You can use the Filter Bar at the top of the report to change the drill selections. You can also use the filter bar to see the levels you have drilled down through to get to the current one. </p>
+        <p>To drill down on the Overview page:</p>
+        <div class="indent">
+            <div class="no_break">
+                <p>Click on the hierarchy label on either graph to drill down to the next level in the hierarchy. When you hover over the label, you can see which level you will be drilling down to.</p>
+                <p>
+                    <img src="../Resources/Images/BI/overview_drill_avail_and_pricing.png" />
+                </p>
+            </div>
+            <div class="no_break">
+                <p MadCap:conditions="">Both graphs will change to show details from the next level in the hierarchy. You can see which levels you have drilled down to at the top of the report and in the Filter Bar above the report.</p>
+                <p MadCap:conditions="">
+                    <img src="../Resources/Images/BI/overview_drill_filter_avail_and_pricing.png" />
+                </p>
+            </div>
+            <div class="no_break">
+                <p>To drill back up, click the Level on either graph. This will change both graphs to show details from one level higher than the current level.</p>
+                <p>
+                    <img src="../Resources/Images/BI/overview_drill2_avail_and_pricing.png" />
+                </p>
+            </div>
+        </div>
+        <MadCap:snippetBlock src="../Resources/Snippets/Overview_snapshots_note.flsnp" />
+        <p>You can also use the Input Controls to filter the information on the Overview.</p>
+        <p>
+            <img src="../Resources/Images/BI/avail_and_pricing_overview_IC.png" />
+        </p>
+        <h2 MadCap:conditions="">Amenities</h2>
+        <MadCap:snippetBlock src="../Resources/Snippets/amenities_filter_default.flsnp" />
+        <MadCap:snippetBlock src="../Resources/Snippets/persisting_IC.flsnp" />
+        <h2 MadCap:conditions="">Community Filter</h2>
+        <p MadCap:conditions="">The Community filter allows you to run the report for all communities, multiple communities, or a specific community.</p>
+        <p>By default, the report includes all communities that you have access to that use an attribute in the selected hierarchy. </p>
+        <MadCap:snippetBlock src="../Resources/Snippets/select_multiple_communities.flsnp">
+        </MadCap:snippetBlock>
+        <MadCap:snippetBlock src="../Resources/Snippets/apply_community_filter.flsnp">
+        </MadCap:snippetBlock>
+        <h2>Levels 1 - 3 Filters </h2>
+        <p>You can choose to display information on the graphs for a particular attribute value in a level. For example, if level 3 is State, you could choose to view the information for a particular state. </p>
+        <MadCap:snippetBlock src="../Resources/Snippets/levels_are_attributes.flsnp">
+        </MadCap:snippetBlock>
+        <p> The filter for each level allows you to narrow the information down by attribute values. You can also see which values are included in each level.</p>
+        <p>A reporting group can contain up to 10 levels, but it is uncommon to have that many. You can view the graph at a levels 1-10 by drilling down, but you can only filter the report by the attribute values for levels 1 - 3.</p>
+        <h3>Tip</h3>
+        <p>When you open the report, you will be prompted to select a date and a hierarchy. If you want to view the report using a different date or hierarchy, you can close and reopen it or select the refresh button.</p>
+        <p>
+            <img src="../Resources/Images/BI/reset_button_AP.png" />
+        </p>
+        <p class="note">Hierarchies are also known as Reporting Groups and are set up under the Reporting Admin tab.</p>
+        <h2>
+            <a name="Filterin">
+            </a>Filtering the Detail View</h2>
+        <p>You'll use Input Controls and drill down functionality to filter the Detail view of the Availability &amp; Pricing report.</p>
+        <h2>Input Controls</h2>
+        <p>
+            <img src="../Resources/Images/BI/avail_and_pricing_detail_IC.png" />
+        </p>
+        <h2>Show Comparisons As</h2>
+        <p>This allows you to show your occupancy and average rent from last week, last month, last year, and first of the year as percentage changes or as the actual measures for those time periods.</p>
+        <h2>Amenities Filter</h2>
+        <MadCap:snippetBlock src="../Resources/Snippets/amenities_filter_default.flsnp" />
+        <p class="note">If you set this filter on the Detail view, it will persist to the Overview and vice versa.</p>
+        <h2 MadCap:conditions="">Community Filter</h2>
+        <p MadCap:conditions="">The Community filter allows you to run the report for all communities, multiple communities, or a specific community.</p>
+        <p>By default, the report includes all communities that you have access to that use an attribute in the selected hierarchy. </p>
+        <MadCap:snippetBlock src="../Resources/Snippets/select_multiple_communities.flsnp" />
+        <MadCap:snippetBlock src="../Resources/Snippets/apply_community_filter.flsnp" />
+        <h2>Drill-Down Capability</h2>
+        <p MadCap:conditions="">You can drill down to levels in the hierarchy by clicking on the hierarchy attribute name. You can drill up by clicking on the arrow icon. You can hover over the name or the icon to see which level you will be drilling down or up to.</p>
+        <div class="no_break">
+            <p MadCap:conditions="" class="bold">Drill Down By Clicking The Attribute Name</p>
+            <p MadCap:conditions="" class="bold">
+                <img src="../Resources/Images/BI/avail_and_pricing_detail_drill.png">
+                </img>
+            </p>
+        </div>
+        <div class="no_break">
+            <p class="bold" MadCap:conditions="">Drill Back Up By Clicking The Arrow Icon</p>
+            <p class="bold" MadCap:conditions="">
+                <img src="../Resources/Images/BI/avail_and_pricing_detail_drill2.png">
+                </img>
+            </p>
+            <MadCap:snippetBlock src="../Resources/Snippets/bi_hierarchies_info_link.flsnp" />
+            <p class="more_space">
+                <MadCap:relatedTopics>
+                    <MadCap:relatedTopic src="Availability_and_Pricing_Rpt.htm" />
+                    <MadCap:relatedTopic src="reporting_tips.htm" />
+                    <MadCap:relatedTopic src="understanding_hierarchies.htm" />
+                    <MadCap:relatedTopic src="Reporting_Basics.htm" />
+                </MadCap:relatedTopics>
+            </p>
+        </div>
+    </body>
+</html>

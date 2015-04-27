@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="1645" MadCap:lastWidth="1094">
+    <head>
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="unit types:setting up" />Setting Up Unit Types</h1>
+        <p>Unit Types are set up in the <MadCap:variable name="Variables.LRO" /> system and mapped to unit types from the PMS system. When a new community is created, <MadCap:variable name="Variables.LRO" /> unit types are set up with a 1-to-1 mapping for each PMS unit type. When the nightly processes are run, if a new PMS unit type is imported, a new <MadCap:variable name="Variables.LRO" /> unit type is created and mapped to it. By default, the <MadCap:variable name="Variables.LRO" /> unit types have the same names as the PMS unit types.</p>
+        <p class="note">PMS unit types may have lowercase and uppercase letters. <MadCap:variable name="Variables.LRO" /> unit types can only have uppercase letters. So a PMS unit type named 123b would be mapped to a <MadCap:variable name="Variables.LRO" /> unit type named 123B.</p>
+        <p>If multiple PMS unit types have the same name, the <MadCap:variable name="Variables.LRO" /> system will still create a 1-to-1 mapping with each unit type. The second unit type will have an "&amp;1" on the end, the third unit type will have an "&amp;2" on the end, and so on. An example of <MadCap:variable name="Variables.LRO" /> unit types that were created from two PMS unit types that are both called 1A is shown below. This would most likely happen in a blended community.</p>
+        <p>
+            <img src="../Resources/Images/PUTMOP/unit_type_same_name.JPG" />
+        </p>
+        <p MadCap:conditions="Default.NotPrint">
+            <a href="../Screens/unit_types_screen.htm">Learn about the Unit Types screen</a><![CDATA[   ]]></p>
+        <h3>To set up and maintain unit types:</h3>
+        <ol>
+            <li>
+                <p>Log into the <MadCap:variable name="Variables.LRO" /> Web UI and select the Configuration tab in the top title bar.</p>
+            </li>
+            <li>Select the community.</li>
+            <li>Select the Unit Types screen. This is where you'll set up and maintain the unit types for the community.</li>
+            <li>
+                <MadCap:snippetBlock src="../Resources/Snippets/click_enable_editing.flsnp" />
+            </li>
+        </ol>
+        <div class="no_break">
+            <h2>
+                <MadCap:keyword term="unit types:adding" />Adding a Unit Type</h2>
+            <ol>
+                <li>On the Unit Types screen, click <span class="bold">Add Unit Type</span>.</li>
+                <li>Enter a name or ID for the unit type and a description.</li>
+                <li>
+                    <p>Click <span class="bold">OK</span>.</p>
+                    <p>Next you'll need to edit the unit type to get it set up how you want it, including assigning it to the correct unit category.</p>
+                </li>
+            </ol>
+        </div>
+        <h2>
+            <MadCap:keyword term="unit types:editing" />Editing a Unit Type</h2>
+        <p>After you've created a unit type, you can edit the description, market composite floor, move in cost, make ready days, renewal cost, unit category, number of beds, and number of baths. If the selected unit category is not optimized, you can edit the Exclude from Billing setting. </p>
+        <p class="note">Beds and Baths information is used when creating competitor unit types (which are based on your unit types).</p>
+        <ol>
+            <li>On the Unit Types screen, click the pencil icon <img src="../Resources/Images/PUTMOP/pencil_icon.JPG" class="ButtonImage" /> on the row for the unit type you want to edit.</li>
+            <li>Make your changes.</li>
+            <li>Click the save icon <img src="../Resources/Images/PUTMOP/save_icon.JPG" class="ButtonImage" /> on the unit type row to save your changes. If you don't want to save your changes, click the cancel icon <img src="../Resources/Images/PUTMOP/cancel_icon.JPG" class="ButtonImage" />.</li>
+        </ol>
+        <p class="note">After you set up a new unit type, you'll need to add competitor mappings, weights, and positions for the new unit type before running the nightly processes. This information is added under LRO&gt;Competitors.<br /><br />You should run the nightly processes after adding a new unit type or assigning a unit type to a new unit category.</p>
+        <h2>
+            <MadCap:keyword term="unit types:deleting" />Deleting a Unit Type</h2>
+        <p>You can delete unit types that don't have any PMS unit types mapped to them.</p>
+        <ul>
+            <li>
+                <p>To delete all unit types that aren't being used,  click <span class="bold">Remove Unused Unit Types</span> on the Unit Types screen. </p>
+                <p>This will remove all unit types that aren't mapped to  PMS unit types. </p>
+            </li>
+            <li>To delete a specific unit type, click the delete icon <img src="../Resources/Images/PUTMOP/delete_icon.JPG" class="ButtonImage" /> on the row of the unit type you want to delete. This icon appears next to the pencil icon. If you don't see the delete icon, then the unit type cannot be deleted.</li>
+        </ul>
+        <div class="no_break">
+            <h2>
+                <MadCap:keyword term="unit types:renaming" />Renaming a Unit Type</h2>
+            <p class="less_space">You can't edit a unit type's name. You have to create a new unit type and delete the old one.</p>
+            <p class="note">Unit type names cannot contain spaces.</p>
+            <ol>
+                <li>On the Unit Types screen, add a new unit type with the name you want.</li>
+                <li>Set the unit type up the same way as the original unit type. </li>
+                <li>On the PMS Unit Types screen, change any PMS unit types that were mapped to the original unit type to be mapped to the new unit type.</li>
+                <li>On the Unit Types screen, click the delete icon <img src="../Resources/Images/PUTMOP/delete_icon.JPG" class="ButtonImage" /> on the original unit type row. This icon appears next to the pencil icon if the unit type can be deleted.</li>
+            </ol>
+        </div>
+        <p class="more_space">
+            <MadCap:relatedTopics>
+                <MadCap:relatedTopic src="../Screens/unit_types_screen.htm" />
+                <MadCap:relatedTopic src="mapping_unit_types.htm" />
+                <MadCap:relatedTopic src="../Screens/pms_unit_types_screen.htm" />
+                <MadCap:relatedTopic src="../PUTMOP/enabling_editing.htm" />
+            </MadCap:relatedTopics>
+        </p>
+    </body>
+</html>

@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="5" MadCap:lastHeight="2282" MadCap:lastWidth="1241">
+    <head>
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="lease term configuration screen;lease terms:configuration" />Lease Term Configuration Screen</h1>
+        <p>The Lease Term Configuration screen allows you to configure your lease terms to offer different lease terms for new leases vs. renewal leases. You can also offer different lease terms for your rent control units, if you have any. This isn't where you set up your lease terms.&#160;It is just where you specify which lease terms you want to use for each lease type. Lease terms are set up under LRO configuration or RecGen.</p>
+        <h2>Using the Lease Term Configuration Screen</h2>
+        <p>The Lease Term Configuration screen is located under <span class="bold">Admin</span>&gt;<span class="bold">Lease Term Configuration</span>. </p>
+        <p> Lease Term Configuration determines which lease terms will be displayed in <MadCap:variable name="Variables.LRO" />'s New Pricing  and Renewal Pricing screens. Pricing for the specified lease terms will be sent to your PMS system if you are using Yardi, AMSI, or MRI. It will not change the lease terms you have set up in your PMS system.</p>
+        <h2>
+            <a name="Configur">
+            </a>Configuring Lease Terms</h2>
+        <p>When you configure lease terms, you have the option to configure the lease terms by lease term or by community.</p>
+        <h3>Configuring a Lease Term for all Communities</h3>
+        <p>To configure a lease term for all communities that use that lease term:</p>
+        <div class="no_break">
+            <ol>
+                <li>
+                    <p>Check the Configure by Lease Term checkbox. </p>
+                    <p>
+                        <img src="../Resources/Images/WebUI/config_by_lease_term_checked.png" />
+                    </p>
+                </li>
+                <li>Select the lease term from the Lease Term drop-list.</li>
+                <li>
+                    <p>Update the settings for the lease term for each community listed. </p>
+                    <p>Click on a cell to change the value from Yes to No or No to Yes.  Lease terms that are included are shown in green and lease terms that are excluded are shown in red. Any changes you make will appear in red italics until saved.</p>
+                    <p>You can easily set the lease term to the same setting for all communities <a href="#SetAll">using the "Set All" option</a>.</p>
+                </li>
+                <li>
+                    <p>After you make a change, the Save and Reset buttons appear. </p>
+                    <p>
+                        <img src="../Resources/Images/WebUI/lease_term_config_buttons.png" />
+                    </p>
+                </li>
+                <li>
+                    <p>To save your changes, click Save. After you have saved your changes, the buttons will disappear and all of the values will appear in regular black text.</p>
+                    <p>If you don't want to save your changes, click Reset to set the values back to the last saved values.</p>
+                </li>
+            </ol>
+        </div>
+        <h3>
+            <a name="SetAll">
+            </a>Using Set All</h3>
+        <div class="indent">
+            <p>On the Lease Term View (Configure by Lease Term checkbox is checked), there is a Set All option for each pricing column. This is on the first row where it says "All" under Community.</p>
+            <p>
+                <img src="../Resources/Images/WebUI/LTC_set_all.png" />
+            </p>
+            <p>If you click Set All, it will change the lease term setting in that pricing column for the specified lease term to No for all communities in the list. It will also show No in the cell for All (instead of Set All).</p>
+            <p>
+                <img src="../Resources/Images/WebUI/LTC_set_all_no.png" />
+            </p>
+            <p>If you click No, it will change the lease term setting for the specified lease term to Yes for all communities in the list. It will also show Yes in the cell for All.</p>
+            <p>
+                <img src="../Resources/Images/WebUI/LTC_set_all_yes.png" />
+            </p>
+            <p>If you change the lease term setting for one of the communities, then the cell for All will return to Set All since all of the communities in the list no longer have the same setting.</p>
+            <p>
+                <img src="../Resources/Images/WebUI/LTC_set_all_2.png" />
+            </p>
+            <p class="note">When you first open the screen or if you come back to this screen after saving your changes, the All row will display Set All even if all of the communities are set the same.</p>
+        </div>
+        <h3>Configuring Lease Terms for a Specific Community</h3>
+        <p>To configure the lease terms for a specific community:</p>
+        <ol>
+            <li>
+                <p>Make sure the Configure by Lease Term checkbox is <span class="bold">not</span> checked.</p>
+                <p>
+                    <img src="../Resources/Images/WebUI/config_by_lease_term_unchecked.png" />
+                </p>
+            </li>
+            <li>
+                <p>In the Community drop-list, select the community that you want to configure the lease terms for.</p>
+                <p class="note">You can set different lease terms for affordable new and renewal leases, as well as conventional leases. You'll see columns for both the conventional lease terms and the affordable lease terms on this screen if the selected community has affordable (rent control) units. </p>
+            </li>
+            <li>
+                <p>Click on a cell to change the value from Yes to No or No to Yes.  Lease terms that are included are shown in green and lease terms that are excluded are shown in red. Any changes you make will appear in red italics until saved.</p>
+                <p class="note">You must have at least one lease term marked as Yes for New Leases and for Renewals.</p>
+            </li>
+            <li>
+                <p>After you make a change, the Save and Reset buttons appear. </p>
+                <p>
+                    <img src="../Resources/Images/WebUI/Config_LT_screen_edit.png" />
+                </p>
+            </li>
+            <li>
+                <p>To save your changes, click Save. After you have saved your changes, the buttons will disappear and all of the values will appear in regular black text.</p>
+                <p>If you don't want to save your changes, click Reset to set the values back to the last saved values. </p>
+            </li>
+        </ol>
+        <h3>When Will Changes Take Effect</h3>
+        <p MadCap:conditions="">After changes are saved, the lease term changes for New Pricing will be effective the next time pricing is run. Lease term changes for renewal pricing can be seen by refreshing the Renewal Pricing screen.</p>
+        <p class="more_space">
+            <MadCap:relatedTopics>
+                <MadCap:relatedTopic src="../Basics/configuring_lease_terms.htm" />
+                <MadCap:relatedTopic src="new_pricing_screen.htm" />
+                <MadCap:relatedTopic src="renewal_pricing_screen.htm" />
+            </MadCap:relatedTopics>
+        </p>
+    </body>
+</html>

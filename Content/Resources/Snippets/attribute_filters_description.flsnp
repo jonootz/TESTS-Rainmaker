@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <p>The attribute filters will appear right below the toolbar. There is a filter for each attribute in the selected reporting group. The drop list for each filter contains the values for each attribute. If you select a value, only properties that have that value assigned for that attribute will be included in the report.</p>
+    </body>
+</html>

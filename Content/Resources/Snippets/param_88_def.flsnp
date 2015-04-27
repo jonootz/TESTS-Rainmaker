@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="2" MadCap:lastHeight="104" MadCap:lastWidth="1280">
+    <body>
+        <p>The number of days worth of observations used in leasing velocity.  Leasing velocity is calculated in 7 day increments.  This value is rounded to the next highest multiple of 7; i.e.  30/7 = 5 weeks.</p>
+        <p>Values: Integer</p>
+        <p>Default: 30</p>
+    </body>
+</html>

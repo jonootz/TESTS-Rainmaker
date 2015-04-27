@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="3600" MadCap:lastWidth="1090">
+    <head>
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="business intelligence reporting setup:overview;business intelligence reporting admin:overview;overview:business intelligence reporting setup;setting up:business intelligence reporting" />
+            <MadCap:conditionalText MadCap:conditions="Default.NotPrint">Business Intelligence Reporting </MadCap:conditionalText>Admin and Setup: Overview</h1>
+        <p>There are two places in the <MadCap:variable name="Variables.LRO" /> Web UI where you set up information for using Business Intelligence reporting. Some information is set up under the  Admin tab and some is set up under the Reporting Admin tab. </p>
+        <h2 MadCap:conditions="">
+            <a name="Setup">
+            </a>Setup</h2>
+        <ol>
+            <li MadCap:conditions="">
+                <p>
+                    <span class="bold">Set up users under the Admin tab on the Users screen</span> with access to REPORTING.MODULE and REPORTING Report Access All Properties property rights. If you want a user to have access to the Reporting Admin tab, you will need to give them access to REPORTINGADMIN.ReportingAdmin as well. Make sure the users have valid email addresses, also.</p>
+                <p>
+                    <img src="../Resources/Images/BI/Admin_tab_user_rights.png" title="Click to view larger" />
+                </p>
+                <p>&#160;</p>
+                <p>
+                    <img src="../Resources/Images/BI/Admin_tab_property_rights.png" title="Click to view larger" />
+                </p>
+            </li>
+            <li MadCap:conditions="">
+                <p>Under Admin&gt;Users, you'll also <span class="bold">set up properties and property groups and assign them to users</span>. </p>
+                <p>
+                    <img src="../Resources/Images/BI/Admin_tab_assign_properties.png" title="Click to view larger" />
+                </p>
+            </li>
+            <li MadCap:conditions="">Users and property information will be brought over into the Reporting Admin tab  as part of the nightly processes. After the users and property information appear under the Reporting Admin tab, you can continue with the setup in the <MadCap:variable name="Variables.LRO" /> Web UI.</li>
+            <li MadCap:conditions="">
+                <p>On the Reporting Admin Users screen, <span class="bold">verify that your users have the correct roles assigned to them</span>. The users should already have the MGT Content Viewer role. This allows them to see the reports on the Reporting tab. If you want a user to have access to view and change information on the Reporting Admin tab, make sure they have the Admin role by giving them the REPORTINGADMIN.ReportingAdmin right from the Users screen under the Admin tab. </p>
+                <p>
+                    <img src="../Resources/Images/BI/RA_users.png" title="Click to view larger" />
+                </p>
+            </li>
+            <li MadCap:conditions="">
+                <MadCap:snippetBlock src="../Resources/Snippets/property_attributes_example.flsnp" />
+                <p>On the Property Attributes screen, <span class="bold">make sure the attributes are the ones you want to use for the Business Intelligence reports</span>.You can add, edit, and delete property attributes here.</p>
+                <p>
+                    <img src="../Resources/Images/BI/RA_property_attributes.png" title="Click to view larger" />
+                </p>
+            </li>
+            <li MadCap:conditions="">
+                <p>On the Property Attribute Details screen, <span class="bold">verify that your attribute values are correct</span>. You can add, edit, and delete attribute values and assign attributes to properties here.</p>
+                <p>
+                    <img src="../Resources/Images/BI/RA_property_attribute_details.png" title="Click to view larger" /> </p>
+            </li>
+            <li MadCap:conditions="">
+                <p>On the Properties screen, <span class="bold">verify the correct attributes are assigned to your properties</span>. You can assign attributes to a property or change the assigned attributes by clicking the link in the PMS Prop ID field, and then clicking Edit on the Property Details screen.</p>
+                <p>
+                    <img src="../Resources/Images/BI/RA_properties.png" title="Click to view larger" />
+                </p>
+            </li>
+            <li MadCap:conditions="">
+                <MadCap:snippetBlock src="../Resources/Snippets/reporting_group_example.flsnp" />
+                <p>On the Reporting Groups screen, you'll <span class="bold">set up your reporting groups</span>. You must have at least one reporting group.  When you view certain reports, you'll be able to select which reporting group you want to use. </p>
+                <p class="note">Prior to release 14.11, you could set up a reporting hierarchy from the  Admin tab under Communities&gt;Hierarchy and if you had one set up there, it would initially show up as a reporting group here. Now, you can only set up hierarchies under the Reporting Admin tab.</p>
+                <p>
+                    <img src="../Resources/Images/BI/RA_reporting_groups.png" title="Click to view larger" />
+                </p>
+            </li>
+        </ol>
+        <h2 MadCap:conditions="">When  Changes Will Take Effect</h2>
+        <p MadCap:conditions="">Changes that you make on the Reporting Admin tab and user setup under the  Admin tab will take effect after the nightly processes are run. So basically, after you make any changes to your Business Intelligence Admin setup, including adding users, you'll have to wait until the next day for them to take effect.</p>
+        <p class="more_space">
+            <MadCap:relatedTopics>
+                <MadCap:relatedTopic src="Admin_Setup_Users.htm" />
+                <MadCap:relatedTopic src="Admin_Setup_Property_Attributes.htm" />
+                <MadCap:relatedTopic src="Admin_Setup_Property.htm" />
+                <MadCap:relatedTopic src="Admin_Setup_Reporting_Group.htm" />
+            </MadCap:relatedTopics>
+        </p>
+    </body>
+</html>

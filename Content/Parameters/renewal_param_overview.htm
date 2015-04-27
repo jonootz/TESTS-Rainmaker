@@ -1,0 +1,275 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="7" MadCap:lastHeight="2690" MadCap:lastWidth="1077">
+    <head>
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="parameters:renewal pricing;renewal pricing:parameters" />Renewal  Parameters</h1>
+        <p>The renewal  parameters help you communicate your business strategy regarding renewals to the <MadCap:variable name="Variables.LRO" /> system. These parameters can be modified to accommodate almost any renewal strategy. </p>
+        <p>The renewal  parameters are often changed seasonally. More aggressive renewal offers are presented during peak seasons with more conservative offers during slow seasons. The renewal  parameters are also changed if the community strategy shifts or if there has been a significant increase or decrease in asking rents for new leases. </p>
+        <p class="note">You should review and approve your renewal batches monthly to make sure your renewal parameter settings are working correctly for your renewal strategy.</p>
+        <p>Following are the renewal parameters you'll be most likely to change.</p>
+        <p MadCap:conditions="Default.NotPrint">
+            <a href="parameters_recipe_card.htm#Renewal">View suggested values for the Renewal parameters</a>
+        </p>
+        <h3>Current Perceived Rent</h3>
+        <div class="no_break">
+            <p>CPR Method tells the <MadCap:variable name="Variables.LRO" /> system what each resident currently pays.</p>
+            <div class="indent">
+                <p>
+                    <a href="parameters_list.htm#param134">134 CPR Method</a> <![CDATA[ ]]></p>
+            </div>
+        </div>
+        <h3>
+            <a name="TiersRates">
+            </a>Tiers and Rates</h3>
+        <div class="no_break">
+            <p>Drop Tier and Drop Rate apply to renewals when the current resident is paying more than the new move-in rate (inverted leases).</p>
+            <div class="indent">
+                <p>
+                    <a href="parameters_list.htm#param120">120 Drop tier</a>
+                </p>
+                <p>The Drop Rate is entered on the <a href="#RenewalParamScreen">Renewal Config Parameters screen</a>.</p>
+            </div>
+        </div>
+        <div class="no_break">
+            <p>Increase Tier and Increase Rate apply to renewals where the current resident is paying less than the new move-in rate.</p>
+            <div class="indent">
+                <p>
+                    <a href="parameters_list.htm#param122">122 Increase tier</a>
+                </p>
+                <p>The Increase Rate is entered on the <a href="#RenewalParamScreen">Renewal Config Parameters screen</a>.</p>
+            </div>
+        </div>
+        <div class="no_break">
+            <p>Minimum Increase and Maximum Increase override the parameters set for tiers and rates.</p>
+            <div class="indent">
+                <p>Minimum Increase and Maximum Increase are entered on the <a href="#RenewalParamScreen">Renewal Config Parameters screen</a>.</p>
+            </div>
+        </div>
+        <h3>Concessions</h3>
+        <div class="no_break">
+            <p>Concessions can be incorporated into the renewal strategy.</p>
+            <div class="indent">
+                <p>
+                    <a href="parameters_list.htm#param135">135 Discretionary Concession Factor</a>
+                </p>
+                <p>
+                    <a href="parameters_list.htm#param136">136 Concession Offer Factor</a>
+                </p>
+            </div>
+        </div>
+        <h3>Smoothing</h3>
+        <div class="no_break">
+            <p>Market Average Window Forward and Market Average Window Backward set the time period used to smooth pricing recommendations.</p>
+            <div class="indent">
+                <p>
+                    <a href="parameters_list.htm#param142">142 Market Average Window Forward</a>
+                </p>
+                <p>
+                    <a href="parameters_list.htm#param143">143 Market Average Window Backward</a>
+                </p>
+            </div>
+        </div>
+        <h3>Rounding</h3>
+        <div class="no_break">
+            <p>The dollar amounts on the renewal offer can be rounded.</p>
+            <div class="indent">
+                <p>
+                    <a href="parameters_list.htm#param138">138 Rent Multiple</a>
+                </p>
+                <p>
+                    <a href="parameters_list.htm#param139">139 Concession Multiple</a>
+                </p>
+            </div>
+        </div>
+        <h3>Time Frame</h3>
+        <p>The <span class="bold">Renewal Window parameters (145, 146, and 147)</span> set the time frame to be considered when setting renewal rates.  <a href="timeframe_param_overview.htm#RenewalPricingTimeframes" MadCap:conditions="Default.NotPrint">Learn more about the renewal pricing time frame parameters</a></p>
+        <h3>
+            <a name="RenewalParamScreen">
+            </a>Renewal Config Parameters Screen</h3>
+        <p>The Renewal Config Parameters screen is where you enter Drop/Increase Rates, Minimum Increases, and Maximum Increases for different ranges based on the percentage difference from what the resident is currently paying and the new lease pricing for that unit.</p>
+        <p class="note">These parameters work with the <a href="#TiersRates">Tier parameters</a>. </p>
+        <p>By default, you will have three ranges set up. Most likely, you will not need to add new ranges. </p>
+        <div class="no_break">
+            <p>
+                <img src="../Resources/Images/WebUI/renewal_config_parameters2.png" title="Click to view larger" />
+            </p>
+            <div class="indent">
+                <p>
+                    <span class="bold">From (%) and To (%)</span>: This is the range of percentage differences that the parameters are set for. You'll enter this information if you are adding a new range.</p>
+                <p>
+                    <span class="bold">Rate (%)</span>: This is the  % of the difference between the current rent and the tier-adjusted market rent that will be added or subtracted from the renewal offer. For current rents below the tier-adjusted market rent, this is the increase rate. For current rents above the tier-adjusted market rent, this is the drop rate.</p>
+                <p>
+                    <span class="bold">Min Increase&#160;(%)</span>: This is the minimum renewal rent increase or a cap on the drop rate. This value is a percentage. If this is set to 0%, it means no drop in current rent is allowed.</p>
+                <p>
+                    <span class="bold">Max Increase (%)</span>: This is the maximum renewal rent increase. This value is a percentage. If this is set to 0%, it means that no increase in current rent is allowed.</p>
+            </div>
+            <p class="note">The Generate Renewals button allows you to easily re-run renewals after changing the renewal config parameters.</p>
+            <p class="less_space">Things to note about this screen:</p>
+            <ul>
+                <li>
+                    <p>A minimum of 3 ranges in required.</p>
+                </li>
+                <li>The zero range will always be included.</li>
+                <li>You must have at least one range above the zero range and one below.</li>
+                <li>The ranges will be continuous. For example, the upper limit (To) of a range  will match the lower limit (From) of the  range above it.</li>
+                <li>The maximum number of ranges you can have is 21.</li>
+            </ul>
+        </div>
+        <div class="no_break">
+            <p>Upon upgrade to release 13.12, three ranges were set up based on the values that were stored in parameters 121, 123, 124, and 125. These parameters are no longer used.</p>
+            <p>For new communities, the default ranges are as follows:</p>
+            <table style="width: 100%; border-collapse: collapse;">
+                <col />
+                <col />
+                <thead>
+                    <tr class="light_grey">
+                        <th class="borders">From</th>
+                        <th class="borders">To</th>
+                        <th class="borders">Rate</th>
+                        <th class="borders">Min Increase</th>
+                        <th class="borders">Max Increase</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="borders">
+                            <p class="TableCell">0</p>
+                        </td>
+                        <td class="borders">
+                            <p class="TableCell">&gt;0</p>
+                        </td>
+                        <td class="borders">
+                            <p class="TableCell">50</p>
+                        </td>
+                        <td class="borders">
+                            <p class="TableCell">0</p>
+                        </td>
+                        <td class="borders">
+                            <p class="TableCell">15</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="borders">
+                            <p class="TableCell">0</p>
+                        </td>
+                        <td class="borders">
+                            <p class="TableCell">0</p>
+                        </td>
+                        <td class="borders">
+                            <p class="TableCell">0</p>
+                        </td>
+                        <td class="borders">
+                            <p class="TableCell">0</p>
+                        </td>
+                        <td class="borders">
+                            <p class="TableCell">15</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="borders">
+                            <p class="TableCell">&lt;0</p>
+                        </td>
+                        <td class="borders">
+                            <p class="TableCell">0</p>
+                        </td>
+                        <td class="borders">
+                            <p class="TableCell">0</p>
+                        </td>
+                        <td class="borders">
+                            <p class="TableCell">0</p>
+                        </td>
+                        <td class="borders">
+                            <p class="TableCell">15</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <h3>Understanding the Range Boundaries</h3>
+            <p class="less_space">Since the To value from one range will match the From value of the range above it, you may wonder which parameters are used when the percentage equals that value. </p>
+            <ul>
+                <li MadCap:conditions="">If the value is 0, it is included in the 0 to 0 range. </li>
+                <li MadCap:conditions="">If the value is a positive number, it will be included in the range where it falls in the To column.</li>
+                <li MadCap:conditions="">If the value is a negative number, it will be included in the range where it falls in the From column. </li>
+            </ul>
+            <p>Let's say you have the following ranges:</p>
+            <table style="width: 100%; border-collapse: collapse;">
+                <col />
+                <col />
+                <thead>
+                    <tr class="light_grey">
+                        <th class="borders">From</th>
+                        <th class="borders">To</th>
+                        <th class="borders">Range</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="borders">
+                            <p class="TableCell">5</p>
+                        </td>
+                        <td class="borders">
+                            <p class="TableCell">&gt;5</p>
+                        </td>
+                        <td class="borders">
+                            <p class="TableCell">&#160;</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="borders">
+                            <p class="TableCell">0</p>
+                        </td>
+                        <td class="borders">
+                            <p class="TableCell">5</p>
+                        </td>
+                        <td class="borders">
+                            <p class="TableCell">5 falls in this range.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="borders">
+                            <p class="TableCell">0</p>
+                        </td>
+                        <td class="borders">
+                            <p class="TableCell">0</p>
+                        </td>
+                        <td class="borders">
+                            <p class="TableCell">0 falls in this range.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="borders">
+                            <p class="TableCell">-10</p>
+                        </td>
+                        <td class="borders">
+                            <p class="TableCell">0</p>
+                        </td>
+                        <td class="borders">-10 falls in this range.</td>
+                    </tr>
+                    <tr>
+                        <td class="borders">
+                            <p class="TableCell">&lt;-10</p>
+                        </td>
+                        <td class="borders">
+                            <p class="TableCell">-10</p>
+                        </td>
+                        <td class="borders">
+                            <p>&#160;</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="note">The percentage in the database could be more decimal places than displayed on the screen. For example, you might see 5.00 as the percentage difference, but if it is actually 5.00001 in the database, it will be considered greater than 5 and in the above example the 5 to &gt;5 range value would be used.</p>
+            <p class="more_space">
+                <MadCap:relatedTopics>
+                    <MadCap:relatedTopic src="param_at_work_drop_rate.htm" />
+                    <MadCap:relatedTopic src="parameters_at_work_increase_rate.htm" />
+                    <MadCap:relatedTopic src="param_at_work_increase_tier.htm" />
+                    <MadCap:relatedTopic src="param_at_work_min_max_increase.htm" />
+                    <MadCap:relatedTopic src="parameters_recipe_card.htm" />
+                </MadCap:relatedTopics>
+            </p>
+        </div>
+    </body>
+</html>

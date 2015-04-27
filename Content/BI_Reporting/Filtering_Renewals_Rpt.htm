@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="5" MadCap:lastHeight="2811" MadCap:lastWidth="1107">
+    <head>
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="Renewals Report:filtering;filtering:Renewals Report;reports:filtering Renewals Report" />Filtering the Renewals Report <MadCap:conditionalText MadCap:conditions="Default.NotPrint">(BI Reporting)</MadCap:conditionalText></h1>
+        <p>The Renewals Report has two views, Overview and Detail. You can filter both of these views using Input Controls and by drilling down on the report to different hierarchy levels. </p>
+        <MadCap:snippetBlock src="../Resources/Snippets/input_controls_button.flsnp" />
+        <MadCap:snippetBlock src="../Resources/Snippets/input_controls_tips_link.flsnp" />
+        <h2>
+            <a name="Filterin">
+            </a>Filtering the Overview</h2>
+        <p>The Overview page can be filtered by drilling down on the graph labels. You can use the Filter Bar at the top of the report to change the drill selections. You can also use the filter bar to see the levels you have drilled down through to get to the current one. </p>
+        <p>To drill down on the Overview page:</p>
+        <div class="indent">
+            <div class="no_break">
+                <p>Click on the hierarchy label to drill down to the next level in the hierarchy. When you hover over the label, you can see which level you will be drilling down to.</p>
+                <p>
+                    <img src="../Resources/Images/BI/overview_drill_renewals.png" />
+                </p>
+            </div>
+            <div class="no_break">
+                <p MadCap:conditions="">Both graphs will change to show details from the next level in the hierarchy. You can see which levels you have drilled down to at the top of the report and in the Filter Bar above the report.</p>
+                <p MadCap:conditions="">
+                    <img src="../Resources/Images/BI/overview_drill_filter_renewals.png" />
+                </p>
+            </div>
+            <div class="no_break">
+                <p>To drill back up, click the Level on either graph. This will change both graphs to show details from one level higher than the current level.</p>
+                <p>
+                    <img src="../Resources/Images/BI/overview_drill2_renewals.png" />
+                </p>
+            </div>
+        </div>
+        <MadCap:snippetBlock src="../Resources/Snippets/Overview_snapshots_note.flsnp" />
+        <p>By default, the information shown on both graphs is for the current month, but you can use the Input Controls to view it for the next month, two months out, or three months out, as well.</p>
+        <p>
+            <img src="../Resources/Images/BI/renewals_rpt_overview_IC.png" />
+        </p>
+        <p class="note">The Variance graph will not be displayed if you choose to view the information for three months out because Up-Down information is not available three months out.</p>
+        <h3>Tip</h3>
+        <p>When you open the report, you will be prompted to select a hierarchy. If you want to view the report using a different hierarchy, you can close and reopen it or select the refresh button.</p>
+        <p>
+            <img src="../Resources/Images/BI/reset_button_renewals.png" />
+        </p>
+        <p class="note">Hierarchies are also known as Reporting Groups and are set up under the Reporting Admin tab.</p>
+        <h2>
+            <a name="Filterin2">
+            </a>Filtering the Detail View</h2>
+        <p>You'll use Input Controls and drill down functionality to filter the Detail view of the Renewals report.</p>
+        <h2>Input Controls</h2>
+        <p>
+            <img src="../Resources/Images/BI/renewals_report_detail_IC.png" />
+        </p>
+        <h2 MadCap:conditions="">Community Filter</h2>
+        <p MadCap:conditions="">The Community filter allows you to run the report for all communities, multiple communities, or a specific community.</p>
+        <p>By default, the report includes all communities that you have access to that use an attribute in the selected hierarchy. </p>
+        <MadCap:snippetBlock src="../Resources/Snippets/select_multiple_communities.flsnp" />
+        <MadCap:snippetBlock src="../Resources/Snippets/apply_community_filter.flsnp" />
+        <h2>Level of Detail to Display</h2>
+        <p>You can control the amount of information you want to display on the report. You can view it at three levels of detail:</p>
+        <ul>
+            <li>Hierarchy Only - information is  shown at the hierarchy attribute level</li>
+            <li>Hierarchy &amp; Community - information is shown at the hierarchy attribute level broken down by community</li>
+            <li>Hierarchy, Community &amp; Unit Type - information is shown at the hierarchy attribute level broken down by community and then by unit type</li>
+        </ul>
+        <p>For example, let's say you're viewing the report at Level 3 which is Region. The report will be broken out by Region if you view it as Hierarchy Only. The report will be broken out by Region and then by Community within each region if you view it as Hierarchy &amp; Community. The report will be broken out by Region, then by Community within each region, then by Unit Type within each community if you view it as Hierarchy, Community &amp; Unit Type.</p>
+        <p MadCap:conditions="Default.NotPrint">
+            <a href="#Drill-Do">Learn how to view the report at different hierarchy levels</a>
+        </p>
+        <h2>Amenities Filter</h2>
+        <MadCap:snippetBlock src="../Resources/Snippets/amenities_filter_default.flsnp" />
+        <h2>
+            <a name="Drill-Do">
+            </a>Drill-Down Capability</h2>
+        <p MadCap:conditions="">You can drill down to levels in the hierarchy by clicking on the hierarchy attribute name. You can drill up by clicking on the arrow icon. You can hover over the name or the icon to see which level you will be drilling down or up to.</p>
+        <div class="no_break">
+            <p MadCap:conditions="" class="bold">Drill Down By Clicking The Attribute Name</p>
+            <p MadCap:conditions="" class="bold">
+                <img src="../Resources/Images/BI/detail_drill_down_renewals.png">
+                </img>
+            </p>
+        </div>
+        <div class="no_break">
+            <p class="bold" MadCap:conditions="">Drill Back Up By Clicking The Arrow Icon</p>
+            <p class="bold" MadCap:conditions="">
+                <img src="../Resources/Images/BI/detail_drill_up_renewals.png">
+                </img>
+            </p>
+            <MadCap:snippetBlock src="../Resources/Snippets/bi_hierarchies_info_link.flsnp" />
+            <p class="more_space">
+                <MadCap:relatedTopics>
+                    <MadCap:relatedTopic src="Renewals_Report.htm" />
+                    <MadCap:relatedTopic src="reporting_tips.htm" />
+                    <MadCap:relatedTopic src="understanding_hierarchies.htm" />
+                    <MadCap:relatedTopic src="Reporting_Basics.htm" />
+                </MadCap:relatedTopics>
+            </p>
+        </div>
+    </body>
+</html>

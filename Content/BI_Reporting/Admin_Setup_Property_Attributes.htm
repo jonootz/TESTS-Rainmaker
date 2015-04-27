@@ -1,0 +1,215 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="7" MadCap:lastHeight="4478" MadCap:lastWidth="1081">
+    <head>
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="reporting admin:property attributes;business intelligence reporting admin:property attributes;business intelligence reporting setup:property attributes" />
+            <MadCap:conditionalText MadCap:conditions="Default.NotPrint">Business Intelligence Reporting </MadCap:conditionalText>Admin and Setup: Property Attributes</h1>
+        <p>On the Reporting Admin Property Attributes screen, you can add, edit, and delete attributes. Attributes are used to make up the reporting groups (hierarchies) you want to use for your Business Intelligence reports.</p>
+        <p class="note">Prior to release 14.11, you could set up a reporting hierarchy from the  Admin tab under Communities&gt;Hierarchy and if you had one set up there, the property attributes set up there would initially show up here. </p>
+        <MadCap:snippetBlock src="../Resources/Snippets/changes_made_after_daily_load.flsnp" />
+        <h3>How Are Property Attributes Used</h3>
+        <p>The property attributes are used to help you view your reporting information in ways that are beneficial to you. For example, you can view information at the corporate level which will include all of your properties, but then you can also view the information at the regional level or the state level if you have set up region and state attributes. The attributes will have values, for example, different regions such as Southeast and Northwest and different states such as Georgia and Oregon. You will assign the appropriate attribute values to your properties so the correct information is included when you view the information at different levels on the reports.</p>
+        <p>Property attributes are set up here and then assigned to properties.</p>
+        <div class="no_break">
+            <h3>To add a property attribute:</h3>
+            <ol>
+                <li>
+                    <p>In the <MadCap:variable name="Variables.LRO" /> Web UI, go to <span class="bold">Reporting Admin</span>&gt;<span class="bold">Property Attribute</span>.</p>
+                    <p>
+                        <img src="../Resources/Images/BI/RA_property_attributes.png" title="Click to view larger" />
+                    </p>
+                </li>
+                <li>
+                    <p>Click <span class="bold">Add Attribute</span>.</p>
+                    <p>
+                        <img src="../Resources/Images/BI/RA_add_attribute_button.png" title="Click to view larger" />
+                    </p>
+                </li>
+                <li>
+                    <p>Enter a name and description for the attribute.</p>
+                    <p>
+                        <img src="../Resources/Images/BI/RA_add_attribute.png" title="Click to view larger" />
+                    </p>
+                </li>
+                <li>Click <span class="bold">OK</span>.</li>
+            </ol>
+        </div>
+        <p class="less_space">The attribute will now be in the list. In order to use this attribute, it needs to have values. </p>
+        <div class="no_break">
+            <p class="less_space">To add values for an attribute:</p>
+            <ol>
+                <li>
+                    <p>On the Property Attributes screen, click the name of the attribute.</p>
+                    <p>
+                        <img src="../Resources/Images/BI/RA_property_attribute_name.png" title="Click to view larger" />
+                    </p>
+                </li>
+                <li>
+                    <p>On the Property Attribute Details screen, click <span class="bold">Add Value</span> in the Attribute Values section.</p>
+                    <p>
+                        <img src="../Resources/Images/BI/RA_prop_att_add_value.png" title="Click to view larger" />
+                    </p>
+                </li>
+                <li>
+                    <p>Enter the value.</p>
+                    <p>
+                        <img src="../Resources/Images/BI/RA_add_attribute_value.png" title="Click to view larger" />
+                    </p>
+                </li>
+                <li>Click <span class="bold">OK</span>.</li>
+                <li>Repeat steps 2-4 for each value you want to add.</li>
+            </ol>
+        </div>
+        <div class="no_break">
+            <p class="less_space">
+                <a name="AssignAttributesToProperties">
+                </a>Now you can assign these values to your properties.</p>
+            <ol>
+                <li>
+                    <p>In the&#160;Properties section, click <span class="bold">Edit</span> on the row for each property that you want to assign a value for this attribute.</p>
+                    <p>
+                        <img src="../Resources/Images/BI/RA_prop_att_edit_prop.png" title="Click to view larger" />
+                    </p>
+                </li>
+                <li>
+                    <p>Select the attribute value for each of the properties.</p>
+                    <p>
+                        <img src="../Resources/Images/BI/RA_prop_att_assign_att_value.png" title="Click to view larger" />
+                    </p>
+                </li>
+                <li>Click <span class="bold">Save</span> on each row to save the value for each of the properties.</li>
+            </ol>
+        </div>
+        <p class="note">You'll need to go into the Reporting Group screen and add this attribute to your reporting groups in order to filter by it on the reports.</p>
+        <div class="no_break">
+            <h3>To edit a property attribute:</h3>
+            <p class="less_space">To change the name or description of a property attribute:</p>
+            <ol>
+                <li>
+                    <p>On the Property Attributes screen, find the property attribute you want to edit in the list.</p>
+                    <p>
+                        <img src="../Resources/Images/BI/RA_property_attributes.png" title="Click to view larger" />
+                    </p>
+                </li>
+                <li>
+                    <p>In the Actions column, click the <span class="bold">Edit</span> button.</p>
+                    <p>
+                        <img src="../Resources/Images/BI/RA_prop_att_edit_button.png" title="Click to view larger" />
+                    </p>
+                </li>
+                <li>
+                    <p>Edit the name and/or description.</p>
+                    <p>
+                        <img src="../Resources/Images/BI/RA_edit_attribute.png" title="Click to view larger" />
+                    </p>
+                </li>
+                <li>Click <span class="bold">OK</span>.</li>
+            </ol>
+        </div>
+        <p class="note">The property attribute stays in the same reporting groups and is still assigned to the same properties with the new name.</p>
+        <div class="no_break">
+            <p class="less_space">To change the name of a value for an attribute:</p>
+            <ol>
+                <li>
+                    <p>On the Property Attributes screen, click the name of the attribute that has the value you want to change.</p>
+                    <p>
+                        <img src="../Resources/Images/BI/RA_property_attribute_name_select.png" title="Click to view larger" />
+                    </p>
+                </li>
+                <li>On the Property Details Attribute screen, find the value you want to change in the Attribute Values section.</li>
+                <li>
+                    <p>In the Actions column, click the <span class="bold">Edit</span> button.</p>
+                    <p>
+                        <img src="../Resources/Images/BI/RA_prop_att_edit_att_value.png" title="Click to view larger" />
+                    </p>
+                </li>
+                <li>
+                    <p>Change the name of the value.</p>
+                    <p>
+                        <img src="../Resources/Images/BI/RA_edit_attribute_value.png" title="Click to view larger" />
+                    </p>
+                </li>
+                <li>Click <span class="bold">OK</span>.</li>
+            </ol>
+        </div>
+        <p class="note">The value is still assigned to the same properties with the new name.</p>
+        <div class="no_break">
+            <p class="less_space">To delete a value for an attribute:</p>
+            <ol>
+                <li>
+                    <p>On the Property Attributes screen, click the name of the attribute that has the value you want to delete.</p>
+                    <p>
+                        <img src="../Resources/Images/BI/RA_property_attribute_name_select.png" title="Click to view larger" />
+                    </p>
+                </li>
+                <li>On the Property Details Attribute screen, find the value you want to delete in the Attribute Values section.</li>
+                <li>
+                    <p>In the Actions column, click the drop-down arrow next to the Edit button for that value.</p>
+                    <p>
+                        <img src="../Resources/Images/BI/RA_prop_att_edit_value_menu.png" title="Click to view larger" />
+                    </p>
+                </li>
+                <li>
+                    <p>Select <span class="bold">Delete</span>.</p>
+                    <p>
+                        <img src="../Resources/Images/BI/RA_delete_prop_att_value.png" title="Click to view larger" />
+                    </p>
+                </li>
+                <li>Click <span class="bold">OK</span> on the message confirming you want to delete the attribute value.</li>
+            </ol>
+        </div>
+        <p class="note">The attribute value will be removed from any properties that it was assigned to and can no longer be used to filter the reports. (These changes will take effect after the nightly processes are run.)</p>
+        <div class="no_break">
+            <h3>To delete a property attribute:</h3>
+            <ol>
+                <li>
+                    <p>On the Property Attributes screen, find the property attribute you want to delete in the list.</p>
+                    <p>
+                        <img src="../Resources/Images/BI/RA_property_attributes.png" title="Click to view larger" />
+                    </p>
+                </li>
+                <li>
+                    <p>In the Actions column, click the drop-down arrow next to the Edit button for that attribute.</p>
+                    <p>
+                        <img src="../Resources/Images/BI/RA_prop_att_edit_menu.png" title="Click to view larger" />
+                    </p>
+                </li>
+                <li>
+                    <p>Select <span class="bold">Delete</span>.</p>
+                    <p>
+                        <img src="../Resources/Images/BI/RA_delete_property_attribute.png" title="Click to view larger" />
+                    </p>
+                </li>
+                <li>Click <span class="bold">OK</span> on the message confirming you want to delete the attribute.</li>
+            </ol>
+        </div>
+        <p class="note">The attribute will be removed from any properties and reporting groups that it was assigned to and can no longer be used to filter reports. (These changes will take effect after the nightly processes are run.)</p>
+        <div class="no_break">
+            <MadCap:snippetBlock src="../Resources/Snippets/AssignAttributesTip.flsnp" />
+        </div>
+        <h2>Troubleshooting</h2>
+        <h3>I created a new attribute, but I don't see information from properties that should have this attribute and/or I can't filter the report using the new attribute.</h3>
+        <p class="less_space">There are several reasons that this could occur:</p>
+        <ul>
+            <li>
+                <MadCap:snippetText src="../Resources/Snippets/nightly_process_reporting_admin.flsnp">
+                </MadCap:snippetText>
+            </li>
+            <li>The attribute wasn't added to a reporting group.</li>
+            <li>Values for the attribute weren't assigned to any properties or to the correct properties.</li>
+            <li>The report may be filtered so that the information is not being included. Be sure that you have selected a reporting group that includes this attribute (if applicable) and that your other filters would not exclude the information you are expecting to see. Also make sure a value for this attribute is assigned to the properties you are expecting to see information for.</li>
+        </ul>
+        <MadCap:snippetBlock src="../Resources/Snippets/audit_hierarchy_tip.flsnp" />
+        <p class="more_space">
+            <MadCap:relatedTopics>
+                <MadCap:relatedTopic src="Admin_Setup_Overview.htm" />
+                <MadCap:relatedTopic src="Admin_Setup_Users.htm" />
+                <MadCap:relatedTopic src="Admin_Setup_Property.htm" />
+                <MadCap:relatedTopic src="Admin_Setup_Reporting_Group.htm" />
+                <MadCap:relatedTopic src="Audit_Hierarchy_Report.htm" />
+            </MadCap:relatedTopics>
+        </p>
+    </body>
+</html>

@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <li MadCap:conditions="">
+            <p>Select <span class="bold">Export Current Report As</span>.</p>
+            <p>
+                <img src="../Images/BI/export_current_report_as_menu.png" title="Click to view larger" />
+            </p>
+            <MadCap:snippetBlock src="Export_Current_Report_vs_Document.flsnp" />
+        </li>
+    </body>
+</html>

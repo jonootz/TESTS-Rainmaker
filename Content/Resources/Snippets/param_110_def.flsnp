@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="2" MadCap:lastHeight="104" MadCap:lastWidth="1280">
+    <body>
+        <p>Affects the 2 corner case DRRC business rules and defines the # of weeks of zero RL before rule 9 (low exposure and no recent leases) or rule 10 (exposure is 0) is invoked.</p>
+        <p>Values: 1,2,3, etc.</p>
+        <p>Default: 2</p>
+    </body>
+</html>

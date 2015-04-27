@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="420" MadCap:lastWidth="1155">
+    <body>
+        <p MadCap:conditions="">When you open the report, you'll be prompted to select a hierarchy.</p>
+        <MadCap:snippetBlock src="hierarachy_description.flsnp" />
+        <MadCap:snippetBlock src="select_hierarchy_steps.flsnp" />
+    </body>
+</html>

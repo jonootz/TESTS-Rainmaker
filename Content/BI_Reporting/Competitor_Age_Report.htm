@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="1964" MadCap:lastWidth="1090">
+    <head>
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="Competitor Age Report;reports:competitor age report;business intelligence reporting:competitor age report" />Competitor Age Report <MadCap:conditionalText MadCap:conditions="Default.NotPrint">(BI Reporting)</MadCap:conditionalText></h1>
+        <p MadCap:conditions="">The Competitor Age Report can be accessed from the Reporting tab in the <MadCap:variable name="Variables.LRO" /> Web UI.  </p>
+        <p class="less_space">This report gives you two key pieces of information:</p>
+        <ul>
+            <li> whether the rents are being updated weekly (Status column)</li>
+            <li>whether the rents are actually changing from week to week (Date Rent Changed and Rent Change Aging columns) </li>
+        </ul>
+        <p>This information is useful to determine if your communities are  shopping their comps or if there is an issue with a competitor. If there is an issue with a competitor, you may need to change its weight/position or even remove it as a competitor.</p>
+        <p>
+            <a href="BI_questions_answered.htm#Market">What questions can the Competitor Age Report answer?</a>
+        </p>
+        <h2 MadCap:conditions="">Viewing the Report</h2>
+        <p MadCap:conditions="">The report will open when you click the Competitor Age link on the Reporting tab.</p>
+        <MadCap:snippetBlock src="../Resources/Snippets/select_community_when_open_report.flsnp" />
+        <div class="no_break">
+            <p MadCap:conditions="">In addition to the Competitor Age information, there is a Definitions page. You can  switch between them using the tabs at the bottom of the screen.</p>
+            <p MadCap:conditions="">
+                <img src="../Resources/Images/BI/comp_age_rpt.png" title="Click to view larger" />
+            </p>
+        </div>
+        <p class="note">Comps that are not weighted are excluded from the Competitor Age Report. </p>
+        <MadCap:snippetBlock src="../Resources/Snippets/see_report_basics.flsnp" MadCap:conditions="Default.NotTraining" />
+        <p MadCap:conditions="Default.NotPrint">
+            <a href="Filtering_Competitor_Age_Rpt.htm">Learn about filtering the Competitor Age Report</a>
+        </p>
+        <p>The information on the report is divided into sections by community.</p>
+        <div class="indent">
+            <p>
+                <span class="bold">Competitor Name (Code)</span> comes from the Comp Setup screen.</p>
+            <p>
+                <span class="bold">Competitor Unit Type</span> comes from the Comp Setup screen.</p>
+            <p>
+                <span class="bold">Date Rent Changed</span> is the last time the rents were changed on the Comp Rents screen.</p>
+            <p>
+                <span class="bold">Rent Change Aging</span> is the number of days since the rents were changed on the Comp Rents screen.</p>
+            <p>
+                <span class="bold">Last Update Aging</span> is the number of days since the rents were saved or the Stale banner was dismissed on the Comp Rents screen. The rents may or may not have actually changed.</p>
+            <p>
+                <span class="bold">Last Update User</span> allows you to see who the last person was to save the rents or dismiss the Stale banner on the Comp Rents screen. They may or may not have actually changed the rents.</p>
+            <p>
+                <span class="bold">Status</span> lets you know if a competitor is stale or not. A competitor is stale if the rents haven't been saved in the past week. (The default setting for stale competitors is 7 days. This is set by parameter 105.) If this column is blank, then the competitor is not stale. </p>
+            <p class="note">A competitor can be "not stale" even if the Rent Change Aging is greater than 7 (parameter 105). This can happen if a user is just dismissing the Stale banner and not changing the rent.</p>
+        </div>
+        <h2>Definitions</h2>
+        <div class="no_break">
+            <p MadCap:conditions="">The last tab is a definitions page that will help you understand the information contained in the report.</p>
+            <p MadCap:conditions="">
+                <img src="../Resources/Images/BI/comp_age_rpt_definitions.png" />
+            </p>
+        </div>
+        <p class="more_space">
+            <MadCap:relatedTopics>
+                <MadCap:relatedTopic src="Filtering_Competitor_Age_Rpt.htm" />
+                <MadCap:relatedTopic src="reporting_tips.htm" />
+                <MadCap:relatedTopic src="Reporting_Basics.htm" />
+                <MadCap:relatedTopic src="../Screens/comp_rents_screen.htm" />
+                <MadCap:relatedTopic src="BI_questions_answered.htm" />
+            </MadCap:relatedTopics>
+        </p>
+    </body>
+</html>

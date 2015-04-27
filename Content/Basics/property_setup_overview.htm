@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="4" MadCap:lastHeight="2353" MadCap:lastWidth="1116">
+    <head>
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="property setup;community setup;property setup:overview;community setup:overview;overview:property setup;overview:community setup" />Property Setup Overview</h1>
+        <p>There are some key things you need to consider when setting up a new property in the <MadCap:variable name="Variables.LRO" /> system.</p>
+        <h2>Unit Type and Floorplan Groupings</h2>
+        <p>Prior to initialization, consider how the property's floorplans might be grouped in the <MadCap:variable name="Variables.LRO" /> system. Floorplans can be grouped in the <MadCap:variable name="Variables.LRO" /> system at three levels.</p>
+        <div class="indent">
+            <h3>Unit Category</h3>
+            <p>A unit category is a grouping of one or more unit types where the unit types, though different in price, appeal to the same segment of renters. Calculations of statistics and forecasts are done at the unit category level to ensure that there is sufficient data to generate good values. Each unit category has unit types assigned to it. This function is typically done by an administrator or pricing manager.</p>
+            <p>
+                <a href="setting_up_unit_categories.htm">Learn about setting up unit categories</a>
+            </p>
+            <h3>Unit Type</h3>
+            <p>Unit types are set up in the <MadCap:variable name="Variables.LRO" /> system and mapped to the unit types (floorplans) from the property management system. Also, when you set up competitors, competitor unit types will automatically be created and mapped based on your unit types.</p>
+            <p>
+                <a href="setting_up_unit_types.htm">Learn about setting up unit types</a>
+            </p>
+            <h3>PMS Unit Type</h3>
+            <p>Similar PMS unit types (floorplans) can be grouped together for pricing purposes into a single <MadCap:variable name="Variables.LRO" /> unit type.</p>
+            <p>
+                <a href="mapping_unit_types.htm">Learn about mapping unit types</a>
+            </p>
+        </div>
+        <h3>Pricing Offsets</h3>
+        <p>
+            <MadCap:snippetText src="../Resources/Snippets/pricing_offsets_def.flsnp" />
+        </p>
+        <p class="less_space">There are two reasons we group PMS unit types together, to have enough data and to match the customers' interests.</p>
+        <div class="indent">
+            <p>From a statistical perspective, having a unit count above 32 is best. Grouping PMS&#160;unit types together into one <MadCap:variable name="Variables.LRO" /> unit type provides the <MadCap:variable name="Variables.LRO" /> system enough transactional data (guest cards, move-ins, move-outs, etc.) to make sound pricing recommendations.</p>
+            <p>You may have a variety of floorplan options and based on the customer's needs, the Leasing Associate will narrow down the best option for them. With that in mind, grouping certain floorplans together is a logical approach and gives the <MadCap:variable name="Variables.LRO" /> system the best information.</p>
+        </div>
+        <p>One PMS unit type of those grouped together in an <MadCap:variable name="Variables.LRO" /> unit type should have a zero offset. This is referred to as the Pivot Unit Type. Typically, this would be the PMS unit type that has the largest unit count in each <MadCap:variable name="Variables.LRO" /> unit type. This is the floorplan that will be used for comparison to the mapped floorplan at each competitor.</p>
+        <p>
+            <a href="../PUTMOP/using_offset_pricing.htm">Learn about entering pricing offsets</a>
+        </p>
+        <h2>Parameters</h2>
+        <p>Parameters are settings that define how the <MadCap:variable name="Variables.LRO" /> system will react in various business cases. Some parameters can be set at the unit type level, while others are set at the community level. It is important to consider your company's overall operational strategy, the property's current occupancy and stability, as well as the current market conditions, when deciding on the initial set of parameters.</p>
+        <p class="less_space">Some questions to ask include:</p>
+        <ul>
+            <li>What is the property's current position? Is it stable and performing well? What is the current vacancy percentage? Is it fully staffed?</li>
+            <li>What is the current state of the submarket? Are rents stable/increasing/dropping? Is it moving toward a busier or slower leasing season?</li>
+            <li>What are your company's goals in regard to this property? Are you geared toward an occupancy target or a rent growth target?</li>
+        </ul>
+        <p>Based on the goals of the property and your company, you can set the <MadCap:variable name="Variables.LRO" /> parameters to compliment your business strategy.</p>
+        <p class="note">Keep in mind that you should reassess your parameters seasonally and whenever there are business scenario changes at the property or in the market.</p>
+        <p>The parameters you are most likely to set when you are setting up your property are Admin parameters and New Pricing parameters. Renewal parameters are typically set a month or two after the property has been on the <MadCap:variable name="Variables.LRO" /> system.</p>
+        <p>
+            <a href="../Parameters/parameters_intro.htm">Learn about setting parameters</a>
+        </p>
+        <p>
+            <a href="../Parameters/admin_overview.htm">Learn about Admin parameters</a>
+        </p>
+        <p>
+            <a href="../Parameters/new_pricing_param_overview.htm">Learn about New Pricing parameters</a>
+        </p>
+        <p>
+            <a href="../Parameters/renewal_param_overview.htm">Learn about Renewal parameters</a>
+        </p>
+        <h2>Statistics</h2>
+        <p>Upon initialization, the <MadCap:variable name="Variables.LRO" /> system will pull historical data from your property management system and calculate statistics based on your property's history. Those statistics include the property's seasonal demand patterns during different times of the year, how far in advance prospects typically look for apartments, as well as the historical renewal percentage.</p>
+        <p class="less_space">Often the historical data from the PMS is sufficient. However, if the data is incomplete or inaccurate, statistics can be cloned from a sister community or from an aggregate of the market. You might do this if the property is a recent acquisition with little or no historical data available from the prior owner or manager, is a recent lease up, or has recently undergone a major renovation. <MadCap:variable name="Variables.LRO" /> Support can assist in assessing your property's data and in cloning statistics, when necessary.</p>
+        <h2>Competitors</h2>
+        <p>The competitive set is one of the drivers in the <MadCap:variable name="Variables.LRO" /> pricing model. With regard to competitors, the <MadCap:variable name="Variables.LRO" /> system considers rent and concessions tied to rent, not occupancy, traffic or leases. The <MadCap:variable name="Variables.LRO" /> system incorporates competitive rents only when availability is high and leasing is slow. At other times, the <MadCap:variable name="Variables.LRO" /> system looks at trends from the competitor rents. Ideally, a competitive set would contain the top 4-6 competitors for each <MadCap:variable name="Variables.LRO" /> unit type.</p>
+        <h3>
+            <MadCap:keyword term="competitive set;competitive set:establishing" />Establishing a Competitive Set</h3>
+        <p class="less_space">There are three considerations when establishing the competitive set for a community.</p>
+        <ul>
+            <li>Who are the main competitors for the community? Focus on competitors who share qualified traffic and leases with your community.</li>
+            <li>How do the competitors rate from most important to least important? Who do you share traffic with and who do you lose leases to?</li>
+            <li>What are the fundamental rent-impacting differences between your community and each competitor? Would a customer expect to pay more, less, or about the same at your community vs the competitor? Why?</li>
+        </ul>
+        <p>Once you have established your competitive set, you will need to choose the floorplans to map to your <MadCap:variable name="Variables.LRO" /> unit types. At each competitor, choose a single floorplan  to match each <MadCap:variable name="Variables.LRO" /> unit type. Ideally, this would be the floorplan with the highest unit count, even if it is larger or smaller than the pivot floorplan at your community. This gives the site team the best chance to get accurate, real-time pricing each week. Any differences in features or square footage can be accounted for with positioning.</p>
+        <p class="note">When you add a competitor, competitor unit types are automatically created and mapped based on your <MadCap:variable name="Variables.LRO" /> unit types.&#160;You should review your competitor unit types and make any adjustments after you add a competitor.</p>
+        <h3>Competitor Weights</h3>
+        <p>The competitor weight is the ranking of each competitor based on the amount of shared qualified traffic and leases with your community. Weights are entered as percentages with the more important competitors receiving greater values. The percentages must add up to 100% for each <MadCap:variable name="Variables.LRO" /> unit type.</p>
+        <p>
+            <a href="../Screens/comp_weights_screen.htm">Learn about Competitor Weights</a>
+        </p>
+        <h3>Competitor Positions</h3>
+        <p>A position levels the playing field. It tells the <MadCap:variable name="Variables.LRO" /> system how much more or less a customer would expect to pay at a competitor vs your community. Positions are entered in positive or negative dollar amounts.</p>
+        <p>
+            <a href="../Screens/comp_positions_screen.htm">Learn about Competitor Positions</a>
+        </p>
+        <p class="more_space">
+            <MadCap:relatedTopics>
+                <MadCap:relatedTopic src="setting_up_unit_categories.htm" />
+                <MadCap:relatedTopic src="setting_up_unit_types.htm" />
+                <MadCap:relatedTopic src="mapping_unit_types.htm" />
+                <MadCap:relatedTopic src="../Parameters/parameters_intro.htm" />
+                <MadCap:relatedTopic src="setting_up_competitors.htm" />
+                <MadCap:relatedTopic src="../Screens/comp_rents_screen.htm" />
+                <MadCap:relatedTopic src="../Screens/comp_weights_screen.htm" />
+            </MadCap:relatedTopics>
+        </p>
+    </body>
+</html>

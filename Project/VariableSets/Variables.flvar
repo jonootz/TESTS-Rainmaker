@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultVariableSet>
+    <Variable Comment="" Name="FullCompanyName">The Rainmaker Group Ventures, LLC</Variable>
+    <Variable Comment="" Name="ShortCompanyName">Rainmaker</Variable>
+    <Variable Name="LRO" Comment="" Definition="Some text">LRO</Variable>
+    <Variable Name="Date" Comment="" Definition="Some text">March 2015</Variable>
+    <Variable Name="CompetitorImportTool" Comment="" Definition="Some text">iLifeSaver</Variable>
+    <Variable Name="LROBudget" Comment="">LRO Budget</Variable>
+</CatapultVariableSet>

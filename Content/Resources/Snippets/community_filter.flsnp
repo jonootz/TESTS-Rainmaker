@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="2" MadCap:lastHeight="67" MadCap:lastWidth="1214">
+    <body>
+        <p class="note">The community filter will only contain communities that were selected in the Prompts window. If you didn't select any communities in the Prompts window, the report was run for all communities and all communities will be in the Community filter.</p>
+    </body>
+</html>

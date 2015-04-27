@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="2" MadCap:lastHeight="53" MadCap:lastWidth="1208">
+    <body>
+        <p MadCap:conditions="">There are two different views of the report, an Overview and a Detail view. The filters for these views are independent of each other. For example, if you have the Overview filtered for a particular community and then switch to the Detail view, the Detail view will not automatically be filtered for that community.</p>
+    </body>
+</html>

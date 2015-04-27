@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="7" MadCap:lastHeight="2331" MadCap:lastWidth="1215">
+    <head>
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="reports:mail merge;business intelligence reporting:mail merge report;Renewals Mail Merge Report;Mail Merge Report" />Renewals Mail Merge Report <MadCap:conditionalText MadCap:conditions="Default.NotPrint">(BI Reporting)</MadCap:conditionalText></h1>
+        <p>The Renewals Mail Merge report can be run from the Reporting tab in the LRO Web UI. </p>
+        <p>This report is used to create renewal letters. It allows you to export pricing for all expiring leases and renewal offers for the selected period of time. This report would typically be run whenever you are generating renewal offers, which is usually monthly.</p>
+        <h2>Viewing the Report</h2>
+        <p>When you open the report, you'll be given a prompt to make your filter selections and run the report. </p>
+        <p>To run the mail merge report:</p>
+        <ol>
+            <li>
+                <p>Select the Mail Merge report on the Reporting tab in the LRO Web UI.</p>
+                <p>The report will open in the Business Objects portal with the Prompts dialog shown.</p>
+            </li>
+            <li>Make sure the first prompt under Prompts Summary is selected (Enter value for Curr Lease Exp Date (Start)).</li>
+            <li>
+                <p>Select or enter the start date.</p>
+                <p>
+                    <img src="../Resources/Images/BI/mail_merge_start_date.png" title="Click to view larger" />
+                </p>
+            </li>
+            <li>Select the second prompt under Prompts Summary (Enter value for Curr Lease Exp Date (End)). </li>
+            <li>
+                <p>Select or enter the end date.</p>
+                <p>
+                    <img src="../Resources/Images/BI/mail_merge_end_date.png" title="Click to view larger" />
+                </p>
+                <p class="note">If you accidentally enter a start date that is later than the end date, the report will be blank.</p>
+            </li>
+            <li>Select the third prompt under Prompts Summary (Enter values for Community).</li>
+            <li>
+                <p>Select the communities you want to include on the report. </p>
+                <p class="note">If you select All here, only All will be available as the Unit Type selection. If you want to filter this report by unit type, you should select specific communities here, instead of selecting All. If you want to filter by unit type and you want all communities on the report, just select all of them. You can select multiple communities using Shift-click or Ctrl-click.</p>
+                <p>
+                    <img src="../Resources/Images/BI/mail_merge_community_prompt.png" title="Click to view larger" />
+                </p>
+            </li>
+            <li>
+                <p>Select the Add button after you have made your selection. The list on the right will show the communities that are selected.</p>
+                <p>
+                    <img src="../Resources/Images/BI/mail_merge_community_prompt_add.png" title="Click to view larger" />
+                </p>
+            </li>
+            <li>Select the fourth prompt under Prompts Summary (Enter values for Unit Type).</li>
+            <li>
+                <p>Select the unit types you want to include on the report.  You can select multiple unit types using Shift-click or Ctrl-click.</p>
+                <p class="note">If you selected All for the Community value, only All will be available as the Unit Type selection. If you want to filter this report by unit type, you should select specific communities under Enter values for Community, instead of selecting All. If you want all communities on the report, just select all of them.</p>
+                <p>
+                    <img src="../Resources/Images/BI/mail_merge_unit_type_prompt.png" title="Click to view larger" />
+                </p>
+            </li>
+            <li>
+                <p>Select the Add button after you have made your selection. The list on the right will show the unit types that are selected.</p>
+                <p>
+                    <img src="../Resources/Images/BI/mail_merge_unit_type_add.png" title="Click to view larger" />
+                </p>
+            </li>
+            <li>
+                <p>Click <span class="bold">OK</span> to run the report.</p>
+                <p>
+                    <img src="../Resources/Images/BI/mail_merge_run_query.png" title="Click to view larger" />
+                </p>
+            </li>
+        </ol>
+        <div class="no_break">
+            <p>
+                <img src="../Resources/Images/BI/mail_merge_report.png" title="Click to view larger" />
+            </p>
+        </div>
+        <MadCap:snippetBlock src="../Resources/Snippets/see_report_basics.flsnp" MadCap:conditions="Default.NotTraining" />
+        <h3>Tips</h3>
+        <p MadCap:conditions="">If your report is very large, you'll use the page functionality instead of continuously scrolling down.</p>
+        <p MadCap:conditions="">
+            <img src="../Resources/Images/BI/mail_merge_page.png" title="Click to view larger" />
+        </p>
+        <div class="no_break">
+            <p>To rerun the report with different filter selections, you can click the Refresh button.</p>
+            <p>
+                <img src="../Resources/Images/BI/mail_merge_refresh.png" title="Click to view larger" />
+            </p>
+        </div>
+        <p class="note">The filters for this report are all on the Prompt screen that appears when you run the report. This report does not use filters from the Input Controls or Filter Bar like some of the other reports do. Since these filters are not available, you may see a note about adding them. You do not need those filters for this report so you should not try to add them.</p>
+        <p>
+            <img src="../Resources/Images/BI/mail_merge_ignore_filters.png" title="Click to view larger" />
+        </p>
+        <p class="more_space">
+            <MadCap:relatedTopics>
+                <MadCap:relatedTopic src="Reporting_Basics.htm" />
+                <MadCap:relatedTopic src="../Basics/renewal_letters.htm" />
+                <MadCap:relatedTopic src="../Basics/renewal_dos_donts.htm" />
+            </MadCap:relatedTopics>
+        </p>
+    </body>
+</html>

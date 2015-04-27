@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="507" MadCap:lastWidth="1123">
+    <body>
+        <p MadCap:conditions="">When you open the report, you'll be prompted to select a community.</p>
+        <p MadCap:conditions="" class="note">You don't have to select a community. If you don't select a community, the report will run for all communities.</p>
+        <p class="less_space">To select a community:</p>
+        <ol start="1">
+            <li>
+                <p>On the Community Prompt, you don't have to select anything if you want to run the report for all communities. </p>
+                <p>If you want to view the report for a particular community or set of communities, select the community or communities you want to include on the report. You can select multiple communities using Shift-click or Ctrl-click.</p>
+                <p class="note">Click Refresh Values to see the list of communities.</p>
+                <p>
+                    <img src="../Images/BI/community_prompt.png" />
+                </p>
+            </li>
+            <li>
+                <p>If you selected any communities, select the Add button. The list on the right will show the communities that are selected.</p>
+                <p>
+                    <img src="../Images/BI/community_prompt_add.png" />
+                </p>
+            </li>
+            <li>
+                <p>Click <span class="bold">OK</span> to run the report.</p>
+            </li>
+        </ol>
+    </body>
+</html>

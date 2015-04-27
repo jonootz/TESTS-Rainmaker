@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="2" MadCap:lastHeight="125" MadCap:lastWidth="1280">
+    <body>
+        <p>Percentage of the difference between the last reference rent and the current market composite that will be reduced if the correct business rule is invoked in the DRRC (New Pricing). It affects when to lower rent and by how much.</p>
+        <p>Values: 0-100 %</p>
+        <p>Default: 50</p>
+    </body>
+</html>

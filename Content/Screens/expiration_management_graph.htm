@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="961" MadCap:lastWidth="1228">
+    <head>
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="LEM:graph;lease expiration management:graph;expiration management graph;expiration management:graph" />Lease Expiration Management Graph</h1>
+        <MadCap:snippetBlock src="../Resources/Snippets/lem_definition.flsnp" />
+        <MadCap:snippetBlock src="../Resources/Snippets/lem_model.flsnp" />
+        <MadCap:snippetBlock src="../Resources/Snippets/lem_graph_description.flsnp" />
+        <MadCap:snippetBlock src="../Resources/Snippets/use_lem_parameter_note.flsnp" />
+        <p>
+            <img src="../Resources/Images/WebUI/LEM_graph.png" />
+        </p>
+        <h2>Understanding the Expiration Management Graph</h2>
+        <p>This is the key information you will see on the graph for the Unit Category you have selected.</p>
+        <div class="indent">
+            <p>
+                <span class="bold">Actual Expirations (blue):</span> The number of expirations expected from leases which have already been signed.</p>
+            <p>
+                <span class="bold">Remaining Forecasted Expirations (purple):</span> The number of expirations expected from demand which is forecasted to materialize in the future.</p>
+            <p>
+                <span class="bold">Total Forecasted Expirations (blue + purple):</span> The sum of Actual Expirations and Remaining Forecasted Expirations.</p>
+            <p>
+                <MadCap:variable name="Variables.LRO" class="bold" />
+                <span class="bold"> Recommended Expirations (red):</span> The expirations recommended for each calendar month based on seasonality, historical expirations, and renewal fractions.</p>
+        </div>
+        <h2>Tips</h2>
+        <ul>
+            <li>The Expiration Management Graph is broken down by unit category.</li>
+            <li>Select <span class="bold">Display Graph Values</span> to show the actual values associated with each month.</li>
+            <li>The scale on the left margin provides the number of expirations as well as the 1.0 average demand for seasonality.</li>
+            <li>Expiration data for 24 months can be viewed using the scroll bar at the bottom of the graph.</li>
+            <li>Seasonality&#160;is illustrated as a line near the top of the graph and numerically below the graph.</li>
+            <li>The <MadCap:variable name="Variables.LRO" /> recommended expirations are illustrated as red bars on the graph and numerically below the graph.</li>
+            <li>The blue bars indicate the actual number of leases in place.</li>
+            <li>The purple bars indicate the remaining forecasted expirations.</li>
+            <li>The green highlighted cells below the graph allow you to override the <MadCap:variable name="Variables.LRO" /> recommended number of expirations.</li>
+        </ul>
+        <p class="more_space">
+            <MadCap:relatedTopics>
+                <MadCap:relatedTopic src="../Basics/LEM_facts.htm" />
+                <MadCap:relatedTopic src="../Basics/overriding_LRO_expirations.htm" />
+                <MadCap:relatedTopic src="../Parameters/lem_param_overview.htm" />
+                <MadCap:relatedTopic src="../Basics/turning_on_LEM.htm" />
+            </MadCap:relatedTopics>
+        </p>
+    </body>
+</html>

@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="2" MadCap:lastHeight="104" MadCap:lastWidth="1280">
+    <body>
+        <p>Used when LEM is turned on (parameter 172=1). The percentage above reference rent at which to clip the final rent recommendations.</p>
+        <p>Values: &gt;=0%</p>
+        <p>Default: 100</p>
+    </body>
+</html>

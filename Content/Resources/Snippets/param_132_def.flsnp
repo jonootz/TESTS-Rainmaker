@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="2" MadCap:lastHeight="140" MadCap:lastWidth="1280">
+    <body>
+        <p>Enables smoothing of today’s recommended rents over yesterday’s rents. Current Rents need to be populated to use this – Refer to parameter 14.</p>
+        <p class="TableCell">Value: Y=Smooth rents in current week only (independent of LEM; smooth over recent days), A=Smooth over all weeks (only if parameter 172 enhanced LEM is on), N=Do not smooth</p>
+        <p class="TableCell">If this parameter is set to A, parameter 174 will need to be set.</p>
+        <p class="TableCell">Default: N</p>
+    </body>
+</html>

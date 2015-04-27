@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="1226" MadCap:lastWidth="1228">
+    <head>
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="moving from seeded to calculated statistics" />When and How to Move from Seeded to Calculated Statistics</h1>
+        <p>
+            <a href="../Parameters/cooking_stats_param_overview.htm">Seeding statistics</a> is when you tell the <MadCap:variable name="Variables.LRO" /> system to use data consistent with assets in the same market instead of calculating statistics using data from the&#160;Property Management System.</p>
+        <p>If necessary, <MadCap:variable name="Variables.LRO" /> support can help you make the move from seeded to calculated statistics.</p>
+        <h2>When to Move from Seeded to Calculated Statistics</h2>
+        <p>You would use seeded statistics when you don't have enough good data for the <MadCap:variable name="Variables.LRO" /> system to calculate valid statistics. Following are guidelines for the amount of lease history you need to move from seeded to calculated statistics along with the parameter that controls whether or not that statistic is seeded or calculated.</p>
+        <table style="width: 100%;border-collapse: collapse;border-spacing: 2px 2px;">
+            <col />
+            <col />
+            <col />
+            <thead>
+                <tr class="light_grey">
+                    <th class="borders">Business Statistic</th>
+                    <th class="borders">Stable Lease History Requirement</th>
+                    <th class="borders">Parameter</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="borders">
+                        <p class="TableCell">Seasonality</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCellCentered">18 months (minimum); may want to wait until you have 36 months of stable history</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCellCentered">92</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="borders">
+                        <p class="TableCell">Lease Term Demand Level</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCellCentered">8 months</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCellCentered">93</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="borders">
+                        <p class="TableCell">Lead Time Curve</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCellCentered">12 months</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCellCentered">94</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="borders">
+                        <p class="TableCell">Lease Term Fraction</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCellCentered">12 months</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCellCentered">95</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="borders">
+                        <p class="TableCell">Average Early Termination</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCellCentered">12 months</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCellCentered">96</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="borders">
+                        <p class="TableCell">Early Termination Lead Time Curve</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCellCentered">12 months</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCellCentered">97</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="borders">
+                        <p class="TableCell">Average Number of Vacant Days</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCellCentered">12 months</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCellCentered">98</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="borders">
+                        <p class="TableCell">Renewal Fraction</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCellCentered">12 months</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCellCentered">99</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2>How to Move from Seeded to Calculated Statistics</h2>
+        <p class="less_space">This is what you will need to do when you are ready to move from seeded to calculated statistics. Contact <MadCap:variable name="Variables.LRO" /> Support, if you need assistance.</p>
+        <ol>
+            <li>
+                <p>Go to <span class="bold">Admin</span>&gt;<span class="bold">Parameters</span>. </p>
+                <p>You should be on the Community Parameters screen. If not, select Community under Parameters in the menu bar.</p>
+            </li>
+            <li>Make sure the Community you want to change the parameters for is selected.</li>
+            <li>Click <span class="bold">Edit</span> in the upper right corner of the screen.</li>
+            <li>Scroll down to find the parameter for the statistic that you want to be calculated.</li>
+            <li>In the green field (Community Value) for that parameter, enter <span class="bold">1</span>. (0=Seeded, 1=Calculated)</li>
+            <li>Repeat steps 4-5 for each parameter you want to change.</li>
+            <li>Scroll down to parameter 223 Upstat DOW Run Date and <span class="bold">make a note of what this parameter is currently set to</span>.</li>
+            <li>After you have noted what parameter 223 is set to, change it to the current day of the week (0=Sunday, 1=Monday, etc.).</li>
+            <li>Click <span class="bold">Save</span>.</li>
+            <li>Go to <span class="bold">Admin</span>&gt;<span class="bold">Scheduler</span>.</li>
+            <li>Click <span class="bold">Nightly</span>.</li>
+            <li>Check the box next to the property whose parameters you just changed.</li>
+            <li>Click <span class="bold">OK</span> to run a fully nightly processing. This will allow the calculated statistics to take effect.</li>
+            <li>
+                <p>After the nightly processing has completed, go to <span class="bold">Admin</span>&gt;<span class="bold">Parameters</span>. </p>
+                <p>You should be on the Community Parameters screen. If not, select Community under Parameters in the menu bar.</p>
+            </li>
+            <li>Make sure the Community whose parameters you changed is selected.</li>
+            <li>Click <span class="bold">Edit</span> in the upper right corner of the screen.</li>
+            <li>Find parameter 223 and change it back to what it was previously.</li>
+            <li>Click <span class="bold">Save</span>.</li>
+        </ol>
+        <p class="note">If you want to review what the calculated statistics look like, go to <span class="bold">LRO</span>&gt;<span class="bold">Charts</span>&gt;<span class="bold">BI Charts</span>. Use the Report drop-down to select the different statistics graphs.</p>
+        <p class="more_space">
+            <MadCap:relatedTopics>
+                <MadCap:relatedTopic src="../Parameters/cooking_stats_param_overview.htm" />
+                <MadCap:relatedTopic src="../Parameters/parameters_intro.htm" />
+                <MadCap:relatedTopic src="../Parameters/parameters_list.htm" />
+            </MadCap:relatedTopics>
+        </p>
+    </body>
+</html>

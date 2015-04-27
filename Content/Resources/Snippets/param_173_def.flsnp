@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="2" MadCap:lastHeight="125" MadCap:lastWidth="1280">
+    <body>
+        <p>Used when LEM is turned on (parameter 172=1). The minimum number of units required for the LEM recommendations to be based on the Unit Category level statistics. If a Unit Category has fewer than the number of units specified here (32 by default), its LEM recommended expirations will be based on statistics calculated using the Community level data.</p>
+        <p>Values: Integer</p>
+        <p>Default: 32</p>
+    </body>
+</html>

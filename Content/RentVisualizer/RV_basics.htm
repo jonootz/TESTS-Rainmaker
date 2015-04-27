@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="4" MadCap:lastHeight="2506" MadCap:lastWidth="1256">
+    <head>
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="rent visualizer:basics" />Rent Visualizer Basics</h1>
+        <MadCap:snippetBlock src="../Resources/Snippets/rent_visualizer_desc.flsnp" />
+        <h2>Viewing the Rent Visualizer</h2>
+        <p>The Rent Visualizer is opened from the New Pricing screen.  You can click the Base Rent to see the Rent Visualizer for that Unit Type and Lease Term Category. </p>
+        <p class="note">The link is from the Base Rent and not the Effective Rent because the Effective Rent will not always match the Rent Visualizer information because the Rent Visualizer does not include concessions. Also, be aware that the Base Rent on New Pricing may not match what is in the Rent Visualizer because amenities and pricing offsets are included in New Pricing, but not in the Rent Visualizer.</p>
+        <p>
+            <img src="../Resources/Images/WebUI/new_pricing_rovr_link.png" />
+        </p>
+        <p MadCap:conditions="">The Rent Visualizer will open in a separate tab. This allows you to switch back and forth between the Rent Visualizer and the New Pricing screen if you want to.</p>
+        <p MadCap:conditions="">
+            <img src="../Resources/Images/WebUI/rent_visualizer.png" />
+        </p>
+        <p MadCap:conditions="">The Rent Visualizer is divided into five components to help you understand the pricing process. Inputs and parameters that were used at each pricing stage are displayed in the panel on the right side of the screen when you select a point on the graph.</p>
+        <p MadCap:conditions="">This gives you some insight into the pricing calculations and what affects them so you can make adjustments or just have a better general understanding of LRO's pricing process.</p>
+        <h2 MadCap:conditions="">Filtering the Rent Visualizer</h2>
+        <p MadCap:conditions="">When you open the Rent Visualizer, you will see the rent information for the unit type and lease term category for the base rent you selected. You can filter the Rent Visualizer to see different information.</p>
+        <div class="indent">
+            <h3 MadCap:conditions="">Pricing Date</h3>
+            <p MadCap:conditions="">You can select to view the pricing as of the date the pricing was run. </p>
+            <p MadCap:conditions="">The available dates will start from the date you started using the Rent Visualizer functionality. If pricing wasn't run for a particular day or if the Rent Visualizer functionality was turned off (parameter 313), that date will not be in the list. Also, information for dates more than 3 months back may have been purged and no longer be available.</p>
+            <h3 MadCap:conditions="">Pricing Week</h3>
+            <p MadCap:conditions="">You can select to view the pricing for a specific week. For any given Pricing Date, you can select pricing for a number of weeks into the future. The number of weeks is determined by parameter 1, Opt_Horizon, which is set to 16 by default.</p>
+            <h3 MadCap:conditions="">LTC</h3>
+            <p MadCap:conditions="">You can select to view the pricing for a particular lease term.</p>
+            <p MadCap:conditions="" class="note">The Lease Terms filter will change to display lease terms for the lease term category selected here.</p>
+            <h3 MadCap:conditions="">Unit Category</h3>
+            <p MadCap:conditions="">You can select to view the pricing for a particular unit category.</p>
+            <p MadCap:conditions="" class="note">The Unit Types filter will change to display unit types that fall within the selected unit category.</p>
+            <h3 MadCap:conditions="">Unit Types</h3>
+            <p MadCap:conditions="">You can select any unit types that fall within the selected unit category.</p>
+            <p MadCap:conditions="" class="note">You must select at least one unit type.</p>
+            <h3 MadCap:conditions="">Lease Terms</h3>
+            <p MadCap:conditions="">You can select any lease terms that apply for the selected lease term category.</p>
+            <p MadCap:conditions="" class="note">You must select at least one lease term.</p>
+        </div>
+        <h3 MadCap:conditions="">Tips</h3>
+        <p MadCap:conditions="">The labels on the graph will help you identify the pricing path for a particular unit type and lease term. These labels are on the starting point (Reference Rent) and ending point (Further Post-Processing). This is helpful if you have filtered the report to show multiple unit types or multiple lease terms.</p>
+        <p MadCap:conditions="">
+            <img src="../Resources/Images/WebUI/rent_visualizer_labels.png" />
+        </p>
+        <p MadCap:conditions="">You can also mouse over a point on the graph to see the price at that point.</p>
+        <p MadCap:conditions="">
+            <img src="../Resources/Images/WebUI/rent_visualizer_tooltip.png" />
+        </p>
+        <h2 MadCap:conditions="">Printing the Rent Visualizer</h2>
+        <p MadCap:conditions="">You can print the Rent Visualizer, if you want to. This will include the graph and the information in the panel on the right side of the screen at the time the Rent Visualizer was printed. </p>
+        <p MadCap:conditions="">To print the Rent Visualizer, click the Print icon in the top right corner of the screen.</p>
+        <p MadCap:conditions="">
+            <img src="../Resources/Images/BI/print_rent_visualizer.png" />
+        </p>
+        <p MadCap:conditions="" class="note">The graph will print on one page and the panel information on another.</p>
+        <h2 MadCap:conditions="">Security</h2>
+        <p MadCap:conditions="">Access to the Rent Visualizer is controlled by a property right called Field Rent Visualizer. Users that have this right will be able to see the  links on the New Pricing screen and to launch the Rent Visualizer.</p>
+        <p MadCap:conditions="" class="less_space">This right is included in the following rights::</p>
+        <ul>
+            <li MadCap:conditions="">Administrator</li>
+            <li MadCap:conditions="">PricingAnalyst</li>
+            <li MadCap:conditions="">LRO_Administrator</li>
+            <li MadCap:conditions="">LRO_PricingAnalyst</li>
+        </ul>
+        <h2 MadCap:conditions="">Turn On/Off</h2>
+        <p MadCap:conditions="">You can turn the Rent Visualizer on and off using <a href="../Parameters/parameters_list.htm#param313">parameter 313</a>.  You may want to turn the Rent Visualizer off if you are not using it or if you find that it slows down your nightly processes too much.</p>
+        <p class="note">Lease Expiration Management (LEM) must also be turned on to use the Rent Visualizer. LEM is turned on using <a href="../Parameters/parameters_list.htm#param172">parameter 172</a>.</p>
+        <p MadCap:conditions="">
+            <MadCap:relatedTopics>
+                <MadCap:relatedTopic src="RV_overview.htm" />
+                <MadCap:relatedTopic src="RV_ref_rent.htm" />
+                <MadCap:relatedTopic src="RV_optimization.htm" />
+                <MadCap:relatedTopic src="RV_ltc_to_lt.htm" />
+                <MadCap:relatedTopic src="RV_uc_to_ut.htm" />
+                <MadCap:relatedTopic src="RV_post_processing.htm" />
+            </MadCap:relatedTopics>
+        </p>
+    </body>
+</html>

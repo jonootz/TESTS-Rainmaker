@@ -1,0 +1,3 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultProject Version="1" xml:lang="en-us" SourceControlBound="false" Comment="Project for LRO with page layouts for job aids and guides" MasterToc="/Project/TOCs/OnlineHelp/LRO_Help.fltoc" MasterPageLayout="/Content/Resources/PageLayouts/guide_layout.flpgl" MasterStylesheet="/Content/Resources/Stylesheets/rmlrobasic.css">
+</CatapultProject>

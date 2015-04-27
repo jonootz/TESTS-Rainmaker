@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="2" MadCap:lastHeight="104" MadCap:lastWidth="1280">
+    <body>
+        <p>Defines the upper bounds for ranges of exposure. </p>
+        <p>Values: 0.00-100.00 %</p>
+        <p>Default: 10</p>
+    </body>
+</html>

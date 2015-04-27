@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <p>The Lease Expiration Management Graph is located in the <MadCap:variable name="Variables.LRO" />Web UI under <span class="bold">LRO</span>&gt;<span class="bold">Expiration Management</span>. It illustrates the relationship between the number of expirations the <MadCap:variable name="Variables.LRO" /> system is recommending and the total number of expirations expected.</p>
+    </body>
+</html>

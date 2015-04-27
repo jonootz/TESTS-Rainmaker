@@ -1,0 +1,213 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="8" MadCap:lastHeight="1540" MadCap:lastWidth="1202">
+    <head>
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="rent visualizer:futher post processing;Further Post Processing Stage (rent visualizer)" />Rent Visualizer: Further Post Processing Stage</h1>
+        <p MadCap:conditions="">The final stage<span class="bold"> results in what is referred to as the recommended rent before any amenities or pricing offsets are applied</span>. Once the amenities and/or any offsets are considered, then this value should match the Base rent on the New Pricing report. This post optimization stage applies any rounding rules that are in effect. It also applies any lease expiration management premiums or Rec Gen premiums that have been configured.</p>
+        <p MadCap:conditions="">
+            <img src="../Resources/Images/WebUI/rent_visualizer_post.png" />
+        </p>
+        <MadCap:snippetBlock src="../Resources/Snippets/inputs_and_parameters_below.flsnp" />
+        <h3 MadCap:conditions="">Inputs</h3>
+        <table style="width: 100%; border-collapse: collapse;">
+            <col style="width: 186px;" />
+            <col />
+            <thead>
+                <tr class="light_grey">
+                    <th class="borders">
+                        <p>Input</p>
+                    </th>
+                    <th class="borders">
+                        <p>Definition</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr MadCap:conditions="">
+                    <td class="borders">
+                        <p class="less_space">Rec Gen Used</p>
+                    </td>
+                    <td class="borders">
+                        <p>Indicates whether or not Rec Generation has been set up for this community.</p>
+                    </td>
+                </tr>
+                <tr MadCap:conditions="">
+                    <td class="borders">
+                        <p class="less_space">Rec Gen Lease Term</p>
+                    </td>
+                    <td class="borders">
+                        <p>The corresponding lease term as set up in Rec Generation under Admin&gt;Rec Generation (if Rec Gen Used = Y).</p>
+                    </td>
+                </tr>
+                <tr MadCap:conditions="">
+                    <td class="borders">
+                        <p class="less_space">Rec Gen Base Lease Term</p>
+                    </td>
+                    <td class="borders">
+                        <p>Displays the lease term pricing that the actual lease term is being based off of according to how Rec Generation has been set up (if Rec Gen Used = Y).</p>
+                    </td>
+                </tr>
+                <tr MadCap:conditions="">
+                    <td class="borders">
+                        <p class="less_space">Rec Gen Premium</p>
+                    </td>
+                    <td class="borders">
+                        <p>The additional percentage amount that will be added on to the recommended rent for that lease term(if Rec Gen Used = Y).</p>
+                    </td>
+                </tr>
+                <tr MadCap:conditions="">
+                    <td class="borders">
+                        <p class="less_space">Recommended Base Rent</p>
+                    </td>
+                    <td class="borders">
+                        <p>The  final rent recommendation for the lease term not including any pricing offsets or amenities.</p>
+                    </td>
+                </tr>
+                <tr MadCap:conditions="">
+                    <td class="borders">
+                        <p class="less_space">Recommended Concession</p>
+                    </td>
+                    <td class="borders">
+                        <p>The amount of any concessions being applied. This is configured as a total dollar amount or number of months free  under Configuration&gt;Recommendation Strategy.</p>
+                    </td>
+                </tr>
+                <tr MadCap:conditions="">
+                    <td class="borders">
+                        <p class="less_space">Recommended Effective Base Rent</p>
+                    </td>
+                    <td class="borders">
+                        <p>The value of the base rent after including any concessions.</p>
+                    </td>
+                </tr>
+                <tr MadCap:conditions="">
+                    <td class="borders">
+                        <p class="less_space">Rounded Recommended Rent</p>
+                    </td>
+                    <td class="borders">
+                        <p>The amount of the final rent recommendation after applying the rounding rules in place. The default value is to the nearest $5.</p>
+                    </td>
+                </tr>
+                <tr MadCap:conditions="">
+                    <td class="borders">
+                        <p class="less_space">Rounded Concession</p>
+                    </td>
+                    <td class="borders">
+                        <p>The amount of any concessions in place after the rounding rule has been applied.</p>
+                    </td>
+                </tr>
+                <tr MadCap:conditions="">
+                    <td class="borders">
+                        <p class="less_space">Base Rent Rounding Parameter</p>
+                    </td>
+                    <td class="borders">
+                        <p>The value of the base rent rounding rule that is currently in place. It can only be changed by LRO Support.</p>
+                    </td>
+                </tr>
+                <tr MadCap:conditions="">
+                    <td class="borders">
+                        <p class="less_space">Concession Rounding Parameter</p>
+                    </td>
+                    <td class="borders">
+                        <p>The value of the concession rounding rule that is currently in place. It can only be changed by LRO Support.</p>
+                    </td>
+                </tr>
+                <tr MadCap:conditions="">
+                    <td class="borders">
+                        <p class="less_space">Ceiling Type</p>
+                    </td>
+                    <td class="borders">
+                        <p>In this stage, recommended rents are checked to ensure they are within a certain range of the current rents. Ceiling Type defines the range type which can be either dollars or a percentage. This is configured under Configuration&gt;Recommendation Strategy.</p>
+                    </td>
+                </tr>
+                <tr MadCap:conditions="">
+                    <td class="borders">
+                        <p class="less_space">Ceiling Value</p>
+                    </td>
+                    <td class="borders">
+                        <p>In this stage, recommended rents are checked to ensure they are within a certain range of the current rents. Ceiling Value is the upper bound for the range check. This is configured under Configuration&gt;Recommendation Strategy.</p>
+                    </td>
+                </tr>
+                <tr MadCap:conditions="">
+                    <td class="borders">
+                        <p class="less_space">Minimum Threshold</p>
+                    </td>
+                    <td class="borders">
+                        <p>The Min Change In Rent Week 0 and Week 12, when non-zero, defines a dollar or percentage threshold below which rents for the UT are not written to the rent recommendations table. In this case, LRO will use the rents from the prior post date (Week 0 refers to the current pricing week). This is configured under Configuration&gt;Recommendation Strategy.</p>
+                    </td>
+                </tr>
+                <tr MadCap:conditions="">
+                    <td class="borders">
+                        <p class="less_space">Maximum Threshold</p>
+                    </td>
+                    <td class="borders">
+                        <p>The Maximum Threshold is the Min Change In Rent Week 12 configured under Configuration&gt;Recommendation Strategy. When non-zero, this defines a dollar or percentage threshold below which rents for the UT are not written to the rent recommendations table. In this case, LRO will use the rents from the prior post date. Week 12 here  actually means the last week of the optimization horizon, as configured in the Optimization Horizon parameter (parameter 1). This Maximum Threshold is used along with the Minimum Threshold defined above to derive the threshold used to determine if recommendations are written to the rent recommendation table for each pricing week from the current week to the end of the pricing horizon.</p>
+                    </td>
+                </tr>
+                <tr MadCap:conditions="">
+                    <td class="borders">
+                        <p class="less_space">Current Base Rent</p>
+                    </td>
+                    <td class="borders">
+                        <p>Current Base Rent is populated when the PMS in place is MRI, or specific configurations are in place to populate the LRO current rents table. These current rents can be used as a form of price smoothing called smoothing over post dates. This is different from smoothing over pricing weeks, but has the same goal of reducing price volatility. It uses percentages of pricing across post dates as opposed to pricing weeks.</p>
+                    </td>
+                </tr>
+                <tr MadCap:conditions="">
+                    <td class="borders">
+                        <p class="less_space">Current Rent</p>
+                    </td>
+                    <td class="borders">
+                        <p>Current Rent is populated when the PMS in place is MRI, or specific configurations are in place to populate the LRO current rents table.  These current rents can be used as a form of price smoothing called smoothing over post dates. This is different from smoothing over pricing weeks, but has the same goal of reducing price volatility. It uses percentages of pricing across post dates as opposed to pricing weeks.</p>
+                    </td>
+                </tr>
+                <tr MadCap:conditions="">
+                    <td class="borders">
+                        <p class="less_space">Current Concession</p>
+                    </td>
+                    <td class="borders">
+                        <p>Current Concession is populated when the PMS in place is MRI, or specific configurations are in place to populate the LRO current rents table.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h3 MadCap:conditions="">Parameters</h3>
+        <table style="width: 100%; border-collapse: collapse;">
+            <col style="width: 111px;" />
+            <col style="width: 188px;" />
+            <col MadCap:conditions="" />
+            <thead>
+                <tr class="light_grey">
+                    <th class="borders">Parameter ID</th>
+                    <th class="borders">Parameter Description</th>
+                    <th class="borders">
+                        <p>Definition</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr MadCap:conditions="">
+                    <td class="borders" style="text-align: center;">
+                        <p class="TableCell">14</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">REC_SENT_STATUS</p>
+                    </td>
+                    <td class="borders">
+                        <MadCap:snippetBlock src="../Resources/Snippets/param_14_def.flsnp" />
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p MadCap:conditions="">
+            <MadCap:relatedTopics>
+                <MadCap:relatedTopic src="RV_overview.htm" />
+                <MadCap:relatedTopic src="RV_basics.htm" />
+                <MadCap:relatedTopic src="RV_ref_rent.htm" />
+                <MadCap:relatedTopic src="RV_optimization.htm" />
+                <MadCap:relatedTopic src="RV_ltc_to_lt.htm" />
+                <MadCap:relatedTopic src="RV_uc_to_ut.htm" />
+            </MadCap:relatedTopics>
+        </p>
+    </body>
+</html>

@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="2" MadCap:lastHeight="74" MadCap:lastWidth="1187">
+    <body>
+        <p MadCap:conditions="">A reporting group is the group of attributes that you want to include on your reports. For example, you might have attributes for Corporate, Region, and City and create a reporting group to only include Corporate and Region. Information for all communities that have been assigned these attributes will appear on the reports when you choose to view them using this reporting group. </p>
+    </body>
+</html>

@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="4" MadCap:lastHeight="632" MadCap:lastWidth="1254">
+    <head>
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="LEM:overrides;lease expiration management:overrides;overriding LRO expirations (LEM)" />Overriding <MadCap:variable name="Variables.LRO" /> Expirations</h1>
+        <p>When Lease Expiration Management is enabled, the <MadCap:variable name="Variables.LRO" /> system will recommend the desired expirations for each calendar month. However, you may feel that you want to allow more or fewer expirations in a given month. For that reason, you can override the <MadCap:variable name="Variables.LRO" /> system recommended expirations for a particular month.</p>
+        <p class="less_space">To do this:</p>
+        <ol>
+            <li>
+                <p>Go to <span class="bold">LRO</span>&gt;<span class="bold">Expiration Management</span>&gt;<span class="bold">Expiration Management Graph</span>.</p>
+                <p>
+                    <img src="../Resources/Images/WebUI/LEM_graph.png" />
+                </p>
+            </li>
+            <li>
+                <p>Below the graph, you'll see the numeric values of the <MadCap:variable name="Variables.LRO" /> system recommended expirations for each month. </p>
+                <p>Enter the override values in the green cells below the recommended values.</p>
+            </li>
+            <li>Click <span class="bold">Save</span>.</li>
+            <li>Click <span class="bold">Re-Optimize</span> to see the effect the overrides have on new lease pricing.</li>
+        </ol>
+        <h2>Things to Keep in Mind When Entering Expiration Overrides</h2>
+        <ul>
+            <li>The override value entered represents the total number of lease expirations preferred in a given month.</li>
+            <li>The override value cannot exceed 15% of the total units in the unit category. This maximum allowable percentage is set using <a href="../Parameters/parameters_list.htm#param226">parameter 226</a> which is set to 15 by default.</li>
+            <li>To preserve the recommended expiration counts totaled over the year, the <MadCap:variable name="Variables.LRO" /> Recommended Total and Overridden Recommendation Total should match.</li>
+            <li>Once an override is saved, it replaces the <MadCap:variable name="Variables.LRO" /> expiration recommendation for the month in the current year and in future years (unless you change it in the future).</li>
+            <li>After the overrides have been entered, the values should be saved and then pricing can be re-optimized.</li>
+            <li>Overrides will be reflected on the graph in orange.</li>
+        </ul>
+        <p class="more_space">
+            <MadCap:relatedTopics>
+                <MadCap:relatedTopic src="../Screens/expiration_management_graph.htm" />
+                <MadCap:relatedTopic src="LEM_facts.htm" />
+                <MadCap:relatedTopic src="../Parameters/lem_param_overview.htm" />
+                <MadCap:relatedTopic src="turning_on_LEM.htm" />
+            </MadCap:relatedTopics>
+        </p>
+    </body>
+</html>

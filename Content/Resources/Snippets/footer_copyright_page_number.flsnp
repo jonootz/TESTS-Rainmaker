@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="8" MadCap:lastHeight="45" MadCap:lastWidth="1190">
+    <body>
+        <table style="width: 100%;border-spacing: 2px 0px;border-top-style: solid;border-top-width: 1px;border-top-color: #7fb072;">
+            <col />
+            <col />
+            <tbody>
+                <tr>
+                    <td>
+                        <MadCap:snippetBlock src="copyright_short.flsnp" />
+                    </td>
+                    <td>
+                        <p class="footer" style="text-align: right;">Page <MadCap:variable name="System.PageNumber" /></p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="4" MadCap:lastHeight="1294" MadCap:lastWidth="1185">
+    <head>
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="parameters:adjustment" />Adjustment Parameters</h1>
+        <h3>
+            <a name="ZeroRecentLeasing">
+            </a>Weeks of Zero Recent Leasing</h3>
+        <p>You can define the number of consecutive weeks of zero recent leasing before the <MadCap:variable name="Variables.LRO" /> system invokes business rule 9 or 10.</p>
+        <p class="note">Business rules are used to determine how to adjust the reference rent up or down when DRRC runs.</p>
+        <p class="bold_italic">Business Rule 9</p>
+        <p>When relative leases are 0 for the number of consecutive weeks defined by parameter 110 and exposure is low, business rule 9 is triggered.</p>
+        <p>For business rule 9, reference rent is calculated as the maximum of the new market composite or the existing reference rent.</p>
+        <p class="bold_italic">Business Rule 10</p>
+        <p>When relative leases are 0 for the number of consecutive weeks defined by parameter 110, business rule 10 is triggered.</p>
+        <p class="less_space">For business rule 10, reference rent is calculated as follows:</p>
+        <div class="indent">
+            <p>New Reference Rent = Existing Reference Rent + (New Market Composite - Previous Market Composite)</p>
+        </div>
+        <p>Business rule 10 maintains the competitor spread. The competitor spread is the difference in the market composite this week versus last week. For example, if the composite increased $50 over last week (between two DRRC runs), then the reference rent will be adjusted up $50 if the competitor spread is maintained.</p>
+        <div class="no_break">
+            <p class="note">If parameter 110 is set to 0, the new reference rent always maintains the competitor spread.</p>
+            <div class="indent">
+                <p>
+                    <a href="parameters_list.htm#param110">110 Weeks of Zero RL</a>
+                </p>
+            </div>
+        </div>
+        <div class="no_break">
+            <h3>Upper Boundary for Vacant Day Stats</h3>
+            <p>If a community has a high number of vacant apartments of a given unit type, it might be beneficial to encourage demand for the vacant apartments.</p>
+            <p>When considering whether or not to change parameter 156, you may want to evaluate your actual days vacant at the company or community level. The Summary Analysis report can be helpful when evaluating whether your average days vacant is significantly greater or less than the <MadCap:variable name="Variables.LRO" /> default of 21 days.</p>
+        </div>
+        <div class="no_break">
+            <p class="note">If you change parameter 156 to reflect actual average days vacant, remember to evaluate your actual days vacant on a regular basis.</p>
+            <div class="indent">
+                <p>
+                    <a href="parameters_list.htm#param156">156 Upper bound for vacant day stats</a>
+                </p>
+            </div>
+        </div>
+        <h3>
+            <a name="ExposedUnitsRange">
+            </a>Exposed Units Range</h3>
+        <p>The Exposed Units Range parameter specifies the number of days used in the DRRC calculation related to exposure. It is often translated as number of days exposure or to the top of the yellow area on the Pricing Trend Exposure Graph.</p>
+        <div class="no_break">
+            <p>You should evaluate your <a href="new_pricing_param_overview.htm#exposure_threshold">Exposure Thresholds</a> when adjusting the Exposed Units Range parameter.</p>
+            <div class="indent">
+                <p>
+                    <a href="parameters_list.htm#param153">153 Exposed Units Range</a>
+                </p>
+            </div>
+        </div>
+        <h3>Use Scale Factor Flag</h3>
+        <div class="no_break">
+            <p MadCap:conditions="">Parameter 109 tells the <MadCap:variable name="Variables.LRO" /> system whether or not to scale the aggressive factor, brake factor, and max reference rent reduction based on the number of days that have passed since the last time DRRC was run. If this is set to Y, the full amount of the aggressive factor, the brake factor, and the max reference rent reduction will be applied every time the DRRC is run. For example, if you run the DRRC twice a week or once every two weeks, no proration will be done based on the number of days since the last DRRC run. This will typically remain set at N.</p>
+            <div class="indent">
+                <p>
+                    <a href="parameters_list.htm#param109">109 Use Scale Factor Flag</a>
+                </p>
+            </div>
+        </div>
+        <div class="no_break">
+            <p class="more_space">
+                <MadCap:relatedTopics>
+                    <MadCap:relatedTopic src="../Basics/DRRC.htm" />
+                    <MadCap:relatedTopic src="../Basics/reference_rent.htm" />
+                    <MadCap:relatedTopic src="parameters_list.htm" />
+                </MadCap:relatedTopics>
+            </p>
+        </div>
+    </body>
+</html>

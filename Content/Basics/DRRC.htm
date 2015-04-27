@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="2" MadCap:lastHeight="384" MadCap:lastWidth="1280">
+    <head>
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="DRRC;Dynamic Reference Rent Calculator" />Dynamic Reference Rent Calculator (DRRC)</h1>
+        <p>As its name suggests, the Dynamic Reference Rent Calculator calculates the reference rent. It is considered "dynamic" since the reference rent changes based on community performance.</p>
+        <p>The DRRC updates the reference rent once a week, by default. This is typically done on the day of the pricing call.  This day is specified using parameter 222 when the <MadCap:variable name="Variables.LRO" /> system is set up, but can be changed if the day of your pricing call changes. </p>
+        <p>The DRRC takes into account Exposure (supply) and Leasing Velocity (demand) when calculating the reference rent.</p>
+        <h3>Why is the reference rent only updated once a week? </h3>
+        <p>When the reference rent is updated, there is the potential for a larger change in price than on a regular day. Allowing the reference rent to stay the same for a week results in pricing that stays around the same point for the week. This allows sufficient time to test pricing at the community since traffic and leasing is not always consistent from day to day. For example, you may have more traffic on the weekend than you do on a weekday.</p>
+        <p class="note">The reference rent can be updated more than once a week, but we recommend updating it once a week.</p>
+        <p class="more_space">
+            <MadCap:relatedTopics>
+                <MadCap:relatedTopic src="reference_rent.htm" />
+                <MadCap:relatedTopic src="exposure.htm" />
+                <MadCap:relatedTopic src="leasing_velocity.htm" />
+            </MadCap:relatedTopics>
+        </p>
+    </body>
+</html>

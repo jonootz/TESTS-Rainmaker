@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultGlossary>
+    <GlossaryEntry>
+        <Terms>
+            <Term>DRRC</Term>
+        </Terms>
+        <Definition Link="">-Dynamic Reference Rent Calculator-</Definition>
+    </GlossaryEntry>
+    <GlossaryEntry>
+        <Terms>
+            <Term>exposure</Term>
+        </Terms>
+        <Definition Link="">-available apartments-</Definition>
+    </GlossaryEntry>
+    <GlossaryEntry>
+        <Terms>
+            <Term>leasing velocity</Term>
+        </Terms>
+        <Definition Link="">-conversion rate of traffic to leases-</Definition>
+    </GlossaryEntry>
+    <GlossaryEntry>
+        <Terms>
+            <Term>market composite</Term>
+        </Terms>
+        <Definition Link="">-average of the competitor rents with weights and positions applied-</Definition>
+    </GlossaryEntry>
+    <GlossaryEntry>
+        <Terms>
+            <Term>seasonality</Term>
+        </Terms>
+        <Definition Link="">-recurring chronological pattern of demand-</Definition>
+    </GlossaryEntry>
+    <GlossaryEntry>
+        <Terms>
+            <Term>LEM</Term>
+        </Terms>
+        <Definition Link="">-Lease Expiration Management-</Definition>
+    </GlossaryEntry>
+    <GlossaryEntry>
+        <Terms>
+            <Term>LTC</Term>
+        </Terms>
+        <Definition Link="">-Lease Term Category-</Definition>
+    </GlossaryEntry>
+    <GlossaryEntry>
+        <Terms>
+            <Term>PMS</Term>
+        </Terms>
+        <Definition Link="">-Property Management System-</Definition>
+    </GlossaryEntry>
+    <GlossaryEntry>
+        <Terms>
+            <Term>pivot floorplan</Term>
+        </Terms>
+        <Definition Link="">-PMS unit type that has the largest unit count in each LRO unit type; also known as pivot unit type-</Definition>
+    </GlossaryEntry>
+</CatapultGlossary>

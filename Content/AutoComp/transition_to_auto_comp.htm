@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="4" MadCap:lastHeight="1334" MadCap:lastWidth="1058">
+    <head>
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="Automated Comps:transitioning to;Automated Comps:converting existing competitors;competitors:transitioning to Automated Comps" />Transitioning to Automated Comps</h1>
+        <p>When you turn Automated Comps on for a community, the next step is to transition your existing competitors to use Automated Comps.</p>
+        <p class="note">Automated Comps is turned on for a community using parameter 317.</p>
+        <h2>Transitioning an Existing Competitor to Use Automated Comps</h2>
+        <p>You can transition existing competitors with Automated Comps<a href="auto_comp_statuses.htm"> statuses</a> of Match or Off to use Automated Comps.</p>
+        <p class="note">When you transition an existing competitor to Automated Comps, it keeps the pricing history for that competitor.</p>
+        <h3>Transitioning a Competitor with Match Status</h3>
+        <p>After Automated Comps has been turned on for your community and the nightly processes have run, any existing competitors that Automated Comps has found a match for will show <img src="../Resources/Images/WebUI/auto_comp_match_icon.png" /> in the Auto Comp column on the Comp Setup screen.</p>
+        <p>To convert a matched competitor to use Automated Comps:</p>
+        <ol>
+            <li>
+                <p>On the Comp Setup screen, in the Auto Comp column, click <img src="../Resources/Images/WebUI/auto_comp_match_icon.png" />. </p>
+                <p>The Update Competitor screen will open with the competitor pinned on the map and listed to the left of the map.</p>
+                <p class="note">If this isn't the correct competitor, you can clear out the search text and search for another competitor.</p>
+                <p>
+                    <img src="../Resources/Images/WebUI/auto_comp_match_map.png" />
+                </p>
+            </li>
+            <li>Select the competitor.</li>
+            <li>
+                <p>Click the Add button.</p>
+                <p>
+                    <img src="../Resources/Images/WebUI/auto_comp_match_add.png" />
+                </p>
+            </li>
+            <li>Next, you'll need to verify the unit type mappings and bed, bath, and square foot information for each unit type. Learn how to do this.</li>
+        </ol>
+        <h3>Transitioning a Competitor with Off Status</h3>
+        <p>To turn Automated Comps back on for a competitor that used to be set up to use Automated Comps:</p>
+        <ol>
+            <li>On the Comp Setup screen, click the pencil icon <img src="../Resources/Images/PUTMOP/pencil_icon.JPG" /> in the Actions column for the competitor.</li>
+            <li>Click <span class="bold">Edit</span> on the Competitor Information section.</li>
+            <li>
+                <p>Change the Automated Comp Settings toggle to <span class="bold">On</span>.</p>
+                <p>
+                    <img src="../Resources/Images/WebUI/comp_enable_auto_comp.png" />
+                </p>
+            </li>
+            <li>
+                <p>Click <span class="bold">Save</span>.</p>
+                <p>If the comp unit types were set up for Automated Comps before, then you don't have to do anything else. Otherwise, you will need to set up the competitor unit types to use Automated Comps.</p>
+            </li>
+        </ol>
+        <p class="note">You cannot turn Automated Comps on for a competitor if it is a sister community or if Automated Comps is not turned on for the community.</p>
+        <h3>Tips</h3>
+        <p>If a competitor is showing the N/A status, but you can see it on the Add Competitor map, double-check the address you have. If it is different, edit the address of the competitor to match the one shown on the Add Competitors map. Then after the nightly processes run, it should be marked with the Match status and you can easily convert it to use Automated Comps. Another option is to turn Automated Comps on for the competitor (if the competitor has address information), then find and select the competitor on the map.</p>
+        <p>
+            <MadCap:relatedTopics>
+                <MadCap:relatedTopic src="auto_comp_overview.htm" />
+                <MadCap:relatedTopic src="set_up_unit_type_auto_comp.htm" />
+                <MadCap:relatedTopic src="auto_comp_override.htm" />
+                <MadCap:relatedTopic src="auto_comp_tips.htm" />
+                <MadCap:relatedTopic src="set_up_auto_comp_competitor.htm" />
+            </MadCap:relatedTopics>
+        </p>
+    </body>
+</html>

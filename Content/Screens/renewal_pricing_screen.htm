@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="4" MadCap:lastHeight="1311" MadCap:lastWidth="1237">
+    <head>
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="renewal pricing screen;Renewal Pricing Report" />Renewal Pricing Report</h1>
+        <p>The Renewal Pricing report shows the renewal rents for units that are expiring within a certain time period. This report is typically run once a month for a future time frame. For example, if it is the beginning of February, you might run the report for leases expiring in the month of April. You may run the report more often or for earlier or longer time frames depending on your renewal strategy and business processes. </p>
+        <h2>Using the Renewal Pricing Report</h2>
+        <p>You'll use this report to see your renewal pricing for leases expiring in a particular time period. You can also view information about the expiring leases, see the parameter settings used to generate the renewal pricing, and print renewal letters from this screen. </p>
+        <h2>Viewing the Renewal Pricing Report</h2>
+        <p>You'll find the Renewal Pricing report under <span class="bold">LRO</span>&gt;<span class="bold">Renewal Pricing</span>.</p>
+        <p>The <span class="bold">Summary view</span> of the report shows one line per resident with the best renewal lease term information.</p>
+        <p>The <span class="bold">Detail view</span> of the report shows all lease terms for each resident along with current lease information and the parameter settings used in renewal pricing for that unit. The best renewal lease term will be shown in bold text. This view is useful for negotiating renewal lease terms and rents with current residents.</p>
+        <p>The <span class="bold">Mgmt Report</span> button opens a summary view of the report with some statistics displayed at the top regarding renewal rate increases and decreases. This is often used by corporate teams to quickly review the <MadCap:variable name="Variables.LRO" /> renewal offers before they are sent out.</p>
+        <p>The <span class="bold">Mail Merge</span> button opens an Excel spreadsheet with the renewal information included so it can be used with Microsoft Word's mail merge functionality to create renewal letters. </p>
+        <MadCap:snippetBlock src="../Resources/Snippets/renewal_rpts_same_day.flsnp" />
+        <h2>Understanding the Information on the Renewal Pricing Report</h2>
+        <p>The current resident's name and unit ID are shown to identify each lease that is expiring within the specified time period.</p>
+        <h3>Lease/Unit Information</h3>
+        <div class="indent">
+            <p><span class="bold">Current Perceived Rent</span>: This is the rent that the resident is currently paying</p>
+            <p><span class="bold">Amenities</span>: Description of any amenities for this unit. The PMS unit type and pricing offset amount are shown in parentheses.</p>
+            <p><span class="bold">Amen Amt</span>: This is the amount being charged for any amenities. This is included in the current perceived rent amount. </p>
+            <p><span class="bold">Current Lease Term</span>: The length of the current lease.</p>
+            <p><span class="bold">Current Expiration Date</span>: The date the current lease expires.</p>
+            <p><span class="bold">Renewal Date</span>: The first day of the new lease. </p>
+            <p><span class="bold">Rent Increase</span>: The difference between the Effective Rent for the best renewal lease term (in bold) and the Current Perceived Rent. This is shown as a dollar amount and a percentage. If the amount and percentage are negative, it means the renewal rate is less than what the resident is currently paying.</p>
+            <p><span class="bold">Discount to Market</span>: This is the difference between the Effective Rent and the Move In Rate for the lowest priced renewal lease term (bold). This is shown as a dollar amount and a percentage. If the amount and percentage are negative, it means the renewal rate for the resident is less than what a new resident would pay for that unit for the same lease term.</p>
+            <p><span class="bold">Rate</span>: This is the Increase Rate percentage for this unit type which specifies by how much of the difference between the resident's current rent and the new move-in rent should the resident's rent be increased. This parameter is set under Admin&gt;Parameters&gt;Renewal Config.</p>
+            <p><span class="bold">Min Increase</span>: This is a minimum percentage that the resident's rent must increase based on their current rent. This parameter is set under Admin&gt;Parameters&gt;Renewal Config.</p>
+            <p><span class="bold">Max Increase</span>: This caps the amount that the resident's rent can increase based on their current rent. This parameter is set under Admin&gt;Parameters&gt;Renewal Config.</p>
+        </div>
+        <h3>Renewal Pricing Information</h3>
+        <div class="indent">
+            <p><span class="bold">Lease Term</span>: This is the number of months that the lease is for.</p>
+            <p><span class="bold">Effective Rent</span>: This is the renewal rate for this unit.</p>
+            <p><span class="bold">Base Rent</span>: This is the same as the effective rent unless a concession is in place. </p>
+            <p><span class="bold">Total Concession</span>: This is the amount of any concessions that are being offered for this unit. This is determined by <a href="../Parameters/parameters_list.htm#param136">parameter 136 - Concession Offer Factor</a>.</p>
+            <p><span class="bold">Move In Rate</span>: This is the rate that a new resident would pay for this unit if it was available to lease.</p>
+            <p><span class="bold">Discretionary Concession</span>: This is rarely used. It gives the on-site team the ability to negotiate the renewal offer based on the amount of the concession. This is typically handled as a one-off situation and not configured in the <MadCap:variable name="Variables.LRO" /> system. It is not factored into any of the offers. It applies to residents who have Current Perceived Rents that are greater than the new Move In Rate for the unit. If you want to have a discretionary concession, you would use <a href="../Parameters/parameters_list.htm#param135">parameter 135 - Discretionary Concession Factor</a>.</p>
+        </div>
+    </body>
+</html>

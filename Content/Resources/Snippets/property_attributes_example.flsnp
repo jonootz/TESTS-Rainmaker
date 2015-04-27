@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="2" MadCap:lastHeight="74" MadCap:lastWidth="1175">
+    <body>
+        <p MadCap:conditions="">Property Attributes are your hierarchy levels. They allow you to see report information for all properties that have the same attribute. For example, you might have an attribute called Region if you want to see your report information broken down this way. You would assign values to this attribute for the different regions you have, for example, Southeast, Midwest, Northeast. This allows you to assign the region to properties so that the correct properties are included on the report when filtered by region.</p>
+    </body>
+</html>

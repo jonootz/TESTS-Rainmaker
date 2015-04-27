@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="4" MadCap:lastHeight="1353" MadCap:lastWidth="1116">
+    <head>
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="parameters:timeframe" />Time Frame Parameters</h1>
+        <h3>
+            <a name="OptAndForecast">
+            </a>Optimization and Forecast Horizons</h3>
+        <div class="no_break">
+            <p>The Optimization Horizon (parameter 1) and the Forecast Horizon Week (parameter 44) work together to specify the number of weeks that pricing and forecasts will be produced.</p>
+            <p>You may want to increase parameter 1 in cases where residents give notice more than 16 weeks in advance. Keep in mind that the default (16) is the optimal horizon.</p>
+            <p>The Forecast Horizon (parameter 44) = longest lease term + edge weeks. By default, this is 52 + 4 = 56. You would change this if you offer longer lease terms to make sure that the <MadCap:variable name="Variables.LRO" /> system is forecasting far enough into the future.</p>
+            <div class="indent">
+                <p>
+                    <a href="parameters_list.htm#param1">1 Optimization Horizon</a>
+                </p>
+                <p>
+                    <a href="parameters_list.htm#param44">44 Forecast Horizon</a>
+                </p>
+            </div>
+        </div>
+        <h3>
+            <a name="RenewalPricingTimeframes">
+            </a>Renewal Pricing Time Frames</h3>
+        <div class="no_break">
+            <p>The Renewal Window parameters set the time frame to be considered when setting renewal rates. These parameters are typically set once and not changed. </p>
+            <p>Parameter 146 specifies the number of weeks (or other unit of time as specified by parameter 145) for which the <MadCap:variable name="Variables.LRO" /> system produces  renewal pricing. This should be less than or equal to the time specified in parameter 1 (Optimization Horizon).</p>
+            <p>You might change parameter 146 if you want to see renewals farther into the future. Be aware that extending beyond 16 weeks can impact statistical accuracy. You should not extend beyond 20 weeks without first contacting <MadCap:variable name="Variables.LRO" /> Support to review the forecast data.</p>
+            <p>Parameter 147 addresses how far in advance residents are contacted to discuss renewal options. A typical time period is 60 days.</p>
+            <div class="indent">
+                <p>
+                    <a href="parameters_list.htm#param145">145 Renewal Window Type</a>
+                </p>
+                <p>
+                    <a href="parameters_list.htm#param146">146 Renewal Window Width</a>
+                </p>
+                <p>
+                    <a href="parameters_list.htm#param147">147 Renewal Window Lead Time</a> <![CDATA[ ]]></p>
+            </div>
+        </div>
+        <h3>Inferring a MTM Lease</h3>
+        <div class="no_break">
+            <p>Parameter 16 (MTM Lag Days) and parameter 17 (Number of days to give notice) are used to tell the <MadCap:variable name="Variables.LRO" /> system when to infer a MTM lease for a resident that has not renewed or given notice. </p>
+            <p>For example, if parameter 17 is 60 and parameter 16 is 45, the <MadCap:variable name="Variables.LRO" /> system will infer a MTM lease for any undecided expiring leases 15 days (60-45) prior to the lease end.</p>
+            <div class="indent">
+                <p>
+                    <a href="parameters_list.htm#param16">16 MTM Lag Days</a>
+                </p>
+                <p>
+                    <a href="parameters_list.htm#param17">17 Number of days to give notice</a>
+                </p>
+            </div>
+        </div>
+        <h3>Seasonality</h3>
+        <div class="no_break">
+            <p>Parameter 54 specifies the number of months of historical data that the <MadCap:variable name="Variables.LRO" /> system should use when calculating seasonality. Using at least 18 months of historical data is recommended. The minimum is 13 months. You would reduce the number of months when the accuracy of the data is in question. You would increase the number of months when quality data is available for more months. In most cases, the default (36 months) is used.</p>
+            <div class="indent">
+                <p>
+                    <a href="parameters_list.htm#param54">54 Historical Days Limit (months)</a>
+                </p>
+            </div>
+        </div>
+        <h3>
+            <a name="LeasingVelocity">
+            </a>Leasing Velocity</h3>
+        <div class="no_break">
+            <p>Parameter 88 tells the <MadCap:variable name="Variables.LRO" /> system the number of days worth of observations to use when calculating leasing velocity. Leasing velocity is calculated in 7 day increments with the value rounded up to the next highest multiple. For example:</p>
+            <div class="indent">
+                <p> 30 days/7 = 5 weeks</p>
+                <p>27 days/7 = 4 weeks</p>
+            </div>
+            <p>You might change this parameter due to seasonal patterns. For example, during a peak season, fewer weeks could be factored into leasing velocity for more reactivity.</p>
+            <p>Parameter 104 determines the weight that the <MadCap:variable name="Variables.LRO" /> system assigns to each week of guest card activity when calculating leasing velocity. A lower number gives greater influence to recent weeks.</p>
+            <div class="indent">
+                <p>
+                    <a href="parameters_list.htm#param88">88 Historical Days of Leasing Velocity</a>
+                </p>
+                <p>
+                    <a href="parameters_list.htm#param104">104 Sigma</a>
+                </p>
+            </div>
+        </div>
+        <p class="more_space" MadCap:conditions="Default.NotPrint">
+            <MadCap:relatedTopics>
+                <MadCap:relatedTopic src="admin_overview.htm" />
+                <MadCap:relatedTopic src="new_pricing_param_overview.htm" />
+                <MadCap:relatedTopic src="renewal_param_overview.htm" />
+                <MadCap:relatedTopic src="parameters_list.htm" />
+            </MadCap:relatedTopics>
+        </p>
+    </body>
+</html>

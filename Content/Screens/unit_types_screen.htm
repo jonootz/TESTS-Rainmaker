@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="5" MadCap:lastHeight="1955" MadCap:lastWidth="1103">
+    <head>
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="unit types" />Unit Types </h1>
+        <p>When a new community is created or new PMS unit types are imported, <MadCap:variable name="Variables.LRO" /> Unit Types are created with a 1-to-1 mapping for each PMS unit type. You can change the <MadCap:variable name="Variables.LRO" /> unit types and the PMS mappings, if necessary. PMS mappings are changed on the PMS Unit Types screen.</p>
+        <p>In the <MadCap:variable name="Variables.LRO" /> Web UI, go to <span class="bold">Configuration</span>&gt;<span class="bold">Unit Types</span> to set up the unit types and enter information about the unit types that the <MadCap:variable name="Variables.LRO" /> system uses when calculating prices.</p>
+        <h3>Unit Types Screen</h3>
+        <p>
+            <img src="../Resources/Images/PUTMOP/unit_types_unlocked.JPG" class="MaxWidthForPrint" />
+        </p>
+        <h3>Unit Types Screen with Editing Enabled</h3>
+        <p>
+            <img src="../Resources/Images/PUTMOP/unit_types_locked.png" class="MaxWidthForPrint" />
+        </p>
+        <MadCap:snippetBlock src="../Resources/Snippets/enable_editing_unit_types.flsnp" />
+        <h2>Understanding the Unit Types List</h2>
+        <p>
+            <span class="bold">Unit Type</span> - This is the name or ID&#160;of the unit type. This is entered when the unit type is added and cannot be changed. For unit types that are created as part of new community setup or when new PMS unit types are imported, the name matches the name of the mapped PMS unit type.</p>
+        <p>
+            <span class="bold">Description</span> - This is entered when the unit type is added. You can change it if you want to. For unit types that are created as part of new community setup or when a new PMS unit type is imported, the description matches the description of the mapped PMS unit type.</p>
+        <p>
+            <span class="bold">Avg Sqft</span> - This is the average square feet of the units in the unit type. This is calculated by the <MadCap:variable name="Variables.LRO" /> system using a weighted average. The square footage amounts used in the calculation come from the PMS system. </p>
+        <div class="indent">
+            <p>For new unit types, this field defaults to blank. It will be populated after the extractor runs, which is typically overnight. </p>
+            <p>For unit types that are created as part of new community setup, this field is blank until the extractor is run a second time. This gives you a chance to make any changes to the unit types and mappings after initial setup. </p>
+            <p>You cannot edit this field. It is important that square footage amounts are entered correctly in the PMS system for this calculation to be correct.</p>
+        </div>
+        <p>
+            <span class="bold">Units</span> - This comes from the PMS system based on the unit type mapping.  For new unit types, it will be populated after the extractor is run. For unit types created as part of new community setup, it will be populated correctly after the extractor is run twice. You cannot edit this field.</p>
+        <p>
+            <span class="bold">Market Composite Floor</span> - This defaults to $0.00. You can change it if you want to. This would typically be used during the time you are getting your competitors set up or if the competitive data is untrustworthy.</p>
+        <div class="indent">
+            <p>The low boundary for pricing comes from either the market composite or the market composite floor. The market composite comes from your competitor information. If you have a small or limited competitive set or need to set the low boundary to meet a specific business goal, you can enter a market composite floor amount here. </p>
+            <p>In the <MadCap:variable name="Variables.LRO" /> Web UI on the Reference Rent screen (under the LRO tab), there is a Use Floor setting for each unit type. If this is checked, the market composite floor is used as the low boundary for pricing. If it's not checked, then the market composite is used as the low boundary for pricing.</p>
+        </div>
+        <p>
+            <span class="bold">Move In Cost</span> - This defaults to $500.00. You can change it if you want to. This amount is used by the <MadCap:variable name="Variables.LRO" /> system to calculate the price. It represents the standard turn cost for that unit type. You can adjust this amount to properly reflect the turn costs for the unit type.</p>
+        <p>
+            <span class="bold">Make Ready Days</span> - This defaults to 0. You can change it if you want to. This is the number of days needed to get the unit ready to rent. It is used to calculate the available date if you don't get the available date from the PMS system. You would change this  if the available date is not set in the PMS system; otherwise leave it set to 0.</p>
+        <p>
+            <span class="bold">Renewal Cost</span> - This defaults to $100.00. You can change it if you want to. This is used to calculate renewal pricing. It represents the average cost tied to a lease renewal. It is usually not changed.</p>
+        <p>
+            <span class="bold">Unit Category</span> - You should select the unit category for this unit type. By default, this is set to the 0x0 unit category. The 0x0 unit category is not optimized and prices won't be generated for unit types assigned to it.  Unit categories are set up on the Unit Categories screen. </p>
+        <p>
+            <span class="bold">Beds</span> - This is the number of bedrooms for the unit type. This information is used when creating competitor unit types (which are based on your unit types).</p>
+        <p>
+            <span class="bold">Baths</span> - This is the number of baths for the unit type. This information is used when creating competitor unit types (which are based on your unit types).</p>
+        <p>
+            <span class="bold">PMS Unit Types</span> - This shows which PMS unit types are mapped to this <MadCap:variable name="Variables.LRO" /> unit type. You can have multiple PMS unit types mapped to one <MadCap:variable name="Variables.LRO" /> unit type. You cannot edit this field. PMS unit types are mapped to <MadCap:variable name="Variables.LRO" /> unit types on the PMS Unit Types screen.</p>
+        <p>
+            <span class="bold">Exclude From Billing</span> - This defaults to No which means the customer will be billed for pricing the unit type. If this unit type is assigned to a unit category that is set to Optimize, it cannot be excluded from billing.</p>
+        <p>
+            <span class="bold">Action Column</span> - The last column contains the icons for actions you can take on each unit type. Options are Edit <img src="../Resources/Images/PUTMOP/pencil_icon.JPG" class="ButtonImage" />, Delete <img src="../Resources/Images/PUTMOP/delete_icon.JPG" class="ButtonImage" />, Save <img src="../Resources/Images/PUTMOP/save_icon.JPG" class="ButtonImage" />, and Cancel <img src="../Resources/Images/PUTMOP/cancel_icon.JPG" class="ButtonImage" />. Save and Cancel are available after you click Edit. Delete is available if the unit type is not mapped to any PMS&#160;unit types. You must enable editing for these options to appear in the column.</p>
+        <p class="note">Turn costs (Move-In Cost and Renewal Cost) do not include vacancy days. Costs associated with lost rent are calculated by the <MadCap:variable name="Variables.LRO" /> system based on the community's history.</p>
+        <h2>Understanding Other Unit Type Options</h2>
+        <p>
+            <span class="bold">Add Unit Type</span> - Opens a dialog box where you can add a unit type name and description to create a new unit type. You must enable editing to see this option.</p>
+        <p>
+            <span class="bold">Remove Unused Unit Types</span> - Deletes any unit types that aren't mapped to PMS&#160;unit types. You must enable editing to see this option.</p>
+        <p>
+            <span class="bold">Export to Excel</span> - Select the Excel icon <img src="../Resources/Images/WebUI/Excel_icon.JPG" style="vertical-align: text-bottom;" />in the upper right corner of the screen to open the  unit type list in Excel.</p>
+        <p class="more_space" MadCap:conditions="Default.NotPrint">
+            <MadCap:relatedTopics>
+                <MadCap:relatedTopic src="../Basics/setting_up_unit_types.htm" />
+                <MadCap:relatedTopic src="pms_unit_types_screen.htm" />
+                <MadCap:relatedTopic src="../Basics/mapping_unit_types.htm" />
+            </MadCap:relatedTopics>
+        </p>
+    </body>
+</html>

@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="4" MadCap:lastHeight="582" MadCap:lastWidth="1116">
+    <body>
+        <p>
+            <MadCap:conditionalText MadCap:conditions="Default.ExternalOnly">Parameters are used to communicate your business goals to the <MadCap:variable name="Variables.LRO" /> system. </MadCap:conditionalText>Parameters can be set up at the system level for all communities and then changed, if necessary, at the community and unit type level. If you change a system parameter, the new value will automatically be set for any new communities, however, existing communities will use the parameter value that they had before. <span class="bold">The </span><MadCap:variable name="Variables.LRO" class="bold" /><span class="bold"> system will use the community parameters unless the unit type parameters are set.</span></p>
+        <p class="note">Most parameters won't change.</p>
+        <p class="less_space" MadCap:conditions="Default.ExternalOnly">You'll most likely change parameters at the community level. Parameters are set up in the <MadCap:variable name="Variables.LRO" /> Web UI under the Admin tab. </p>
+        <ol>
+            <li MadCap:conditions="Default.ExternalOnly">For community parameters, go to <span class="bold">Admin</span>. The Community Parameters screen should be shown by default. If not, select Parameters, then Community.</li>
+            <li MadCap:conditions="Default.ExternalOnly">
+                <p>Select the community in the <span class="bold">Community</span> drop-list. By default, all parameters are shown, but you can filter this using the Group drop-list. </p>
+                <p>
+                    <img src="../Images/WebUI/community_parameters_web.PNG">
+                    </img>
+                </p>
+                <p class="note" MadCap:conditions="Default.ExternalOnly">You can click the link in the Community Value field to see a parameter's history.</p>
+            </li>
+            <li MadCap:conditions="Default.ExternalOnly">Click <span class="bold">Edit</span>.</li>
+            <li MadCap:conditions="Default.ExternalOnly">Enter the parameter values for the community in the <span class="bold">Community Value</span> fields. (These fields become editable after you click Edit.)</li>
+            <li MadCap:conditions="Default.ExternalOnly">Click <span class="bold">Save</span>. (Save and Cancel buttons appear in place of the Edit button after you click Edit.)</li>
+        </ol>
+        <p class="note" MadCap:conditions="Default.ExternalOnly">You can tell if the community value is different than the initial system value or the current system value  at-a-glance. The system value fields will be highlighted in gray if they are different from the community values.</p>
+    </body>
+</html>

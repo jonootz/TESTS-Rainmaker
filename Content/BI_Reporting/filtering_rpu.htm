@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="3040" MadCap:lastWidth="1094">
+    <head>
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="reports:filtering Revenue Per Unit Report;reports:filtering RPU Report;filtering:Revenue Per Unit Report;filtering:RPU Report;Revenue Per Unit Report:filtering;RPU Report:filtering" />Filtering the Revenue Per Unit (RPU) Report <MadCap:conditionalText MadCap:conditions="Default.NotPrint">(BI Reporting)</MadCap:conditionalText></h1>
+        <p MadCap:conditions="">You can use the Input Controls to filter the report. In addition to filtering, you can specify if you want the rent amounts and related calculations on the report to include amenities or not. You can also specify if you want to display RPU on the report as either a bar or a line.</p>
+        <p MadCap:conditions="">
+            <img src="../Resources/Images/BI/input_controls_rpu.png" title="Click to view larger" />
+        </p>
+        <MadCap:snippetBlock src="../Resources/Snippets/input_controls_button.flsnp" />
+        <MadCap:snippetBlock src="../Resources/Snippets/input_controls_tips_link.flsnp" />
+        <h2>Input Controls</h2>
+        <h2>Amenities Filter</h2>
+        <MadCap:snippetBlock src="../Resources/Snippets/amenities_filter_default.flsnp" />
+        <h2>Community Filter</h2>
+        <MadCap:snippetBlock src="../Resources/Snippets/community_filter_description.flsnp" />
+        <MadCap:snippetBlock src="../Resources/Snippets/community_filter_default.flsnp" />
+        <MadCap:snippetBlock src="../Resources/Snippets/select_multiple_communities.flsnp" />
+        <MadCap:snippetBlock src="../Resources/Snippets/apply_community_filter.flsnp" />
+        <MadCap:snippetBlock src="../Resources/Snippets/community_filter_and_unit_types.flsnp" />
+        <h2>Unit Type Filter</h2>
+        <MadCap:snippetBlock src="../Resources/Snippets/unit_type_filter.flsnp">
+        </MadCap:snippetBlock>
+        <MadCap:snippetBlock src="../Resources/Snippets/select_multiple_unit_types.flsnp">
+        </MadCap:snippetBlock>
+        <MadCap:snippetBlock src="../Resources/Snippets/apply_unit_type_filter.flsnp">
+        </MadCap:snippetBlock>
+        <MadCap:snippetBlock src="../Resources/Snippets/unit_type_filter_and_communities.flsnp">
+        </MadCap:snippetBlock>
+        <MadCap:snippetBlock src="../Resources/Snippets/BI_tips_link.flsnp" />
+        <MadCap:snippetBlock src="../Resources/Snippets/bi_troubleshooting_link.flsnp" />
+        <h2>Chart RPU As Filter</h2>
+        <p MadCap:conditions="">By default, RPU is shown as a bar, but you can use this filter to show it as a line instead. </p>
+        <p MadCap:conditions="">Viewing  RPU&#160;as a bar allows you to quickly compare the RPU with the average rent for your occupied units since average rent is represented by a bar. </p>
+        <p MadCap:conditions="">
+            <img src="../Resources/Images/BI/rpu_bar_filter.png" title="Click to view larger" />
+        </p>
+        <p MadCap:conditions="">Viewing RPU as a line allows you to quickly see how your RPU is trending with your occupancy which is represented by a line.</p>
+        <p MadCap:conditions="">
+            <img src="../Resources/Images/BI/rpu_line_filter.png" title="Click to view larger" />
+        </p>
+        <h2>Select Month</h2>
+        <p>By default, the report shows RPU for the current month and the past 16 months. You can also  view the report for only one month or for a selection of months. For example, you may want to exclude months from the report that don't have data, in the case of a lease up, or to only view the report for a particular set of months, such as a particular quarter.</p>
+        <p class="note">To select multiple months, hold down the Ctrl key while you select each month. <br />If you want to select a group of sequential months, select the first month, then hold down the Shift key while you select the last month. The first and last months, plus all the months in between, will be selected.</p>
+        <p>Click <span class="bold">OK</span> in the Select Month filter area to apply this filter to the report. </p>
+        <h2>Drill Down</h2>
+        <p>In addition to the Input Controls mentioned previously, you can filter the Drill view by drilling down to the different levels on the report using the headings. A page of the report is created for each attribute when you drill down.</p>
+        <div class="no_break">
+            <p MadCap:conditions="">
+                <img src="../Resources/Images/BI/rpu_drill_1.png" />
+            </p>
+        </div>
+        <div class="no_break">
+            <p>You can click a heading to drill down a level or you can click the icon next to the heading to go up a level.</p>
+            <p>
+                <img src="../Resources/Images/BI/rpu_drill_2.png" />
+            </p>
+        </div>
+        <div class="no_break">
+            <p>When you mouse over a heading or an icon, you'll see what level you will be drilling down or up to.</p>
+            <p>
+                <img src="../Resources/Images/BI/rpu_drill_hover.png" />
+            </p>
+        </div>
+        <p class="note">Each heading is a value of a particular attribute. The attributes (levels) come from the Reporting Group (hierarchy) set up under the Reporting Admin tab. The headings (attribute values) are also set up under the Reporting Admin tab. </p>
+        <h3>Tips</h3>
+        <p>You can see the levels you have drilled down to in the Filter Bar. You can make different selections for a level using the Filter Bar if you want to.</p>
+        <p>
+            <img src="../Resources/Images/BI/filter_bar_drill_rpu.png" />
+        </p>
+        <p>If you have selected a level that has quite a few attributes, you may want to use the Navigation Map to easily navigate to each page of the report, instead of paging through the report.</p>
+        <p>
+            <img src="../Resources/Images/BI/nav_map_rpu.png" />
+        </p>
+        <MadCap:snippetBlock src="../Resources/Snippets/navigation_map_button.flsnp" />
+        <p>You can take a snapshot of the RPU report, if you want to. This is great for comparing information. For example, you might drill down to a particular region and take a snapshot. Then drill down to a different region and take a snapshot. Then you can easily compare the snapshots of the two regions.</p>
+        <p MadCap:conditions="Default.NotPrint">
+            <a href="Reporting_Basics.htm#Taking">Learn how to take snapshots</a><![CDATA[     ]]></p>
+        <p class="more_space">
+            <MadCap:relatedTopics>
+                <MadCap:relatedTopic src="RPU_report.htm" />
+                <MadCap:relatedTopic src="reporting_tips.htm" />
+                <MadCap:relatedTopic src="understanding_hierarchies.htm" />
+                <MadCap:relatedTopic src="Reporting_Basics.htm" />
+            </MadCap:relatedTopics>
+        </p>
+    </body>
+</html>

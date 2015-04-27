@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="2" MadCap:lastHeight="146" MadCap:lastWidth="1280">
+    <body>
+        <p class="TableCell">In <MadCap:variable name="Variables.LRO" /> version 9.1, a new leasing velocity calculation was added. The new leasing velocity option calculates the ratio of leases combined across the past 30 days to the minimum exposure or guest cards combined across the past 30 days. This calculation is less sensitive to exceptional weeks that have low traffic activity. <MadCap:variable name="Variables.LRO" /> defaults to use the original leasing velocity calculation. </p>
+        <p class="TableCell">Values: 0=use the original leasing velocity calculation, 1=use the new leasing velocity calculation</p>
+        <p class="TableCell">Default=0</p>
+    </body>
+</html>

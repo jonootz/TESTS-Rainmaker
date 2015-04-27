@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="2" MadCap:lastHeight="74" MadCap:lastWidth="1145">
+    <body>
+        <p>The filter bar provides advanced filtering capabilities based on the attributes in your reporting groups. You may just want to use the Input Controls to filter the report since these additional filters can be complicated.  The Filter Bar allows you to filter the report using the attributes (levels) that make up the reporting group. This does not change the way the information is displayed, just which information is included in the report.</p>
+    </body>
+</html>

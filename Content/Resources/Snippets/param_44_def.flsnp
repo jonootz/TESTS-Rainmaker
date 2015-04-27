@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="2" MadCap:lastHeight="132" MadCap:lastWidth="1280">
+    <body>
+        <p class="less_space">The number of weeks beyond the optimization horizon (parameter 1) which LRO will forecast.</p>
+        <p>For example, the total forecast horizon = parameter 1 + parameter 44. If parameter 1 = 16 and parameter 44 = 56, the total forecast horizon = 16 + 56 = 72 weeks.</p>
+        <p>Values: Integer</p>
+        <p>Default: 56</p>
+    </body>
+</html>

@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="3524" MadCap:lastWidth="1094">
+    <head>
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="Lease Compliance Report:filtering;filtering:Lease Compliance Report" />Filtering the Lease Compliance Report <MadCap:conditionalText MadCap:conditions="Default.NotPrint">(BI Reporting)</MadCap:conditionalText></h1>
+        <MadCap:snippetBlock src="../Resources/Snippets/two_views_filters.flsnp" />
+        <h2>
+            <a name="Filterin2">
+            </a>Filtering the Overview</h2>
+        <p MadCap:conditions="">You can use the Input Controls to filter the report and control how the information is displayed. </p>
+        <p>
+            <img src="../Resources/Images/BI/input_controls_LPT.png" />
+        </p>
+        <MadCap:snippetBlock src="../Resources/Snippets/input_controls_button.flsnp" />
+        <MadCap:snippetBlock src="../Resources/Snippets/input_controls_tips_link.flsnp" />
+        <h2 MadCap:conditions="">Community Name Filter</h2>
+        <p MadCap:conditions="">The Community filter allows you to run the report for all communities, multiple communities, or a specific community.</p>
+        <p>By default, the report includes all communities that you have access to that use an attribute in the selected hierarchy. </p>
+        <MadCap:snippetBlock src="../Resources/Snippets/select_multiple_communities.flsnp" />
+        <MadCap:snippetBlock src="../Resources/Snippets/apply_community_filter.flsnp" />
+        <h2>Level to Display Filter</h2>
+        <p>By default, the  report displays information for Level 1. For example, you may have a reporting group set up with Corporate as Level 1. The Corporate attribute has one value called Corporate and it is applied to all properties.  This allows you to roll up information at the corporate level and then use the Level to Display filter to display the information broken out by other attributes. For example, if Level 4 is State, if you select to display Level 4, the report will be shown with the information broken out by state.</p>
+        <div class="no_break">
+            <p class="note">The Level to Display filter is useful when no other filters are selected or if you have selected multiple communities. It is not very useful if you have selected one filter item. For example, if you have selected one community in the community filter, the report will only show information for the selected community at every level you select.</p>
+        </div>
+        <MadCap:snippetBlock src="../Resources/Snippets/levels_are_attributes.flsnp">
+        </MadCap:snippetBlock>
+        <p>When you view the report by  level, each value for the level is shown on its own page. For example, if you selected Level 4 which is State, each page displays the report by a different state. You can see the attribute value in the filter box next to Hierarchy and Level Value. </p>
+        <p>Use the Level to Display drop-list to select the level you want to display.</p>
+        <MadCap:snippetBlock src="../Resources/Snippets/bi_hierarchies_info_link.flsnp" />
+        <h2>Narrow Rent Comparison By</h2>
+        <div class="no_break">
+            <p MadCap:conditions="">You can click on a bar in the Lease Count &amp; Percentage at Compliance Rate graph to change the info in the Average CPR Effective Rent and Recommended Rent Comparison graph to only display for the selected month.</p>
+            <p MadCap:conditions="">
+                <img src="../Resources/Images/BI/LCR_overview_drill.png" />
+            </p>
+        </div>
+        <div class="no_break">
+            <p MadCap:conditions="">You can clear the selection using the Clear Filters button under Narrow Rent Comparison By in the Input Controls.</p>
+            <p MadCap:conditions="">
+                <img src="../Resources/Images/BI/clear_filters_LPT_2.png" />
+            </p>
+        </div>
+        <h2>
+            <a name="Filterin">
+            </a>Filtering the Detail View</h2>
+        <p>You'll use Input Controls and drill down functionality to filter the Detail view of the Lease Compliance report.</p>
+        <h2>Input Controls</h2>
+        <p>
+            <img src="../Resources/Images/BI/input_controls_LPT_2.png" />
+        </p>
+        <MadCap:snippetBlock src="../Resources/Snippets/input_controls_button.flsnp" />
+        <MadCap:snippetBlock src="../Resources/Snippets/input_controls_tips_link.flsnp" />
+        <h2 MadCap:conditions="">Community Filter</h2>
+        <p MadCap:conditions="">The Community filter allows you to run the report for all communities, multiple communities, or a specific community.</p>
+        <p>By default, the report includes all communities that you have access to that use an attribute in the selected hierarchy. </p>
+        <MadCap:snippetBlock src="../Resources/Snippets/select_multiple_communities.flsnp" />
+        <MadCap:snippetBlock src="../Resources/Snippets/apply_community_filter.flsnp" />
+        <h2>Level of Detail to Display</h2>
+        <MadCap:snippetBlock src="../Resources/Snippets/level_of_detail_to_display_filter.flsnp" />
+        <p MadCap:conditions="Default.NotPrint">
+            <a href="#Drill-Do">Learn how to view the report at different hierarchy levels</a><![CDATA[
+        ]]></p>
+        <h2>Show Compliant Leases As</h2>
+        <p>The compliant leases will be shown as a percentage of all leases signed for that month. This filter allows you to display the actual number of leases that were compliant instead, if you want to.</p>
+        <p class="note">The Compliance Alert is based on the percentage. Months where the compliant rate was below the specified percentage will still be highlighted if the compliant rate is shown as an amount.</p>
+        <h2>Show Non Compliance Variance As</h2>
+        <p>The non compliance variance is the difference between the actual effective rent and the recommended rent for the non-compliant leases. By default, this is shown as a percentage, but you can show it as a dollar amount, if you want to.</p>
+        <h2>Compliance Alert</h2>
+        <p>This is used to highlight months with a compliant rate that falls at or below a specified percentage. </p>
+        <p>Type the percentage in the Compliance Alert text box and click <span class="bold">OK</span>. Any months that have a compliant rate that falls at or below the specified percentage will be highlighted in yellow.</p>
+        <p>
+            <img src="../Resources/Images/BI/LCR_compliant_alert.png" />
+        </p>
+        <h2>Display Leases</h2>
+        <p>By default, the lease compliance information is broken out monthly to show the current month to date and the past 12 months. You can display this information quarterly instead, if you want to. Displaying the information quarterly will show the current quarter to date and the past 4 quarters.</p>
+        <h2>
+            <a name="Drill-Do">
+            </a>Drill-Down Capability</h2>
+        <p MadCap:conditions="">You can drill down to levels in the hierarchy by clicking on the hierarchy attribute name. You can drill up by clicking on the arrow icon. You can hover over the name or the icon to see which level you will be drilling down or up to.</p>
+        <div class="no_break">
+            <p MadCap:conditions="" class="bold">Drill Down By Clicking The Attribute Name</p>
+            <p MadCap:conditions="">
+                <img src="../Resources/Images/BI/detail_drill_down_LPT.png">
+                </img>
+            </p>
+        </div>
+        <div class="no_break">
+            <p class="bold" MadCap:conditions="">Drill Back Up By Clicking The Arrow Icon</p>
+            <p MadCap:conditions="">
+                <img src="../Resources/Images/BI/detail_drill_up_LPT.png">
+                </img>
+            </p>
+            <MadCap:snippetBlock src="../Resources/Snippets/bi_hierarchies_info_link.flsnp" />
+        </div>
+        <p class="more_space">
+            <MadCap:relatedTopics>
+                <MadCap:relatedTopic src="Lease_Compliance_Report.htm" />
+                <MadCap:relatedTopic src="reporting_tips.htm" />
+                <MadCap:relatedTopic src="understanding_hierarchies.htm" />
+                <MadCap:relatedTopic src="Reporting_Basics.htm" />
+            </MadCap:relatedTopics>
+        </p>
+    </body>
+</html>

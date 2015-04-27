@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="2" MadCap:lastHeight="53" MadCap:lastWidth="1175">
+    <body>
+        <p>The levels correspond to the attributes that make up the reporting group (hierarchy) used to view the report. The first attribute is Level 1, the second is Level 2, and so on. <a href="../../BI_Reporting/understanding_hierarchies.htm#Levels" MadCap:conditions="Default.NotPrint">How do I know which attributes the levels represent?</a></p>
+    </body>
+</html>

@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="2" MadCap:lastHeight="104" MadCap:lastWidth="1280">
+    <body>
+        <p>Flag that dictates whether the lease term category premium should be applied to collected competitor rents.</p>
+        <p>Values: N=will only apply premiums to calculate the mkt composite when no competitor rent is collected, Y=applies to all competitor rents, whether collected or not</p>
+        <p>Default: N</p>
+    </body>
+</html>

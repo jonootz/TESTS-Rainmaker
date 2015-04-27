@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="2" MadCap:lastHeight="104" MadCap:lastWidth="1280">
+    <body>
+        <p>The number of days that  a unit flagged as exposed will be considered in the exposure value used in the DRRC.</p>
+        <p>Values: 0-120</p>
+        <p>Default: 60</p>
+    </body>
+</html>

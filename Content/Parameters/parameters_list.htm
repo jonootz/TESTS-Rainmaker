@@ -1,0 +1,2356 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="8" MadCap:lastHeight="36323" MadCap:lastWidth="1004" MadCap:ignoredWords="Parms;Opt_Horizon;F;MSE_MAE_Switch;MSE;UpStat;Week_Start_Day;hardcoded;YOY_History;YOY;BFF;RMG;clinets;ARCHSTONE;REC_SENT_STATUS;MRI;rec;FO;current_rents;Config;Rec;MTM;upgrade_hierarchy;UC;c;LNR;LTC;Elasiticity;LT;GC;unconstraining;avg;WTDemand;WTRenewal;PreleasePeriod;param;DRRC;Proxy_Rent_Insert_Switch;Mkt;Ref_rents;Y;N;proration;i;Upstat;Unc;Dem;Avg;Interp;STALECOMPSFACTORDAYS;LV;RL;LEM;DDRC;mkt;ftp;Current_Rents;Demand_Forecast;Purger;Supply_Forecast;Reference_Rent_Forecast;Hist;Recommendation_Hist;Opt_Ref_Rent;Opt_Rents;Paulk;m;M;YYYYMMDD;KPI;Recommendation_Detail;Recommendation_History">
+    <head>
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="parameters:list" />Parameters List</h1>
+        <p MadCap:conditions="Default.ExternalOnly">Following is a numerical list of the parameters in the <MadCap:variable name="Variables.LRO" /> system that you might want to change. If a parameter is not listed here, then you shouldn't change it without talking to an <MadCap:variable name="Variables.LRO" /> implementation or support specialist first.</p>
+        <table style="width: 100%; border-collapse: collapse;">
+            <col style="width: 111px;" />
+            <col style="width: 188px;" />
+            <col />
+            <col />
+            <thead>
+                <tr class="light_grey">
+                    <th class="borders">Parameter ID</th>
+                    <th class="borders">Parameter Description</th>
+                    <th class="borders">
+                        <p>Definition</p>
+                    </th>
+                    <th class="borders">
+                        <p>Component</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr MadCap:conditions="">
+                    <td class="borders" style="text-align: center;">
+                        <p class="TableCell">1</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">Opt_Horizon</p>
+                    </td>
+                    <td class="borders">
+                        <a name="param1">
+                        </a>
+                        <MadCap:snippetBlock src="../Resources/Snippets/param_1_def.flsnp" />
+                    </td>
+                    <td class="borders">
+                        <p>F/O</p>
+                    </td>
+                </tr>
+                <tr MadCap:conditions="Default.NotTraining">
+                    <td class="borders" style="text-align: left;">
+                        <p class="TableCell" style="text-align: center;">9</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">Guest Card Factor</p>
+                    </td>
+                    <td class="borders">
+                        <a name="param9">
+                        </a>
+                        <MadCap:snippetBlock src="../Resources/Snippets/param_9_def.flsnp" />
+                    </td>
+                    <td class="borders">
+                        <p>UpStat</p>
+                    </td>
+                </tr>
+                <tr MadCap:conditions="Default.NotTraining">
+                    <td class="borders" style="text-align: left;">
+                        <p class="TableCell" style="text-align: center;">14</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">REC_SENT_STATUS</p>
+                    </td>
+                    <td class="borders">
+                        <a name="param14">
+                        </a>
+                        <MadCap:snippetBlock src="../Resources/Snippets/param_14_def.flsnp" />
+                    </td>
+                    <td class="borders">
+                        <p>Config</p>
+                    </td>
+                </tr>
+                <tr MadCap:conditions="Default.NotTraining">
+                    <td class="borders" style="text-align: left;">
+                        <p class="TableCell" style="text-align: center;">15</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">Rec Type</p>
+                    </td>
+                    <td class="borders">
+                        <p>Tells Optimization which type of recommendations to include in the rent rec ASCII text files.   </p>
+                        <p>Values: 1 = Renewals and New, 2 = only New, 3= only Renewals, 4 = do not create rent rec file</p>
+                        <p>Default: 2</p>
+                    </td>
+                    <td class="borders">
+                        <p>Config</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="borders" style="text-align: left;">
+                        <p class="TableCell" style="text-align: center;">16</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">MTM Lag Days</p>
+                    </td>
+                    <td class="borders">
+                        <p>
+                            <a name="param16">
+                            </a>Represents the number of days after the required notice period (Parameter 17) at which the <MadCap:variable name="Variables.LRO" /> system will infer the resident’s lease is going MTM (for expiring leases with no notice to vacate, move out date or renewal).  For example: [60 days to give notice (Parameter 17)] – [45 MTM lag days (Parameter 16)] = [15 days before the lease expires, the <MadCap:variable name="Variables.LRO" /> system will infer a MTM lease].</p>
+                        <p>Values: 0-60</p>
+                        <p>Default: 45</p>
+                    </td>
+                    <td class="borders">
+                        <p>Extractor</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="borders" style="text-align: center;">
+                        <p class="TableCell">17</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">Number of days to give notice</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">
+                            <a name="param17">
+                            </a>See parameter 16</p>
+                        <p class="TableCell">Values: 0-90</p>
+                        <p class="TableCell">Default: 60</p>
+                    </td>
+                    <td class="borders">
+                        <p>Extractor</p>
+                    </td>
+                </tr>
+                <tr MadCap:conditions="Default.NotTraining">
+                    <td class="borders" style="text-align: center;">
+                        <p class="TableCell">19</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">Min Seasonal Factor</p>
+                    </td>
+                    <td class="borders">
+                        <p>This is the lower bound of the seasonality statistic as displayed in the Seasonality tab of the BI Charts screen. </p>
+                        <p>Values: 0-1</p>
+                        <p>Default=0.4</p>
+                    </td>
+                    <td class="borders">
+                        <p>UpStat</p>
+                    </td>
+                </tr>
+                <tr MadCap:conditions="Default.NotTraining">
+                    <td class="borders" style="text-align: center;">
+                        <p class="TableCell">20</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">Max Seasonal Factor</p>
+                    </td>
+                    <td class="borders">
+                        <p>This is the upper bound of the seasonality statistic as displayed in the Seasonality tab of the BI Charts screen. </p>
+                        <p>Values: 1 or higher</p>
+                        <p>Default: 2.5</p>
+                    </td>
+                    <td class="borders">
+                        <p>UpStat</p>
+                    </td>
+                </tr>
+                <tr MadCap:conditions="Default.NotTraining">
+                    <td class="borders" style="text-align: center;">
+                        <p class="TableCell">41</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">Max Price Reduction %</p>
+                    </td>
+                    <td class="borders">
+                        <a name="param41">
+                        </a>
+                        <MadCap:snippetBlock src="../Resources/Snippets/param_41_def.flsnp" />
+                    </td>
+                    <td class="borders">
+                        <p>F/O</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="borders" style="text-align: center;">
+                        <p class="TableCell">44</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">Forecast Horizon Weeks</p>
+                    </td>
+                    <td class="borders">
+                        <a name="param44">
+                        </a>
+                        <MadCap:snippetBlock src="../Resources/Snippets/param_44_def.flsnp" />
+                    </td>
+                    <td class="borders">
+                        <p>F/O</p>
+                    </td>
+                </tr>
+                <tr MadCap:conditions="Default.NotTraining">
+                    <td class="borders" style="text-align: center;">
+                        <p class="TableCell">45</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">Demand Statistics Weeks</p>
+                    </td>
+                    <td class="borders">
+                        <p>The number of weeks (by type, so read months) used in calculating the LTC Demand Level stat. (LTC = Lease Term Category)</p>
+                        <p>Values: Integer </p>
+                        <p>Default: 12</p>
+                    </td>
+                    <td class="borders">
+                        <p>UpStat</p>
+                    </td>
+                </tr>
+                <tr MadCap:conditions="Default.NotTraining">
+                    <td class="borders" style="text-align: center;">
+                        <p class="TableCell">48</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">Max Epoch Count</p>
+                    </td>
+                    <td class="borders">
+                        <p>The maximum number of epochs (points representing the fastest change in slope) used in calculating lead time curves. </p>
+                        <p>Values: Integer</p>
+                        <p>Default: 36</p>
+                    </td>
+                    <td class="borders">
+                        <p>UpStat</p>
+                    </td>
+                </tr>
+                <tr MadCap:conditions="Default.NotTraining">
+                    <td class="borders" style="text-align: center;">
+                        <p class="TableCell">49</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">Empty Unit Factor - Percent</p>
+                    </td>
+                    <td class="borders">
+                        <p>The percentage the optimization post processing will reward or punish a lease term. This is relative to the avg calculated term within each lease term category for expiration management purposes. </p>
+                        <p>Values: 0-100 %</p>
+                        <p>Default: 8</p>
+                    </td>
+                    <td class="borders">
+                        <p>F/O</p>
+                    </td>
+                </tr>
+                <tr MadCap:conditions="Default.NotTraining">
+                    <td class="borders" style="text-align: center;">
+                        <p class="TableCell">53</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">PreleasePeriod (weeks)</p>
+                    </td>
+                    <td class="borders">
+                        <a name="param53">
+                        </a>
+                        <MadCap:snippetBlock src="../Resources/Snippets/param_53_def.flsnp" />
+                    </td>
+                    <td class="borders">
+                        <p>F/O</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="borders" style="text-align: center;">
+                        <p class="TableCell">54</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">Historical Data Limit (months)</p>
+                    </td>
+                    <td class="borders">
+                        <a name="param54">
+                        </a>
+                        <MadCap:snippetBlock src="../Resources/Snippets/param_54_def.flsnp" />
+                    </td>
+                    <td class="borders">
+                        <p>UpStat</p>
+                    </td>
+                </tr>
+                <tr MadCap:conditions="Default.NotTraining">
+                    <td class="borders" style="text-align: center;">
+                        <p class="TableCell">60</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">smooth param -5</p>
+                    </td>
+                    <td class="borders">
+                        <a name="param60">
+                        </a>
+                        <MadCap:snippetBlock src="../Resources/Snippets/smoothing_param_default_0.flsnp" />
+                    </td>
+                    <td class="borders">
+                        <p>F/O</p>
+                    </td>
+                </tr>
+                <tr MadCap:conditions="Default.NotTraining">
+                    <td class="borders" style="text-align: center;">
+                        <p class="TableCell">61</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">smooth param -4</p>
+                    </td>
+                    <td class="borders">
+                        <a name="param61">
+                        </a>
+                        <MadCap:snippetBlock src="../Resources/Snippets/smoothing_param_default_0.flsnp" />
+                    </td>
+                    <td class="borders">
+                        <p>F/O</p>
+                    </td>
+                </tr>
+                <tr MadCap:conditions="Default.NotTraining">
+                    <td class="borders" style="text-align: center;">
+                        <p class="TableCell">62</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">smooth param -3</p>
+                    </td>
+                    <td class="borders">
+                        <a name="param62">
+                        </a>
+                        <MadCap:snippetBlock src="../Resources/Snippets/smoothing_param_default_0.flsnp" />
+                    </td>
+                    <td class="borders">
+                        <p>F/O</p>
+                    </td>
+                </tr>
+                <tr MadCap:conditions="Default.NotTraining">
+                    <td class="borders" style="text-align: center;">
+                        <p class="TableCell">63</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">smooth param -2</p>
+                    </td>
+                    <td class="borders">
+                        <a name="param63">
+                        </a>
+                        <MadCap:snippetBlock src="../Resources/Snippets/smoothing_param_default_0.flsnp" />
+                    </td>
+                    <td class="borders">
+                        <p>F/O</p>
+                    </td>
+                </tr>
+                <tr MadCap:conditions="Default.NotTraining">
+                    <td class="borders" style="text-align: center;">
+                        <p class="TableCell">64</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">smooth param -1</p>
+                    </td>
+                    <td class="borders">
+                        <a name="param64">
+                        </a>
+                        <MadCap:snippetBlock src="../Resources/Snippets/smoothing_param_default_0.flsnp" />
+                    </td>
+                    <td class="borders">
+                        <p>F/O</p>
+                    </td>
+                </tr>
+                <tr MadCap:conditions="Default.NotTraining">
+                    <td class="borders" style="text-align: center;">
+                        <p class="TableCell">65</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">smooth param 0</p>
+                    </td>
+                    <td class="borders">
+                        <a name="param65">
+                        </a>
+                        <MadCap:snippetBlock src="../Resources/Snippets/smoothing_param_default_100.flsnp" />
+                    </td>
+                    <td class="borders">
+                        <p>F/O</p>
+                    </td>
+                </tr>
+                <tr MadCap:conditions="Default.NotTraining">
+                    <td class="borders" style="text-align: center;">
+                        <p class="TableCell">66</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">smooth param 1</p>
+                    </td>
+                    <td class="borders">
+                        <a name="param66">
+                        </a>
+                        <MadCap:snippetBlock src="../Resources/Snippets/smoothing_param_default_0.flsnp" />
+                    </td>
+                    <td class="borders">
+                        <p>F/O</p>
+                    </td>
+                </tr>
+                <tr MadCap:conditions="Default.NotTraining">
+                    <td class="borders" style="text-align: center;">
+                        <p class="TableCell">67</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">smooth param 2</p>
+                    </td>
+                    <td class="borders">
+                        <a name="param67">
+                        </a>
+                        <MadCap:snippetBlock src="../Resources/Snippets/smoothing_param_default_0.flsnp" />
+                    </td>
+                    <td class="borders">
+                        <p>F/O</p>
+                    </td>
+                </tr>
+                <tr MadCap:conditions="Default.NotTraining">
+                    <td class="borders" style="text-align: center;">
+                        <p class="TableCell">68</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">smooth param 3</p>
+                    </td>
+                    <td class="borders">
+                        <a name="param68">
+                        </a>
+                        <MadCap:snippetBlock src="../Resources/Snippets/smoothing_param_default_0.flsnp" />
+                    </td>
+                    <td class="borders">
+                        <p>F/O</p>
+                    </td>
+                </tr>
+                <tr MadCap:conditions="Default.NotTraining">
+                    <td class="borders" style="text-align: center;">
+                        <p class="TableCell">69</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">smooth param 4</p>
+                    </td>
+                    <td class="borders">
+                        <a name="param69">
+                        </a>
+                        <MadCap:snippetBlock src="../Resources/Snippets/smoothing_param_default_0.flsnp" />
+                    </td>
+                    <td class="borders">
+                        <p>F/O</p>
+                    </td>
+                </tr>
+                <tr MadCap:conditions="Default.NotTraining">
+                    <td class="borders" style="text-align: center;">
+                        <p class="TableCell">70</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">smooth param 5</p>
+                    </td>
+                    <td class="borders">
+                        <a name="param70">
+                        </a>
+                        <MadCap:snippetBlock src="../Resources/Snippets/smoothing_param_default_0.flsnp" />
+                    </td>
+                    <td class="borders">
+                        <p>F/O</p>
+                    </td>
+                </tr>
+                <tr MadCap:conditions="Default.NotTraining">
+                    <td class="borders" style="text-align: center;">
+                        <p class="TableCell">71</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">Threshold low exposure (DRRC)</p>
+                    </td>
+                    <td class="borders">
+                        <a name="param71">
+                        </a>
+                        <MadCap:snippetBlock src="../Resources/Snippets/param_71_def.flsnp" />
+                    </td>
+                    <td class="borders">
+                        <p>DRRC</p>
+                    </td>
+                </tr>
+                <tr MadCap:conditions="Default.NotTraining">
+                    <td class="borders" style="text-align: center;">
+                        <p class="TableCell" style="text-align: center;">72</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">Threshold high exposure (DRRC)</p>
+                    </td>
+                    <td class="borders">
+                        <a name="param72">
+                        </a>
+                        <MadCap:snippetBlock src="../Resources/Snippets/param_72_def.flsnp" />
+                    </td>
+                    <td class="borders">
+                        <p>DRRC</p>
+                    </td>
+                </tr>
+                <tr MadCap:conditions="Default.NotTraining">
+                    <td class="borders" style="text-align: center;">
+                        <p class="TableCell">73</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">Aggressive Factor (DRRC)</p>
+                    </td>
+                    <td class="borders">
+                        <a name="param73">
+                        </a>
+                        <MadCap:snippetBlock src="../Resources/Snippets/param_73_def.flsnp" />
+                    </td>
+                    <td class="borders">
+                        <p>DRRC</p>
+                    </td>
+                </tr>
+                <tr MadCap:conditions="Default.NotTraining">
+                    <td class="borders" style="text-align: center;">
+                        <p class="TableCell">74</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">Break Factor high (DRRC)</p>
+                    </td>
+                    <td class="borders">
+                        <a name="param74">
+                        </a>
+                        <MadCap:snippetBlock src="../Resources/Snippets/param_74_def.flsnp" />
+                    </td>
+                    <td class="borders">
+                        <p>DRRC</p>
+                    </td>
+                </tr>
+                <tr MadCap:conditions="Default.NotTraining">
+                    <td class="borders" style="text-align: center;">
+                        <p class="TableCell">75</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">Break Factor medium (DRRC)</p>
+                    </td>
+                    <td class="borders">
+                        <a name="param75">
+                        </a>
+                        <MadCap:snippetBlock src="../Resources/Snippets/param_75_def.flsnp" />
+                    </td>
+                    <td class="borders">
+                        <p>DRRC</p>
+                    </td>
+                </tr>
+                <tr MadCap:conditions="Default.NotTraining">
+                    <td class="borders" style="text-align: center;">
+                        <p class="TableCell">83</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">Proxy_Rent_Insert_Switch</p>
+                    </td>
+                    <td class="borders">
+                        <p>Used in campus coordination. This indicates the rent to send to a sister community. </p>
+                        <p>Values: 0 = Mkt Comp; 1 = Ref Rent; 2 = Best Available Price</p>
+                        <p>Default: 0</p>
+                    </td>
+                    <td class="borders">
+                        <p>DRRC</p>
+                    </td>
+                </tr>
+                <tr MadCap:conditions="Default.NotTraining">
+                    <td class="borders" style="text-align: center;">
+                        <p class="TableCell">84</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">Threshold for low UT count (DRRC)</p>
+                    </td>
+                    <td class="borders">
+                        <a name="param84">
+                        </a>
+                        <MadCap:snippetBlock src="../Resources/Snippets/param_84_def.flsnp" />
+                    </td>
+                    <td class="borders">
+                        <p>DRRC</p>
+                    </td>
+                </tr>
+                <tr MadCap:conditions="Default.NotTraining">
+                    <td class="borders" style="text-align: center;">
+                        <p class="TableCell">86</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">Shopper Period (DRRC)</p>
+                    </td>
+                    <td class="borders">
+                        <a name="param86">
+                        </a>
+                        <MadCap:snippetBlock src="../Resources/Snippets/param_86_def.flsnp" />
+                    </td>
+                    <td class="borders">
+                        <p>DRRC</p>
+                    </td>
+                </tr>
+                <tr MadCap:conditions="Default.NotTraining">
+                    <td class="borders" style="text-align: center;">
+                        <p class="TableCell">87</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">Clipping Factor (DRRC)</p>
+                    </td>
+                    <td class="borders">
+                        <a name="param87">
+                        </a>
+                        <MadCap:snippetBlock src="../Resources/Snippets/param_87_def.flsnp" />
+                    </td>
+                    <td class="borders">
+                        <p>DRRC</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="borders" style="text-align: center;">
+                        <p class="TableCell">88</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">Historical Days for Leasing Velocity (DRRC)</p>
+                    </td>
+                    <td class="borders">
+                        <a name="param88">
+                        </a>
+                        <MadCap:snippetBlock src="../Resources/Snippets/param_88_def.flsnp" />
+                    </td>
+                    <td class="borders">
+                        <p>DRRC</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="borders" style="text-align: center;">
+                        <p class="TableCell">91</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">Unc Dem Flag</p>
+                    </td>
+                    <td class="borders">
+                        <p>Flag that indicates whether the demand unconstraining statistic should be recalculated or rolled forward from prior values during the UpStat process. </p>
+                        <p>Values: 0=roll forward, 1=recalculate</p>
+                        <p>Default: 1</p>
+                    </td>
+                    <td class="borders">
+                        <p>UpStat</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="borders" style="text-align: center;">
+                        <p class="TableCell">92</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">Seasonality Flag</p>
+                    </td>
+                    <td class="borders">
+                        <p>
+                            <a name="param92">
+                            </a>Flag that indicates whether the demand seasonality statistic should be recalculated or rolled forward from prior values during the UpStat process. </p>
+                        <p>Values: 0=roll forward, 1=recalculate</p>
+                        <p>Default: 1</p>
+                    </td>
+                    <td class="borders">
+                        <p>UpStat</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="borders" style="text-align: center;">
+                        <p class="TableCell">93</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">Demand Rent Stats Flag</p>
+                    </td>
+                    <td class="borders">
+                        <p>
+                            <a name="param93">
+                            </a>Flag that indicates whether the demand level statistic should be recalculated or rolled forward from prior values during the UpStat process. </p>
+                        <p>Values: 0=roll forward, 1=recalculate</p>
+                        <p>Default: 1</p>
+                    </td>
+                    <td class="borders">
+                        <p>UpStat</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="borders" style="text-align: center;">
+                        <p class="TableCell">94</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">Lead Time Curve Stats Flag</p>
+                    </td>
+                    <td class="borders">
+                        <p>
+                            <a name="param94">
+                            </a>Flag that indicates whether the lead time curve statistic should be recalculated or rolled forward from prior values during the UpStat process. </p>
+                        <p>Values: 0=roll forward, 1=recalculate</p>
+                        <p>Default: 1</p>
+                    </td>
+                    <td class="borders">
+                        <p>UpStat</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="borders" style="text-align: center;">
+                        <p class="TableCell">95</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">LT Fraction Avg LT Flag</p>
+                    </td>
+                    <td class="borders">
+                        <p>
+                            <a name="param95">
+                            </a>Flag that indicates whether the lease term statistic should be recalculated or rolled forward from prior values during the UpStat process. </p>
+                        <p>Values: 0=roll forward, 1=recalculate</p>
+                        <p>Default: 1</p>
+                    </td>
+                    <td class="borders">
+                        <p>UpStat</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="borders" style="text-align: center;">
+                        <p class="TableCell">96</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">ET Average Flag</p>
+                    </td>
+                    <td class="borders">
+                        <p>
+                            <a name="param96">
+                            </a>Flag that indicates whether the average early termination statistic should be recalculated or rolled forward from prior values during the UpStat process. </p>
+                        <p>Values: 0=roll forward, 1=recalculate</p>
+                        <p>Default: 1</p>
+                    </td>
+                    <td class="borders">
+                        <p>UpStat</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="borders" style="text-align: center;">
+                        <p class="TableCell">97</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">ET Lead Time Curve Flag</p>
+                    </td>
+                    <td class="borders">
+                        <p>
+                            <a name="param97">
+                            </a>Flag that indicates whether the early termination lead time statistic should be recalculated or rolled forward from prior values during the UpStat process. </p>
+                        <p>Values: 0=roll forward, 1=recalculate</p>
+                        <p>Default: 1</p>
+                    </td>
+                    <td class="borders">
+                        <p>UpStat</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="borders" style="text-align: center;">
+                        <p class="TableCell">98</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">Avg Vacant Days Flag</p>
+                    </td>
+                    <td class="borders">
+                        <p>
+                            <a name="param98">
+                            </a>Flag that indicates whether the average vacant days statistic should be recalculated or rolled forward from prior values during the UpStat process. </p>
+                        <p>Values: 0=roll forward, 1=recalculate</p>
+                        <p>Default: 1</p>
+                    </td>
+                    <td class="borders">
+                        <p>UpStat</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="borders" style="text-align: center;">
+                        <p class="TableCell">99</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">Renewal Fraction Flag</p>
+                    </td>
+                    <td class="borders">
+                        <p>
+                            <a name="param99">
+                            </a>Flag that indicates whether the renewal lease statistic should be recalculated or rolled forward from prior values during the UpStat process. </p>
+                        <p>Values: 0=roll forward, 1=recalculate</p>
+                        <p>Default: 1</p>
+                    </td>
+                    <td class="borders">
+                        <p>UpStat</p>
+                    </td>
+                </tr>
+                <tr MadCap:conditions="Default.NotTraining">
+                    <td class="borders" style="text-align: center;">
+                        <p class="TableCell">100</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">Disable Linear Interp Post-Process</p>
+                    </td>
+                    <td class="borders">
+                        <p>Flag that allows the linear interpolation used in post-processing to be turned off.  By default, linear interpolation is performed. It is used to propagate rents from LTC to LT in a linear fashion. </p>
+                        <p>Values: N=perform linear interpolation, Y=do not perform linear interpolation</p>
+                        <p>Default: N</p>
+                    </td>
+                    <td class="borders">
+                        <p>F/O</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="borders" style="text-align: center;">
+                        <p class="TableCell">104</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">Sigma (DRRC)</p>
+                    </td>
+                    <td class="borders">
+                        <a name="param104">
+                        </a>
+                        <MadCap:snippetBlock src="../Resources/Snippets/param_104_def.flsnp" />
+                    </td>
+                    <td class="borders">
+                        <p>DRRC</p>
+                    </td>
+                </tr>
+                <tr MadCap:conditions="Default.NotTraining">
+                    <td class="borders" style="text-align: center;">
+                        <p class="TableCell">105</p>
+                    </td>
+                    <td class="borders">
+                        <p>STALECOMPSFACTORDAYS</p>
+                    </td>
+                    <td class="borders">
+                        <p>A competitor will be considered stale if its rents have not been updated after the number of days indicated with this parameter. This is used to put exclamation codes/colors on competitor tabs in the Competitive Rents screen and to list competitors in the Stale Competitors area of the Dashboard Overview tab in the <MadCap:variable name="Variables.LRO" /> Web UI. </p>
+                        <p>Values: Integer</p>
+                        <p>Default: 7</p>
+                    </td>
+                    <td class="borders">
+                        <p>Config</p>
+                    </td>
+                </tr>
+                <tr MadCap:conditions="Default.NotTraining">
+                    <td class="borders" style="text-align: center;">
+                        <p class="TableCell">107</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">LV Threshold High (RL)</p>
+                    </td>
+                    <td class="borders">
+                        <a name="param107">
+                        </a>
+                        <MadCap:snippetBlock src="../Resources/Snippets/param_107_def.flsnp" />
+                    </td>
+                    <td class="borders">
+                        <p>DRRC</p>
+                    </td>
+                </tr>
+                <tr MadCap:conditions="Default.NotTraining">
+                    <td class="borders" style="text-align: center;">
+                        <p class="TableCell">108</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">LV Threshold Low (RL)</p>
+                    </td>
+                    <td class="borders">
+                        <a name="param108">
+                        </a>
+                        <MadCap:snippetBlock src="../Resources/Snippets/param_108_def.flsnp" />
+                    </td>
+                    <td class="borders">
+                        <p>DRRC</p>
+                    </td>
+                </tr>
+                <tr MadCap:conditions="Default.NotTraining">
+                    <td class="borders" style="text-align: center;">
+                        <p class="TableCell">109</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">Use Scale Factor Flag</p>
+                    </td>
+                    <td class="borders">
+                        <a name="param109">
+                        </a>
+                        <MadCap:snippetBlock src="../Resources/Snippets/param_109_def.flsnp" />
+                    </td>
+                    <td class="borders">
+                        <p>DRRC</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="borders" style="text-align: center;">
+                        <p class="TableCell">110</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">Weeks of Zero RL</p>
+                    </td>
+                    <td class="borders">
+                        <a name="param110">
+                        </a>
+                        <MadCap:snippetBlock src="../Resources/Snippets/param_110_def.flsnp" />
+                    </td>
+                    <td class="borders">
+                        <p>DRRC</p>
+                    </td>
+                </tr>
+                <tr MadCap:conditions="Default.NotTraining">
+                    <td class="borders" style="text-align: center;">
+                        <p class="TableCell">112</p>
+                    </td>
+                    <td class="borders">
+                        <p>
+                            <a name="param112">
+                            </a>Rent Low Change % Threshold</p>
+                    </td>
+                    <td class="borders">
+                        <p> An alert will appear on the Comp Rents screen if a new competitor rent is entered or received from Automated Comps that varies by more than the percentage set in this parameter from the previous rent amount.</p>
+                        <p>Values: 0-100 %</p>
+                        <p>Default: 10</p>
+                    </td>
+                    <td class="borders">
+                        <p>Config</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="borders" style="text-align: center;">
+                        <p class="TableCell">113</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">EN Grace Days</p>
+                    </td>
+                    <td class="borders">
+                        <p> Defines the number of days a move out can occur before the original lease end date and NOT&#160;be an early termination for ET stats. </p>
+                        <p>Values: Integer</p>
+                        <p>Default: 14</p>
+                    </td>
+                    <td class="borders">
+                        <p>UpStat</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="borders" style="text-align: center;">
+                        <p class="TableCell">114</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">Lease Cancel Days</p>
+                    </td>
+                    <td class="borders">
+                        <p> Defines the number of days after the lease start date that a lease can end and be considered a cancellation instead of a potential early termination lease as defined by parameter 113. </p>
+                        <p>Values: Integer</p>
+                        <p>Default: 5</p>
+                    </td>
+                    <td class="borders">
+                        <p>UpStat</p>
+                    </td>
+                </tr>
+                <tr MadCap:conditions="Default.NotTraining">
+                    <td class="borders" style="text-align: center;">
+                        <p class="TableCell">120</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">Drop tier</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">
+                            <a name="param120">
+                            </a>Sets the starting point for applying the drop rate for individuals who are above market (for example, if the drop tier is set to 5%, the drop rate applies once market rents fall below the current perceived rent by 5%).</p>
+                        <p class="TableCell">Values: 0-100 %</p>
+                        <p class="TableCell">Default: 0</p>
+                    </td>
+                    <td class="borders">
+                        <p>Renewal</p>
+                    </td>
+                </tr>
+                <tr MadCap:conditions="Default.NotTraining">
+                    <td class="borders" style="text-align: center;">
+                        <p class="TableCell" style="text-align: center;">121</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">Drop Rate</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">No longer used. The Drop Rate is entered on the <a href="renewal_param_overview.htm#RenewalParamScreen">Renewal Config Parameters screen</a>.</p>
+                    </td>
+                    <td class="borders">
+                    </td>
+                </tr>
+                <tr MadCap:conditions="Default.NotTraining">
+                    <td class="borders" style="text-align: center;">
+                        <p class="TableCell">122</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">Increase tier</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">
+                            <a name="param122">
+                            </a>Sets the starting point for applying the increase rate for individuals who are below market (for example, if the increase tier is set at 2%, the increase rate applies once market rents exceed the current perceived rent by 2%).</p>
+                        <p class="TableCell">Values: 0.0-100.0 %</p>
+                        <p class="TableCell">Default: 0</p>
+                    </td>
+                    <td class="borders">
+                        <p>Renewal</p>
+                    </td>
+                </tr>
+                <tr MadCap:conditions="Default.NotTraining">
+                    <td class="borders" style="text-align: center;">
+                        <p class="TableCell">123</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">Increase Rate</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">No longer used. The Increase Rate is entered on the <a href="renewal_param_overview.htm#RenewalParamScreen">Renewal Config Parameters screen</a>.</p>
+                    </td>
+                    <td class="borders">
+                    </td>
+                </tr>
+                <tr MadCap:conditions="Default.NotTraining">
+                    <td class="borders" style="text-align: center;">
+                        <p class="TableCell">124</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">Min Increase</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">No longer used. The Minimum Increase  is entered on the <a href="renewal_param_overview.htm#RenewalParamScreen">Renewal Config Parameters screen</a>.</p>
+                    </td>
+                    <td class="borders">
+                    </td>
+                </tr>
+                <tr MadCap:conditions="Default.NotTraining">
+                    <td class="borders" style="text-align: center;">
+                        <p class="TableCell">125</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">Max Increase</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">No longer used. The Maximum Increase  is entered on the <a href="renewal_param_overview.htm#RenewalParamScreen">Renewal Config Parameters screen</a>.</p>
+                    </td>
+                    <td class="borders">
+                    </td>
+                </tr>
+                <tr MadCap:conditions="">
+                    <td class="borders" style="text-align: center;">
+                        <p class="TableCell">132</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">Post Processing - Smooth over post date</p>
+                    </td>
+                    <td class="borders">
+                        <a name="param132">
+                        </a>
+                        <MadCap:snippetBlock src="../Resources/Snippets/param_132_def.flsnp" />
+                    </td>
+                    <td class="borders">
+                        <p>F/O</p>
+                    </td>
+                </tr>
+                <tr MadCap:conditions="Default.NotTraining">
+                    <td class="borders" style="text-align: center;">
+                        <p class="TableCell">134</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">CPR Method</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">
+                            <a name="param134">
+                            </a>This tells the <MadCap:variable name="Variables.LRO" /> renewal calculator which Current Perceived Rent (a measure of what a renter is currently paying)  to use. </p>
+                        <p class="TableCell">Value: 1=max, 2=effective, 3=current</p>
+                        <p class="TableCell">Default: 3</p>
+                    </td>
+                    <td class="borders">
+                        <p>Renewal</p>
+                    </td>
+                </tr>
+                <tr MadCap:conditions="Default.NotTraining">
+                    <td class="borders" style="text-align: center;">
+                        <p class="TableCell">135</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">Discretionary Concession Factor</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">
+                            <a name="param135">
+                            </a>This is the % of the difference between a renewal offer and the recommended rent for the unit that a property manager has to negotiate. This only applies when a renewal offer is over the recommended rent.</p>
+                        <p class="TableCell">Values: 0.0-100.0 %</p>
+                        <p class="TableCell">Default: 0</p>
+                    </td>
+                    <td class="borders">
+                        <p>Renewal</p>
+                    </td>
+                </tr>
+                <tr MadCap:conditions="Default.NotTraining">
+                    <td class="borders" style="text-align: center;">
+                        <p class="TableCell">136</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">Concession Offer Factor</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">
+                            <a name="param136">
+                            </a>This is the % of the difference between a renewal offer and the recommended rent that will be offered immediately. This only applies when a renewal offer is over the recommended rent.</p>
+                        <p class="TableCell">Values: 0.0-100.0 %</p>
+                        <p class="TableCell">Default: 0</p>
+                    </td>
+                    <td class="borders">
+                        <p>Renewal</p>
+                    </td>
+                </tr>
+                <tr MadCap:conditions="Default.NotTraining">
+                    <td class="borders" style="text-align: center;">
+                        <p>137</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">LV Absolute Lease Change (DRRC)</p>
+                    </td>
+                    <td class="borders">
+                        <a name="param137">
+                        </a>
+                        <MadCap:snippetBlock src="../Resources/Snippets/param_137_def.flsnp" />
+                    </td>
+                    <td class="borders">
+                        <p>DDRC</p>
+                    </td>
+                </tr>
+                <tr MadCap:conditions="Default.NotTraining">
+                    <td class="borders" style="text-align: center;">
+                        <p class="TableCell">138</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">Rent Multiple</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">
+                            <a name="param138">
+                            </a>Renewal rent offer rounding.</p>
+                        <p class="TableCell">Values: Integer ($)</p>
+                        <p class="TableCell">Default: 1</p>
+                    </td>
+                    <td class="borders">
+                        <p>Renewal</p>
+                    </td>
+                </tr>
+                <tr MadCap:conditions="Default.NotTraining">
+                    <td class="borders" style="text-align: center;">
+                        <p class="TableCell">139</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">Concession Multiple</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">
+                            <a name="param139">
+                            </a>Renewal concession offer rounding.</p>
+                        <p class="TableCell">Values: Integer ($)</p>
+                        <p class="TableCell">Default: 1</p>
+                    </td>
+                    <td class="borders">
+                        <p>Renewal</p>
+                    </td>
+                </tr>
+                <tr MadCap:conditions="Default.NotTraining">
+                    <td class="borders" style="text-align: center;">
+                        <p class="TableCell">140</p>
+                    </td>
+                    <td class="borders">
+                        <p>Competitor Auto Positioning Averaging Method</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">Specifies whether variances in the Position Worksheet should be calculated using straight averaging or weighted averaging.</p>
+                        <p class="TableCell">Values: 0=straight averaging, 1=weighted averaging</p>
+                        <p class="TableCell">Default: 0</p>
+                    </td>
+                    <td class="borders">
+                        <p>Config</p>
+                    </td>
+                </tr>
+                <tr MadCap:conditions="Default.NotTraining">
+                    <td class="borders" style="text-align: center;">
+                        <p class="TableCell">141</p>
+                    </td>
+                    <td class="borders">
+                        <p>Exclude Competitor Amenity %</p>
+                    </td>
+                    <td class="borders">
+                        <p>The percentage of competitor rents to be excluded as amenities in the Position Worksheet variance calculations.</p>
+                        <p class="TableCell">Values: 0-100 %</p>
+                        <p class="TableCell">Default: 0</p>
+                    </td>
+                    <td class="borders">
+                        <p>Config </p>
+                    </td>
+                </tr>
+                <tr MadCap:conditions="Default.NotTraining">
+                    <td class="borders" style="text-align: center;">
+                        <p class="TableCell">142</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">mkt Avg Window Forward</p>
+                    </td>
+                    <td class="borders">
+                        <p>
+                            <a name="param142">
+                            </a>The number of pricing weeks prior to the renewal pricing week used in smoothing the recommended rents.</p>
+                        <p class="TableCell">Values: 0-10</p>
+                        <p class="TableCell">Default: 1</p>
+                    </td>
+                    <td class="borders">
+                        <p>Renewal</p>
+                    </td>
+                </tr>
+                <tr MadCap:conditions="Default.NotTraining">
+                    <td class="borders" style="text-align: center;">
+                        <p class="TableCell">143</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">mkt Avg Window Backward</p>
+                    </td>
+                    <td class="borders">
+                        <p>
+                            <a name="param143">
+                            </a>The number of pricing weeks after the renewal pricing week used in smoothing the recommended rents.</p>
+                        <p class="TableCell">Values: 0-10</p>
+                        <p class="TableCell">Default: 1</p>
+                    </td>
+                    <td class="borders">
+                        <p>Renewal</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="borders" style="text-align: center;">
+                        <p class="TableCell">145</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">Renewal Window Type</p>
+                    </td>
+                    <td class="borders">
+                        <p>
+                            <a name="param145">
+                            </a>Identifies the unit of time for which renewals will be pulled.</p>
+                        <p class="TableCell">Values: DAY, WEEK, MONTH</p>
+                        <p class="TableCell">Default: WEEK</p>
+                    </td>
+                    <td class="borders">
+                        <p>Renewal</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="borders" style="text-align: center;">
+                        <p class="TableCell">146</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">Renewal Window Width</p>
+                    </td>
+                    <td class="borders">
+                        <p>
+                            <a name="param146">
+                            </a>The number of units of time (specified in parameter 145) for which renewals will be pulled; must be less than or equal to parameter 1 (Optimization Horizon).</p>
+                        <p class="TableCell">Values: Integer</p>
+                        <p class="TableCell">Default: 16</p>
+                    </td>
+                    <td class="borders">
+                        <p>Renewal</p>
+                    </td>
+                </tr>
+                <tr MadCap:conditions="">
+                    <td class="borders" style="text-align: center;">
+                        <p class="TableCell">147</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">Renewal Window Lead Time</p>
+                    </td>
+                    <td class="borders">
+                        <p>
+                            <a name="param147">
+                            </a>The time in advance of the window start for which renewals will be pulled. </p>
+                        <p class="TableCell">Values: 0-120</p>
+                        <p class="TableCell">Default: 60</p>
+                    </td>
+                    <td class="borders">
+                        <p>Renewal</p>
+                    </td>
+                </tr>
+                <tr MadCap:conditions="Default.NotTraining">
+                    <td class="borders" style="text-align: center;">
+                        <p class="TableCell">148</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">Rent Increase Bucket Min</p>
+                    </td>
+                    <td class="borders">
+                        <p>Identifies the first tier of "bucketing" used in the manager's summary report (&lt;=).</p>
+                        <p>Values: Integer</p>
+                        <p>Default: 3</p>
+                    </td>
+                    <td class="borders">
+                        <p>Renewal</p>
+                    </td>
+                </tr>
+                <tr MadCap:conditions="Default.NotTraining">
+                    <td class="borders" style="text-align: center;">
+                        <p class="TableCell">149</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">Rent Increase Bucket Max</p>
+                    </td>
+                    <td class="borders">
+                        <p>Identifies the second tier of "bucketing" used in the manager's summary report (&gt;=).</p>
+                        <p>Values: Integer</p>
+                        <p>Default: 7</p>
+                    </td>
+                    <td class="borders">
+                        <p>Renewal</p>
+                    </td>
+                </tr>
+                <tr MadCap:conditions="Default.NotTraining">
+                    <td class="borders" style="text-align: center;">
+                        <p class="TableCell">150</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">Apply LTC Premium Flag</p>
+                    </td>
+                    <td class="borders">
+                        <a name="param150">
+                        </a>
+                        <MadCap:snippetBlock src="../Resources/Snippets/param_150_def.flsnp" />
+                    </td>
+                    <td class="borders">
+                        <p>Config</p>
+                    </td>
+                </tr>
+                <tr MadCap:conditions="Default.NotTraining">
+                    <td class="borders" style="text-align: center;">
+                        <p class="TableCell">151</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">Lease Audit Hold Days</p>
+                    </td>
+                    <td class="borders">
+                        <p>The number of days prior to the application date used when identifying comparison recommendations for calculating lease audit variances.  The system will identify the closest recommendation for the application date and this number of days prior based on term and available date of the unit.</p>
+                        <p>Values: 0-10</p>
+                        <p>Default: 1</p>
+                    </td>
+                    <td class="borders">
+                        <p>Config</p>
+                    </td>
+                </tr>
+                <tr MadCap:conditions="Default.NotTraining">
+                    <td class="borders" style="text-align: center;">
+                        <p class="TableCell">152</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">Max Ref Rent Decrease (DRRC)</p>
+                    </td>
+                    <td class="borders">
+                        <a name="param152">
+                        </a>
+                        <MadCap:snippetBlock src="../Resources/Snippets/param_152_def.flsnp" />
+                    </td>
+                    <td class="borders">
+                        <p>DDRC</p>
+                    </td>
+                </tr>
+                <tr MadCap:conditions="Default.NotTraining">
+                    <td class="borders" style="text-align: center;">
+                        <p class="TableCell">153</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">Exposed Units Range (DRRC)</p>
+                    </td>
+                    <td class="borders">
+                        <a name="param153">
+                        </a>
+                        <MadCap:snippetBlock src="../Resources/Snippets/param_153_def.flsnp" />
+                    </td>
+                    <td class="borders">
+                        <p>DDRC</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="borders" style="text-align: center;">
+                        <p class="TableCell">156</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">Upper bound for vacant days stats</p>
+                    </td>
+                    <td class="borders">
+                        <a name="param156">
+                        </a>
+                        <MadCap:snippetBlock src="../Resources/Snippets/param_156_def.flsnp" />
+                    </td>
+                    <td class="borders">
+                        <p>F/O</p>
+                    </td>
+                </tr>
+                <tr MadCap:conditions="Default.NotTraining">
+                    <td class="borders" style="text-align: center;">
+                        <p class="TableCell">172</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">FO Use LEM Statistics</p>
+                    </td>
+                    <td class="borders">
+                        <a name="param172">
+                        </a>
+                        <MadCap:snippetBlock src="../Resources/Snippets/param_172_def.flsnp" />
+                    </td>
+                    <td class="borders">
+                        <p>F/O</p>
+                    </td>
+                </tr>
+                <tr MadCap:conditions="Default.NotTraining">
+                    <td class="borders" style="text-align: center;">
+                        <p class="TableCell">173</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">LEM Minimum number of units in UC</p>
+                    </td>
+                    <td class="borders">
+                        <a name="param173">
+                        </a>
+                        <MadCap:snippetBlock src="../Resources/Snippets/param_173_def.flsnp" />
+                    </td>
+                    <td class="borders">
+                        <p>LEM</p>
+                    </td>
+                </tr>
+                <tr MadCap:conditions="Default.NotTraining">
+                    <td class="borders" style="text-align: center;">
+                        <p class="TableCell">174</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">FO Smoothing Weight</p>
+                    </td>
+                    <td class="borders">
+                        <a name="param174">
+                        </a>
+                        <MadCap:snippetBlock src="../Resources/Snippets/param_174_def.flsnp" />
+                    </td>
+                    <td class="borders">
+                        <p>F/O</p>
+                    </td>
+                </tr>
+                <tr MadCap:conditions="Default.NotTraining">
+                    <td class="borders" style="text-align: center;">
+                        <p class="TableCell">178</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">FO Maximum Price Increase</p>
+                    </td>
+                    <td class="borders">
+                        <a name="param178">
+                        </a>
+                        <MadCap:snippetBlock src="../Resources/Snippets/param_178_def.flsnp" />
+                    </td>
+                    <td class="borders">
+                        <p>F/O</p>
+                    </td>
+                </tr>
+                <tr MadCap:conditions="">
+                    <td class="borders" style="text-align: center;">
+                        <p class="TableCell">181</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">Use Remaining Expirations (LEM)</p>
+                    </td>
+                    <td class="borders">
+                        <a name="param181">
+                        </a>
+                        <MadCap:snippetBlock src="../Resources/Snippets/param_181_def.flsnp" />
+                    </td>
+                    <td class="borders">
+                        <p>F/O</p>
+                    </td>
+                </tr>
+                <tr MadCap:conditions="">
+                    <td class="borders" style="text-align: center;">
+                        <p class="TableCell">182</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">New Demand</p>
+                    </td>
+                    <td class="borders">
+                        <a name="param182">
+                        </a>
+                        <MadCap:snippetBlock src="../Resources/Snippets/param_182_def.flsnp" />
+                    </td>
+                    <td class="borders">
+                        <p>F/O</p>
+                    </td>
+                </tr>
+                <tr MadCap:conditions="">
+                    <td class="borders" style="text-align: center;">
+                        <p class="TableCell">185</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">Prior Days Parameter</p>
+                    </td>
+                    <td class="borders">
+                        <p MadCap:conditions="" class="less_space">Used when parameter 188 is set to Y.</p>
+                        <p MadCap:conditions="" class="less_space">The number of days prior to the original lease end date (when calculating budget statistics). </p>
+                        <p MadCap:conditions=""> Values: Integer </p>
+                        <p>Default: 20</p>
+                    </td>
+                    <td class="borders">
+                        <p>UpStat</p>
+                    </td>
+                </tr>
+                <tr MadCap:conditions="">
+                    <td class="borders" style="text-align: center;">
+                        <p class="TableCell">186</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">Past Days Parameter</p>
+                    </td>
+                    <td class="borders">
+                        <p MadCap:conditions="" class="less_space">Used when parameter 188 is set to Y.</p>
+                        <p MadCap:conditions="" class="less_space">The number of days after the original lease end date (when calculating budget statistics). </p>
+                        <p MadCap:conditions=""> Values: Integer </p>
+                        <p>Default: 20</p>
+                    </td>
+                    <td class="borders">
+                        <p>UpStat</p>
+                    </td>
+                </tr>
+                <tr MadCap:conditions="">
+                    <td class="borders" style="text-align: center;">
+                        <p class="TableCell">187</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">Years for Moveout Frac/ETFrac/RenFrac Calculation</p>
+                    </td>
+                    <td class="borders">
+                        <p MadCap:conditions="" class="less_space">Used when parameter 188 is set to Y.</p>
+                        <p MadCap:conditions="" class="less_space">The number of historical years of data to be used when calculating the move-out fraction, early termination, and renewal fraction (when calculating budget statistics). </p>
+                        <p MadCap:conditions=""> Values: Integer </p>
+                        <p>Default: 2</p>
+                    </td>
+                    <td class="borders">
+                        <p>UpStat</p>
+                    </td>
+                </tr>
+                <tr MadCap:conditions="">
+                    <td class="borders" style="text-align: center;">
+                        <p class="TableCell">188</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">Calculate LROBudget Stats</p>
+                    </td>
+                    <td class="borders">
+                        <p class="less_space">Controls whether or not to calculate budget statistics. This parameter should be set to Y for LRO Budget customers. </p>
+                        <p MadCap:conditions=""> Values: Y, N</p>
+                        <p>Default: N</p>
+                    </td>
+                    <td class="borders">
+                        <p>UpStat</p>
+                    </td>
+                </tr>
+                <tr MadCap:conditions="Default.NotTraining">
+                    <td class="borders" style="text-align: center;">
+                        <p class="TableCell">201</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">Lease Audit Variance</p>
+                    </td>
+                    <td class="borders">
+                        <p>% tolerable variance where the lease is still considered compliant.</p>
+                        <p>Values: Integer (%)</p>
+                        <p>Default: 2</p>
+                    </td>
+                    <td class="borders">
+                        <p>Config</p>
+                    </td>
+                </tr>
+                <tr MadCap:conditions="Default.NotTraining">
+                    <td class="borders" style="text-align: center;">
+                        <p class="TableCell">202</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">PMS ID</p>
+                    </td>
+                    <td class="borders">
+                        <p>Identifies the PMS that the <MadCap:variable name="Variables.LRO" /> system is extracting from. It is also tied to the pricing delivery mechanism.</p>
+                        <p>Values: text</p>
+                        <p>Default: &lt;blank&gt;</p>
+                    </td>
+                    <td class="borders">
+                        <p>Config</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="borders" style="text-align: center;">
+                        <p class="TableCell">212</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">Allow 1 Month Recommendations</p>
+                    </td>
+                    <td class="borders">
+                        <p>Determines whether rates for one month lease terms appear on the New Pricing report.</p>
+                        <p>Values: Y, N</p>
+                        <p>Default: N</p>
+                    </td>
+                    <td class="borders">
+                        <p>Config</p>
+                    </td>
+                </tr>
+                <tr MadCap:conditions="Default.NotTraining">
+                    <td class="borders" style="text-align: center;">
+                        <p class="TableCell">213</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">MTM By Movement Grace Window Days</p>
+                    </td>
+                    <td class="borders">
+                        <p>The number of days after the initial lease end date beyond which a move out is associated with a MTM instead of demoted to the prior term lease.</p>
+                        <p>Values: Integer</p>
+                        <p>Default: 10</p>
+                    </td>
+                    <td class="borders">
+                        <p>F/O</p>
+                    </td>
+                </tr>
+                <tr MadCap:conditions="Default.NotTraining">
+                    <td class="borders" style="text-align: center;">
+                        <p class="TableCell">214</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">Property is Active For Billing</p>
+                    </td>
+                    <td class="borders">
+                        <p>Internal <MadCap:variable name="Variables.ShortCompanyName" /> billing flag.  <MadCap:conditionalText MadCap:conditions="Default.ExternalOnly">Only <MadCap:variable name="Variables.ShortCompanyName" /> employees can change this parameter.</MadCap:conditionalText></p>
+                        <p>Values: Y, N</p>
+                        <p>Default: N</p>
+                    </td>
+                    <td class="borders">
+                        <p>Config</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="borders" style="text-align: center;">
+                        <p class="TableCell">216</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">Renewal Graph Little m</p>
+                    </td>
+                    <td class="borders">
+                        <p>Works with parameter 217 - Big M - to define the forward looking window for the renewal graph in the Pricing Trend Report.</p>
+                        <p>Values: Integer</p>
+                        <p>Default: 15</p>
+                    </td>
+                    <td class="borders">
+                        <p>Config</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="borders" style="text-align: center;">
+                        <p class="TableCell">217</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">Renewal Graph Big M</p>
+                    </td>
+                    <td class="borders">
+                        <p>Works with parameter 216 -Little m- to define the forward looking window for the renewal graph in the Pricing Trend Report.</p>
+                        <p>Values: Integer</p>
+                        <p>Default: 45</p>
+                    </td>
+                    <td class="borders">
+                        <p>Config</p>
+                    </td>
+                </tr>
+                <tr MadCap:conditions="Default.NotTraining">
+                    <td class="borders" style="text-align: center;">
+                        <p class="TableCell">218</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">Billing Start Date (YYYYMMDD)</p>
+                    </td>
+                    <td class="borders">
+                        <p>The date when the community becomes billable. It typically corresponds to the property initialization date.  <MadCap:conditionalText MadCap:conditions="Default.ExternalOnly">Only <MadCap:variable name="Variables.ShortCompanyName" /> employees can change this parameter.</MadCap:conditionalText></p>
+                        <p>Values: YYYYMMDD</p>
+                        <p>Default: &lt;blank&gt;</p>
+                    </td>
+                    <td class="borders">
+                        <p>Config</p>
+                    </td>
+                </tr>
+                <tr MadCap:conditions="Default.NotTraining">
+                    <td class="borders" style="text-align: center;">
+                        <p class="TableCell">219</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">Billing End Date (YYYYMMDD)</p>
+                    </td>
+                    <td class="borders">
+                        <p>The date when the community becomes non-billable. This is used when billing is paused or when a community is removed from the <MadCap:variable name="Variables.LRO" /> system.  <MadCap:conditionalText MadCap:conditions="Default.ExternalOnly">Only <MadCap:variable name="Variables.ShortCompanyName" /> employees can change this parameter.</MadCap:conditionalText></p>
+                        <p>Values: YYYYMMDD</p>
+                        <p>Default: &lt;blank&gt;</p>
+                    </td>
+                    <td class="borders">
+                        <p>Config</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="borders" style="text-align: center;">
+                        <p class="TableCell">220</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">KPI width in days</p>
+                    </td>
+                    <td class="borders">
+                        <p>The range of forward and backward days used to identify leases used in KPI calculations.</p>
+                        <p>Values: Integer</p>
+                        <p>Default: 7</p>
+                    </td>
+                    <td class="borders">
+                        <p>Config</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="borders" style="text-align: center;">
+                        <p class="TableCell">221</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">KPI minimum observations</p>
+                    </td>
+                    <td class="borders">
+                        <p>The minimum number of leases which must be present within the range (defined in parameter 220) for calculating the statistics. If the number of leases does not meet the threshold, the day range is increased until the threshold is met.</p>
+                        <p>Values: Integer</p>
+                        <p>Default: 5</p>
+                    </td>
+                    <td class="borders">
+                        <p>Config</p>
+                    </td>
+                </tr>
+                <tr MadCap:conditions="Default.NotTraining">
+                    <td class="borders" style="text-align: center;">
+                        <p class="TableCell">222</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">DRRC DOW Run Date (0=Sun)</p>
+                    </td>
+                    <td class="borders">
+                        <a name="param222">
+                        </a>
+                        <MadCap:snippetBlock src="../Resources/Snippets/param_222_def.flsnp" />
+                    </td>
+                    <td class="borders">
+                        <p>Config</p>
+                    </td>
+                </tr>
+                <tr MadCap:conditions="Default.NotTraining">
+                    <td class="borders" style="text-align: center;">
+                        <p class="TableCell">223</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">Upstat DOW Run Date (0=Sun)</p>
+                    </td>
+                    <td class="borders">
+                        <a name="param223">
+                        </a>
+                        <MadCap:snippetBlock src="../Resources/Snippets/param_223_def.flsnp" />
+                    </td>
+                    <td class="borders">
+                        <p>Config</p>
+                    </td>
+                </tr>
+                <tr MadCap:conditions="Default.NotTraining">
+                    <td class="borders" style="text-align: center;">
+                        <p class="TableCell">224</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">Competitor Summary Post Date range (in weeks)</p>
+                    </td>
+                    <td class="borders">
+                        <p>The number of weeks to go back in time to create a list of all post dates where some competitor information was changed.   This list of post dates is used in the drop down list for the competitor summary screen.</p>
+                        <p>Values: 0-30</p>
+                        <p>Default: 15</p>
+                    </td>
+                    <td class="borders">
+                        <p>Config</p>
+                    </td>
+                </tr>
+                <tr MadCap:conditions="Default.NotTraining">
+                    <td class="borders" style="text-align: center;">
+                        <p class="TableCell">225</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">Price Alert Percent Change</p>
+                    </td>
+                    <td class="borders">
+                        <p>The percentage change for Price Alert Exceptions in the <MadCap:variable name="Variables.LRO" /> Web UI.</p>
+                        <p>Values: Integer</p>
+                        <p>Default: 3</p>
+                    </td>
+                    <td class="borders">
+                        <p>Config</p>
+                    </td>
+                </tr>
+                <tr MadCap:conditions="Default.NotTraining">
+                    <td class="borders" style="text-align: center;">
+                        <p class="TableCell">226</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">LEM Exp Override Upper Bound %</p>
+                    </td>
+                    <td class="borders">
+                        <p>
+                            <a name="param226">
+                            </a>Limit on the maximum expiration ratio for any month on the LEM graph. This is a percentage of the physical capacity of the unit category.</p>
+                        <p>Values: Integer</p>
+                        <p>Default: 15</p>
+                    </td>
+                    <td class="borders">
+                        <p>Config</p>
+                    </td>
+                </tr>
+                <tr MadCap:conditions="Default.NotTraining">
+                    <td class="borders" style="text-align: center;">
+                        <p class="TableCell">234</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">Display Prior Rent Column</p>
+                    </td>
+                    <td class="borders">
+                        <p>
+                            <a name="param234">
+                            </a>Allows you to specify whether or not the Prior Rent column is displayed on the New Pricing Report in the <MadCap:variable name="Variables.LRO" /> Web UI.</p>
+                        <p>Values: Y, N</p>
+                        <p>Default: N</p>
+                    </td>
+                    <td class="borders">
+                        <p>F/O</p>
+                    </td>
+                </tr>
+                <tr MadCap:conditions="Default.NotTraining">
+                    <td class="borders" style="text-align: center;">
+                        <p class="TableCell">237</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">Pricing Services: Property is Active for Billing</p>
+                    </td>
+                    <td class="borders">
+                        <p>Internal <MadCap:variable name="Variables.ShortCompanyName"></MadCap:variable> billing flag for pricing services. <MadCap:conditionalText MadCap:conditions="Default.ExternalOnly">Only <MadCap:variable name="Variables.ShortCompanyName"></MadCap:variable> employees can change this parameter.</MadCap:conditionalText></p>
+                        <p>Values: Y, N</p>
+                        <p>Default: N</p>
+                    </td>
+                    <td class="borders">
+                        <p>Config</p>
+                    </td>
+                </tr>
+                <tr MadCap:conditions="Default.NotTraining">
+                    <td class="borders" style="text-align: center;">
+                        <p class="TableCell">238</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">Pricing Services: Billing Start Date (YYYYMMDD)</p>
+                    </td>
+                    <td class="borders">
+                        <p>The date when pricing services for the community become billable. <MadCap:conditionalText MadCap:conditions="Default.ExternalOnly">Only <MadCap:variable name="Variables.ShortCompanyName"></MadCap:variable> employees can change this parameter.</MadCap:conditionalText></p>
+                        <p>Values: YYYYMMDD</p>
+                        <p>Default: &lt;blank&gt;</p>
+                    </td>
+                    <td class="borders">
+                        <p>Config</p>
+                    </td>
+                </tr>
+                <tr MadCap:conditions="Default.NotTraining">
+                    <td class="borders" style="text-align: center;">
+                        <p class="TableCell">239</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">Pricing Services: Billing End Date (YYYYMMDD)</p>
+                    </td>
+                    <td class="borders">
+                        <p>The date when pricing services for the community become non-billable. This is used when billing for pricing services is paused or when a community stops using pricing services. <MadCap:conditionalText MadCap:conditions="Default.ExternalOnly">Only <MadCap:variable name="Variables.ShortCompanyName"></MadCap:variable> employees can change this parameter.</MadCap:conditionalText></p>
+                        <p>Values: YYYYMMDD</p>
+                        <p>Default: &lt;blank&gt;</p>
+                    </td>
+                    <td class="borders">
+                        <p>Config</p>
+                    </td>
+                </tr>
+                <tr MadCap:conditions="Default.NotTraining">
+                    <td class="borders" style="text-align: center;">
+                        <p class="TableCell">240</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">LROBudget: Property is Active for Billing</p>
+                    </td>
+                    <td class="borders">
+                        <p>Internal <MadCap:variable name="Variables.ShortCompanyName"></MadCap:variable> billing flag for <MadCap:variable name="Variables.LRO"></MadCap:variable> Budget. <MadCap:conditionalText MadCap:conditions="Default.ExternalOnly">Only <MadCap:variable name="Variables.ShortCompanyName"></MadCap:variable> employees can change this parameter.</MadCap:conditionalText></p>
+                        <p>Values: Y, N</p>
+                        <p>Default: N</p>
+                    </td>
+                    <td class="borders">
+                        <p>Config</p>
+                    </td>
+                </tr>
+                <tr MadCap:conditions="Default.NotTraining">
+                    <td class="borders" style="text-align: center;">
+                        <p class="TableCell">241</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">LROBudget: Billing Start Date (YYYYMMDD)</p>
+                    </td>
+                    <td class="borders">
+                        <p>The date when the community becomes billable for <MadCap:variable name="Variables.LRO"></MadCap:variable> Budget. <MadCap:conditionalText MadCap:conditions="Default.ExternalOnly">Only <MadCap:variable name="Variables.ShortCompanyName"></MadCap:variable> employees can change this parameter.</MadCap:conditionalText></p>
+                        <p>Values: YYYYMMDD</p>
+                        <p>Default: &lt;blank&gt;</p>
+                    </td>
+                    <td class="borders">
+                        <p>Config</p>
+                    </td>
+                </tr>
+                <tr MadCap:conditions="Default.NotTraining">
+                    <td class="borders" style="text-align: center;">
+                        <p class="TableCell">242</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">LRO Budget: Billing End Date (YYYYMMDD)</p>
+                    </td>
+                    <td class="borders">
+                        <p>The date when the community becomes non-billable for <MadCap:variable name="Variables.LRO"></MadCap:variable> Budget. This is used when billing is paused for <MadCap:variable name="Variables.LRO"></MadCap:variable> Budget or when a community is removed from <MadCap:variable name="Variables.LRO"></MadCap:variable> Budget. <MadCap:conditionalText MadCap:conditions="Default.ExternalOnly">Only <MadCap:variable name="Variables.ShortCompanyName"></MadCap:variable> employees can change this parameter.</MadCap:conditionalText></p>
+                        <p>Values: YYYYMMDD</p>
+                        <p>Default: &lt;blank&gt;</p>
+                    </td>
+                    <td class="borders">
+                        <p>Config</p>
+                    </td>
+                </tr>
+                <tr MadCap:conditions="Default.NotTraining">
+                    <td class="borders" style="text-align: center;">
+                        <p class="TableCell" MadCap:conditions="">243</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell" MadCap:conditions="">Maximum Price Level UC Propagation Method</p>
+                    </td>
+                    <td class="borders">
+                        <p class="less_space" MadCap:conditions="">
+                            <a name="param243">
+                            </a>Determines how  <a href="#param41">parameter 41</a>, when defined at the unit type level, will be propagated to the unit category level for optimization.</p>
+                        <p class="less_space"> If parameter 243 is set to Avg, it will average the parameter 41 values for all unit types within the unit category. If parameter 243 is set to Max, it will use the highest parameter 41 value from all unit types within the unit category. If parameter 243 is set to Min, it will use the lowest parameter 41 value from all unit types within the unit category.</p>
+                        <p class="TableCell" MadCap:conditions=""> Values: Max, Min, Avg</p>
+                        <p class="TableCell" MadCap:conditions="">Default: Avg</p>
+                    </td>
+                    <td class="borders">
+                        <p MadCap:conditions="">F/O</p>
+                    </td>
+                </tr>
+                <tr MadCap:conditions="">
+                    <td class="borders" style="text-align: center;">
+                        <p class="TableCell">248</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">Vacant Days Upper Bound</p>
+                    </td>
+                    <td class="borders">
+                        <MadCap:snippetBlock src="../Resources/Snippets/doma_param.flsnp" />
+                        <p class="less_space">
+                            <a name="param248">
+                            </a>Observations with Vacant Day values greater than the amount set by this parameter will be clipped.</p>
+                        <p class="TableCell"> Values: &gt;=0</p>
+                        <p class="TableCell">Default: 60</p>
+                    </td>
+                    <td class="borders">
+                        <p>Upstat</p>
+                    </td>
+                </tr>
+                <tr MadCap:conditions="">
+                    <td class="borders" style="text-align: center;">
+                        <p class="TableCell" style="text-align: center;">249</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">Vacant Days Lower Bound</p>
+                    </td>
+                    <td class="borders">
+                        <MadCap:snippetBlock src="../Resources/Snippets/doma_param.flsnp" />
+                        <p class="less_space">
+                            <a name="param249">
+                            </a>Observations with Vacant Day values less than the amount set by this parameter will be clipped.</p>
+                        <p class="TableCell" MadCap:conditions=""> Values: &gt;=0</p>
+                        <p class="TableCell" MadCap:conditions="">Default: 0</p>
+                    </td>
+                    <td class="borders">
+                        <p MadCap:conditions="">Upstat</p>
+                    </td>
+                </tr>
+                <tr MadCap:conditions="">
+                    <td class="borders" style="text-align: center;">
+                        <p class="TableCell" style="text-align: center;">250</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">Market Days Upper Bound</p>
+                    </td>
+                    <td class="borders">
+                        <MadCap:snippetBlock src="../Resources/Snippets/doma_param.flsnp" />
+                        <p class="less_space">
+                            <a name="param250">
+                            </a>Observations with Market Day values greater than the amount set by this parameter will be clipped.</p>
+                        <p class="TableCell" MadCap:conditions=""> Values: &gt;=0</p>
+                        <p class="TableCell" MadCap:conditions="">Default: 120</p>
+                    </td>
+                    <td class="borders">
+                        <p MadCap:conditions="">Upstat</p>
+                    </td>
+                </tr>
+                <tr MadCap:conditions="">
+                    <td class="borders" style="text-align: center;">
+                        <p class="TableCell" style="text-align: center;">251</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">Market Days Lower Bound</p>
+                    </td>
+                    <td class="borders">
+                        <MadCap:snippetBlock src="../Resources/Snippets/doma_param.flsnp" />
+                        <p class="less_space">
+                            <a name="param251">
+                            </a>Observations with Market Day values less than the amount set by this parameter will be clipped.</p>
+                        <p class="TableCell" MadCap:conditions=""> Values: &gt;=0</p>
+                        <p class="TableCell" MadCap:conditions="">Default: 0</p>
+                    </td>
+                    <td class="borders">
+                        <p MadCap:conditions="">Upstat</p>
+                    </td>
+                </tr>
+                <tr MadCap:conditions="">
+                    <td class="borders" style="text-align: center;">
+                        <p class="TableCell" style="text-align: center;">254</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">Available Days Param</p>
+                    </td>
+                    <td class="borders">
+                        <MadCap:snippetBlock src="../Resources/Snippets/doma_param.flsnp" />
+                        <p>
+                            <a name="param254">
+                            </a>It specifies whether Vacant Days or Market Days will be used to determine if a unit has historically been a slow or fast mover. </p>
+                        <p>If you want to base the classification off when the unit is actually losing money because it is vacant, you would select Vacant Days. If you are more concerned with the total marketing time, you would choose Market Days.</p>
+                        <p MadCap:conditions="">Values: Vacant Days, Market Days</p>
+                        <p MadCap:conditions="">Default: Market Days</p>
+                    </td>
+                    <td class="borders">
+                        <p MadCap:conditions="">Update Pricing</p>
+                    </td>
+                </tr>
+                <tr MadCap:conditions="">
+                    <td class="borders" style="text-align: center;">
+                        <p class="TableCell" style="text-align: center;">255</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">Number of Standard Deviations</p>
+                    </td>
+                    <td class="borders">
+                        <MadCap:snippetBlock src="../Resources/Snippets/doma_param.flsnp" />
+                        <p>
+                            <a name="param255">
+                            </a>This is the number of standard deviations about the median which will determine the Fast, Medium, and Slow buckets for the Historical Lease Pace Level.</p>
+                        <p>Generally, the higher number of standard deviations signifies that fewer units will be classified as slow or fast. </p>
+                        <p class="note">The Historical Pace Level buckets may be determined using parameters 274 and 275, if they are set.</p>
+                        <p MadCap:conditions="">Values: &gt;=0</p>
+                        <p MadCap:conditions="">Default: 0.5</p>
+                    </td>
+                    <td class="borders">
+                        <p MadCap:conditions="">Update Pricing</p>
+                    </td>
+                </tr>
+                <tr MadCap:conditions="">
+                    <td class="borders" style="text-align: center;">
+                        <p class="TableCell" style="text-align: center;">257</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">Minimum Move Out Observations</p>
+                    </td>
+                    <td class="borders">
+                        <MadCap:snippetBlock src="../Resources/Snippets/doma_param.flsnp">
+                        </MadCap:snippetBlock>
+                        <p>
+                            <a name="param257">
+                            </a>This is the minimum number of turnover observations needed for a unit at the current amenity value in order to classify it as a slow, fast, or medium mover. If the amenity value of the unit has been changed recently, the unit will not be classified as slow or fast until it becomes vacant and rented at the current amenity level for the number of times specified by this parameter.</p>
+                        <p MadCap:conditions="">Values: &gt;=0</p>
+                        <p MadCap:conditions="">Default: 2</p>
+                    </td>
+                    <td class="borders">
+                        <p MadCap:conditions="">Update Pricing</p>
+                    </td>
+                </tr>
+                <tr MadCap:conditions="">
+                    <td class="borders" style="text-align: center;">
+                        <p class="TableCell">264</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">Days on Market Statistical Historical Months</p>
+                    </td>
+                    <td class="borders">
+                        <MadCap:snippetBlock src="../Resources/Snippets/doma_param.flsnp">
+                        </MadCap:snippetBlock>
+                        <p>
+                            <a name="param264">
+                            </a>This is the number of months to look back when calculating Days on Market Analysis statistics.</p>
+                        <p MadCap:conditions="">Values: &gt;=0</p>
+                        <p MadCap:conditions="">Default: 60</p>
+                    </td>
+                    <td class="borders">
+                        <p>Upstat</p>
+                    </td>
+                </tr>
+                <tr MadCap:conditions="">
+                    <td class="borders" style="text-align: center;">
+                        <p class="TableCell">265</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">Days on Market Statistical Lag Days</p>
+                    </td>
+                    <td class="borders">
+                        <MadCap:snippetBlock src="../Resources/Snippets/doma_param.flsnp">
+                        </MadCap:snippetBlock>
+                        <p>
+                            <a name="param265">
+                            </a>The historical months of data used for estimating Days on Market Analysis statistics will be taken by a number of days prior to the system run date as specified by this parameter. For example, if this parameter is set to 30 days and the system run date is 11/25, then the 60 months count (parameter 264) will start from 10/25 onwards.</p>
+                        <p MadCap:conditions="">Values: &gt;=0</p>
+                        <p MadCap:conditions="">Default: 0</p>
+                    </td>
+                    <td class="borders">
+                        <p MadCap:conditions="">Upstat</p>
+                    </td>
+                </tr>
+                <tr MadCap:conditions="">
+                    <td class="borders" style="text-align: center;">
+                        <p class="TableCell">266</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">Days on Market Statistics</p>
+                    </td>
+                    <td class="borders">
+                        <p>
+                            <a name="param266">
+                            </a>This specifies whether the Days on Market Analysis statistics will be calculated by the Upstat process or not. If you are using Days on Market Analysis, this should be set to 1. (Parameter 276 should also be set to 1.)</p>
+                        <p>Values: 1=Calculate; 0=Don't Calculate</p>
+                        <p>Default: 1 </p>
+                    </td>
+                    <td class="borders">
+                        <p>Upstat</p>
+                    </td>
+                </tr>
+                <tr MadCap:conditions="">
+                    <td class="borders" style="text-align: center;">
+                        <p class="TableCell">273</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">Subtract Vacant Rented and Market Rented Days</p>
+                    </td>
+                    <td class="borders">
+                        <MadCap:snippetBlock src="../Resources/Snippets/doma_param.flsnp">
+                        </MadCap:snippetBlock>
+                        <p>
+                            <a name="param273">
+                            </a>This determines if the days the unit was in Vacant Rented status will be subtracted from Vacant Day calculations and if the days the unit was in Vacant Rented or Market Rented status will be subtracted from Market Day calculations.</p>
+                        <p>Sometimes, when a unit comes on market or becomes vacant, it gets rented out but then the prospect cancels causing the unit to go on market or become vacant again. If you would like to exclude the days a unit was in Vacant Rented or Market Rented status from being counted towards the unit's market or vacant days, you should set this parameter to 1.</p>
+                        <p MadCap:conditions="">Values: 0=Don't subtract; 1=Subtract </p>
+                        <p MadCap:conditions="">Default: 1</p>
+                    </td>
+                    <td class="borders">
+                        <p MadCap:conditions="">Upstat/Update Pricing</p>
+                    </td>
+                </tr>
+                <tr MadCap:conditions="">
+                    <td class="borders" style="text-align: center;">
+                        <p class="TableCell">274</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">Slow Threshold Days</p>
+                    </td>
+                    <td class="borders">
+                        <MadCap:snippetBlock src="../Resources/Snippets/doma_param.flsnp">
+                        </MadCap:snippetBlock>
+                        <p>
+                            <a name="param274">
+                            </a>If the number of vacant or market days for a unit are greater than the number specified with this parameter, that unit will be considered a slow renter.</p>
+                        <p>This parameter, if set, takes over the classification that would have been done by parameter 255. This can be set at the unit type level, if desired.</p>
+                        <p MadCap:conditions="">Values:&gt;=0</p>
+                        <p MadCap:conditions="">Default: NULL</p>
+                    </td>
+                    <td class="borders">
+                        <p MadCap:conditions="">Update Pricing</p>
+                    </td>
+                </tr>
+                <tr MadCap:conditions="">
+                    <td class="borders" style="text-align: center;">
+                        <p class="TableCell">275</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">Fast Threshold Days</p>
+                    </td>
+                    <td class="borders">
+                        <MadCap:snippetBlock src="../Resources/Snippets/doma_param.flsnp">
+                        </MadCap:snippetBlock>
+                        <p>
+                            <a name="param275">
+                            </a>If the number of vacant or market days for a unit are less than the number specified with this parameter, that unit will be considered a fast renter.</p>
+                        <p MadCap:conditions="">This parameter, if set, takes over the classification that would have been done by parameter 255. This can be set at the unit type level, if desired.</p>
+                        <p MadCap:conditions="">Values:&gt;=0</p>
+                        <p MadCap:conditions="">Default: NULL</p>
+                    </td>
+                    <td class="borders">
+                        <p MadCap:conditions="">Update Pricing</p>
+                    </td>
+                </tr>
+                <tr MadCap:conditions="">
+                    <td class="borders" style="text-align: center;">
+                        <p class="TableCell">276</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">Perform Days on Market Analysis</p>
+                    </td>
+                    <td class="borders">
+                        <p>
+                            <a name="param276">
+                            </a>This specifies whether or not  Days on Market Analysis will be performed. This determines if a unit is a fast or slow mover.</p>
+                        <p MadCap:conditions="">If you want to use Days on Market Analysis, this parameter should be set to 1. </p>
+                        <p MadCap:conditions="" class="note">
+                            <a href="#param266">Parameter 266</a> should also be set to 1 to use Days on Market Analysis.</p>
+                        <p MadCap:conditions="">Values: 0=Don't perform Days on Market Analysis, 1=Perform Days on Market Analysis</p>
+                        <p MadCap:conditions="">Default: 0</p>
+                    </td>
+                    <td class="borders">
+                        <p MadCap:conditions="">Update Pricing</p>
+                    </td>
+                </tr>
+                <tr MadCap:conditions="">
+                    <td class="borders" style="text-align: center;">
+                        <p class="TableCell">313</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">
+                            <a name="param313">
+                            </a>Rent Visualizer Data Load</p>
+                    </td>
+                    <td class="borders">
+                        <p class="less_space">Controls whether the Rent Visualizer is turned on or off. </p>
+                        <p class="less_space">If this parameter is set to 0 (off), then the Rent Visualizer processes are not run and the link to the Rent Visualizer is not available on the New Pricing screen.</p>
+                        <p class="note">LEM must be turned on (<a href="#param172">parameter 172</a>) for the Rent Visualizer data to be shown on the New Pricing screen.</p>
+                        <p class="TableCell"> Values: 0 = off; 1 = on</p>
+                        <p class="TableCell">Default: 1</p>
+                    </td>
+                    <td class="borders">
+                        <p>F/O</p>
+                    </td>
+                </tr>
+                <tr MadCap:conditions="">
+                    <td class="borders" style="text-align: center;">
+                        <p class="TableCell" style="text-align: center;">317</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">
+                            <a name="param317">
+                            </a>EnableAutoComp</p>
+                    </td>
+                    <td class="borders">
+                        <p>Controls whether Automated Comps is turned on or off. </p>
+                        <p>Values: Y, N</p>
+                        <p>Default: N</p>
+                    </td>
+                    <td class="borders">
+                        <p>Config</p>
+                    </td>
+                </tr>
+                <tr MadCap:conditions="">
+                    <td class="borders" style="text-align: center;">
+                        <p class="TableCell" style="text-align: center;">318</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">
+                            <a name="param318">
+                            </a>MissingWeekThreshold</p>
+                    </td>
+                    <td class="borders">
+                        <p>An alert will be displayed on the Comp Rents screen if a new rent is not received for an Automated Comps competitor in the number of weeks specified by this parameter. </p>
+                        <p>Values: Integer</p>
+                        <p>Default: 4</p>
+                    </td>
+                    <td class="borders">
+                        <p>Config</p>
+                    </td>
+                </tr>
+                <tr MadCap:conditions="">
+                    <td class="borders" style="text-align: center;">
+                        <p class="TableCell" style="text-align: center;">319</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">
+                            <a name="param319">
+                            </a>Max Rent Change % Threshold</p>
+                    </td>
+                    <td class="borders">
+                        <p>If a new competitor rent is received from Automated Comps that varies by more than the percentage set in this parameter from the previous rent amount, the rent will not be saved and an alert will appear on the Comp Rents screen.</p>
+                        <p>Values: 0-100%</p>
+                        <p>Default: 15</p>
+                    </td>
+                    <td class="borders">
+                        <p>Config</p>
+                    </td>
+                </tr>
+                <tr MadCap:conditions="">
+                    <td class="borders" style="text-align: center;">
+                        <p class="TableCell" style="text-align: center;">320</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">
+                            <a name="param320">
+                            </a>Days to Shop Auto Comp Prior to DRRC</p>
+                    </td>
+                    <td class="borders">
+                        <p>This specifies when you want Automated Comps to get updated rents in relation to when the DRRC is run.</p>
+                        <p>This gives you the ability to review the comp rents that came in from Automated Comps before they are used in the DRRC run for the week. The default is two days, but you may increase this if you need more time to review the rents or you may set it to one day if you fully trust the Automated Comps rents and want to have the most recent rent amounts when the DRRC is run.</p>
+                        <p>Values: 1-6</p>
+                        <p>Default: 2</p>
+                    </td>
+                    <td class="borders">
+                        <p>Auto Comp API Call</p>
+                    </td>
+                </tr>
+                <tr MadCap:conditions="">
+                    <td class="borders" style="text-align: center;">
+                        <p class="TableCell" style="text-align: center;">321</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">
+                            <a name="param321">
+                            </a>Auto Comp: Property is Active for Billing</p>
+                    </td>
+                    <td class="borders">
+                        <p>Internal <MadCap:variable name="Variables.ShortCompanyName" /> billing flag for Automated Comps. <MadCap:conditionalText MadCap:conditions="Default.ExternalOnly">Only <MadCap:variable name="Variables.ShortCompanyName" /> employees can change this parameter.</MadCap:conditionalText></p>
+                        <p>Values: Y, N</p>
+                        <p>Default: N</p>
+                    </td>
+                    <td class="borders">
+                        <p>Config</p>
+                    </td>
+                </tr>
+                <tr MadCap:conditions="">
+                    <td class="borders" style="text-align: center;">
+                        <p class="TableCell" style="text-align: center;">322</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">
+                            <a name="param322">
+                            </a>Auto Comp: Billing Start Date (YYYYMMDD)</p>
+                    </td>
+                    <td class="borders">
+                        <p>The date when the community becomes billable for Automated Comps. <MadCap:conditionalText MadCap:conditions="Default.ExternalOnly">Only <MadCap:variable name="Variables.ShortCompanyName" /> employees can change this parameter.</MadCap:conditionalText></p>
+                        <p>Values: YYYYMMDD</p>
+                        <p>Default: &lt;blank&gt;</p>
+                    </td>
+                    <td class="borders">
+                        <p>Config</p>
+                    </td>
+                </tr>
+                <tr MadCap:conditions="">
+                    <td class="borders" style="text-align: center;">
+                        <p class="TableCell" style="text-align: center;">323</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">
+                            <a name="param323">
+                            </a>Auto Comp: Billing End Date (YYYYMMDD)</p>
+                    </td>
+                    <td class="borders">
+                        <p>The date when the community becomes non-billable for Automated Comps. This is used when billing is paused for Automated Comps or when a community is removed from using Automated Comps. <MadCap:conditionalText MadCap:conditions="Default.ExternalOnly">Only <MadCap:variable name="Variables.ShortCompanyName" /> employees can change this parameter.</MadCap:conditionalText></p>
+                        <p>Values: YYYYMMDD</p>
+                        <p>Default: &lt;blank&gt;</p>
+                    </td>
+                    <td class="borders">
+                        <p>Config</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

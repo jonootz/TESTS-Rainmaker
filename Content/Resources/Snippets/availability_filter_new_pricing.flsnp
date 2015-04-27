@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="5" MadCap:lastHeight="238" MadCap:lastWidth="1182">
+    <body>
+        <div class="no_break">
+            <h2>Availability Filter</h2>
+            <p class="less_space">By default, the report shows units that are available in the next 365 days. You can show units that are available in a shorter time frame if you want to. The filter options are:</p>
+            <ul>
+                <li>Now</li>
+                <li>Next 30 Days</li>
+                <li>Next 60 Days</li>
+                <li>Next 90 Days</li>
+                <li>Next 120 Days</li>
+                <li>Next 365 Days</li>
+            </ul>
+        </div>
+    </body>
+</html>

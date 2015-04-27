@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="5" MadCap:lastHeight="2688" MadCap:lastWidth="1103">
+    <head>
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="reports:market summary report;business intelligence reporting:market summary report;Market Summary Report" />Market Summary Report <MadCap:conditionalText MadCap:conditions="Default.NotPrint">(BI Reporting)</MadCap:conditionalText></h1>
+        <p MadCap:conditions="">The Market Summary Report can be accessed from the Reporting tab in the <MadCap:variable name="Variables.LRO" /> Web UI.  </p>
+        <p>This report allows you to compare the occupancy and  rents for your properties and your competitors in different ways. It is useful for helping you spot negative trends quickly, with the added ability to drill down into the data for detailed analysis. </p>
+        <p>
+            <a href="BI_questions_answered.htm#Market">What questions can the Market Summary Report answer?</a>
+        </p>
+        <h2 MadCap:conditions="">Viewing the Report</h2>
+        <div class="no_break">
+            <p MadCap:conditions="">There are two views of the report, Overview and Detail, plus a Definitions page. You can switch between them using the tabs at the bottom of the screen.</p>
+            <p MadCap:conditions="">
+                <img src="../Resources/Images/BI/market_survey_tabs.png" title="Click to view larger">
+                </img>
+            </p>
+        </div>
+        <MadCap:snippetBlock src="../Resources/Snippets/views_have_own_filters_example.flsnp" />
+        <p>The Overview and Detail view contain much of the same information. It is just displayed and filtered in a different way.</p>
+        <h3>Community Information</h3>
+        <div class="indent">
+            <p>
+                <span class="bold">Community Name (ID)</span>: Name and ID&#160;of the property</p>
+            <p>
+                <span class="bold">My Unit Type</span>: LRO unit type</p>
+            <p>
+                <span class="bold">My Unit Type Description</span>: Description of the  unit type</p>
+            <p>
+                <span class="bold">Total Units</span>: Total number of units in the unit type</p>
+            <p>
+                <span class="bold">SQFT</span>: Square foot measurement of the unit type </p>
+            <p class="note">Unit Type, Unit Type Description, Total Units, and SQFT are set up under Configuration&gt;Unit Types.</p>
+            <p>
+                <span class="bold">Base Rent</span>: Average rent without concessions for  the unit type</p>
+            <p>
+                <span class="bold">Conc</span>: Average concession amount for  the unit type</p>
+            <p>
+                <span class="bold">Eff Rent</span>: Average rent including concessions for the unit type (This will match the base rent if there are no concessions.)</p>
+            <p>
+                <span class="bold">Eff Rent/SQFT</span>: Effective rent per square foot for the unit type</p>
+        </div>
+        <h3>Competitor Information</h3>
+        <div class="indent">
+            <p>
+                <span class="bold">Occupancy %</span>: Percentage of units in this unit type that are occupied at the competitor property </p>
+            <p>
+                <span class="bold">My Unit Type</span>: LRO unit type that is mapped to the competitor unit type</p>
+            <p>
+                <span class="bold">Their Unit Type Description</span>: The competitor unit type</p>
+            <p>
+                <span class="bold">Total Units</span>: Number of units the competitor has in the unit type</p>
+            <p>
+                <span class="bold">SQFT</span>: Square foot measurement of the competitor unit type</p>
+            <p class="note">Competitor Name (ID),  mapping of unit types (My Unit Type), Their Unit Type Description, Total Units, and SQFT are entered on the Comp Setup screen.</p>
+            <p>
+                <span class="bold">Base Rent</span>: Rent for the competitor unit type excluding any concessions </p>
+            <p>
+                <span class="bold">Conc</span>: Concessions for the competitor unit type </p>
+            <p>
+                <span class="bold">Eff Rent</span>: Effective rent for the competitor unit type (This will match the base rent if there are no concessions.)</p>
+            <p class="note">Occupancy %, Base Rent, Conc, and Eff Rent are entered on the Comp Rents screen.</p>
+            <p>
+                <span class="bold">Eff Rent/SQFT</span>: Effective rent per square foot for the competitor unit type</p>
+            <p>
+                <span class="bold">Weight</span>: Indicates the relative importance of this competitor and is assigned on the Comp Weights screen (LRO&gt;Competitors&gt;Comp Weights)</p>
+            <p>
+                <span class="bold">Position</span>: Indicates how your unit type compares with this competitor's unit type and is assigned on the Comp Positions screen (LRO&gt;Competitors&gt;Comp Positions)</p>
+        </div>
+        <MadCap:snippetBlock src="../Resources/Snippets/see_report_basics.flsnp" MadCap:conditions="Default.NotTraining" />
+        <MadCap:snippetBlock src="../Resources/Snippets/BI_tips_link.flsnp" />
+        <div class="no_break">
+            <h2>Overview</h2>
+            <p>When you open the Market Summary report, you'll be taken to the Overview. This view allows you to compare communities based on number of units (size of box) and effective rent (color of box). Typically, there will be 5 colors on the Overview. Communities with similar effective rents will be the same color. An attempt is made to group the communities so each color has about the same number of communities. </p>
+            <p>
+                <img src="../Resources/Images/BI/market_survey_snapshot.png" title="Click to view larger">
+                </img>
+            </p>
+        </div>
+        <div class="no_break">
+            <p class="less_space">You can click on a community to drill down to the details for that community. When you drill down, you'll be able to see:</p>
+            <ul>
+                <li>a pie chart with unit count by unit type for the community</li>
+                <li>a bar graph which allows you to compare the community's occupancy with that of its competitors</li>
+                <li>a bar graph which displays the average effective rent/square foot by unit type for the community</li>
+                <li>a bar graph which allows you to compare the community's average effective rent with the average effective rent of its competitors</li>
+            </ul>
+        </div>
+        <p>
+            <img src="../Resources/Images/BI/mkt_sum_community.png" />
+        </p>
+        <p MadCap:conditions="Default.NotPrint">
+            <a href="Filtering_Market_Summary.htm#Filterin">Learn about filtering the Overview</a><![CDATA[        ]]></p>
+        <div class="no_break">
+            <h2>Detail View</h2>
+            <p MadCap:conditions="">The Detail View of the Market Summary report has information about your community's units and the community's competitor's units in a table format. This view allows you to compare your community's unit count and rent information by unit type to your competitors' unit count and rent information by unit type.</p>
+            <p MadCap:conditions="">
+                <img src="../Resources/Images/BI/market_survey_detail.png" title="Click to view larger">
+                </img>
+            </p>
+        </div>
+        <p MadCap:conditions="Default.NotPrint">
+            <a href="Filtering_Market_Summary.htm#Filterin2">Learn about filtering the Detail View</a>
+        </p>
+        <div class="no_break">
+            <h2 MadCap:conditions="">Definitions</h2>
+            <p MadCap:conditions="">The last tab contains Definitions to help you understand the information on the Market Summary Report.</p>
+            <p MadCap:conditions="">
+                <img src="../Resources/Images/BI/mkt_sum_rpt_definitions.png" />
+            </p>
+        </div>
+        <p class="more_space">
+            <MadCap:relatedTopics>
+                <MadCap:relatedTopic src="Filtering_Market_Summary.htm" />
+                <MadCap:relatedTopic src="reporting_tips.htm" />
+                <MadCap:relatedTopic src="Reporting_Basics.htm" />
+                <MadCap:relatedTopic src="../Screens/comp_rents_screen.htm" />
+                <MadCap:relatedTopic src="BI_questions_answered.htm" />
+            </MadCap:relatedTopics>
+        </p>
+    </body>
+</html>

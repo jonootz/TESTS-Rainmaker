@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="2" MadCap:lastHeight="53" MadCap:lastWidth="888">
+    <body>
+        <p>When the report displays, only properties with values assigned to at least one of the attributes in the hierarchy are included. You can filter the report by the attributes in the hierarchy, if you want to. Filtering the report using attributes will be covered later.</p>
+    </body>
+</html>

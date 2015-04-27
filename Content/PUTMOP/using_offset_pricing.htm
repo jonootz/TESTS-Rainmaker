@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="999" MadCap:lastWidth="1211">
+    <head>
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="offset pricing:using" />Using Offset Pricing</h1>
+        <p>You'll typically use offset pricing when you have multiple PMS unit types mapped to a single <MadCap:variable name="Variables.LRO" /> unit type and you want the prices of those units to be different. The <MadCap:variable name="Variables.LRO" /> system will generate the same price for each unit within an <MadCap:variable name="Variables.LRO" /> unit type. You can use offset pricing to have <MadCap:variable name="Variables.LRO" /> adjust the price up or down for a particular PMS unit type.</p>
+        <p>For example, let's say you have separate PMS unit types for a 3 bedroom/2 bathroom garden apartment and a 3 bedroom/2 bathroom townhouse. Both of these PMS unit types are mapped to one <MadCap:variable name="Variables.LRO" /> unit type for 3 bedroom/2 bathroom units. The <MadCap:variable name="Variables.LRO" /> system will generate the same price for both types of units, but you want the townhouse to be $50 more per month than the garden apartment. You can enter a pricing offset to account for this. You can either enter a pricing offset of $-50.00 for the garden apartment or a pricing offset of $50.00 for the townhouse apartment to create a $50 difference in the prices. </p>
+        <h2>Entering Pricing Offsets</h2>
+        <p>Pricing offsets are entered in the <MadCap:variable name="Variables.LRO" /> Web UI under <span class="bold">Configuration</span>&gt;<span class="bold">PMS Unit Types</span>. By default, pricing offsets are set to $0.00.</p>
+        <p>
+            <img src="../Resources/Images/PUTMOP/pricing_offset.png" title="Click to view larger" />
+        </p>
+        <p MadCap:conditions="Default.NotPrint"><a href="../Screens/pms_unit_types_screen.htm">Learn about the PMS&#160;Unit Types screen</a>
+        </p>
+        <h3>
+            <MadCap:keyword term="offset pricing:entering" />To enter pricing offsets:</h3>
+        <ol>
+            <li>
+                <p>Log into the <MadCap:variable name="Variables.LRO" /> Web UI and select the Configuration tab in the top title bar.</p>
+            </li>
+            <li>Select the community.</li>
+            <li>Select the PMS Unit Types screen.</li>
+            <li>
+                <MadCap:snippetBlock src="../Resources/Snippets/click_enable_editing.flsnp" />
+            </li>
+            <li>On the row for the PMS Unit Type that you want to enter a pricing offset for, click the pencil icon <img src="../Resources/Images/PUTMOP/pencil_icon.JPG" class="ButtonImage" />.</li>
+            <li>In the Pricing Offset field, enter the amount of the pricing offset. This can be a positive or negative amount.</li>
+            <li>Click the save icon <img src="../Resources/Images/PUTMOP/save_icon.JPG" class="ButtonImage" />.</li>
+            <li>Repeat steps 5-7 for any additional pricing offsets you want to enter.</li>
+        </ol>
+        <p class="note">If a pricing offset was previously entered as an amenity, you should remove the pricing offset amenity if you enter the pricing offset here, so you don't include it twice. Amenities are set up in the PMS system.</p>
+        <h3>To see the effect of the pricing offsets:</h3>
+        <div class="indent">
+            <p>The re-optimization process must be run before the pricing offsets will be included in the pricing reports and  the pricing XML. This process is typically run overnight, but you can re-optimize from the Reference Rents screen under the LRO tab in the <MadCap:variable name="Variables.LRO" /> Web UI to see the effects sooner.</p>
+        </div>
+        <p>On the <span class="bold">New Pricing</span> report, the pricing offset will be included in the Amen Amt value, the Base Rent, and the Effective Rent. The PMS Unit Type and the Pricing Offset amount will appear in parenthesis in the Amenities column.</p>
+        <p>On the <span class="bold">Renewal Pricing</span> report, the pricing offset will be included in the Amenities amount, the Effective Rent, the Base Rent, and the Move In Rate. The PMS Unit Type and the Pricing Offset amount will appear in parenthesis in the Amenities information for each unit in Detail View and in the Amenities column in Summary View. They will also appear in the Amenities column in the Renewal Management Report which is generated from the Renewal Pricing report.</p>
+        <p class="more_space">&#160;</p>
+    </body>
+</html>

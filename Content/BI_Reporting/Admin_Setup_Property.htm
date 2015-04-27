@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="7" MadCap:lastHeight="1657" MadCap:lastWidth="1110">
+    <head>
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="business intelligence reporting admin:properties;business intelligence reporting setup:properties;reporting admin:properties" />
+            <MadCap:conditionalText MadCap:conditions="Default.NotPrint">Business Intelligence Reporting </MadCap:conditionalText>Admin and Setup: Properties</h1>
+        <p>On the Reporting Admin Properties screen, you can view information about the properties that can be included in the reports. <MadCap:conditionalText MadCap:conditions="Default.ExternalOnly">The </MadCap:conditionalText>property information comes over from the <MadCap:variable name="Variables.LRO" /> database as part of the nightly processes. </p>
+        <MadCap:snippetBlock src="../Resources/Snippets/changes_made_after_daily_load.flsnp" />
+        <p class="note">Properties are assigned to users under the  Admin tab. </p>
+        <div class="no_break">
+            <p>In the <MadCap:variable name="Variables.LRO" /> Web UI, go to <span class="bold">Reporting Admin</span>&gt;<span class="bold">Property</span>.</p>
+            <p>
+                <img src="../Resources/Images/BI/RA_properties.png" title="Click to view larger" />
+            </p>
+        </div>
+        <p>You can click the link in the PMS Property ID field to see the details for a property.</p>
+        <p>
+            <img src="../Resources/Images/BI/RA_property_details.png" title="Click to view larger" />
+        </p>
+        <h2>
+            <a name="AssigningPropertyAttributes">
+            </a>Assigning Property Attributes</h2>
+        <p>You'll need to set up attributes on the Property Attributes screen and then assign them to properties. <MadCap:conditionalText MadCap:conditions="Default.NotPrint"><a href="Admin_Setup_Property_Attributes.htm">Learn about setting up property attributes</a> <![CDATA[ ]]></MadCap:conditionalText></p>
+        <p class="note">Prior to release 14.11, you could set up a reporting hierarchy from the  Admin tab under Communities&gt;Hierarchy and if you had one set up there, the property attributes assigned there would initially be assigned here. </p>
+        <h3>To assign attributes or change the attributes assigned to a property:</h3>
+        <ol>
+            <li>In the <MadCap:variable name="Variables.LRO" /> Web UI, go to <span class="bold">Reporting Admin</span>&gt;<span class="bold">Property</span>.</li>
+            <li>
+                <p>Click the <span class="bold">PMS Property ID</span> link for the property.</p>
+                <p>
+                    <img src="../Resources/Images/BI/RA_property_select_ID.png" title="Click to view larger" />
+                </p>
+            </li>
+            <li>
+                <p>On the Property Details screen, click <span class="bold">Edit</span>.</p>
+                <p>
+                    <img src="../Resources/Images/BI/RA_property_details_edit.png" title="Click to view larger" />
+                </p>
+            </li>
+            <li>
+                <p>On the Edit Property Attribute dialog, select the  value for any attributes that you want to assign to this property.</p>
+                <p>
+                    <img src="../Resources/Images/BI/RA_edit_property_attribute.png" title="Click to view larger" />
+                </p>
+            </li>
+            <li>Click <span class="bold">OK</span>.</li>
+        </ol>
+        <div class="no_break">
+            <MadCap:snippetBlock src="../Resources/Snippets/AssignAttributesTip.flsnp" />
+        </div>
+        <h2>Troubleshooting</h2>
+        <h3>I assigned an attribute value to a property, but  that property is not included when I view my reports.</h3>
+        <p class="less_space">There are a couple of reasons that this could occur:</p>
+        <ul>
+            <li>
+                <MadCap:snippetText src="../Resources/Snippets/nightly_process_reporting_admin.flsnp" />
+            </li>
+            <li>The report may be filtered so that the information is not being included. Be sure that you have selected a reporting group that includes this attribute (if applicable) and that your other filters would not exclude this property.</li>
+        </ul>
+        <p class="more_space">
+            <MadCap:relatedTopics>
+                <MadCap:relatedTopic src="Admin_Setup_Overview.htm" />
+                <MadCap:relatedTopic src="Admin_Setup_Users.htm" />
+                <MadCap:relatedTopic src="Admin_Setup_Property_Attributes.htm" />
+                <MadCap:relatedTopic src="Admin_Setup_Reporting_Group.htm" />
+            </MadCap:relatedTopics>
+        </p>
+    </body>
+</html>

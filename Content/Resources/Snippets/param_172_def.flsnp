@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="2" MadCap:lastHeight="154" MadCap:lastWidth="1280">
+    <body>
+        <p>Flag to turn on Lease Expiration Management (LEM).</p>
+        <p class="note">LEM must be turned on to use the Rent Visualizer which is turned on using <a href="../../Parameters/parameters_list.htm#param313">parameter 313</a>.</p>
+        <p>Values: 0=LEM is disabled, 1=LEM is enabled</p>
+        <p>Default: 1</p>
+    </body>
+</html>

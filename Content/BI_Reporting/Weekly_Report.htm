@@ -1,0 +1,328 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="8" MadCap:lastHeight="5658" MadCap:lastWidth="1131">
+    <head>
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="reports:weekly report;business intelligence reporting:weekly report;Weekly Report" />Weekly Report <MadCap:conditionalText MadCap:conditions="Default.NotPrint">(BI Reporting)</MadCap:conditionalText></h1>
+        <p>The Weekly Report can be accessed from the Reporting tab in the <MadCap:variable name="Variables.LRO" /> Web UI. </p>
+        <p>This report provides a snapshot of where the community stands for the current week in regards to occupancy, exposure, and changes in rents. The Alert input controls allow you to highlight communities that are above or below certain thresholds. This report is useful for a variety of people within your organization, including site teams, regional/corporate operations teams, and pricing analysts.</p>
+        <p><a href="BI_questions_answered.htm#Portfoli">What questions can the Weekly Report answer?</a>
+        </p>
+        <h2>Viewing the Report</h2>
+        <p MadCap:conditions="">When you open the report, you'll be prompted to select a hierarchy. You can select to view the report for a specific community or multiple communities. You can also specify if you want the traffic information on the report to be for the past 7 days, past 14 days, or past 30 days.</p>
+        <MadCap:snippetBlock src="../Resources/Snippets/hierarachy_description.flsnp" />
+        <p class="less_space">To open the report:</p>
+        <ol>
+            <li>
+                <p>Select the Weekly Report on the Reporting tab in the LRO Web UI.</p>
+                <p>The report will open in the Business Objects portal with the Prompts dialog shown.</p>
+            </li>
+            <li>
+                <p>Under Prompts Summary, the Select Hierarchy prompt will be selected.</p>
+                <p class="note">If you don't see any hierarchies in the list, click <span class="bold">Refresh Values</span>.</p>
+                <p>Select the hierarchy you want to use and then click the Add arrow button.</p>
+                <p>
+                    <img src="../Resources/Images/BI/weekly_rpt_hierarchy_prompt_add.png" />
+                </p>
+            </li>
+            <li>
+                <p>If you want to view the report for a specific community or selection of communities, click the Enter Community (ID) prompt.</p>
+                <p class="note">Selecting a community is not required. All communities that are included in the selected hierarchy will be included on the report if you don't select a community here.</p>
+                <p>Click <span class="bold">Refresh Values</span> to see the list of communities.</p>
+                <p>
+                    <img src="../Resources/Images/BI/weekly_rpt_comm_prompt.png" />
+                </p>
+            </li>
+            <li>
+                <p>Select the community or communities that you want to view on the report and then click the Add arrow button.</p>
+                <MadCap:snippetBlock src="../Resources/Snippets/select_multiple_communities.flsnp" />
+                <p>
+                    <img src="../Resources/Images/BI/weekly_rpt_comm_prompt_add.png" />
+                </p>
+            </li>
+            <li>
+                <p>By default, the traffic information (visits and leases) on the report will be shown for the past 7 days. You can select to run the report with the traffic information for the past 14 days or past 30 days instead, if you want to. To do this, select the Show Traffic Within prompt.</p>
+                <p>
+                    <img src="../Resources/Images/BI/weekly_rpt_traffic_prompt_select.png" />
+                </p>
+            </li>
+            <li>
+                <p>Select the option for the number of days of traffic you want displayed on the report and then click the Add arrow button.</p>
+                <p>
+                    <img src="../Resources/Images/BI/weekly_rpt_traffic_prompt_add.png" />
+                </p>
+            </li>
+            <li>Click <span class="bold">OK</span> to view the report.</li>
+        </ol>
+        <p>There is an Overview page and four Detail pages for the Weekly Report plus a definitions page. You can switch between them using the tabs at the bottom of the screen.</p>
+        <p>
+            <img src="../Resources/Images/BI/weekly_report.png" />
+        </p>
+        <p class="note" MadCap:conditions="">Each view of the report has its own filters. For example, if you select to view the KPI Focus Page for a particular community and then switch to the Occupancy &amp; Exposure  view, you will have to select that particular community again for the Occupancy &amp; Exposure view, if that is the only community you want to see. However, alert settings will persist across views. For example, if you set the Exposure Alert to 30 on the KPI Focus Page view, it will be set to 30 on the Occupancy &amp; Exposure view also. The Show Traffic Within filter will also persist across views.</p>
+        <p MadCap:conditions="Default.NotTraining,Default.NotPrint"><a href="Filtering_Weekly_Report.htm">Learn about filtering the Weekly Report</a><![CDATA[   ]]></p>
+        <MadCap:snippetBlock src="../Resources/Snippets/see_report_basics.flsnp" MadCap:conditions="Default.NotTraining">
+        </MadCap:snippetBlock>
+        <div class="no_break">
+            <h2 MadCap:conditions="">Overview</h2>
+        </div>
+        <p>After you select your hierarchy on the prompts screen and click OK, the report will open in the Overview. The Overview contains four "drillable" graphs that help you explore some key metrics at different levels of the hierarchy you selected when you opened the report.</p>
+        <p>
+            <img src="../Resources/Images/BI/weekly_rpt_overview.png" />
+        </p>
+        <div class="no_break">
+            <p class="less_space">The Overview shows you graphs of:</p>
+            <ul>
+                <li>your current occupancy and 60 day exposure</li>
+                <li>move ins higher than expiring, renewals higher than expiring, and asking rent</li>
+                <li>average vacant days and your renewal % over the past 12 months</li>
+                <li>visits and leases over the past specified number of days (7 by default)</li>
+            </ul>
+        </div>
+        <p>You can use the Input Controls to view the Visits and Leases for the past 7, 14, or 30 days. You can also drill down to view the information at the different levels of the selected hierarchy. Drilling down allows you to focus in on a subset of properties that use the attribute (level) that you select. </p>
+        <MadCap:snippetBlock src="../Resources/Snippets/Overview_snapshots_note.flsnp" />
+        <div class="no_break">
+            <h3>Current Occupancy &amp; 60 Day Exposure</h3>
+            <p>This shows you the current occupancy percentage and the percentage of units that will be available within the next 60 days.</p>
+            <p class="note">
+                <MadCap:snippetText src="../Resources/Snippets/horizontal_axis_drill_down.flsnp" /> You can click on the Level to drill up to the previous level in the hierarchy.</p>
+        </div>
+        <div class="no_break">
+            <h3>Move Ins &amp; Renewals Over Expiring and Current Asking Rent</h3>
+            <p>This allows you to see how much higher priced your new leases and renewals are than the expiring leases. You can also see what your current asking rent looks like.</p>
+            <p class="note">
+                <MadCap:snippetText src="../Resources/Snippets/horizontal_axis_drill_down.flsnp" />
+            </p>
+        </div>
+        <div class="no_break">
+            <h3>Avg Vacant Days &amp; Renewal % Over Past 12 Months</h3>
+            <p>This allows you to see the average number of days units were vacant between tenants and what percentage of leases were renewed over the past 12 months.</p>
+            <p class="note">
+                <MadCap:snippetText src="../Resources/Snippets/horizontal_axis_drill_down.flsnp" />
+            </p>
+        </div>
+        <div class="no_break">
+            <h3>Visits &amp; Leases </h3>
+            <p>This  allows you to compare the number of leases that were signed with the number of visits over the past 7, 14, or 30 days based on your selection when you opened the report. You can use the Show Traffic Within input control to change the number of days when you are viewing the report.</p>
+            <p class="note">You can click on the label on the vertical axis to drill down to the next level in the hierarchy.</p>
+        </div>
+        <div class="no_break">
+            <h3>Tip</h3>
+            <p>You can drill down on the charts by clicking on the hierarchy level on any of the graphs. This will adjust all of the graphs to drill down to the next level in the hierarchy. To drill back up, you can click the Level on the Current Occupancy &amp; 60 Day Exposure graph. </p>
+            <p>
+                <img src="../Resources/Images/BI/weekly_rpt_overview_drill_1.png" />
+            </p>
+            <p MadCap:conditions="Default.NotPrint"><a href="Filtering_Weekly_Report.htm#Filterin">Learn about filtering the Overview</a>
+            </p>
+            <MadCap:snippetBlock src="../Resources/Snippets/BI_tips_link.flsnp" />
+        </div>
+        <h2>Detail Views</h2>
+        <h2>KPI Focus Page</h2>
+        <div class="no_break">
+            <p>The KPI Focus Page gives you some key metrics from the Weekly Report on one tab.</p>
+            <p>
+                <img src="../Resources/Images/BI/weekly_report_focus.png" />
+            </p>
+        </div>
+        <p>In the Input Controls for the KPI&#160;Focus Page, you can set Alerts for Occupancy, Exposure, Vacant Days, and Renewals. If the particular information falls below or above the specified alert value (depending on the type of alert), it will be highlighted in yellow on the report.</p>
+        <p MadCap:conditions="Default.NotPrint"><a href="Filtering_Weekly_Report.htm#Filterin2">Learn about the Input Controls for the Detail Pages including alerts</a>
+        </p>
+        <div class="no_break">
+            <p>By default, the information is displayed rolled up by Community. You can expand the Community information to see the details for the community.</p>
+            <p>To do this:</p>
+            <ol>
+                <li>
+                    <p>Select <span class="bold">Outline</span> in the toolbar if it is not already selected.</p>
+                    <p>
+                        <img src="../Resources/Images/BI/outline_button_weekly_rpt.png" />
+                    </p>
+                </li>
+                <li>
+                    <p>Click on the Community Name of the community you want to expand or hide.</p>
+                    <p>
+                        <img src="../Resources/Images/BI/expand_community_select_weekly_rpt.png" />
+                    </p>
+                </li>
+                <li>
+                    <p>Click the arrow next to the community name to show or hide the details for that community.</p>
+                    <p>
+                        <img src="../Resources/Images/BI/expand_community_arrow_weekly_rpt.png" />
+                    </p>
+                </li>
+            </ol>
+        </div>
+        <p>&#160;</p>
+        <h2>Occupancy &amp; Exposure, Asking &amp; Effective Rents, and Vacants, Notices &amp; Traffic</h2>
+        <p>These tabs contain detailed information about important metrics about your communities. The information is broken into three tabs and is formatted for printing. </p>
+        <div class="no_break">
+            <p class="bold">Occupancy &amp; Exposure</p>
+            <p>
+                <img src="../Resources/Images/BI/weekly_rpt_occ_and_exp.png" />
+            </p>
+            <p>This tab gives you information about your inventory, occupancy trends, and exposure %.</p>
+        </div>
+        <div class="no_break">
+            <p class="bold">Asking &amp; Effective Rents</p>
+            <p>
+                <img src="../Resources/Images/BI/weekly_rpt_ask_and_eff_rents.png" />
+            </p>
+            <p>This tab shows you information about your asking rent and how it has changed over time. You can also compare the average effective rent for all leases, expiring leases, renewing leases, and new move ins. </p>
+        </div>
+        <div class="no_break">
+            <p class="bold">Vacants, Notices &amp; Traffic</p>
+            <p>
+                <img src="../Resources/Images/BI/weekly_rpt_vac_notice_traffic.png" />
+            </p>
+            <p>This tab helps you understand what is going on with your inventory. You can see how many units are vacant and on notice. You can compare how many visits you've had with how many leases were signed over the past 7, 14, or 30 days. You can see how your renewals have been trending over the past 12 months and even set up an alert to draw attention to communities and units with a renewal percentage lower than a certain amount.</p>
+            <p>On the Vacants, Notices &amp; Traffic tab, the Renewal (Past 12 Months) % is shown as a number and as a bar. The color of the bar is based on the Renewal alert. <a href="Filtering_Weekly_Report.htm#Renewal" MadCap:conditions="Default.NotPrint">Learn about the Renewal alert</a></p>
+        </div>
+        <div class="no_break">
+            <h3>Tips</h3>
+            <p>If you want to see the entire report on one tab, click the "Click Here for 'All in One Tab Version'" link on the Occupancy &amp; Exposure, Asking &amp; Effective Rents, or Vacants, Notices &amp; Traffic tab.</p>
+            <p>
+                <img src="../Resources/Images/BI/weekly_report2.png" />
+            </p>
+        </div>
+        <MadCap:snippetBlock src="../Resources/Snippets/BI_tips_link.flsnp" />
+        <h2>Definitions</h2>
+        <div class="no_break">
+            <p>The last tab contains Definitions to help you understand the information on the Weekly Report.</p>
+            <MadCap:snippetBlock src="../Resources/Snippets/alert_in_defintions.flsnp" />
+            <p>
+                <img src="../Resources/Images/BI/weekly_report_definitions.png" />
+            </p>
+        </div>
+        <h2>Differences Between this Business Intelligence Weekly Report and the <MadCap:variable name="Variables.LRO" /> Analysis Tool Weekly Report</h2>
+        <p>There are some differences in the calculations and information that are displayed on this  Business Intelligence Weekly Report as opposed to the <MadCap:variable name="Variables.LRO" /> Analysis Tool Weekly Report.</p>
+        <table style="width: 100%; border-collapse: collapse;">
+            <col style="width: 115px;" />
+            <col />
+            <col />
+            <thead>
+                <tr class="light_grey">
+                    <th class="borders">&#160;</th>
+                    <th class="borders">Business Intelligence Weekly Report</th>
+                    <th class="borders"><MadCap:variable name="Variables.LRO" /> Analysis Tool Weekly Report</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="borders">
+                        <p class="TableCellBold">Timing</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">Pulls data from a reporting database that is updated once a day</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">Runs directly against the LRO database which is updated throughout the day</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="borders">
+                        <p class="TableCellBold">Calculated Average</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">Calculates averages at the community level</p>
+                        <p class="note">This affects all % calculations on the report.</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">Calculates averages of averages at the unit type level then rolls this up to the community level</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="borders">
+                        <p class="TableCellBold">Exposure</p>
+                    </td>
+                    <td class="borders">
+                        <p>Displays a running total of exposure so 30 day is 0 to 30 days and 60 day is 0 to 60 days</p>
+                        <p class="note">This is consistent with how Exposure is displayed on other reports.</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">Displays 30 day exposure as 0 to 30 days and 60 day exposure as 31 to 60 days</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="borders">
+                        <p class="TableCellBold">Asking Rent</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">Based on the asking rent of the prior day</p>
+                        <p class="note">This is due to the timing differences mentioned previously.</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">Based on the current asking rent</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="borders">
+                        <p class="TableCellBold">All Leases and Expiring</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">Uses the Move-out date and excludes Month to Month leases</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">Uses the Lease End date and includes Month to Month leases</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="borders">
+                        <p class="TableCellBold">Renewals and Move Ins</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">Excludes Month to Month leases</p>
+                        <p class="TableCell">If there are no renewals or move-ins, $0 appears in the Renewing or Move Ins column. In this case, Renewals higher than Expiring or Move Ins higher than Expiring will also show $0.</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">Includes Month to Month leases</p>
+                        <p class="TableCell">If there are no renewals or move-ins, "none" appears in the Renewing or Move Ins column. In this case, Renewals higher than Expiring or Move-ins higher than Expiring will also show "none".</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="borders">
+                        <p class="TableCellBold">Move-In Calculation</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">Uses the Contract Date</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">Uses the Lease Start Date</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="borders">
+                        <p class="TableCellBold">Month to Month Leases</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">Bases the Month to Month lease count on leases that are set up with a 1 month lease term and does not include leases that LRO has assumed are Month to Month leases</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">Includes both in the Month to Month lease count</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="borders">
+                        <p class="TableCellBold">Renewal % Calculation</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">Expired Leases That Have Been Renewed/Expired Count</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">Renewal Count/Expired Count</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="borders">
+                        <p class="TableCellBold">Average Vacant Days</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">Based on the number of days units are vacant after changing the status from Occupied to Vacant</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">Based on Report Date and Lease End Dates</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="more_space">&#160;</p>
+    </body>
+</html>

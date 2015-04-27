@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="2" MadCap:lastHeight="175" MadCap:lastWidth="1280">
+    <body>
+        <p>Entered as an integer, not a fraction. 5=5%.   This is the largest drop below the reference rent that LRO is allowed to price.  This impacts how much additional demand the model feels it can generate. </p>
+        <p class="note">
+            <a href="../../Parameters/parameters_list.htm#param243">Parameter 243</a> determines how  parameter 41, when defined at the unit type level, will be propagated to the unit category level for optimization.</p>
+        <p>Values: 0-100 %</p>
+        <p>Default: 5</p>
+    </body>
+</html>

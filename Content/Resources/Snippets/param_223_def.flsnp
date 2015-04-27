@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="2" MadCap:lastHeight="104" MadCap:lastWidth="1280">
+    <body>
+        <p>The day/early morning the UpStat job runs for the community.</p>
+        <p>Values: 0-6 (0=Sun)</p>
+        <p>Default: 4</p>
+    </body>
+</html>

@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <p>Lease Expiration Management (LEM) allows you to manage the lease expirations for each unit category at the property. When using LEM, the <MadCap:variable name="Variables.LRO" /> system recommends the desired expirations for each calendar month and then these expiration numbers get factored into the price optimization process. </p>
+    </body>
+</html>

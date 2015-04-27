@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <p>The LEM model penalizes demand for lease term categories which end in months where the recommended expirations are lower. It encourages demand for lease term categories that end in months where the recommended expirations are higher. A relative comparison is made between the difference in the recommended expirations and the total forecasted expirations across the different calendar months in order to penalize or encourage  lease terms ending in those months.</p>
+    </body>
+</html>

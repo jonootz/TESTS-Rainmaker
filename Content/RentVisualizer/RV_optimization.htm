@@ -1,0 +1,292 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="8" MadCap:lastHeight="3165" MadCap:lastWidth="1202">
+    <head>
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="rent visualizer:Optimization;Optimization Stage (rent visualizer)" />Rent Visualizer: Optimization Stage</h1>
+        <p MadCap:conditions="">The Optimization stage <span class="bold">generates an optimal rent amount at the unit category, lease term category level</span> that is based on the Reference Rent from the previous stage, Supply and Demand Forecasts, and Business Statistics. The values in these forecasts update nightly and this can lead to pricing changes from one day to the next even if the Reference Rent has not changed. The Supply and Demand Forecasts and Business Statistics used as inputs to Optimization are driven by the move-in, renewal, and guest traffic data collected from the community.</p>
+        <p MadCap:conditions="">
+            <img src="../Resources/Images/WebUI/rent_visualizer_opt.png" />
+        </p>
+        <MadCap:snippetBlock src="../Resources/Snippets/inputs_and_parameters_below.flsnp" />
+        <h3 MadCap:conditions="">Inputs</h3>
+        <table style="width: 100%; border-collapse: collapse;">
+            <col style="width: 186px;" />
+            <col />
+            <thead>
+                <tr class="light_grey">
+                    <th class="borders">
+                        <p>Input</p>
+                    </th>
+                    <th class="borders">
+                        <p>Definition</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr MadCap:conditions="">
+                    <td class="borders">
+                        <p class="less_space">Remaining Unconstrained Arr Demand</p>
+                    </td>
+                    <td class="borders">
+                        <p>Unconstrained demand represents all demand that would lease a property at the Reference Rent with no supply limitations. Lead times, lease terms, seasonality, and unconstrained de-seasonalized demand levels from the historical observations are considered to forecast demand for Lease Type N. However, forecast of expiring leases, renewal fractions, Renewal Fraction Seasonality, and lease term fractions are used to forecast demand for Lease Type R.</p>
+                    </td>
+                </tr>
+                <tr MadCap:conditions="">
+                    <td class="borders">
+                        <p class="less_space">Remaining Constrained Arr Demand</p>
+                    </td>
+                    <td class="borders">
+                        <p>Constrained demand is the demand that will be accepted subject to supply limitations.</p>
+                    </td>
+                </tr>
+                <tr MadCap:conditions="">
+                    <td class="borders">
+                        <p class="less_space">Forecasted Available</p>
+                    </td>
+                    <td class="borders">
+                        <p>Refers to the projected supply (units) for the given week.</p>
+                    </td>
+                </tr>
+                <tr MadCap:conditions="">
+                    <td class="borders">
+                        <p class="less_space">Early Termination Adjustment</p>
+                    </td>
+                    <td class="borders">
+                        <p>A forecasted value representing the number of early terminations that will have an effect on the projected supply.</p>
+                    </td>
+                </tr>
+                <tr MadCap:conditions="">
+                    <td class="borders">
+                        <p class="less_space">Average Early Termination </p>
+                    </td>
+                    <td class="borders">
+                        <p>A business statistic tracking the number of units that are expected to affect a future pricing week’s supply due to early terminations. An early termination is distinguished from a cancellation or regular move out based on settings of community parameters 113 (EN Grace Days) and 114 (Lease Cancel Days).</p>
+                    </td>
+                </tr>
+                <tr MadCap:conditions="">
+                    <td class="borders">
+                        <p class="less_space">Lease Term Fraction</p>
+                    </td>
+                    <td class="borders">
+                        <p>A business statistic that, for new leases, identifies the percentage of total demand that falls into each of the four LTCs and for renewal leases, identifies the percentage of demand expected to renew into a given LTC, given the LTC of the existing expiring lease.</p>
+                    </td>
+                </tr>
+                <tr MadCap:conditions="">
+                    <td class="borders">
+                        <p class="less_space">Average Lease Term</p>
+                    </td>
+                    <td class="borders">
+                        <p>A business statistic representing the average lease term observed for all leases falling within a LTC. It is used as the representative lease term for the LTC in optimization and post-optimization.</p>
+                    </td>
+                </tr>
+                <tr MadCap:conditions="">
+                    <td class="borders">
+                        <p class="less_space">Average Demand</p>
+                    </td>
+                    <td class="borders">
+                        <p>A business statistic referring to the average unconstrained demand expected to materialize in a week after taking out the effects of seasonality.</p>
+                    </td>
+                </tr>
+                <tr MadCap:conditions="">
+                    <td class="borders">
+                        <p class="less_space">Renewal Fraction</p>
+                    </td>
+                    <td class="borders">
+                        <p>A business statistic identifying the fraction of expiring leases which are expected to renew. It is used in forecasting renewals from current and future expiring leases.</p>
+                    </td>
+                </tr>
+                <tr MadCap:conditions="">
+                    <td class="borders">
+                        <p class="less_space">Average Vacant Days</p>
+                    </td>
+                    <td class="borders">
+                        <p>A business statistic tracking the average number of days a unit stays empty once it becomes vacant. It is used to compute the Vacant Day Cost for optimization.</p>
+                    </td>
+                </tr>
+                <tr MadCap:conditions="">
+                    <td class="borders">
+                        <p class="less_space">Total Cost</p>
+                    </td>
+                    <td class="borders">
+                        <p>Total Cost is the sum of Make Ready Cost, Vacant Day Cost and Vacancy Cost.</p>
+                    </td>
+                </tr>
+                <tr MadCap:conditions="">
+                    <td class="borders">
+                        <p class="less_space">Optimizable Capacity</p>
+                    </td>
+                    <td class="borders">
+                        <p>The physical capacity of the property with on rents (occupied units), non-revenue units, and vacant on rents (units that are vacant but not available) removed, adjusted for early terminations.</p>
+                    </td>
+                </tr>
+                <tr MadCap:conditions="">
+                    <td class="borders">
+                        <p class="less_space">Optimizable Rent</p>
+                    </td>
+                    <td class="borders">
+                        <p>Reference Rent at the unit category multiplied by the Average Lease Term.</p>
+                    </td>
+                </tr>
+                <tr MadCap:conditions="">
+                    <td class="borders">
+                        <p class="less_space">Vacancy Cost</p>
+                    </td>
+                    <td class="borders">
+                        <p>Part of Total Cost based on the community's lease expiration profile, in particular recommended lease expirations. It is lower for LTCs containing LTs ending in months with higher recommended expirations (in order to increase demand) and vice versa.</p>
+                        <p>Seasonality refers to identical or almost identical patterns that demand appears to follow during corresponding weeks of successive years. Each month is represented by a seasonality factor indicating how the demand for that month compares with the average demand of the year.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h3 MadCap:conditions="">Parameters</h3>
+        <table style="width: 100%; border-collapse: collapse;">
+            <col style="width: 111px;" />
+            <col style="width: 188px;" />
+            <col MadCap:conditions="" />
+            <thead>
+                <tr class="light_grey">
+                    <th class="borders">Parameter ID</th>
+                    <th class="borders">Parameter Description</th>
+                    <th class="borders">
+                        <p>Definition</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr MadCap:conditions="">
+                    <td class="borders" style="text-align: center;">
+                        <p class="TableCell">1</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">Opt_Horizon</p>
+                    </td>
+                    <td class="borders">
+                        <MadCap:snippetBlock src="../Resources/Snippets/param_1_def.flsnp" />
+                    </td>
+                </tr>
+                <tr MadCap:conditions="">
+                    <td class="borders" style="text-align: center;">
+                        <p class="TableCell">9</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">Guest Card Factor</p>
+                    </td>
+                    <td class="borders">
+                        <MadCap:snippetBlock src="../Resources/Snippets/param_9_def.flsnp" />
+                    </td>
+                </tr>
+                <tr MadCap:conditions="">
+                    <td class="borders" style="text-align: center;">
+                        <p class="TableCell">44</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">Forecast Horizon Weeks</p>
+                    </td>
+                    <td class="borders">
+                        <MadCap:snippetBlock src="../Resources/Snippets/param_44_def.flsnp" />
+                    </td>
+                </tr>
+                <tr MadCap:conditions="">
+                    <td class="borders" style="text-align: center;">
+                        <p class="TableCell">53</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">PreleasePeriod (weeks)</p>
+                    </td>
+                    <td class="borders">
+                        <MadCap:snippetBlock src="../Resources/Snippets/param_53_def.flsnp" />
+                    </td>
+                </tr>
+                <tr MadCap:conditions="">
+                    <td class="borders" style="text-align: center;">
+                        <p class="TableCell">54</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">Historical Data Limit (months)</p>
+                    </td>
+                    <td class="borders">
+                        <MadCap:snippetBlock src="../Resources/Snippets/param_54_def.flsnp" />
+                    </td>
+                </tr>
+                <tr MadCap:conditions="">
+                    <td class="borders" style="text-align: center;">
+                        <p class="TableCell">156</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">Upper bound for vacant days stats</p>
+                    </td>
+                    <td class="borders">
+                        <MadCap:snippetBlock src="../Resources/Snippets/param_156_def.flsnp" />
+                    </td>
+                </tr>
+                <tr MadCap:conditions="">
+                    <td class="borders" style="text-align: center;">
+                        <p class="TableCell">172</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">FO Use LEM Statistics</p>
+                    </td>
+                    <td class="borders">
+                        <MadCap:snippetBlock src="../Resources/Snippets/param_172_def.flsnp" />
+                    </td>
+                </tr>
+                <tr MadCap:conditions="">
+                    <td class="borders" style="text-align: center;">
+                        <p class="TableCell">173</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">LEM Minimum number of units in UC</p>
+                    </td>
+                    <td class="borders">
+                        <MadCap:snippetBlock src="../Resources/Snippets/param_173_def.flsnp" />
+                    </td>
+                </tr>
+                <tr MadCap:conditions="">
+                    <td class="borders" style="text-align: center;">
+                        <p class="TableCell">181</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">Use Remaining Expirations (LEM)</p>
+                    </td>
+                    <td class="borders">
+                        <MadCap:snippetBlock src="../Resources/Snippets/param_181_def.flsnp" />
+                    </td>
+                </tr>
+                <tr MadCap:conditions="">
+                    <td class="borders" style="text-align: center;">
+                        <p class="TableCell">182</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">New Demand</p>
+                    </td>
+                    <td class="borders">
+                        <MadCap:snippetBlock src="../Resources/Snippets/param_182_def.flsnp" />
+                    </td>
+                </tr>
+                <tr MadCap:conditions="">
+                    <td class="borders" style="text-align: center;">
+                        <p class="TableCell">223</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">Upstat DOW Run Date (0=Sun)</p>
+                    </td>
+                    <td class="borders">
+                        <MadCap:snippetBlock src="../Resources/Snippets/param_223_def.flsnp" />
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p MadCap:conditions="">
+            <MadCap:relatedTopics>
+                <MadCap:relatedTopic src="RV_overview.htm" />
+                <MadCap:relatedTopic src="RV_basics.htm" />
+                <MadCap:relatedTopic src="RV_ref_rent.htm" />
+                <MadCap:relatedTopic src="RV_ltc_to_lt.htm" />
+                <MadCap:relatedTopic src="RV_uc_to_ut.htm" />
+                <MadCap:relatedTopic src="RV_post_processing.htm" />
+            </MadCap:relatedTopics>
+        </p>
+    </body>
+</html>

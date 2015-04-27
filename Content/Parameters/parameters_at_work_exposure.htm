@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="3" MadCap:lastHeight="585" MadCap:lastWidth="1165">
+    <head>
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="parameters example: exposure;exposure:parameters at work" />Parameters at Work: Exposure</h1>
+        <h3>Exposure Parameters</h3>
+        <div class="indent">
+            <p>Low Exposure (#71)</p>
+            <p>High Exposure (#72)</p>
+        </div>
+        <p>These parameters are set as percentages.</p>
+        <h3>Purpose</h3>
+        <p>These values will appear on the Exposure graph on the Pricing Trend Report. The low exposure value is noted by a long dashed line and the high exposure value is noted by a short dashed line. The exposure settings create three zones for exposure - low, medium, and high.</p>
+        <p>
+            <img src="../Resources/Images/WebUI/pricing_trend_exposure.png" title="Click to view larger" />
+        </p>
+        <p>If exposure is low, then pricing is likely to increase. If exposure is high, pricing is likely to decrease.</p>
+        <h3>Example</h3>
+        <p>Let's say you have parameter #71 Low Exposure set to 6%. This indicates a trend toward 94% occupancy. Note that this is a trend and not a target. If the overall trend is better than 94% occupancy or 6% exposure, then the <MadCap:variable name="Variables.LRO" /> system will continue to increase pricing. If exposure increases above 6%, the <MadCap:variable name="Variables.LRO" /> system will stop increasing pricing. It will either hold the pricing steady or decrease pricing depending if the exposure is medium or high and whether or not there is leasing activity. </p>
+        <p class="more_space">
+            <MadCap:relatedTopics>
+                <MadCap:relatedTopic src="new_pricing_param_overview.htm" />
+                <MadCap:relatedTopic src="../Basics/exposure.htm" />
+                <MadCap:relatedTopic src="../Screens/pricing_trend_screen.htm" />
+                <MadCap:relatedTopic src="parameters_recipe_card.htm" />
+            </MadCap:relatedTopics>
+        </p>
+    </body>
+</html>

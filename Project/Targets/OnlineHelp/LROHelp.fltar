@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultTarget
+  Version="2"
+  Comment="New Target"
+  Type="WebHelp2"
+  Destinations=""
+  ConditionTagExpression="exclude[&quot;Default.Don't Include&quot; or Default.InternalOnly or Default.PrintOnly] "
+  Skin="/Project/Skins/LRO_HTML5_help.flskn"
+  MasterToc="/Project/TOCs/OnlineHelp/LRO_Help.fltoc"
+  MasterStylesheet="/Content/Resources/Stylesheets/rmlrobasic.css"
+  Medium="non-print"
+  PreCompileScaledImages="true"
+  InsertMOTW="true"
+  OutputFile="LROHelp.htm"
+  ReplaceSpacesWithUnderscores="true"
+  MakeFileLowerCase="true"
+  ExcludeUnreferencedContent="true"
+  UseLocalBuildSettings="false"
+  GlossaryTermConversion="first">
+  <PrintedOutput
+    CollapseMargins="true" />
+  <Destinations>
+    <Destination
+      Link="/Project/Destinations/LROFiles.fldes" />
+  </Destinations>
+  <RelationshipTables>
+    <RelationshipTable
+      Link="/Project/Advanced/Relationship Tables/RelationshipTable.flrtb" />
+  </RelationshipTables>
+  <Glossaries>
+    <Glossary
+      Link="/Project/Glossaries/Glossary.flglo" />
+  </Glossaries>
+  <MetaTags
+    Enabled="true" />
+</CatapultTarget>

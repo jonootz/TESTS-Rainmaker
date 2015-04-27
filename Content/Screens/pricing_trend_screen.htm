@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="3" MadCap:lastHeight="1882" MadCap:lastWidth="1271">
+    <head>
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="pricing trend screen;Pricing Trend Report" />Pricing Trend Report</h1>
+        <p>The Pricing Trend Report gives you a snapshot of supply, demand, and pricing at the unit type level.</p>
+        <h2>Using the Pricing Trend Report</h2>
+        <p>This report is reviewed during pricing calls since it is a key report for visibility into the pricing decisions.</p>
+        <p class="less_space">The Pricing Trend report allows you to quickly see:</p>
+        <div class="indent">
+            <p class="less_space">What does the availability looks like?</p>
+            <p class="less_space">How has the availability been trending?</p>
+            <p class="less_space">Is your community getting traffic?</p>
+            <p class="less_space">Is the traffic converting to leases?</p>
+            <p class="less_space">Are your community's rents trending up, down, or holding flat?</p>
+            <p class="less_space">How are the competitor rents trending?</p>
+        </div>
+        <h2>Viewing the Pricing Trend Report</h2>
+        <p>You'll find the Pricing Trend report under <span class="bold">LRO</span>&gt;<span class="bold">Pricing Trend</span>.</p>
+        <p>The information on this report is shown for the selected unit type over the past quarter by default. You can select to show the information over the past two quarters or the past year, if you want to. You can also select a different unit type.</p>
+        <h3>Exposure</h3>
+        <p>The Exposure graph shows you the vacant and on-notice apartments that are available to rent. The colors stacked together illustrate the total exposure for the unit type on a particular day.</p>
+        <p>The dashed lines are Exposure Thresholds which provide a point of reference for high and low exposure. These thresholds are determined by the community's management company and taken into account by the <MadCap:variable name="Variables.LRO" /> system when pricing recommendations are made. Parameter 71 Low Exposure and parameter 72 High Exposure are used to set the exposure thresholds. </p>
+        <p>When exposure is above the high threshold, recommended rents are lowered in an effort to stimulate demand. The <MadCap:variable name="Variables.LRO" /> system will take a more conservative approach to pricing when exposure is in the medium zone between the high and low thresholds. When exposure is below the low threshold, this presents a position of pricing power and recommended rents are typically increased.</p>
+        <h3 MadCap:conditions="">Rent Comparison</h3>
+        <p>The Rent Comparison graph allows you to compare your community's rent trend (reference rent) to the competitor rent trend (market composite). You can also see how your reference rent changes in relation to changes in exposure by looking at the Exposure and Rent Comparison graphs together.</p>
+        <p>The Market Composite is shown with a green line and is a position-adjusted weighted average of what the competition is charging for a particular unit type. This information comes from the Comp Position and Comp Rents screens.</p>
+        <p>The Reference Rent is shown with a blue line and is the starting point of pricing calculation. This is a measure of the "equilibrium rent" at which higher prices reduce demand and lower prices increase demand. </p>
+        <p>A yellow circle indicates an override which is a manual adjustment to the <MadCap:variable name="Variables.LRO" /> reference rent. Overrides are made on the LRO&gt;Reference Rent screen. In general, you shouldn't have to override the reference rent. However, there may be times when you need to account for circumstances that the <MadCap:variable name="Variables.LRO" /> system is not aware of. For example, the reference rent may be pushed up based on competitor rents, but you may not be prepared to make that increase. You may need to make an override due to marketing strategy. For example, the reference rent may be $1005, but for marketing purposes, you want to set the rent at $995 instead.</p>
+        <p MadCap:conditions="">You can use the Options to show additional information on the Rent Comparison graph. You can include:</p>
+        <div class="indent">
+            <p MadCap:conditions="">Max Price Reduction: This is set with Parameter 41. It specifies how much leeway the&#160;<MadCap:variable name="Variables.LRO" /> system has to set the price below the reference rent. If parameter 41 is set to 0, then the reference rent is the floor. If it is set to something other than 0, that is the amount that the price is allowed to go below the reference rent.</p>
+            <p MadCap:conditions="">Week 1 Optimized Rents: De-amenitized rents for a 12-month lease for vacant apartments (Exposed Now)</p>
+            <p MadCap:conditions="">Week 4 Optimized Rents: De-amenitized rents for a 12-month lease for apartments available in 30 days (Exposed in 30)</p>
+            <p MadCap:conditions="">Week 8 Optimized Rents: De-amenitized rents for a 12-month lease for apartments available in 60 days (Exposed in 60)</p>
+            <p MadCap:conditions="">Week 12 Optimized Rents: De-amenitized rents for a 12-month lease for apartments available in more than 60 days (Exposed in 60+)</p>
+            <p MadCap:conditions="">The Week Optimized Rents are shown with colored lines that correspond to the availability in the Exposure graph. You can see where the rent is falling above or below the reference rent in reaction to supply and demand.</p>
+        </div>
+        <p class="note">The Options button is located underneath the Switch Community button near the top right side of the screen.</p>
+        <h3>Traffic &amp; Leases</h3>
+        <p>This grey bars on this graph represent the traffic or number of customers visiting the community. The green and yellow bars represent the leases that were signed. The yellow bars represent leases that were signed at a rate other than the <MadCap:variable name="Variables.LRO" /> recommended rate. </p>
+        <p>Traffic and leases are an indicator of customer response to pricing. You can look at the graph along with the Rent Comparison and Exposure graphs to identify trends in customer behavior related to supply, demand, and pricing.</p>
+        <h3 MadCap:conditions="">Renewal Percent</h3>
+        <p>This graph helps you evaluate the success of your renewal strategy. You can see trends in the percentage of residents renewing for terms greater than month-to-month.</p>
+        <p>Parameters are set in the <MadCap:variable name="Variables.LRO" /> system to compliment the renewal strategy for the community. This strategy can be conservative, moderate, or aggressive depending on factors such as seasonality and availability.</p>
+        <p>You can use this graph in conjunction with the Exposure and Rent Comparison graphs to look for correlations between exposure, reference rents, and renewal retention. Renewal trends will often reflect the overall performance at a community.</p>
+        <p class="more_space">
+            <MadCap:relatedTopics>
+                <MadCap:relatedTopic src="../Basics/exposure.htm" />
+                <MadCap:relatedTopic src="../Basics/reference_rent.htm" />
+                <MadCap:relatedTopic src="../Basics/market_composite.htm" />
+                <MadCap:relatedTopic src="../Basics/renewal_strategies.htm" />
+            </MadCap:relatedTopics>
+        </p>
+    </body>
+</html>

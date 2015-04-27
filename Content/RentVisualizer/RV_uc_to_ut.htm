@@ -1,0 +1,271 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="8" MadCap:lastHeight="2679" MadCap:lastWidth="1202">
+    <head>
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="rent visualizer:UC to UT;UC to UT Stage (rent visualizer)" />Rent Visualizer: UC to UT Stage</h1>
+        <p MadCap:conditions=""> The second part of propagation <span class="bold">breaks pricing down further to the unit type, individual lease term level</span>. The primary driver here is an adjustment to the resulting rent from the previous stage that is based on the relative weight of the Reference Rents for the UTs in the UC compared to the combined Reference Rent at the UC level. In the Rent Visualizer screen, this is where the effect of pricing smoothing over weeks is shown (if enabled) and where the effect of the max price reduction parameter setting is shown. (However, technically, the price smoothing and the max price reduction parameter functionality actually occur in the Further Post-Processing Stage.)</p>
+        <p MadCap:conditions="">
+            <img src="../Resources/Images/WebUI/rent_visualizer_uc.png" />
+        </p>
+        <MadCap:snippetBlock src="../Resources/Snippets/inputs_and_parameters_below.flsnp" />
+        <h3 MadCap:conditions="">Inputs</h3>
+        <table style="width: 100%; border-collapse: collapse;">
+            <col style="width: 186px;" />
+            <col />
+            <thead>
+                <tr class="light_grey">
+                    <th class="borders">
+                        <p>Input</p>
+                    </th>
+                    <th class="borders">
+                        <p>Definition</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr MadCap:conditions="">
+                    <td class="borders">
+                        <p class="less_space">Minimum Recommended Rent</p>
+                    </td>
+                    <td class="borders">
+                        <p>Parameter 41 (Max Price Reduction %) sets a lower bound below Reference Rent that pricing is allowed to go. Minimum Recommended Rent is the lower bound value after consideration of the percentage configured in parameter 41.</p>
+                    </td>
+                </tr>
+                <tr MadCap:conditions="">
+                    <td class="borders">
+                        <p class="less_space">Maximum Recommended Rent</p>
+                    </td>
+                    <td class="borders">
+                        <p>This is the highest optimized rent at this stage across all lease terms for the given week and unit type. When the configuration of parameter 2 is not the default, and when a lease expiration management premium is configured and in effect for an optimized rent, the lease expiration management premium is added to this value, and the minimum of that result and the given optimized rent is passed through as the new optimized rent.</p>
+                    </td>
+                </tr>
+                <tr MadCap:conditions="">
+                    <td class="borders">
+                        <p class="less_space">Adjusted Recommended Rent</p>
+                    </td>
+                    <td class="borders">
+                        <p>The resulting rent after the UC to UT propagation and the consideration of the percentage configured in parameter 41 (Max Price Reduction %).</p>
+                    </td>
+                </tr>
+                <tr MadCap:conditions="">
+                    <td class="borders">
+                        <p class="less_space">Smoothed Rent</p>
+                    </td>
+                    <td class="borders">
+                        <p>The resulting rent after the price smoothing over weeks functionality is complete. Price smoothing over weeks is configured via percentages entered in parameters 60 through 70, and it combines a weighted percentage of prices from weeks prior to the current pricing week, the current pricing week and weeks following the current pricing week. It is designed to help minimize pricing volatility from week to week.</p>
+                    </td>
+                </tr>
+                <tr MadCap:conditions="">
+                    <td class="borders">
+                        <p class="less_space">Lease Expiration Mgmt Premium End Month</p>
+                    </td>
+                    <td class="borders">
+                        <p>When Lease Expiration Management Premiums are configured, the Lease Expiration Mgmt Premium End Month identifies to which term the configured premium will apply (terms ending in the configured end month). This is configured under LRO&gt;Expiration Management&gt;Monthly Premiums.</p>
+                    </td>
+                </tr>
+                <tr MadCap:conditions="">
+                    <td class="borders">
+                        <p class="less_space">Lease Expiration Mgmt Premium</p>
+                    </td>
+                    <td class="borders">
+                        <p>The Lease Expiration Mgmt Premum is the premium added to the minimum optimized rent that will be applied to leases ending the the configured Lease Expiration Mgmt Premium End Month. If the minimum optimized rent plus the premium is less than the optimized rent for a particular LT, the rent for that particular LT is used instead of the  minimum optimized rent plus the premium. This is configured under LRO&gt;Expiration Management&gt;Monthly Premiums.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h3 MadCap:conditions="">Parameters</h3>
+        <table style="width: 100%; border-collapse: collapse;">
+            <col style="width: 111px;" />
+            <col style="width: 188px;" />
+            <col MadCap:conditions="" />
+            <thead>
+                <tr class="light_grey">
+                    <th class="borders">Parameter ID</th>
+                    <th class="borders">Parameter Description</th>
+                    <th class="borders">
+                        <p>Definition</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr MadCap:conditions="">
+                    <td class="borders" style="text-align: center;">
+                        <p class="TableCell">41</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">Max Price Reduction %</p>
+                    </td>
+                    <td class="borders">
+                        <MadCap:snippetBlock src="../Resources/Snippets/param_41_def.flsnp" />
+                    </td>
+                </tr>
+                <tr MadCap:conditions="">
+                    <td class="borders" style="text-align: center;">
+                        <p class="TableCell">60</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">smooth param -5</p>
+                    </td>
+                    <td class="borders">
+                        <MadCap:snippetBlock src="../Resources/Snippets/smoothing_param_default_0.flsnp" />
+                    </td>
+                </tr>
+                <tr MadCap:conditions="">
+                    <td class="borders" style="text-align: center;">
+                        <p class="TableCell">61</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">smooth param -4</p>
+                    </td>
+                    <td class="borders">
+                        <MadCap:snippetBlock src="../Resources/Snippets/smoothing_param_default_0.flsnp" />
+                    </td>
+                </tr>
+                <tr MadCap:conditions="">
+                    <td class="borders" style="text-align: center;">
+                        <p class="TableCell">62</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">smooth param -3</p>
+                    </td>
+                    <td class="borders">
+                        <MadCap:snippetBlock src="../Resources/Snippets/smoothing_param_default_0.flsnp" />
+                    </td>
+                </tr>
+                <tr MadCap:conditions="">
+                    <td class="borders" style="text-align: center;">
+                        <p class="TableCell">63</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">smooth param -2</p>
+                    </td>
+                    <td class="borders">
+                        <MadCap:snippetBlock src="../Resources/Snippets/smoothing_param_default_0.flsnp" />
+                    </td>
+                </tr>
+                <tr MadCap:conditions="">
+                    <td class="borders" style="text-align: center;">
+                        <p class="TableCell">64</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">smooth param -1</p>
+                    </td>
+                    <td class="borders">
+                        <MadCap:snippetBlock src="../Resources/Snippets/smoothing_param_default_0.flsnp" />
+                    </td>
+                </tr>
+                <tr MadCap:conditions="">
+                    <td class="borders" style="text-align: center;">
+                        <p class="TableCell">65</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">smooth param 0</p>
+                    </td>
+                    <td class="borders">
+                        <MadCap:snippetBlock src="../Resources/Snippets/smoothing_param_default_100.flsnp" />
+                    </td>
+                </tr>
+                <tr MadCap:conditions="">
+                    <td class="borders" style="text-align: center;">
+                        <p class="TableCell">66</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">smooth param 1</p>
+                    </td>
+                    <td class="borders">
+                        <MadCap:snippetBlock src="../Resources/Snippets/smoothing_param_default_0.flsnp" />
+                    </td>
+                </tr>
+                <tr MadCap:conditions="">
+                    <td class="borders" style="text-align: center;">
+                        <p class="TableCell">67</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">smooth param 2</p>
+                    </td>
+                    <td class="borders">
+                        <MadCap:snippetBlock src="../Resources/Snippets/smoothing_param_default_0.flsnp" />
+                    </td>
+                </tr>
+                <tr MadCap:conditions="">
+                    <td class="borders" style="text-align: center;">
+                        <p class="TableCell">68</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">smooth param 3</p>
+                    </td>
+                    <td class="borders">
+                        <MadCap:snippetBlock src="../Resources/Snippets/smoothing_param_default_0.flsnp" />
+                    </td>
+                </tr>
+                <tr MadCap:conditions="">
+                    <td class="borders" style="text-align: center;">
+                        <p class="TableCell">69</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">smooth param 4</p>
+                    </td>
+                    <td class="borders">
+                        <MadCap:snippetBlock src="../Resources/Snippets/smoothing_param_default_0.flsnp" />
+                    </td>
+                </tr>
+                <tr MadCap:conditions="">
+                    <td class="borders" style="text-align: center;">
+                        <p class="TableCell">70</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">smooth param 5</p>
+                    </td>
+                    <td class="borders">
+                        <MadCap:snippetBlock src="../Resources/Snippets/smoothing_param_default_0.flsnp" />
+                    </td>
+                </tr>
+                <tr MadCap:conditions="">
+                    <td class="borders" style="text-align: center;">
+                        <p class="TableCell">132</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">Post Processing - Smooth over post date</p>
+                    </td>
+                    <td class="borders">
+                        <MadCap:snippetBlock src="../Resources/Snippets/param_132_def.flsnp" />
+                    </td>
+                </tr>
+                <tr MadCap:conditions="">
+                    <td class="borders" style="text-align: center;">
+                        <p class="TableCell">174</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">FO Smoothing Weight</p>
+                    </td>
+                    <td class="borders">
+                        <MadCap:snippetBlock src="../Resources/Snippets/param_174_def.flsnp" />
+                    </td>
+                </tr>
+                <tr MadCap:conditions="">
+                    <td class="borders" style="text-align: center;">
+                        <p class="TableCell">178</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">FO Maximum Price Increase</p>
+                    </td>
+                    <td class="borders">
+                        <MadCap:snippetBlock src="../Resources/Snippets/param_178_def.flsnp" />
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p MadCap:conditions="">
+            <MadCap:relatedTopics>
+                <MadCap:relatedTopic src="RV_overview.htm" />
+                <MadCap:relatedTopic src="RV_basics.htm" />
+                <MadCap:relatedTopic src="RV_ref_rent.htm" />
+                <MadCap:relatedTopic src="RV_optimization.htm" />
+                <MadCap:relatedTopic src="RV_ltc_to_lt.htm" />
+                <MadCap:relatedTopic src="RV_post_processing.htm" />
+            </MadCap:relatedTopics>
+        </p>
+    </body>
+</html>

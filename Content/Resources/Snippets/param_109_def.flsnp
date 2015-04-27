@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="2" MadCap:lastHeight="125" MadCap:lastWidth="1280">
+    <body>
+        <p>When set to N, scaling of aggressive factor, medium brake factor, high brake factor, and max ref rent drop factors will be done based on the number of days that have passed since the last time DRRC was run. When set to Y, proration will not be done.</p>
+        <p>Values: Y, N</p>
+        <p>Default: N</p>
+    </body>
+</html>

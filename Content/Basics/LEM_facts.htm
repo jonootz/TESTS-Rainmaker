@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="769" MadCap:lastWidth="1090">
+    <head>
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="tips:lease expiration management;lease expiration management:tips;best practices:lease expiration management;lease expiration management:best practices;LEM:tips;LEM:best practices" />Lease Expiration Management Tips</h1>
+        <MadCap:snippetBlock src="../Resources/Snippets/lem_definition.flsnp" />
+        <MadCap:snippetBlock src="../Resources/Snippets/lem_graph_description.flsnp" />
+        <p>Here are some tips and best practices to keep in mind when using Lease Expiration Management.</p>
+        <ul>
+            <li>The <MadCap:variable name="Variables.LRO" /> system considers four factors when determining the expiration recommendation for each month: Seasonality, Historical Move-ins and Move-outs, Historical Renewal Behavior, and Capacity of the Unit Category.</li>
+            <li>LEM overrides are made, saved, and re-optimized in a live environment and will be reflected in pricing recommendations immediately.</li>
+            <li>To understand the impact of an override, save the changes, then re-optimize and review the new lease pricing for the affected unit type.</li>
+            <li>Premiums entered for Lease Term Categories will have a greater impact than any overrides made on the Expiration Management Graph.</li>
+            <li>LEM is part of both the optimization process and the post-optimization process.</li>
+            <li>Expiration Management premiums, Rec Gen premiums, and Smoothing are factored in during post-optimization after the LEM calculations are completed.</li>
+            <li>Smoothing over Weeks is post processing functionality which tunes down steep price changes from one move-in week to another. The smoothing can be tuned down using parameters 60 to 70 to give preference to LEM-based pricing.</li>
+            <li>When seasonality has been "seeded", the fixed seasonality data will populate in the Expiration Management graph.</li>
+            <li>LEM overrides for a particular month are persistent and carry over from year to year. Overrides will remain in the system until manually deleted or further modified.</li>
+            <li>Overrides should be made in such a way that the total recommended expiration in the year are preserved. When expirations for certain months are overridden up, expirations for other months would need to be overridden down.</li>
+            <li>If the total recommended expirations for the year need to be changed, all months may need to be overridden up or down. An example is the Lease-up case where the available historical data would not result in robust recommended expirations.</li>
+            <li>Use Expiration Management premiums as a brute-force method to completely shut down a series of months (say winter months).</li>
+            <li>With LEM, the recommended prices can be restricted to a maximum percentage over the reference rent using <a href="../Parameters/parameters_list.htm#param178">parameter 178</a>. The maximum percentage that the <MadCap:variable name="Variables.LRO" /> system can price below the reference rent is controlled by <a href="../Parameters/parameters_list.htm#param41">parameter 41</a>.</li>
+            <li>LEM uses the community level historical data to determine expiration counts for a unit category if it has fewer than 32 units. This number of units is set by <a href="../Parameters/parameters_list.htm#param173">parameter 173</a>, which is set to 32 by default.</li>
+        </ul>
+        <p class="more_space">
+            <MadCap:relatedTopics>
+                <MadCap:relatedTopic src="../Screens/expiration_management_graph.htm" />
+                <MadCap:relatedTopic src="overriding_LRO_expirations.htm" />
+                <MadCap:relatedTopic src="../Parameters/lem_param_overview.htm" />
+                <MadCap:relatedTopic src="turning_on_LEM.htm" />
+            </MadCap:relatedTopics>
+        </p>
+    </body>
+</html>

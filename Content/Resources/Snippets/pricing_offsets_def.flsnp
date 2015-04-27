@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>Pricing offsets account for small floor plan differences in units that share the same unit type. For example, some units may have a fireplace or a sunroom and you may want the price of those units to be higher than other units in the same unit type. Entering a pricing offset ensures that the <MadCap:variable name="Variables.LRO" /> system produces prices for individual units that are adjusted for any differences between units in the same <MadCap:variable name="Variables.LRO" /> unit type.</body>
+</html>

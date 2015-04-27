@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="2" MadCap:lastHeight="104" MadCap:lastWidth="1280">
+    <body>
+        <p>The largest % drop that the reference rent can undergo as a result of the application of the business rules (as a % of the current reference rent).</p>
+        <p>Values: Integer (%)</p>
+        <p>Default: 3</p>
+    </body>
+</html>

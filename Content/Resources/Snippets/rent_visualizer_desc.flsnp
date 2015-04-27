@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <p>The Rent Visualizer provides insight into how the LRO pricing optimization process works by displaying the stages the pricing takes to get from the reference rent to the recommended rent. You can also see the primary inputs and parameters the system uses at each stage.</p>
+    </body>
+</html>

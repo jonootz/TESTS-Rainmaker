@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="2" MadCap:lastHeight="417" MadCap:lastWidth="1280">
+    <body>
+        <p>Prior to release 13.7, both renewals and new demand were used in the new pricing calculation. Now the new pricing calculation can be done only using new demand. </p>
+        <p>When parameter 182 is set to 1, renewals will be excluded from the new pricing calculation. </p>
+        <p>When parameter 182 is set to 0, both renewals and new demand will be used in the new pricing calculation.</p>
+        <p>This does not affect renewal pricing. </p>
+        <p class="note" MadCap:conditions="Default.ExternalOnly">You should consult with a <MadCap:variable name="Variables.ShortCompanyName" /> support or implementation specialist before changing this parameter.</p>
+        <p>Values: 0, 1</p>
+        <p>Default: 0</p>
+    </body>
+</html>

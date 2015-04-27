@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="2" MadCap:lastHeight="125" MadCap:lastWidth="1280">
+    <body>
+        <p> Determines if a rec rent file is created by Optimization and what happens to the file. </p>
+        <p>  Values: 1=create and send recommendation data file upon FO completion;    2=do not create recommendation data file, but update current_rent table; 3=create and send recommendation data file and also update current_rent table; 4=do nothing after optimization</p>
+        <p>Default: 4</p>
+    </body>
+</html>

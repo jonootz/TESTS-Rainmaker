@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="4" MadCap:lastHeight="247" MadCap:lastWidth="1254">
+    <body>
+        <p class="less_space">To select a hierarchy:</p>
+        <ol>
+            <li>
+                <p>Select the hierarchy you want to use and then click the Add arrow button.</p>
+                <p class="note">If you don't see any hierarchies in the list, click <span class="bold">Refresh Values</span>.</p>
+                <p>
+                    <img src="../Images/BI/prompts_select_hierarchy_add.png" />
+                </p>
+            </li>
+            <li>Click <span class="bold">OK</span> to view the report using the selected hierarchy.</li>
+        </ol>
+    </body>
+</html>

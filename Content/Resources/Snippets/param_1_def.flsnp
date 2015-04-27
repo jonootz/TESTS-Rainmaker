@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="2" MadCap:lastHeight="216" MadCap:lastWidth="1280">
+    <body>
+        <p class="less_space">The number of future pricing weeks for which recommendations are produced.</p>
+        <p class="less_space">New prices will be produced for the number of weeks specified by parameter 1 times 7 days from the current date.</p>
+        <p class="less_space">For example, if the current date is 1/7/2013 and parameter 1 is set to 16, prices will be generated through 4/29/2013. (1/7/2013 + (16 * 7) days = 4/29/2013).</p>
+        <p class="less_space">Renewal prices are produced for leases expiring in the window defined by parameters 145 and 146. That window should not exceed the window defined by parameter 1.</p>
+        <p>Increasing parameter 1 is helpful in cases where residents give notice more than 16 weeks in advance.</p>
+        <p class="TableCell"> Values: Integer</p>
+        <p class="TableCell">Default: 16</p>
+    </body>
+</html>

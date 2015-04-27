@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="774" MadCap:lastWidth="1026">
+    <head>
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="troubleshooting:business intelligence reporting;business intelligence reporting:troubleshooting" />Troubleshooting Tips for Business Intelligence Reporting</h1>
+        <h2>I see N/A as an attribute on some reports.</h2>
+        <p>You'll see N/A on a report if you display the report at a level (attribute) that some or all properties do not have values for. N/A is for information from any properties that meet the filter criteria, but don't have an attribute value assigned for the level being displayed.</p>
+        <p class="note">You can view some reports at different levels by drilling down on the levels for the report or by selecting the level in the Level to Display input control.</p>
+        <p>This may happen because an attribute value hasn't been assigned to some or all properties. For example, let's say you have 3 properties: P1, P2, and P3. The second attribute in your reporting group is Region. You have assigned a region value of Northwest to P1, nothing for P2, and Southeast for P3. If you select to view the  report at level 2 (region), you'll see information for Northwest, infomation for Southeast, and information for N/A. Information for P2 will be in the N/A part.</p>
+        <p>This could also happen if you display the report at a level that the reporting hierarchy doesn't have. For example, a hierarchy can have up to 10 levels. If the reporting hierarchy only has 4 levels in it, the information on the report will show as an attribute called N/A if you select to view the report for levels 5-10. </p>
+        <h2>I selected a Community or Unit Type and now my report doesn't show any information.</h2>
+        <ul>
+            <li>Make sure the community or communities selected are included in the hierarchy that is applied. </li>
+            <li>
+                <p>Make sure the unit type or unit types selected exist in the community or communities that are selected. </p>
+                <p class="note">You can look in the Filter Box to see which communities and unit types are valid selections based on other selections that have been made. For example, if Unit Type Applied shows 1X1 and 2X2, but you select 2X1 in the Unit Type drop list, the report will not show any information.</p>
+            </li>
+        </ul>
+        <h2>Tip</h2>
+        <MadCap:snippetBlock src="../Resources/Snippets/audit_hierarchy_tip.flsnp" />
+        <MadCap:snippetBlock src="../Resources/Snippets/audit_hierarchy_uses.flsnp" />
+        <p class="more_space">
+            <MadCap:relatedTopics>
+                <MadCap:relatedTopic src="Reporting_Basics.htm" />
+                <MadCap:relatedTopic src="reporting_tips.htm" />
+                <MadCap:relatedTopic src="understanding_hierarchies.htm" />
+                <MadCap:relatedTopic src="Audit_Hierarchy_Report.htm" />
+            </MadCap:relatedTopics>
+        </p>
+    </body>
+</html>

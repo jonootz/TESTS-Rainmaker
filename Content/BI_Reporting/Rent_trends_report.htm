@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="8" MadCap:lastHeight="2488" MadCap:lastWidth="1068">
+    <head>
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="reports:rent trend;business intelligence reporting:rent trend;Rent Trend Report" />Rent Trend Report <MadCap:conditionalText MadCap:conditions="Default.NotPrint">(BI Reporting)</MadCap:conditionalText></h1>
+        <p MadCap:conditions="">The Rent Trend Report can be accessed from the Reporting tab in the <MadCap:variable name="Variables.LRO" /> Web UI.  </p>
+        <p MadCap:conditions="">This report allows you to quickly assess how your rents are trending for the selected time frame. You can see monthly, quarterly, and YTD information including how your average rents are trending for new and renewal units. You can also see your renewal retention percentages. <MadCap:snippetText src="../Resources/Snippets/view_ut_and_community_level.flsnp" /></p>
+        <MadCap:snippetBlock src="../Resources/Snippets/filter_multi_select.flsnp" />
+        <p>
+            <a href="BI_questions_answered.htm#Rent">What questions can the Rent Trend Report answer?</a>
+        </p>
+        <h2>Viewing the Report</h2>
+        <MadCap:snippetBlock src="../Resources/Snippets/select_hierarchy_when_open_report.flsnp" />
+        <p>There are two views of the report, Overview and Detail, plus a Definitions page. You can switch between them using the tabs at the bottom of the screen.</p>
+        <p>
+            <img src="../Resources/Images/BI/rent_trend_tabs.png" />
+        </p>
+        <p class="less_space" MadCap:conditions="Default.NotTraining,Default.NotPrint">
+            <a href="Filtering_Rent_Trend.htm">Learn about filtering the Rent Trend Report</a><![CDATA[      ]]></p>
+        <MadCap:snippetBlock src="../Resources/Snippets/see_report_basics.flsnp" MadCap:conditions="Default.NotTraining" />
+        <h2>Overview</h2>
+        <p>The Overview shows you a graphical representation of your rent trend information. Your renewal retention is shown as a line on the graph. The bars represent the rent information for the recommended rent, average rent for occupied units, average rent for new leases, and average rent for renewal leases. </p>
+        <p>
+            <img src="../Resources/Images/BI/rent_trend_overview.png" />
+        </p>
+        <p>The rent trend information is shown by month for the current quarter and the past 5 quarters. You can use the Input Controls to only show months in a particular quarter or selection of quarters, if you want to.</p>
+        <p MadCap:conditions="" class="note">There is a page for each attribute value for the hierarchy level you are using to view the report.</p>
+        <h3>Tip</h3>
+        <p>You can click on the attribute value to drill down to different levels of the reporting hierarchy you are using the view the report. You can click the icon next to the attribute value to drill back up.</p>
+        <p>
+            <img src="../Resources/Images/BI/rent_trend_drill_overview1.png" />
+        </p>
+        <p class="less_space" MadCap:conditions="Default.NotTraining,Default.NotPrint">
+            <a href="Filtering_Rent_Trend.htm">Learn about filtering the Rent Trend Report</a>
+        </p>
+        <h2>Detail View</h2>
+        <div class="no_break">
+            <p class="less_space" MadCap:conditions="">The information is presented in a table format for each month in the current quarter plus the past 5 quarters. You can filter the report to only show the months in a particular quarter or selection of quarters, if you want to.</p>
+            <p class="less_space" MadCap:conditions="">
+                <img src="../Resources/Images/BI/rent_trend_detail.png" />
+            </p>
+            <div class="indent">
+                <p class="less_space" MadCap:conditions="">
+                    <span class="bold">Avg New Rec:</span> The average of the best recommended rents for new leases across all lease terms for unit types that have available units within the pricing horizon.</p>
+                <p class="less_space" MadCap:conditions="">
+                    <span class="bold">Avg Curr Mon Ren Rec:</span> The average best recommended rent across all lease terms for renewals for leases expiring in that month.</p>
+                <p class="less_space" MadCap:conditions="">
+                    <span class="bold">Avg Next Mon Ren Rec:</span> The average best recommended rent across all lease terms for renewals for leases expiring in the next month.</p>
+                <p class="less_space" MadCap:conditions="">
+                    <span class="bold">Avg Rent (Occ):</span> The average rent for all occupied units in that month. This considers actual move out date, so if a lease had a recorded end date of 4/4/2014 but the resident moved out early on 3/31/2014, then that rent would not be included in this number for April.</p>
+                <p class="less_space" MadCap:conditions="">
+                    <span class="bold">Avg Rent (New):</span> The average rent for all new leases with a contract date (application date) in that month.</p>
+                <p class="less_space" MadCap:conditions="">
+                    <span class="bold">Avg Rent (Rnwl):</span> The average rent for all renewed leases starting in that month.</p>
+                <p MadCap:conditions="">
+                    <span class="bold">Ret %:</span> The percentage of leases expiring in that month that were renewed.</p>
+            </div>
+        </div>
+        <p class="note" MadCap:conditions="">You can filter this information by community, unit type, and quarter. You can also choose whether or not to include amenities in the rent amounts.</p>
+        <MadCap:snippetBlock src="../Resources/Snippets/BI_tips_link.flsnp" />
+        <MadCap:snippetBlock src="../Resources/Snippets/bi_troubleshooting_link.flsnp" />
+        <h2>Definitions</h2>
+        <div class="no_break">
+            <p MadCap:conditions="">The last tab is a definitions page that will help you understand the information contained in the report.</p>
+            <p MadCap:conditions="">
+                <img src="../Resources/Images/BI/rent_trends_definitions.png" />
+            </p>
+        </div>
+        <p class="more_space">
+            <MadCap:relatedTopics>
+                <MadCap:relatedTopic src="Filtering_Rent_Trend.htm" />
+                <MadCap:relatedTopic src="understanding_hierarchies.htm" />
+                <MadCap:relatedTopic src="Reporting_Basics.htm" />
+                <MadCap:relatedTopic src="troubleshooting_bi_reports.htm" />
+                <MadCap:relatedTopic src="BI_questions_answered.htm" />
+            </MadCap:relatedTopics>
+        </p>
+    </body>
+</html>

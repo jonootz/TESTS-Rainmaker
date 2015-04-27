@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="5" MadCap:lastHeight="1490" MadCap:lastWidth="1172">
+    <head>
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="seasonality graph;seasonality:graph" />Seasonality Graph</h1>
+        <div class="no_break">
+            <p>The Seasonality Graph shows you the seasonality for a particular unit category for the past 12 months. By default, the <MadCap:variable name="Variables.LRO" /> system calculates seasonality based on three years of data. You can adjust the seasonality that has been calculated, if necessary.</p>
+            <p>
+                <a href="../Basics/seasonality.htm">How does the <MadCap:variable name="Variables.LRO" /> system use seasonality?</a>
+            </p>
+            <h2>Viewing the Seasonality Graph</h2>
+            <p>The Seasonality Graph is found under <span class="bold">LRO</span>&gt;<span class="bold">Charts</span>&gt;<span class="bold">BI Charts</span>. Select <span class="bold">Seasonality</span> from the Report drop-list. Then you can select the unit category that you want to view or adjust the seasonality for.</p>
+            <p>The seasonality that has been calculated by the LRO system is shown in blue. The seasonality that the system is using is shown in red. This will be the same as the calculated seasonality unless you have changed it. </p>
+        </div>
+        <h2>Adjusting Seasonality on the Seasonality Graph</h2>
+        <p>In general, it is best to use the calculated seasonality. However, there may be circumstances where you feel like the seasonality should be adjusted. If you are not sure if you should adjust your seasonality, then you shouldn't change it.</p>
+        <p>
+            <a href="../Basics/adjusting_seasonality.htm">Why would I adjust my seasonality?</a>
+        </p>
+        <div class="no_break">
+            <p>To change the seasonality that the LRO system is using, click the Edit button located in the bottom right corner of the screen. </p>
+            <p class="note">If you don't see the Edit button, then you do not have access to change the seasonality.</p>
+            <p>You can change the seasonality values in the table or you can move the line on the graph. </p>
+            <h3>Adjusting Seasonality on the Graph:</h3>
+            <p>Each circle represents the seasonality for a week. </p>
+            <ol>
+                <li>Find a week you want to adjust.</li>
+                <li>Click on the circle for that week.</li>
+                <li>Drag it to the new seasonality number.</li>
+                <li>Repeat for each week you want to adjust.</li>
+                <li>
+                    <p>Click <span class="bold">Save</span> to save the new seasonality. </p>
+                    <p class="note">In order to save the new seasonality, the "Adjustment to be made" must equal 0. The line on the graph will be green.</p>
+                    <p>After saving, the adjusted seasonality will appear as the red line on the graph. This is the seasonality that the <MadCap:variable name="Variables.LRO" /> system will use in its pricing calculations.</p>
+                </li>
+            </ol>
+            <h3>Adjusting Seasonality in the Table:</h3>
+            <p>Each row represents the seasonality for a week and each column represents a month.</p>
+            <ol>
+                <li>Find a week you want to adjust.</li>
+                <li>Enter the new seasonality amount in the cell for that week in a particular month.</li>
+                <li>
+                    <p>Repeat for each week you want to adjust.</p>
+                    <p class="note">If you check the "Change monthly values" checkbox located below the table, you can enter a value for one week in a month and that same value will populate all weeks for that month. This only applies to the values in the table. It does not affect moving seasonality on the graph.</p>
+                </li>
+                <li>
+                    <p>Click <span class="bold">Save</span> to save the new seasonality. </p>
+                </li>
+                <li>
+                    <p class="note">In order to save the new seasonality, the "Adjustment to be made" must equal 0. The line on the graph will be green.</p>
+                    <p>After saving, the adjusted seasonality will appear as the red line on the graph. This is the seasonality that the <MadCap:variable name="Variables.LRO" /> system will use in the pricing calculations.</p>
+                </li>
+            </ol>
+            <h3>Tips</h3>
+            <p>When you change the seasonality, the "Adjustment to be made" must equal 0. After you make changes, you'll see the amount of any adjustments that must be made before you can save the new seasonality. The adjustments must balance out. For example, if you increase the seasonality for a week by .1, you must decrease the seasonality by .1 in another week or weeks.</p>
+            <p>The seasonality for each week must be between the Min Seasonal Factor (parameter 19) and the Max Seasonal Factor (parameter 20). These limits determine the range on the Y-axis of the graph.</p>
+        </div>
+        <p class="note">The LRO system will continue to calculate seasonality when the UPSTAT&#160;process is run. However, if you make changes to the seasonality on the Seasonality Graph, the edited seasonality will be used in the pricing calculations. </p>
+        <h3>Seasonality Outside of Limits</h3>
+        <p>If you set parameter 19 to be greater than the smallest seasonality value or set parameter 20 to be smaller than the largest seasonality value and the nightly processes have not been run, you will get an error message on the Seasonality Graph screen. You will not be able to edit the Seasonality Graph unless you change the parameters or until the nightly processes have run. </p>
+        <p class="more_space">
+            <MadCap:relatedTopics>
+                <MadCap:relatedTopic src="../Basics/adjusting_seasonality.htm" />
+                <MadCap:relatedTopic src="../Basics/seasonality.htm" />
+            </MadCap:relatedTopics>
+        </p>
+    </body>
+</html>

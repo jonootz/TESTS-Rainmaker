@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="2" MadCap:lastHeight="104" MadCap:lastWidth="1280">
+    <body>
+        <p>The number of historical months to gather data to use in the UpStat process. This determines how much historical data is used in seasonality calculations. </p>
+        <p>Values: Integer</p>
+        <p>Default: 36</p>
+    </body>
+</html>

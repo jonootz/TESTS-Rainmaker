@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="8" MadCap:lastHeight="1449" MadCap:lastWidth="1202">
+    <head>
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="rent visualizer:LTC to LT;LTC to LT Stage (rent visualizer)" />Rent Visualizer: LTC to LT Stage</h1>
+        <p MadCap:conditions="">The first stage of propagation is where lease expiration management is predominantly used. It factors in the actual expirations, remaining expirations, and the LRO recommended expirations to help determine which lease term should be favored and which lease terms should be discouraged. <span class="bold">The values generated are at the unit category, individual lease term level.</span></p>
+        <p>
+            <img src="../Resources/Images/WebUI/rent_visualizer_ltc.png" />
+        </p>
+        <MadCap:snippetBlock src="../Resources/Snippets/inputs_and_parameters_below.flsnp" />
+        <h3 MadCap:conditions="">Inputs</h3>
+        <table style="width: 100%; border-collapse: collapse;">
+            <col style="width: 186px;" />
+            <col />
+            <thead>
+                <tr class="light_grey">
+                    <th class="borders">
+                        <p>Input</p>
+                    </th>
+                    <th class="borders">
+                        <p>Definition</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr MadCap:conditions="">
+                    <td class="borders">
+                        <p class="less_space">Optimized Base Rent</p>
+                    </td>
+                    <td class="borders">
+                        <p>Output from the optimization stage at the unit category, lease term category level for each pricing week in the optimization horizon.</p>
+                    </td>
+                </tr>
+                <tr MadCap:conditions="">
+                    <td class="borders">
+                        <p class="less_space">Average Lease Term</p>
+                    </td>
+                    <td class="borders">
+                        <p>A business statistic representing the average lease term observed for all leases falling within a LTC. It is used as the representative lease term for the LTC in optimization and post-optimization.</p>
+                    </td>
+                </tr>
+                <tr MadCap:conditions="">
+                    <td class="borders">
+                        <p class="less_space">Remaining Constrained Arr Dmd</p>
+                    </td>
+                    <td class="borders">
+                        <p>Constrained demand is the demand that will be accepted subject to supply limitations.</p>
+                    </td>
+                </tr>
+                <tr MadCap:conditions="">
+                    <td class="borders">
+                        <p class="less_space">Lease Term Category Reference Month</p>
+                    </td>
+                    <td class="borders">
+                        <p>Represents the  most common lease term within the lease term category.</p>
+                    </td>
+                </tr>
+                <tr MadCap:conditions="">
+                    <td class="borders">
+                        <p class="less_space">LEM End Month</p>
+                    </td>
+                    <td class="borders">
+                        <p>The calendar month (i.e. January, February etc.) that a particular lease term ends for lease expiration management purposes. The number of recommended expirations vs total expirations for that month determines if a lease term should be priced lower (encouraged) or priced higher (discouraged).</p>
+                    </td>
+                </tr>
+                <tr MadCap:conditions="">
+                    <td class="borders">
+                        <p class="less_space">LEM Actual Expirations</p>
+                    </td>
+                    <td class="borders">
+                        <p>The number of actual leases that will be expiring within the corresponding end month for that lease term.</p>
+                    </td>
+                </tr>
+                <tr MadCap:conditions="">
+                    <td class="borders">
+                        <p class="less_space">LEM Remaining Unconstrained Demand</p>
+                    </td>
+                    <td class="borders">
+                        <p>The number of expirations expected from demand which is forecasted to materialize in the future.</p>
+                    </td>
+                </tr>
+                <tr MadCap:conditions="">
+                    <td class="borders">
+                        <p class="less_space">LEM Estimated Expirations</p>
+                    </td>
+                    <td class="borders">
+                        <p>The number of leases that LRO is recommending expire within that particular end month for the lease term based on the seasonality for that month, the number of move-ins vs move-outs, and expirations over the past 12 full calendar months.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h3 MadCap:conditions="">Parameters</h3>
+        <table style="width: 100%; border-collapse: collapse;">
+            <col style="width: 111px;" />
+            <col style="width: 188px;" />
+            <col MadCap:conditions="" />
+            <thead>
+                <tr class="light_grey">
+                    <th class="borders">Parameter ID</th>
+                    <th class="borders">Parameter Description</th>
+                    <th class="borders">
+                        <p>Definition</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr MadCap:conditions="">
+                    <td class="borders" style="text-align: center;">
+                        <p class="TableCell">172</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">FO Use LEM Statistics</p>
+                    </td>
+                    <td class="borders">
+                        <MadCap:snippetBlock src="../Resources/Snippets/param_172_def.flsnp" />
+                    </td>
+                </tr>
+                <tr MadCap:conditions="">
+                    <td class="borders" style="text-align: center;">
+                        <p class="TableCell">173</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">LEM Minimum number of units in UC</p>
+                    </td>
+                    <td class="borders">
+                        <MadCap:snippetBlock src="../Resources/Snippets/param_173_def.flsnp" />
+                    </td>
+                </tr>
+                <tr MadCap:conditions="">
+                    <td class="borders" style="text-align: center;">
+                        <p class="TableCell">174</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">FO Smoothing Weight</p>
+                    </td>
+                    <td class="borders">
+                        <MadCap:snippetBlock src="../Resources/Snippets/param_174_def.flsnp" />
+                    </td>
+                </tr>
+                <tr MadCap:conditions="">
+                    <td class="borders" style="text-align: center;">
+                        <p class="TableCell">181</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">Use Remaining Expirations (LEM)</p>
+                    </td>
+                    <td class="borders">
+                        <MadCap:snippetBlock src="../Resources/Snippets/param_181_def.flsnp" />
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p MadCap:conditions="">
+            <MadCap:relatedTopics>
+                <MadCap:relatedTopic src="RV_overview.htm" />
+                <MadCap:relatedTopic src="RV_basics.htm" />
+                <MadCap:relatedTopic src="RV_ref_rent.htm" />
+                <MadCap:relatedTopic src="RV_optimization.htm" />
+                <MadCap:relatedTopic src="RV_uc_to_ut.htm" />
+                <MadCap:relatedTopic src="RV_post_processing.htm" />
+            </MadCap:relatedTopics>
+        </p>
+    </body>
+</html>

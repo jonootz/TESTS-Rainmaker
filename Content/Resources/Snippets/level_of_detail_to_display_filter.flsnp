@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <p>You can control the amount of information you want to display on the report. You can view it at three levels of detail:</p>
+        <ul>
+            <li>Hierarchy Only - information is  shown at the hierarchy attribute level</li>
+            <li>Hierarchy &amp; Community - information is shown at the hierarchy attribute level broken down by community</li>
+            <li>Hierarchy, Community &amp; Unit Type - information is shown at the hierarchy attribute level broken down by community and then by unit type</li>
+        </ul>
+        <p>For example, let's say you're viewing the report at Level 3 which is Region. The report will be broken out by Region if you view it as Hierarchy Only. The report will be broken out by Region and then by Community within each region if you view it as Hierarchy &amp; Community. The report will be broken out by Region, then by Community within each region, then by Unit Type within each community if you view it as Hierarchy, Community &amp; Unit Type.</p>
+    </body>
+</html>

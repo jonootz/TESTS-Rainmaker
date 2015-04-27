@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="3050" MadCap:lastWidth="1090">
+    <head>
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="Availability &amp; Pricing Report;reports:availability &amp; pricing;business intelligence reporting:availability &amp; pricing" />Availability &amp; Pricing Report <MadCap:conditionalText MadCap:conditions="Default.NotPrint">(BI Reporting)</MadCap:conditionalText></h1>
+        <p>The Availability &amp; Pricing report can be accessed from the Reporting tab in the <MadCap:variable name="Variables.LRO" /> Web UI.</p>
+        <p>This report allows you to view all percentage change metrics for occupancy and rents in one place. On the Detail view, you can see the information broken out by community and then by unit type, if you want that level of detail. This report would typically be used by pricing managers on a weekly basis.</p>
+        <h2 MadCap:conditions="">Viewing the Report</h2>
+        <p MadCap:conditions="">The report will open when you click the Availability &amp; Pricing link on the Reporting tab.</p>
+        <p MadCap:conditions="">When you open the report, you'll be prompted to select a date. You should select today's date or an earlier date. You'll also need to select a hierarchy. If desired, you can select to view the report for a specific community or multiple communities.</p>
+        <MadCap:snippetBlock src="../Resources/Snippets/hierarachy_description.flsnp">
+        </MadCap:snippetBlock>
+        <p>To open the report:</p>
+        <ol>
+            <li>
+                <p>Select the Availability &amp; Pricing report on the Reporting tab in the LRO Web UI.</p>
+                <p>The report will open in the Business Objects portal with the Prompts dialog shown.</p>
+            </li>
+            <li>
+                <p>Under Prompts Summary, the Select Date prompt will be selected.</p>
+                <p>Select the date you want to run the report for. This should be today's date or an earlier date.</p>
+                <p>
+                    <img src="../Resources/Images/BI/DP_date_prompt.png">
+                    </img>
+                </p>
+            </li>
+            <li>
+                <p>Click the Select Hierarchy prompt.</p>
+                <p class="note">If you don't see any hierarchies in the list, click <span class="bold">Refresh Values</span>.</p>
+                <p>Select the hierarchy you want to use and then click the Add arrow button.</p>
+                <p>
+                    <img src="../Resources/Images/BI/DP_hierarchy_prompt.png">
+                    </img>
+                </p>
+            </li>
+            <li>
+                <p>If you want to view the report for a specific community or selection of communities, click the Enter Community (ID) prompt.</p>
+                <p class="note">Selecting a community is not required. All communities that are included in the selected hierarchy will be included on the report if you don't select a community here. <br></br>Click <span class="bold">Refresh Values</span> to see the list of communities, if necessary.</p>
+                <p>Select the community or communities that you want to view on the report and then click the Add arrow button.</p>
+                <MadCap:snippetBlock src="../Resources/Snippets/select_multiple_communities.flsnp">
+                </MadCap:snippetBlock>
+                <p>
+                    <img src="../Resources/Images/BI/DP_community_prompt.png">
+                    </img>
+                </p>
+            </li>
+            <li>Click <span class="bold">OK</span> to view the report.</li>
+        </ol>
+        <p>There are two views of the report, Overview and Detail, plus a Definitions page. You can switch between them using the tabs at the bottom of the screen.</p>
+        <p>
+            <img src="../Resources/Images/BI/avail_and_pricing_report_tabs.png" />
+        </p>
+        <MadCap:snippetBlock src="../Resources/Snippets/views_have_own_filters_example.flsnp" />
+        <MadCap:snippetBlock src="../Resources/Snippets/BI_tips_link.flsnp" />
+        <MadCap:snippetBlock src="../Resources/Snippets/see_report_basics.flsnp" />
+        <h2>Overview</h2>
+        <p>The Overview gives you a graphical representation of your occupancy  and your average rent as of the report date, as well as last week, last month, last year, and the first of the year. The average rent can be shown with or without amenities.</p>
+        <p>
+            <img src="../Resources/Images/BI/avail_and_pricing_overview.png" />
+        </p>
+        <p>You can drill down on the graphs by clicking on the hierarchy level on either graph. This will adjust both graphs to drill down to the next level in the hierarchy. To drill back up, you can click the Level on either graph. </p>
+        <p>
+            <img src="../Resources/Images/BI/overview_drill_avail_and_pricing.png" />
+        </p>
+        <p MadCap:conditions="">The information that appears in the Overview is influenced by the Input Controls (filters).</p>
+        <p MadCap:conditions="">
+            <a href="filtering_avail_and_pricing_report.htm#Filterin2">Learn about filtering the Overview</a> <![CDATA[ ]]></p>
+        <h2>Detail View</h2>
+        <p>The Detail View displays your availability and pricing information and comparisons in a table format.</p>
+        <p> <img src="../Resources/Images/BI/avail_and_pricing_detail.png" /></p>
+        <p>You can use the Input Controls to view the report for a specific community or group of communities. You can show the comparisons as a percentage change or the actual measures. You can also display the rent amounts with or without amenities.</p>
+        <p>You can click on the Hierarchy Level attribute to drill down through the levels of the selected hierarchy. </p>
+        <div class="no_break">
+            <p>By default, the information is displayed  by community. You can expand the information to see it broken out by unit type, if you want more details.</p>
+            <p>To do this:</p>
+            <ol>
+                <li>
+                    <p>Select <span class="bold">Outline</span> in the toolbar if it is not already selected.</p>
+                    <p>
+                        <img src="../Resources/Images/BI/outline_button_avail_and_pricing.png" />
+                    </p>
+                </li>
+                <li>
+                    <p>Click on the area next to the Community Name of the community you want to expand or roll up.</p>
+                    <p>
+                        <img src="../Resources/Images/BI/expand_community_avail_and_pricing.png" />
+                    </p>
+                </li>
+                <li>
+                    <p>Click the arrow next to the community name to show or hide the unit type details for that community.</p>
+                    <p>
+                        <img src="../Resources/Images/BI/expand_community_arrow_avail_and_pricing.png" />
+                    </p>
+                </li>
+            </ol>
+        </div>
+        <p>
+            <a href="filtering_avail_and_pricing_report.htm#Filterin">Learn about filtering the Detail View</a>
+        </p>
+        <h2>Definitions</h2>
+        <p>The last tab is a definitions page that will help you understand the information contained in the report.</p>
+        <p>
+            <img src="../Resources/Images/BI/avail_and_pricing_definitions.png" />
+        </p>
+        <p class="more_space">
+            <MadCap:relatedTopics>
+                <MadCap:relatedTopic src="filtering_avail_and_pricing_report.htm" />
+                <MadCap:relatedTopic src="understanding_hierarchies.htm" />
+                <MadCap:relatedTopic src="reporting_tips.htm" />
+                <MadCap:relatedTopic src="Reporting_Basics.htm" />
+            </MadCap:relatedTopics>
+        </p>
+    </body>
+</html>

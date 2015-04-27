@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <ul>
+            <li>If you have selected communities or unit types from the Input Controls filters, only the values that apply for the communities on the report will be available in the Filter Bar drop lists.</li>
+            <li>When you select a filter value from the Filter Bar, the applied information in the filter box does not change. The filter box information only changes when you change the Input Controls filters.</li>
+            <li>The filter bar is not "sticky". You have to select the Filter Bar button to see it each time you view the report.</li>
+        </ul>
+    </body>
+</html>

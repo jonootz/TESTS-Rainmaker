@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultConditionTagSet>
+    <ConditionTag BackgroundColor="#ff0000" Name="InternalOnly" Comment="" />
+    <ConditionTag BackgroundColor="#0000ff" Name="Don't Include" Comment="use for info that is not implemented yet" />
+    <ConditionTag BackgroundColor="#008000" Name="ExternalOnly" Comment="" />
+    <ConditionTag BackgroundColor="#ffa500" Name="NotTraining" Comment="" OriginalName="Training" />
+    <ConditionTag BackgroundColor="#00bfff" Name="Training" Comment="" />
+    <ConditionTag BackgroundColor="#ffff00" Name="PrintOnly" Comment="" />
+    <ConditionTag BackgroundColor="#8b4513" Name="NotPrint" Comment="" />
+</CatapultConditionTagSet>

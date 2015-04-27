@@ -1,0 +1,684 @@
+/*<meta />*/
+
+body
+{
+	font-family: Calibri, sans-serif;
+}
+
+h1
+{
+	font-weight: bold;
+	border-bottom: solid 5px;
+	border-bottom-width: 2px;
+	margin-bottom: 12pt;
+	font-size: 16pt;
+	margin-top: 0.67em;
+}
+
+h2
+{
+	font-weight: bold;
+	margin-bottom: 11.75pt;
+	font-size: 14pt;
+	mc-hyphenate: never;
+}
+
+h3
+{
+	font-weight: bold;
+	font-size: 12pt;
+}
+
+h4
+{
+	font-weight: bold;
+	font-size: 12.0pt;
+}
+
+h5
+{
+	font-weight: bold;
+	font-size: 10.0pt;
+}
+
+h6
+{
+	text-align: center;
+	margin: 0.67em;
+	margin-bottom: 12pt;
+	margin-left: 0em;
+	margin-right: 0em;
+	font-size: 8pt;
+}
+
+p
+{
+	font-size: 12.0pt;
+	margin-top: 0pt;
+	margin-bottom: 12pt;
+	mc-hyphenate: never;
+}
+
+ol,
+ul
+{
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+img
+{
+	border: none;
+}
+
+a.Popup
+{
+	
+}
+
+MadCap|expandingHead
+{
+	font-style: italic;
+	font-weight: normal;
+	cursor: hand;
+	text-decoration: none;
+	color: #006600;
+}
+
+MadCap|expandingBody
+{
+	color: #777777;
+	font-style: italic;
+}
+
+MadCap|dropDownHotspot
+{
+	cursor: hand;
+	font-style: italic;
+	text-decoration: none;
+	color: #006600;
+}
+
+p.subtitle
+{
+	text-align: center;
+	font-size: 12pt;
+	font-style: italic;
+}
+
+p.header
+{
+	font-size: 14pt;
+	font-weight: bold;
+	color: #4f91cd;
+}
+
+h1.title
+{
+	mc-heading-level: 0;
+	color: #4f91cd;
+	font-size: 24pt;
+	border-bottom-width: 0px;
+	border-bottom: none 0px;
+	text-align: center;
+	page-break-before: avoid;
+}
+
+p.footer
+{
+	font-size: 9pt;
+	padding-top: 4px;
+}
+
+.bold
+{
+	font-weight: bold;
+}
+
+td.middle_align_center_green
+{
+	background-color: #7fb072;
+	vertical-align: middle;
+	text-align: center;
+}
+
+@media print
+{
+	h1.print_not_in_toc
+	{
+		mc-heading-level: 0;
+	}
+
+	h3
+	{
+		mc-heading-level: 0;
+	}
+
+	h4
+	{
+		mc-heading-level: 0;
+	}
+
+	h5
+	{
+		mc-heading-level: 0;
+	}
+
+	h6
+	{
+		mc-heading-level: 0;
+	}
+
+	MadCap|tocProxy.no_top_border
+	{
+		border-top-style: none;
+	}
+
+	img
+	{
+		max-width: 6in;
+	}
+
+	ul
+	{
+		
+	}
+
+	img.NoThumbnail
+	{
+		
+	}
+
+	MadCap|dropDownHotspot
+	{
+		color: #000000;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 14pt;
+	}
+
+	MadCap|xref
+	{
+		mc-format: 'See {quote}{paratext}{quote} on page {page}';
+	}
+
+	img.Slideshow
+	{
+		
+	}
+}
+
+li
+{
+	margin-bottom: 5pt;
+	page-break-inside: avoid;
+	mc-hyphenate: never;
+}
+
+li p
+{
+	margin-bottom: 5pt;
+}
+
+img.ButtonImage
+{
+	vertical-align: bottom;
+}
+
+p.note
+{
+	border: solid 2px #7b7b7b;
+	padding: 5px;
+	margin-left: 0px;
+	padding-right: 5px;
+	padding-left: 5px;
+	page-break-inside: avoid;
+	border-radius: 8px;
+}
+
+ul
+{
+	margin-bottom: 12px;
+	list-style-image: url('../Images/raindrops_logo/blue_raindrop_12pt.png');
+}
+
+p.TableCell
+{
+	padding-left: 4pt;
+}
+
+tr
+{
+	page-break-inside: avoid;
+}
+
+td
+{
+	padding: 4pt;
+}
+
+table
+{
+	border-spacing: 2px;
+}
+
+td.borders
+{
+	border: solid 1px;
+}
+
+th.borders
+{
+	border: solid 1px;
+}
+
+tr:hover
+{
+	background-color: #b9e49b;
+}
+
+tr.light_green
+{
+	background-color: #b9e49b;
+}
+
+tr.light_grey
+{
+	background-color: #d2d2d2;
+}
+
+li.black_raindrop
+{
+	list-style-image: url('../images/raindrops_logo/black_raindrop_small.gif');
+}
+
+li.green_raindrop
+{
+	list-style-image: url('../images/raindrops_logo/green_raindrop_small.gif');
+}
+
+li.blue_raindrop
+{
+	list-style-image: url('../images/raindrops_logo/blue_raindrop_small.gif');
+}
+
+.italic
+{
+	font-style: italic;
+}
+
+li.indent_dot
+{
+	margin-left: 20pt;
+	list-style-type: disc;
+}
+
+.bold_italic
+{
+	font-style: italic;
+	font-weight: bold;
+}
+
+div.indent
+{
+	margin-left: 20pt;
+}
+
+div.no_break
+{
+	page-break-inside: avoid;
+}
+
+MadCap|xref.PageForDetails
+{
+	mc-format: 'See {quote}{page}{quote} for details.';
+}
+
+@media mobile
+{
+	
+}
+
+@media non-print
+{
+	MadCap|xref.lower_case
+	{
+		mc-format: 'see {quote}{paratext}{quote}';
+	}
+
+	MadCap|xref.PageOnly
+	{
+		mc-format: 'See {quote}{paratext}{quote}';
+	}
+
+	MadCap|xref.PageForDetails
+	{
+		mc-format: 'See {quote}{paratext}{quote} for details.';
+	}
+
+	MadCap|xref.HeadingAndPage
+	{
+		mc-format: '{quote}{h1}\'';
+	}
+
+	h1
+	{
+		border-bottom-style: none;
+		border: none;
+		border-bottom: solid 5px;
+		border-bottom-width: 2px;
+		color: #569130;
+	}
+
+	h2
+	{
+		color: #569130;
+	}
+
+	h3
+	{
+		color: #505050;
+	}
+
+	h4
+	{
+		color: #569130;
+	}
+
+	h5
+	{
+		color: #569130;
+	}
+
+	MadCap|relatedTopics
+	{
+		color: #225eac;
+		font-size: 12pt;
+		font-weight: bold;
+		mc-image: url('../Images/blank.png');
+		mc-image-position: none;
+	}
+
+	a.MCHelpControl
+	{
+		background-image: url('../Images/raindrops_logo/DoubleArrow2.png');
+		background-repeat: no-repeat;
+		background-position: right center;
+		padding-right: 4px;
+	}
+
+	a.MCHelpControl:hover
+	{
+		color: #4f91cd;
+		background-image: url('../Images/raindrops_logo/DoubleArrow3.png');
+	}
+
+	MadCap|helpControlMenuItem.Highlighted
+	{
+		background-color: #cce0f0;
+		color: #000000;
+		font-family: Calibri;
+	}
+
+	MadCap|helpControlMenu
+	{
+		background-color: #ffffff;
+	}
+
+	MadCap|helpControlMenuItem
+	{
+		font-family: Calibri;
+		font-size: 12pt;
+	}
+
+	.dropDownHotspot:link
+	{
+		font-style: normal;
+		color: #225eac;
+	}
+
+	.dropDownHotspot:hover
+	{
+		color: #4f91cd;
+	}
+
+	.dropDownHotspot:visited
+	{
+		
+	}
+
+	MadCap|glossaryTerm
+	{
+		mc-image-position: none;
+		color: #4f91cd;
+		text-decoration: none;
+		border-bottom: dotted 1px;
+		mc-open-image: url('../images/blank.png');
+		mc-closed-image: url('../images/blank.png');
+	}
+
+	MadCap|dropDown
+	{
+		mc-open-image: url('../images/raindrops_logo/arrowopendkblue.png');
+		mc-closed-image: url('../images/raindrops_logo/arrowcloseddkblue.png');
+	}
+
+	MadCap|dropDownHotspot
+	{
+		font-weight: bold;
+		font-style: normal;
+		font-size: 13pt;
+	}
+
+	table + p.note
+	{
+		margin-top: 12pt;
+	}
+
+	img.Slideshow
+	{
+		
+	}
+}
+
+MadCap|xref.lower_case
+{
+	mc-format: 'see {quote}{paratext}{quote} on page {page}';
+}
+
+img.NoThumbnail
+{
+	
+}
+
+p.TableCellCentered
+{
+	padding-left: 4pt;
+	text-align: center;
+}
+
+MadCap|xref.HeadingForDetails
+{
+	mc-format: 'See {quote}{paratext}{quote} for more details.';
+}
+
+.underline
+{
+	text-decoration: underline;
+}
+
+th
+{
+	mc-hyphenate: never;
+}
+
+@media JobAids
+{
+	h1
+	{
+		page-break-before: avoid;
+	}
+
+	img
+	{
+		max-width: 6in;
+	}
+}
+
+p.TableCellBold
+{
+	padding-left: 4pt;
+	font-weight: bold;
+}
+
+td.borders_light_grey
+{
+	border: solid 1px;
+	background-color: #d2d2d2;
+}
+
+td.borders_grey
+{
+	border: solid 1px;
+	background-color: #a8a8a8;
+}
+
+p.less_space	/*The bottom margin is smaller than regular p. Use to list items (not in a list style) and before lists.*/
+{
+	margin-bottom: 6pt;
+}
+
+a
+{
+	color: #225eac;
+}
+
+p.more_space
+{
+	margin-top: 18pt;
+}
+
+MadCap|xref.lower_case
+{
+	mc-format: 'see {quote}{paratext}{quote}';
+}
+
+MadCap|xref.PageOnly
+{
+	mc-format: 'See {quote}{paratext}{quote}';
+}
+
+MadCap|xref.PageForDetails
+{
+	mc-format: 'See {quote}{paratext}{quote} for details.';
+}
+
+img.NoThumbnail
+{
+	visibility: visible;
+	display: inline;
+	mc-thumbnail: none;
+}
+
+a:link
+{
+	color: #225eac;
+}
+
+a:visited
+{
+	color: #225eac;
+}
+
+a:hover
+{
+	color: #4f91cd;
+}
+
+img
+{
+	mc-thumbnail-max-height: 100px;
+	mc-thumbnail: popup;
+}
+
+img.ButtonImage
+{
+	mc-thumbnail: none;
+}
+
+h2 + div.MCDropDown
+{
+	margin-top: -13px;
+}
+
+div.MCDropDown + h2
+{
+	margin-top: 26px;
+}
+
+MadCap|relatedTopics
+{
+	mc-use-custom-sort-order: true;
+	font-size: 14pt;
+}
+
+MadCap|variable
+{
+	
+}
+
+img.Slideshow
+{
+	mc-thumbnail: none;
+}
+
+.red
+{
+	color: #ff0000;
+}
+
+a.Slide
+{
+	
+}
+
+a.Slide:link
+{
+	text-decoration: none;
+}
+
+a.Slide:visited
+{
+	text-decoration: none;
+}
+
+MadCap|xref.lower_case_with_page
+{
+	mc-format: 'see {quote}{paratext}{quote} on page {page}';
+}
+
+MadCap|xref.PageOnly2
+{
+	mc-format: 'See page {page}';
+}
+
+MadCap|xref.HeadingOnly
+{
+	mc-format: '{quote}{h1}{quote}';
+}
+
+tr.no_hover_highlight
+{
+	
+}
+
+tr.no_hover_highlight:hover
+{
+	background-color: #ffffff;
+}
+
+MadCap|xref
+{
+	mc-format: 'See {quote}{paratext}{quote}';
+}
+

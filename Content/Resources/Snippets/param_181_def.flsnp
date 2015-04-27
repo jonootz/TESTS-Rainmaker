@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="2" MadCap:lastHeight="104" MadCap:lastWidth="1280">
+    <body>
+        <p>Used when LEM is turned on (parameter 172=1). When set to 1, Remaining Expirations are included in LEM calculations. When set to 0, Remaining Expirations are excluded from LEM calculations.</p>
+        <p>Values: 0, 1</p>
+        <p>Default: 1</p>
+    </body>
+</html>

@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="3" MadCap:lastHeight="591" MadCap:lastWidth="1162">
+    <head>
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="parameters example: aggressive factor;aggressive factor:parameters at work" />Parameters at Work: Aggressive Factor</h1>
+        <h3> Aggressive Factor Parameters</h3>
+        <div class="indent">
+            <p>Aggressive Factor (#73)</p>
+        </div>
+        <p>This parameter is set as a percentage. It should be a small number such as 2%.</p>
+        <h3>Purpose</h3>
+        <p>This parameter will affect Reference Rent which you can see on the Rent Comparison graph of the Pricing Trend Report. The <MadCap:variable name="Variables.LRO" /> system increases the reference rent by the aggressive factor to test increases in pricing when exposure is low and there is some leasing activity. As long as exposure is low and there is some leasing activity, the Aggressive Factor will apply each week when the DRRC updates the reference rent.</p>
+        <p>
+            <img src="../Resources/Images/WebUI/ptr_aggressive_factor_ref_rent.png" title="Click to view larger" />
+        </p>
+        <p>In the above screenshot, the aggressive factor has come into play on 11/26, 12/3, 12/10, 12/24, 12/31, and 1/7. The reference rent was increased by 2% on each of those dates in response to low exposure with  leasing activity.</p>
+        <h3>Example</h3>
+        <p>Let's say you have parameter #73 Aggressive Factor set to 2%. If your exposure is low and there is some leasing activity, when the DRRC is run this week, the LRO system will increase the reference rent by 2% to test pricing at a slightly higher level. If the community continues to have low exposure with leasing activity (pricing power), the <MadCap:variable name="Variables.LRO" /> system will increase the reference rent by another 2% the next time the DRRC is run (typically the next week). </p>
+        <p class="more_space">
+            <MadCap:relatedTopics>
+                <MadCap:relatedTopic src="new_pricing_param_overview.htm" />
+                <MadCap:relatedTopic src="../Basics/reference_rent.htm" />
+                <MadCap:relatedTopic src="../Basics/DRRC.htm" />
+                <MadCap:relatedTopic src="../Screens/pricing_trend_screen.htm" />
+                <MadCap:relatedTopic src="parameters_recipe_card.htm" />
+            </MadCap:relatedTopics>
+        </p>
+    </body>
+</html>

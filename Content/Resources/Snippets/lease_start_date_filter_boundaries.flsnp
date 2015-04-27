@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="2" MadCap:lastHeight="67" MadCap:lastWidth="1214">
+    <body>
+        <p class="note">Note that this is limited by the data that you have. You can look at the default Lease Start Date range (in the filter box on the report) to see the boundaries for the lease start date based on the available data. The default upper boundary is the report date you entered when opening the report and the default lower boundary is the earliest lease start date in your data.</p>
+    </body>
+</html>

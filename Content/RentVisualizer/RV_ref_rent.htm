@@ -1,0 +1,411 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="8" MadCap:lastHeight="3577" MadCap:lastWidth="1202">
+    <head>
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="rent visualizer:reference rent;Reference Rent Stage (rent visualizer)" />Rent Visualizer: Reference Rent Stage</h1>
+        <p MadCap:conditions="">This is the starting point in the pricing process. This stage looks at the competitor rent information that is in place for each competitor, along with the weight/position assigned to that competitor and the lease term category premium in place, to <span class="bold">calculate the market composite</span> when the DRRC task runs for its scheduled run date. During this same process, LRO looks at five conditions- exposure level, leasing velocity level, comps increasing, premium current, and comps above/below- to <span class="bold">determine a business formula to use when generating a new reference rent value</span>.</p>
+        <p MadCap:conditions="">
+            <img src="../Resources/Images/WebUI/rent_visualizer_ref_rent.png" />
+        </p>
+        <MadCap:snippetBlock src="../Resources/Snippets/inputs_and_parameters_below.flsnp" />
+        <h3 MadCap:conditions="">Inputs</h3>
+        <table style="width: 100%; border-collapse: collapse;">
+            <col style="width: 186px;" />
+            <col />
+            <thead>
+                <tr class="light_grey">
+                    <th class="borders">
+                        <p>Input</p>
+                    </th>
+                    <th class="borders">
+                        <p>Definition</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr MadCap:conditions="">
+                    <td class="borders">
+                        <p class="less_space">Premium LTC</p>
+                    </td>
+                    <td class="borders">
+                        <p> The Lease Term Category Premium which is used in building the market composite for each lease term category. It is configured under Configuration&gt; LTC.</p>
+                    </td>
+                </tr>
+                <tr MadCap:conditions="">
+                    <td class="borders">
+                        <p class="less_space">Market Composite</p>
+                    </td>
+                    <td class="borders">
+                        <p>Calculated based on the competitor rents, weights, and positions, which are entered under the Competitors tab (Comp Rents, Comp Weights, Comp Positions).</p>
+                    </td>
+                </tr>
+                <tr MadCap:conditions="">
+                    <td class="borders">
+                        <p class="less_space">Last Market Composite</p>
+                    </td>
+                    <td class="borders">
+                        <p>The market composite value that was in place as of the DRRC run before the most recent one.</p>
+                    </td>
+                </tr>
+                <tr MadCap:conditions="">
+                    <td class="borders">
+                        <p class="less_space">Current Reference Rent</p>
+                    </td>
+                    <td class="borders">
+                        <p>The value that the reference rent will be the next time DRRC runs.</p>
+                    </td>
+                </tr>
+                <tr MadCap:conditions="">
+                    <td class="borders">
+                        <p class="less_space">Override Reference Rent</p>
+                    </td>
+                    <td class="borders">
+                        <p>The reference rent value being used if a dollar amount was manually entered  in the green Ref Rent Override box on the Reference Rent screen and the DRRC was run.</p>
+                    </td>
+                </tr>
+                <tr MadCap:conditions="">
+                    <td class="borders">
+                        <p class="less_space">Last Reference Rent</p>
+                    </td>
+                    <td class="borders">
+                        <p>The value of the reference rent that is currently being used as of the last DRRC run. New pricing is based off of this amount.</p>
+                    </td>
+                </tr>
+                <tr MadCap:conditions="">
+                    <td class="borders">
+                        <p class="less_space">Current Market Composite User</p>
+                    </td>
+                    <td class="borders">
+                        <p>The market composite amount that was manually entered under the Configuration tab on the Unit Types screen. This is generally used when a unit type does not have any true competitors in the area.</p>
+                    </td>
+                </tr>
+                <tr MadCap:conditions="">
+                    <td class="borders">
+                        <p class="less_space">Market Composite Option</p>
+                    </td>
+                    <td class="borders">
+                        <p>Indicates whether or not the market composite floor is used when calculating reference rent. This is determined by whether or not the Use Floor box is checked on the Reference Rent screen.</p>
+                    </td>
+                </tr>
+                <tr MadCap:conditions="">
+                    <td class="borders">
+                        <p class="less_space">Business Case</p>
+                    </td>
+                    <td class="borders">
+                        <p>The DRRC formula that is being applied in order to determine the reference rent amount. There are several different business formula options that can be triggered based on the values of five different components (Exposure, Leasing Velocity, Premium Current, Comps Above/Below, and Comps Increasing).</p>
+                    </td>
+                </tr>
+                <tr MadCap:conditions="">
+                    <td class="borders">
+                        <p class="less_space">Normal Exposure</p>
+                    </td>
+                    <td class="borders">
+                        <p>Displays whether an exposure percentage is considered low, medium, or high based on the percentages set for parameters 71 (Threshold Low Exposure) and 72 (Threshold High Exposure). These parameters can be set at either the community level or at the unit type level under Admin&gt;Parameters.</p>
+                    </td>
+                </tr>
+                <tr MadCap:conditions="">
+                    <td class="borders">
+                        <p class="less_space">Premium Current</p>
+                    </td>
+                    <td class="borders">
+                        <p>Indicates whether  the last reference rent was higher than the last market composite.</p>
+                    </td>
+                </tr>
+                <tr MadCap:conditions="">
+                    <td class="borders">
+                        <p class="less_space">Comps Above or Below</p>
+                    </td>
+                    <td class="borders">
+                        <p>Indicates whether the current market composite is above or below the last reference rent value.</p>
+                    </td>
+                </tr>
+                <tr MadCap:conditions="">
+                    <td class="borders">
+                        <p class="less_space">Comps Increasing</p>
+                    </td>
+                    <td class="borders">
+                        <p>Indicates whether the current market composite is above the last market composite.</p>
+                    </td>
+                </tr>
+                <tr MadCap:conditions="">
+                    <td class="borders">
+                        <p class="less_space">Leasing Velocity Value</p>
+                    </td>
+                    <td class="borders">
+                        <p>The weighted percentage of  move-ins compared to either guest cards or exposed units (whichever value is lower) over the last five weeks. More information can be viewed under LRO&gt;Pathfinder&gt;DRRC LV Calc.</p>
+                    </td>
+                </tr>
+                <tr MadCap:conditions="">
+                    <td class="borders">
+                        <p class="less_space">Leasing Velocity, Normalized</p>
+                    </td>
+                    <td class="borders">
+                        <p>Shows what range the leasing velocity percentage falls within (low, medium, or high) based on the percentage settings of parameters 107 (LV Threshold High) and 108 (LV Threshold Low). These parameters can  be set at either the community level or at the unit type level under Admin&gt;Parameters.</p>
+                    </td>
+                </tr>
+                <tr MadCap:conditions="">
+                    <td class="borders">
+                        <p class="less_space">Exposure</p>
+                    </td>
+                    <td class="borders">
+                        <p>Percentage of units available within the unit type in the next number of days specified by parameter 153 (Exposed Units Range). The default number of days is 60. This parameter is configurable at the community level under Admin&gt;Parameters&gt;Community.</p>
+                    </td>
+                </tr>
+                <tr MadCap:conditions="">
+                    <td class="borders">
+                        <p class="less_space">Available Units</p>
+                    </td>
+                    <td class="borders">
+                        <p>The number of  units available within the unit type in the number of days specified by parameter 153 (Exposed Units Range). The default number of days is 60. This parameter is configurable at the community level under Admin&gt;Parameters&gt;Community.</p>
+                    </td>
+                </tr>
+                <tr MadCap:conditions="">
+                    <td class="borders">
+                        <p class="less_space">Total Units</p>
+                    </td>
+                    <td class="borders">
+                        <p>The total number of units in the  unit type.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h3 MadCap:conditions="">Parameters</h3>
+        <table style="width: 100%; border-collapse: collapse;">
+            <col style="width: 111px;" />
+            <col style="width: 188px;" />
+            <col MadCap:conditions="" />
+            <thead>
+                <tr class="light_grey">
+                    <th class="borders">Parameter ID</th>
+                    <th class="borders">Parameter Description</th>
+                    <th class="borders">
+                        <p>Definition</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr MadCap:conditions="">
+                    <td class="borders" style="text-align: center;">
+                        <p class="TableCell">71</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">Threshold low exposure (DRRC)</p>
+                    </td>
+                    <td class="borders">
+                        <MadCap:snippetBlock src="../Resources/Snippets/param_71_def.flsnp" />
+                    </td>
+                </tr>
+                <tr MadCap:conditions="">
+                    <td class="borders" style="text-align: center;">
+                        <p class="TableCell">72</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">Threshold high exposure (DRRC)</p>
+                    </td>
+                    <td class="borders">
+                        <MadCap:snippetBlock src="../Resources/Snippets/param_72_def.flsnp" />
+                    </td>
+                </tr>
+                <tr MadCap:conditions="">
+                    <td class="borders" style="text-align: center;">
+                        <p class="TableCell">73</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">Aggressive Factor (DRRC)</p>
+                    </td>
+                    <td class="borders">
+                        <MadCap:snippetBlock src="../Resources/Snippets/param_73_def.flsnp" />
+                    </td>
+                </tr>
+                <tr MadCap:conditions="">
+                    <td class="borders" style="text-align: center;">
+                        <p class="TableCell">74</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">Break Factor high (DRRC)</p>
+                    </td>
+                    <td class="borders">
+                        <MadCap:snippetBlock src="../Resources/Snippets/param_74_def.flsnp" />
+                    </td>
+                </tr>
+                <tr MadCap:conditions="">
+                    <td class="borders" style="text-align: center;">
+                        <p class="TableCell">75</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">Break Factor medium (DRRC)</p>
+                    </td>
+                    <td class="borders">
+                        <MadCap:snippetBlock src="../Resources/Snippets/param_75_def.flsnp" />
+                    </td>
+                </tr>
+                <tr MadCap:conditions="">
+                    <td class="borders" style="text-align: center;">
+                        <p class="TableCell">84</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">Threshold for low UT count (DRRC)</p>
+                    </td>
+                    <td class="borders">
+                        <MadCap:snippetBlock src="../Resources/Snippets/param_84_def.flsnp" />
+                    </td>
+                </tr>
+                <tr MadCap:conditions="">
+                    <td class="borders" style="text-align: center;">
+                        <p class="TableCell">86</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">Shopper Period (DRRC)</p>
+                    </td>
+                    <td class="borders">
+                        <MadCap:snippetBlock src="../Resources/Snippets/param_86_def.flsnp" />
+                    </td>
+                </tr>
+                <tr MadCap:conditions="">
+                    <td class="borders" style="text-align: center;">
+                        <p class="TableCell">87</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">Clipping Factor (DRRC)</p>
+                    </td>
+                    <td class="borders">
+                        <MadCap:snippetBlock src="../Resources/Snippets/param_87_def.flsnp" />
+                    </td>
+                </tr>
+                <tr MadCap:conditions="">
+                    <td class="borders" style="text-align: center;">
+                        <p class="TableCell">88</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">Historical Days for Leasing Velocity (DRRC)</p>
+                    </td>
+                    <td class="borders">
+                        <MadCap:snippetBlock src="../Resources/Snippets/param_88_def.flsnp" />
+                    </td>
+                </tr>
+                <tr MadCap:conditions="">
+                    <td class="borders" style="text-align: center;">
+                        <p class="TableCell">104</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">Sigma (DRRC)</p>
+                    </td>
+                    <td class="borders">
+                        <MadCap:snippetBlock src="../Resources/Snippets/param_104_def.flsnp" />
+                    </td>
+                </tr>
+                <tr MadCap:conditions="">
+                    <td class="borders" style="text-align: center;">
+                        <p class="TableCell">107</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">LV Threshold High (RL)</p>
+                    </td>
+                    <td class="borders">
+                        <MadCap:snippetBlock src="../Resources/Snippets/param_107_def.flsnp" />
+                    </td>
+                </tr>
+                <tr MadCap:conditions="">
+                    <td class="borders" style="text-align: center;">
+                        <p class="TableCell">108</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">LV Threshold Low (RL)</p>
+                    </td>
+                    <td class="borders">
+                        <MadCap:snippetBlock src="../Resources/Snippets/param_108_def.flsnp" />
+                    </td>
+                </tr>
+                <tr MadCap:conditions="">
+                    <td class="borders" style="text-align: center;">
+                        <p class="TableCell">109</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">Use Scale Factor Flag</p>
+                    </td>
+                    <td class="borders">
+                        <MadCap:snippetBlock src="../Resources/Snippets/param_109_def.flsnp" />
+                    </td>
+                </tr>
+                <tr MadCap:conditions="">
+                    <td class="borders" style="text-align: center;">
+                        <p class="TableCell">110</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">Weeks of Zero RL</p>
+                    </td>
+                    <td class="borders">
+                        <MadCap:snippetBlock src="../Resources/Snippets/param_110_def.flsnp" />
+                    </td>
+                </tr>
+                <tr MadCap:conditions="">
+                    <td class="borders" style="text-align: center;">
+                        <p class="TableCell">137</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">LV Absolute Lease Change (DRRC)</p>
+                    </td>
+                    <td class="borders">
+                        <MadCap:snippetBlock src="../Resources/Snippets/param_137_def.flsnp" />
+                    </td>
+                </tr>
+                <tr MadCap:conditions="">
+                    <td class="borders" style="text-align: center;">
+                        <p class="TableCell">150</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">Apply LTC Premium Flag</p>
+                    </td>
+                    <td class="borders">
+                        <MadCap:snippetBlock src="../Resources/Snippets/param_150_def.flsnp" />
+                    </td>
+                </tr>
+                <tr MadCap:conditions="">
+                    <td class="borders" style="text-align: center;">
+                        <p class="TableCell">152</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">Max Ref Rent Decrease (DRRC)</p>
+                    </td>
+                    <td class="borders">
+                        <MadCap:snippetBlock src="../Resources/Snippets/param_152_def.flsnp" />
+                    </td>
+                </tr>
+                <tr MadCap:conditions="">
+                    <td class="borders" style="text-align: center;">
+                        <p class="TableCell">153</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">Exposed Units Range (DRRC)</p>
+                    </td>
+                    <td class="borders">
+                        <MadCap:snippetBlock src="../Resources/Snippets/param_153_def.flsnp" />
+                    </td>
+                </tr>
+                <tr MadCap:conditions="">
+                    <td class="borders" style="text-align: center;">
+                        <p class="TableCell">222</p>
+                    </td>
+                    <td class="borders">
+                        <p class="TableCell">DRRC DOW Run Date (0=Sun)</p>
+                    </td>
+                    <td class="borders">
+                        <MadCap:snippetBlock src="../Resources/Snippets/param_222_def.flsnp" />
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p MadCap:conditions="">
+            <MadCap:relatedTopics>
+                <MadCap:relatedTopic src="RV_overview.htm" />
+                <MadCap:relatedTopic src="RV_basics.htm" />
+                <MadCap:relatedTopic src="RV_optimization.htm" />
+                <MadCap:relatedTopic src="RV_ltc_to_lt.htm" />
+                <MadCap:relatedTopic src="RV_uc_to_ut.htm" />
+                <MadCap:relatedTopic src="RV_post_processing.htm" />
+            </MadCap:relatedTopics>
+        </p>
+    </body>
+</html>

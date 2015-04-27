@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="3043" MadCap:lastWidth="1123" MadCap:ignoredWords="KPI">
+    <head>
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="filtering:KPI Report;KPI Report:filtering;reports:filtering KPI Report" />Filtering the KPI Report <MadCap:conditionalText MadCap:conditions="Default.NotPrint">(BI Reporting)</MadCap:conditionalText></h1>
+        <p MadCap:conditions="">There are two different views of the report, an Overview and a Detail view. Some of the filters for these views are independent of each other. For example, if you have the Overview filtered for a particular community and then switch to the Detail view, the Detail view will not automatically be filtered for that community.</p>
+        <p MadCap:conditions="">You can use the Input Controls to filter the report and control how the information is displayed. </p>
+        <div class="no_break">
+            <p MadCap:conditions="" class="bold">Input Controls for Overview</p>
+            <p>
+                <img src="../Resources/Images/BI/input_controls_kpi_overview.png" MadCap:mediastyle="@media print { max-height: 6.25in; }" />
+            </p>
+        </div>
+        <div class="no_break">
+            <p class="bold">Input Controls for Detail View</p>
+            <p>
+                <img src="../Resources/Images/BI/input_controls_kpi_detail.png" MadCap:mediastyle="@media print { max-height: 6.25in; }" />
+            </p>
+        </div>
+        <MadCap:snippetBlock src="../Resources/Snippets/input_controls_button.flsnp">
+        </MadCap:snippetBlock>
+        <h3>Tip</h3>
+        <p>When you open the report, you will be prompted to select a hierarchy. If you want to view the report using a different hierarchy, you can close and reopen it or select the refresh button.</p>
+        <p>
+            <img src="../Resources/Images/BI/reset_button_KPI.png" />
+        </p>
+        <h2 MadCap:conditions="">Level of Detail to Display (Detail View only)</h2>
+        <MadCap:snippetBlock src="../Resources/Snippets/level_of_detail_to_display_filter.flsnp" />
+        <p MadCap:conditions="" class="note">If you choose to view the report at the Hierarchy &amp; Community or Hierarchy, Community &amp; Unit Type levels, there will be a large amount of data on the report so you may want to filter the report down to a specific community and/or unit type, especially if you plan on printing the report.</p>
+        <h2 MadCap:conditions="">Level to Display</h2>
+        <p>By default, the KPI report displays information for Level 1. For example, you may have a reporting group set up with Corporate as Level 1. The Corporate attribute has one value called Corporate and it is applied to all properties. This allows you to roll up information at the corporate level and then use the Level to Display filter to display the information broken out by other attributes. For example, if Level 4 is State, if you select to display Level 4, the report will be shown with the information broken out by state.</p>
+        <div class="no_break">
+            <p class="note">The Level to Display filter is useful when no other filters are selected or if you have selected multiple communities. It is not very useful if you have selected one filter item. For example, if you have selected one community in the community filter, the report will only show information for the selected community at every level you select.</p>
+        </div>
+        <MadCap:snippetBlock src="../Resources/Snippets/levels_are_attributes.flsnp">
+        </MadCap:snippetBlock>
+        <p>When you view the report by  level, each value for the level is shown on its own page. For example, if you selected Level 4 which is State, each page displays the report by a different state. You can see the attribute value in the filter box next to Hierarchy and Level Value. </p>
+        <p>Use the Level to Display drop-list to select the level you want to display.</p>
+        <MadCap:snippetBlock src="../Resources/Snippets/persisting_IC.flsnp" />
+        <h2 MadCap:conditions="">Amenities</h2>
+        <MadCap:snippetBlock src="../Resources/Snippets/amenities_filter_default.flsnp" />
+        <MadCap:snippetBlock src="../Resources/Snippets/persisting_IC.flsnp" />
+        <h2 MadCap:conditions="">Include Month to Month</h2>
+        <MadCap:snippetBlock src="../Resources/Snippets/include_mtm_filter.flsnp" />
+        <MadCap:snippetBlock src="../Resources/Snippets/persisting_IC.flsnp" />
+        <h2 MadCap:conditions="">Chart Options</h2>
+        <p MadCap:conditions="">By default, the KPI report information is broken out by month. You can choose to break it out by day, week, or quarter, if you want to. </p>
+        <p MadCap:conditions="" class="note">If you choose to view the report broken out Daily, there will be a large amount of data on the report so you may want to filter the report down to a specific community and/or unit type before choosing to view the information Daily.</p>
+        <MadCap:snippetBlock src="../Resources/Snippets/persisting_IC.flsnp" />
+        <h2 MadCap:conditions="">Display Measures (Overview only)</h2>
+        <p MadCap:conditions="" class="less_space">This allows you to show and hide the following average rent measures on the Overview graph:</p>
+        <ul>
+            <li MadCap:conditions="">Average Rent Expiring Leases</li>
+            <li MadCap:conditions="">Average Rent New Leases</li>
+            <li MadCap:conditions="">Average Rent Renewing Leases</li>
+        </ul>
+        <p MadCap:conditions="">Occupancy and Average Rent Leases in Place will always appear on the graph.</p>
+        <h2 MadCap:conditions="">Filter Dates &gt;= </h2>
+        <p>This is the lower boundary of the date range. Use this filter to show effective rent and occupancy information on or after a particular date. If you only enter a date here, the report will display information from that date on. If you want to set a range, you would enter the upper boundary in the following filter (Filter Dates &lt;=).</p>
+        <h2 MadCap:conditions="">Filter Dates &lt;=</h2>
+        <p>This is the upper boundary of the date range. Use this filter to show effective rent and occupancy information on or before a particular date. If you only enter a date here, the report will display information from that date and earlier. If you want to set a range, you would enter the lower boundary in the previous filter (Filter Dates &gt;=).</p>
+        <p class="note">If you set the Filter Dates to the same date, you won't see anything on the Overview. This is because the graph displays a line and you can't create a line with a single date. You can see the information for a single date on the Detail view.</p>
+        <h2 MadCap:conditions="">Community (ID)</h2>
+        <p MadCap:conditions="">The Community filter allows you to run the report for all communities, multiple communities, or a specific community.</p>
+        <p>By default, the report includes either all communities that you have access to that use an attribute in the selected hierarchy or the communities you selected on the Prompts dialog when you opened the report. </p>
+        <MadCap:snippetBlock src="../Resources/Snippets/select_multiple_communities.flsnp" />
+        <MadCap:snippetBlock src="../Resources/Snippets/apply_community_filter.flsnp" />
+        <h2>Unit Type</h2>
+        <p>You can filter the report to only show data for a particular unit type or selection of unit types.  </p>
+        <p class="note">The unit type filter will only contain unit types that apply to the communities that were selected in the Prompts window. If you didn't select any communities in the Prompts window, the report was run for all communities and all unit types will be in the Unit Type filter.</p>
+        <MadCap:snippetBlock src="../Resources/Snippets/select_multiple_unit_types.flsnp" />
+        <MadCap:snippetBlock src="../Resources/Snippets/apply_unit_type_filter.flsnp" />
+        <p class="more_space">
+            <MadCap:relatedTopics>
+                <MadCap:relatedTopic src="KPI_report.htm" />
+                <MadCap:relatedTopic src="understanding_hierarchies.htm" />
+                <MadCap:relatedTopic src="reporting_tips.htm" />
+                <MadCap:relatedTopic src="Reporting_Basics.htm" />
+            </MadCap:relatedTopics>
+        </p>
+    </body>
+</html>

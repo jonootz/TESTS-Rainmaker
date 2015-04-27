@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="4290" MadCap:lastWidth="1094">
+    <head>
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="Weekly Report:filtering;filtering:Weekly Report;reports:filtering Weekly Report" />Filtering the Weekly Report <MadCap:conditionalText MadCap:conditions="Default.NotPrint">(BI Reporting)</MadCap:conditionalText></h1>
+        <p>The Weekly Report consists of five pages of information that can be filtered. The Overview page is filtered by drilling down and using the Input Controls. The Detail pages are filtered using the Input Controls.</p>
+        <h2>
+            <a name="Filterin">
+            </a>Filtering the Overview Page</h2>
+        <h2>Drill Down</h2>
+        <p>The Overview page can be filtered by drilling down on the graph labels. You can use the Filter Bar at the top of the report to change the drill selections. You can also use the filter bar to see the levels you have drilled down through to get to the current one. </p>
+        <p>To drill down on the Overview page:</p>
+        <div class="indent">
+            <p>Click on the graph label to drill down to the next level in the hierarchy. When you hover over the label, you can see which level you will be drilling down to.</p>
+            <p>
+                <img src="../Resources/Images/BI/weekly_rpt_overview_drill_1.png" />
+            </p>
+            <p>All of the graphs will change to show details from the next level in the hierarchy. You can see which levels you have drilled down to at the top of the report and in the Filter Bar above the report.</p>
+            <p>
+                <img src="../Resources/Images/BI/weekly_rpt_overview2.png" />
+            </p>
+            <p>To drill back up, click the Level in the Current Occupancy &amp; 60 Day Exposure graph. This will change all of the graphs to show details from one level higher than the current level.</p>
+            <p>
+                <img src="../Resources/Images/BI/weekly_rpt_overview_drill2.png" />
+            </p>
+        </div>
+        <MadCap:snippetBlock src="../Resources/Snippets/Overview_snapshots_note.flsnp" />
+        <h2>Input Controls</h2>
+        <p> You can use the Input Controls to view the Visits and Leases section by number of days. It defaults to whatever was selected from the Prompts screen when you opened the report. If you didn't select anything when you opened the report, the default is past 7 days. Your filter options are past 7 days, past 14 days, past 30 days, and default. </p>
+        <p>
+            <img src="../Resources/Images/BI/weekly_rpt_overview_IC.png" />
+        </p>
+        <MadCap:snippetBlock src="../Resources/Snippets/input_controls_button.flsnp" />
+        <MadCap:snippetBlock src="../Resources/Snippets/input_controls_tips_link.flsnp" />
+        <h3>Tips</h3>
+        <p>When you open the report, you will be prompted to select a hierarchy. If you want to view the report using a different hierarchy, you can close and reopen it or select the refresh button.</p>
+        <p>
+            <img src="../Resources/Images/BI/reset_button_WR.png" />
+        </p>
+        <p class="note">Hierarchies are also known as Reporting Groups and are set up under the Reporting Admin tab.</p>
+        <h2>
+            <a name="Filterin2">
+            </a>Filtering the Detail Pages</h2>
+        <p>The KPI Focus Page, Occupancy &amp; Exposure, Asking &amp; Effective Rents, and Vacants, Notices &amp; Traffic pages are all filtered using the Input Controls. You can also use the Input Controls to set Alerts on these pages.</p>
+        <MadCap:snippetBlock src="../Resources/Snippets/input_controls_button.flsnp" />
+        <MadCap:snippetBlock src="../Resources/Snippets/input_controls_tips_link.flsnp" />
+        <h2 MadCap:conditions="">Community Name Filter</h2>
+        <p MadCap:conditions="">This is available on all of the Detail pages.</p>
+        <p MadCap:conditions="">The Community filter allows you to run the report for all communities, multiple communities, or a specific community.</p>
+        <p>By default, the report includes either all communities that you have access to that use an attribute in the selected hierarchy or the communities you selected on the Prompts dialog when you opened the report.  </p>
+        <MadCap:snippetBlock src="../Resources/Snippets/select_multiple_communities.flsnp" />
+        <MadCap:snippetBlock src="../Resources/Snippets/apply_community_filter.flsnp" />
+        <h2>Amenities Filter</h2>
+        <p>This is available on the KPI&#160;Focus Page and the Asking &amp; Effective Rents page.</p>
+        <p>The Amenities filter is used to specify if you want the rent amounts on the report to include amenities or not. By default, the amounts will not include amenities.</p>
+        <h2>Occupancy Alert</h2>
+        <p>This is found on the KPI Focus Page and the Occupancy &amp; Exposure page.</p>
+        <p>It is used to highlight communities and unit types with current occupancy that falls at or below a specified percentage. </p>
+        <MadCap:snippetBlock src="../Resources/Snippets/alert_persists.flsnp" />
+        <p>Type the percentage in the Occupancy Alert text box and click <span class="bold">OK</span>. Any communities or unit types that have a Current Occupancy that falls at or below the specified percentage will be highlighted in yellow.</p>
+        <p>
+            <img src="../Resources/Images/BI/occupancy_alert_WR.png" />
+        </p>
+        <h2>Exposure Alert</h2>
+        <p>This is found on the KPI Focus Page and the Occupancy &amp; Exposure page.</p>
+        <p>It is used to highlight communities and unit types with 60 day exposure that falls at or above a specified percentage. </p>
+        <MadCap:snippetBlock src="../Resources/Snippets/alert_persists.flsnp" />
+        <p>Type the percentage in the Exposure Alert text box and click <span class="bold">OK</span>. Any communities or unit types that have a 60 Day Exposure that falls at or above the specified percentage will be highlighted in yellow.</p>
+        <p>
+            <img src="../Resources/Images/BI/exposure_alert_WR.png" />
+        </p>
+        <h2>Vacant Days Alert</h2>
+        <p>This is found on the KPI Focus Page and the Vacants, Notices &amp; Traffic page.</p>
+        <p>It is used to highlight communities and unit types with average vacant days that fall at or above a specified number. </p>
+        <MadCap:snippetBlock src="../Resources/Snippets/alert_persists.flsnp">
+        </MadCap:snippetBlock>
+        <p>Type the number of days in the Vacant Days Alert text box and click <span class="bold">OK</span>. Any communities or unit types that have Average Vacant Days that fall at or above the specified number of days will be highlighted in yellow.</p>
+        <p>
+            <img src="../Resources/Images/BI/vacant_days_alert_WR.png" />
+        </p>
+        <h2>
+            <a name="Renewal">
+            </a>Renewal Alert</h2>
+        <p>This is found on the KPI Focus Page and the Vacants, Notices &amp; Traffic page.</p>
+        <p>It is used to highlight communities and unit types with a renewal percentage over the past 12 months that falls at or below a specified percentage. </p>
+        <MadCap:snippetBlock src="../Resources/Snippets/alert_persists.flsnp">
+        </MadCap:snippetBlock>
+        <p>Type the percentage in the Renewal Alert text box and click <span class="bold">OK</span>. Any communities or unit types that have a Renewal Percentage Over the Past 12 Months that falls at or below the specified percentage will be highlighted in yellow.</p>
+        <p>
+            <img src="../Resources/Images/BI/renewal_alert_WR.png" />
+        </p>
+        <p>In addition, on the Vacants, Notices &amp; Traffic page, the Renewal (Past 12 Months) % is shown as a number and as a bar. The color of the bar is based on the Renewal alert. </p>
+        <div class="no_break">
+            <p class="less_space">If the Renewal % is:</p>
+            <ul>
+                <li>Alert value or below, the bar will be Red</li>
+                <li>Within 20% of the alert value above the alert value, the bar will be Orange</li>
+                <li>Otherwise, the bar will be Green</li>
+            </ul>
+        </div>
+        <p class="less_space">For example, if you set the Renewal alert at 50% and the Renewal % is:</p>
+        <ul>
+            <li>50 or lower: Red bar</li>
+            <li>51 to 60: Orange bar* </li>
+            <li>61 or higher: Green bar</li>
+        </ul>
+        <p>*Range calculation for Orange bar (50*.2=10; 50 + 10 = 60)</p>
+        <p>
+            <img src="../Resources/Images/BI/weekly_rpt_renewal_alert_example.png" />
+        </p>
+        <h2>Show Traffic Within</h2>
+        <p>This is available on the Overview page, the KPI Focus Page, and the Vacants, Notices &amp; Traffic page.</p>
+        <p>It allows you to display the Visits and Leases  by number of days. It defaults to whatever was selected on the Prompts screen when you opened the report. Your filter options are past 7 days, past 14 days, past 30 days, and default. Default is whatever was selected on the Prompts screen when you opened the report. If you didn't select anything, this will be the past 7 days.</p>
+        <p class="note">If you set this filter on one page, it will persist to any other pages of the report that use the filter.</p>
+        <h2>Display Rent Comparisons As</h2>
+        <p>This is available on the KPI Focus Page and the Asking &amp; Effective Rents page.</p>
+        <p>The Display Rent Comparisons As filter is used to specify if you want the rent comparisons on the page to show as a percentage change  or as a dollar amount. By default, the comparisons will show as a percentage change.</p>
+        <p class="more_space">
+            <MadCap:relatedTopics>
+                <MadCap:relatedTopic src="Weekly_Report.htm" />
+                <MadCap:relatedTopic src="reporting_tips.htm" />
+                <MadCap:relatedTopic src="understanding_hierarchies.htm" />
+                <MadCap:relatedTopic src="Reporting_Basics.htm" />
+            </MadCap:relatedTopics>
+        </p>
+    </body>
+</html>

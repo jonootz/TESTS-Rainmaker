@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="4" MadCap:lastHeight="258" MadCap:lastWidth="1188">
+    <body>
+        <h2 MadCap:conditions="">Community Filter</h2>
+        <p MadCap:conditions="">The Community filter allows you to run the report for all communities, multiple communities, or a specific community.</p>
+        <MadCap:snippetBlock src="community_filter.flsnp" />
+        <MadCap:snippetBlock src="select_multiple_communities.flsnp" />
+        <MadCap:snippetBlock src="apply_community_filter.flsnp" />
+    </body>
+</html>

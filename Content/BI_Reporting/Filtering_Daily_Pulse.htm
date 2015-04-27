@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="4" MadCap:lastHeight="1798" MadCap:lastWidth="1119">
+    <head>
+    </head>
+    <body>
+        <h1>
+            <a name="Filterin3">
+            </a>
+            <MadCap:keyword term="filtering:Daily Pulse Report;Daily Pulse Report:filtering;reports:filtering Daily Pulse Report" />Filtering the Daily Pulse Report <MadCap:conditionalText MadCap:conditions="Default.NotPrint">(BI Reporting)</MadCap:conditionalText></h1>
+        <p MadCap:conditions="">There are two different views of the report, an Overview and a Detail view. Some of the filters for these views are independent of each other. For example, if you have the Overview filtered for a particular community and then switch to the Detail view, the Detail view will not automatically be filtered for that community.</p>
+        <p MadCap:conditions="">You can use the Input Controls to filter the report and control how the information is displayed. </p>
+        <div class="no_break">
+            <p MadCap:conditions="" class="bold">Input Controls for Overview</p>
+            <p>
+                <img src="../Resources/Images/BI/DP_overview_IC.png" MadCap:mediastyle="@media print { max-height: 6.25in; }">
+                </img>
+            </p>
+        </div>
+        <div class="no_break">
+            <p class="bold">Input Controls for Detail View</p>
+            <p>
+                <img src="../Resources/Images/BI/DP_detail_view_IC.png" MadCap:mediastyle="@media print { max-height: 6.25in; }" />
+            </p>
+        </div>
+        <MadCap:snippetBlock src="../Resources/Snippets/input_controls_button.flsnp" />
+        <MadCap:snippetBlock src="../Resources/Snippets/input_controls_tips_link.flsnp" />
+        <h2>Level to Display Filter</h2>
+        <p>By default, the  report displays information for Level 1. For example, you may have a reporting group set up with Corporate as Level 1. The Corporate attribute has one value called Corporate and it is applied to all properties.  This allows you to roll up information at the corporate level and then use the Level to Display filter to display the information broken out by other attributes. For example, if Level 4 is State, if you select to display Level 4, the report will be shown with the information broken out by state.</p>
+        <div class="no_break">
+            <p class="note">The Level to Display filter is useful when no other filters are selected or if you have selected multiple communities. It is not very useful if you have selected one filter item. For example, if you have selected one community in the community filter, the report will only show information for the selected community at every level you select.</p>
+        </div>
+        <MadCap:snippetBlock src="../Resources/Snippets/levels_are_attributes.flsnp">
+        </MadCap:snippetBlock>
+        <p>When you view the report by  level, the values for each level are shown on the graph in a different color (legend is below the graph). For example, if you selected Level 4 which is State, a line will appear on the report for each state in a different color. You can see the attribute values in the legend. </p>
+        <p>Use the Level to Display drop-list to select the level you want to display.</p>
+        <MadCap:snippetBlock src="../Resources/Snippets/bi_hierarchies_info_link.flsnp" />
+        <h2 MadCap:conditions="">Community Filter</h2>
+        <p MadCap:conditions="">The Community filter allows you to run the report for all communities, multiple communities, or a specific community.</p>
+        <p>By default, the report includes all communities that you have access to that use an attribute in the selected hierarchy. </p>
+        <MadCap:snippetBlock src="../Resources/Snippets/select_multiple_communities.flsnp">
+        </MadCap:snippetBlock>
+        <MadCap:snippetBlock src="../Resources/Snippets/apply_community_filter.flsnp">
+        </MadCap:snippetBlock>
+        <h2>Trendline (Overview only)</h2>
+        <p>You can click on a point on the graph to see key facts about your occupancy, exposure, effective rent, and recommended rent for that particular date. When you do this, the date and level attribute you selected will appear in the Trendline input control. To clear the selection, click Clear Filters in the Trendline input control or you can select another point on the graph to view information for that date and attribute.</p>
+        <p>
+            <img src="../Resources/Images/BI/DP_overview_trendline_IC.png" />
+        </p>
+        <h2>Levels 1 - 6 Filters (Overview Only)</h2>
+        <p>You can choose to display information on the graph for a particular attribute value in a level. For example, if level 4 is State, you could choose to view the information for a particular state. </p>
+        <MadCap:snippetBlock src="../Resources/Snippets/levels_are_attributes.flsnp">
+        </MadCap:snippetBlock>
+        <p> The filter for each level allows you to narrow the information down by attribute values. You can also see which values are included in each level.</p>
+        <p>A reporting group can contain up to 10 levels, but it is uncommon to have more than 6. You can view the graph at a levels 1-10 using the level to display filter, but you can only filter the report by the attribute values for levels 1 - 6.</p>
+        <p class="more_space">
+            <MadCap:relatedTopics>
+                <MadCap:relatedTopic src="Daily_Pulse_Report.htm" />
+                <MadCap:relatedTopic src="reporting_tips.htm" />
+                <MadCap:relatedTopic src="understanding_hierarchies.htm" />
+                <MadCap:relatedTopic src="Reporting_Basics.htm" />
+            </MadCap:relatedTopics>
+        </p>
+    </body>
+</html>

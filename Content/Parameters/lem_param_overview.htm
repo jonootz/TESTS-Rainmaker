@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="1256" MadCap:lastWidth="1092">
+    <head>
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="parameters:lease expiration management;lease expiration management:parameters;LEM:parameters" />Lease Expiration Management (LEM) Parameters</h1>
+        <MadCap:snippetBlock src="../Resources/Snippets/lem_definition.flsnp" />
+        <MadCap:snippetBlock src="../Resources/Snippets/lem_model.flsnp" />
+        <MadCap:snippetBlock src="../Resources/Snippets/lem_graph_description.flsnp" />
+        <MadCap:snippetBlock src="../Resources/Snippets/use_lem_parameter_note.flsnp" />
+        <p class="bold">The following parameters are used when parameter 172 is set to 1.</p>
+        <div class="no_break">
+            <p MadCap:conditions="">The community level historical data will be used to determine expiration counts for a unit category if it has less than the number of units set in parameter 173.</p>
+            <div class="indent">
+                <p>
+                    <a href="parameters_list.htm#param173">173 LEM Minimum Number of Units in UC</a>
+                </p>
+            </div>
+        </div>
+        <div class="no_break">
+            <p class="less_space">Parameter 174 is used to smooth prices from one day to another to reduce volatility. This parameter is used when parameter 132 is set to A. Selecting A for parameter 132 means that you want to smooth over all weeks when using LEM. Parameter 174 is the weight you want to give to yesterday's price when smoothing.</p>
+            <div class="indent">
+                <p>
+                    <a href="parameters_list.htm#param174">174 FO Smoothing Weight</a>
+                </p>
+                <p>
+                    <a href="parameters_list.htm#param132">132 Smoothing Option with Rec or Current Rent</a>
+                </p>
+            </div>
+        </div>
+        <div class="no_break">
+            <p MadCap:conditions="">Parameter 178 can be used to restrict the recommended prices to a maximum percentage over the reference rent.</p>
+            <div class="indent">
+                <p>
+                    <a href="parameters_list.htm#param178">178 FO Maximum Price Increase</a>
+                </p>
+            </div>
+        </div>
+        <div class="no_break">
+            <p>You can use parameter 181 to control whether or not to use remaining expirations (purple bars) on the LEM graph and in calculations. </p>
+            <div class="indent">
+                <p>
+                    <a href="parameters_list.htm#param181">181 Use Remaining Expirations (LEM)</a>
+                </p>
+            </div>
+        </div>
+        <p class="more_space">
+            <MadCap:relatedTopics>
+                <MadCap:relatedTopic src="parameters_intro.htm" />
+                <MadCap:relatedTopic src="parameters_list.htm" />
+                <MadCap:relatedTopic src="../Basics/turning_on_LEM.htm" />
+                <MadCap:relatedTopic src="../Screens/expiration_management_graph.htm" />
+            </MadCap:relatedTopics>
+        </p>
+    </body>
+</html>

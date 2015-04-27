@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="1475" MadCap:lastWidth="1230">
+    <head>
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="unit categories:setting up" />Setting Up Unit Categories</h1>
+        <p>Unit Categories are used to categorize your unit types. For example, you may have a unit category for 1 bedroom/1 bathroom units and have multiple unit types that would fall into this category.</p>
+        <p>You will typically add or delete unit categories during the initial setup of a community. There may be circumstances such as significant rehabs or new inventory coming online when you may want to regroup the unit types into new unit categories.  </p>
+        <p MadCap:conditions="Default.NotPrint">
+            <a href="../Screens/unit_categories_screen.htm">Learn about the Unit Categories screen</a><![CDATA[
+  ]]></p>
+        <h3>To set up and maintain unit categories:</h3>
+        <ol>
+            <li>
+                <p>Log into the <MadCap:variable name="Variables.LRO" /> Web UI and select the Configuration tab in the top title bar.</p>
+            </li>
+            <li>Select the community.</li>
+            <li>Select the Unit Categories screen. This is where you'll set up and maintain the unit categories for the community.</li>
+            <li>
+                <MadCap:snippetBlock src="../Resources/Snippets/click_enable_editing.flsnp" />
+            </li>
+        </ol>
+        <h2>What is the Default Unit Category</h2>
+        <p>When the community is created, a default unit category is set up. It's named 0x0 with Optimize set to No. This means pricing will not be generated for any units in unit types assigned to this unit category. By default, all unit types are assigned to this unit category. You will need to set up new unit categories for the community and assign unit types to them on the Unit Types screen.</p>
+        <p>You cannot delete the default unit category. It is used by the <MadCap:variable name="Variables.LRO" /> system whenever new unit types are added.</p>
+        <MadCap:snippetBlock src="../Resources/Snippets/enable_editing_unit_categories.flsnp" />
+        <h2>
+            <MadCap:keyword term="unit categories:adding" />Adding a Unit Category</h2>
+        <ol>
+            <li>On the Unit Categories screen, click <span class="bold">Add Unit Category</span>. </li>
+            <li>Enter a name or ID for the unit category and a description.</li>
+            <li>Click <span class="bold">OK</span>.</li>
+        </ol>
+        <h2>
+            <MadCap:keyword term="unit categories:editing" />Editing a Unit Category</h2>
+        <p>After you've created a unit category, you can edit the description, optimize setting, and sort order.</p>
+        <ol>
+            <li>On the Unit Categories screen, click the pencil icon <img src="../Resources/Images/PUTMOP/pencil_icon.JPG" class="ButtonImage" /> on the row for the unit category you want to edit. </li>
+            <li>Make your changes.</li>
+            <li>Click the save icon <img src="../Resources/Images/PUTMOP/save_icon.JPG" class="ButtonImage" /> on the unit category row to save your changes. If you don't want to save your changes, click the cancel icon <img src="../Resources/Images/PUTMOP/cancel_icon.JPG" class="ButtonImage" />.</li>
+        </ol>
+        <h2>
+            <MadCap:keyword term="unit categories:deleting" />Deleting a Unit Category</h2>
+        <p>You can delete unit categories that don't have any unit types assigned to them. You cannot delete the default unit category (0x0). </p>
+        <p>To delete a unit category, click the delete icon <img src="../Resources/Images/PUTMOP/delete_icon.JPG" class="ButtonImage" /> on the row of the unit category you want to delete. This icon appears next to the pencil icon. If you don't see the delete icon, then the unit category cannot be deleted.</p>
+        <h2>
+            <MadCap:keyword term="unit categories:renaming" />Renaming a Unit Category</h2>
+        <p>You can't edit a unit category's name. You have to create a new unit category and delete the old one.</p>
+        <p class="note">You can't do this for the default unit category (0x0) since it can't be deleted, but you can change its description.</p>
+        <ol>
+            <li>On the Unit Categories screen, add a new unit category with the name you want. </li>
+            <li>Set the unit category up the same way as the original unit category. </li>
+            <li>On the Unit Types screen, change any unit types that were assigned to the original unit category to be assigned to the new unit category.</li>
+            <li>On the Unit Categories screen, click the delete icon <img src="../Resources/Images/PUTMOP/delete_icon.JPG" class="ButtonImage" /> on the original unit category row. This icon appears next to the pencil icon if the unit category can be deleted.</li>
+        </ol>
+        <p class="more_space">
+            <MadCap:relatedTopics>
+                <MadCap:relatedTopic src="../Screens/unit_categories_screen.htm" />
+                <MadCap:relatedTopic src="../PUTMOP/enabling_editing.htm" />
+            </MadCap:relatedTopics>
+        </p>
+    </body>
+</html>

@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="5" MadCap:lastHeight="868" MadCap:lastWidth="1241">
+    <head>
+    </head>
+    <body>
+        <h1>Admin Parameters</h1>
+        <h3>
+            <MadCap:keyword term="parameters:prior rent" />Prior Rent</h3>
+        <div class="no_break">
+            <p>You can specify if you want the Prior Rent column to appear on the New Pricing Report in the <MadCap:variable name="Variables.LRO" /> Web UI.</p>
+            <div class="indent">
+                <p>
+                    <a href="parameters_list.htm#param234">234 Display Prior Rent Column</a>
+                </p>
+            </div>
+        </div>
+        <h3 MadCap:conditions="">
+            <MadCap:keyword term="parameters:scheduling processes" />Scheduling Processes</h3>
+        <p MadCap:conditions="">You can set the day of the week that you want your pricing processes to run. </p>
+        <div class="indent">
+            <p MadCap:conditions="">Parameter 222 controls the day of the week that the LRO system will run the DRRC process which sets a new reference rent. </p>
+            <p MadCap:conditions="">Parameter 223 controls the day of the week that the LRO system will run the UPSTAT process which calculates a full set of community statistics. </p>
+        </div>
+        <p MadCap:conditions="">You would typically run both of these processes on the same day as the pricing call. This way, the processes run in the early morning and will factor into that day's pricing. The biggest changes can occur when the DRRC runs so timing the pricing call with the DRRC run means you can review the results that same day. </p>
+        <div class="no_break">
+            <p MadCap:conditions="">These parameters are usually set when you first start using the LRO system. You would change them if you move your pricing call to a different day and you want the DRRC and UPSTAT to continue to run on the same day as the call. </p>
+            <div class="indent">
+                <p>
+                    <a href="parameters_list.htm#param222">222 DRRC DOW Run Date</a>
+                </p>
+                <p>
+                    <a href="parameters_list.htm#param223">223 Upstat DOW Run Date</a>
+                </p>
+            </div>
+        </div>
+        <h3>Lease Expiration Management</h3>
+        <div class="no_break">
+            <p>Parameter 172 lets you specify if you want to use Lease Expiration Management (LEM) or not.</p>
+            <div class="indent">
+                <p>
+                    <a href="parameters_list.htm#param172">172 FO Use LEM Statistics</a>
+                </p>
+            </div>
+            <p MadCap:conditions="Default.NotPrint">
+                <a href="lem_param_overview.htm">Learn more about Lease Expiration Management (LEM) parameters</a><![CDATA[			]]></p>
+        </div>
+        <h3>Optimization Horizon</h3>
+        <div class="no_break">
+            <p>The Optimization Horizon is used to specify the number of future pricing weeks for which recommendations are produced. </p>
+            <div class="indent">
+                <p>
+                    <a href="parameters_list.htm#param1">1 Opt_Horizon</a>
+                </p>
+            </div>
+            <p>The Optimization Horizon works with parameter 44, Forecast Horizon Week. </p>
+            <p MadCap:conditions="Default.NotPrint">
+                <a href="timeframe_param_overview.htm#OptAndForecast">Learn how the Optimization Horizon and the Forecast Horizon Week work together</a>
+            </p>
+        </div>
+        <p class="more_space">
+            <MadCap:relatedTopics>
+                <MadCap:relatedTopic src="../Basics/DRRC.htm" />
+                <MadCap:relatedTopic src="../Screens/new_pricing_screen.htm" />
+                <MadCap:relatedTopic src="parameters_list.htm" />
+            </MadCap:relatedTopics>
+        </p>
+    </body>
+</html>

@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="728" MadCap:lastWidth="1090">
+    <head>
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="LEM:turning on;lease expiration management:turning on;turning on lease expiration management" />Turning on Lease Expiration Management</h1>
+        <MadCap:snippetBlock src="../Resources/Snippets/lem_definition.flsnp" />
+        <p>These are the steps you should take if you are not currently using Lease Expiration Management and you want to turn it on.</p>
+        <ol>
+            <li>Save the current New Lease Pricing Detail (under LRO&gt;New Pricing) by exporting it to Excel and saving the file. This will be used to provide a comparison of pre-LEM and post-LEM pricing recommendations.</li>
+            <li>Set parameter 172 to a value of 1 (under Admin&gt;Parameters). This enables the LEM functionality.</li>
+            <li>Re-optimize pricing to generate the expiration and seasonality numbers on the Expiration Management graph (under LRO&gt;Expiration Management).</li>
+            <li>
+                <p>Review the <MadCap:variable name="Variables.LRO" /> recommended expirations on the Expiration Management Graph:</p>
+                <div class="indent">
+                    <p>Check the total recommended expirations in the year with respect to the unit category's capacity.</p>
+                    <p>Check the recommended expiration numbers for each month in the year.</p>
+                </div>
+            </li>
+            <li>Override the <MadCap:variable name="Variables.LRO" /> recommendations, if needed, based on your review.</li>
+            <li>Remove any existing monthly premiums in the Monthly Premiums screen (under LRO&gt;Expiration Management). Also, remove any Rec Gen lease term premiums that may be in place (under Admin&gt;Rec Gen).</li>
+            <li>Reset the Lease Term Category premiums (under Configuration&gt;LTC). For example, if it is acceptable to allow LEM to favor Medium lease terms over Long lease terms, set the premium for the Medium lease term category to 0%. Reference rent overrides will need to be made to the Medium LTC to reflect the modified premiums (under LRO&gt;Reference Rent).</li>
+            <li>Re-optimize and review the new LEM generated pricing (under LRO&gt;New Pricing). Reference the saved pre-LEM pricing to see what impact enabling LEM had on the new pricing.</li>
+            <li>Make reference rent overrides (under LRO&gt;Reference Rent) as needed to align the LEM-based prices with your original prices. If any reference rent changes are made, then re-optimize to view updated pricing.</li>
+            <li>Smoothing over weeks may restrict pricing differentiation for the weeks falling in the beginning or end of a month. The impact of smoothing can be lessened by changing the smoothing parameters (under Admin&gt;Parameters). Smoothing can be turned off if parameter 65 is set to 100% and parameters 60 to 64 and 66 to 70 are set to 0%. Please note that turning off smoothing may lead to higher jumps in pricing from one move-in week to the next.</li>
+            <li>If needed, re-enter Monthly Premiums (under LRO&gt;Expiration Management) and Rec Gen Lease Term Premiums (under Admin&gt;Rec Gen) and re-optimize pricing. Additional premiums can be used to achieve the business goals of the community.</li>
+        </ol>
+        <p class="more_space">
+            <MadCap:relatedTopics>
+                <MadCap:relatedTopic src="LEM_facts.htm" />
+                <MadCap:relatedTopic src="../Screens/expiration_management_graph.htm" />
+                <MadCap:relatedTopic src="overriding_LRO_expirations.htm" />
+                <MadCap:relatedTopic src="../Parameters/lem_param_overview.htm" />
+            </MadCap:relatedTopics>
+        </p>
+    </body>
+</html>

@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="5" MadCap:lastHeight="1592" MadCap:lastWidth="1241">
+    <head>
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="parameters:new pricing;new pricing:parameters;parameters:new lease;new lease:parameters" />New Lease Parameters</h1>
+        <p>The new lease parameters help you communicate your business strategy regarding new pricing to the <MadCap:variable name="Variables.LRO" /> system. These parameters are adjusted as the strategy for the community changes.    Changes often correspond with seasonality when demand is expected to increase or to slow down during  particular time periods. These parameters allow you to be aggressive, moderate, or conservative in your approach to pricing for new leases. </p>
+        <p class="note">You should periodically review these parameter settings to make sure they correctly represent your new lease pricing strategy. You should also make sure that the parameter settings complement each other and are not working against each other.</p>
+        <p>Following are the new lease parameters you'll be most likely to change.</p>
+        <p MadCap:conditions="Default.NotPrint">
+            <a href="parameters_recipe_card.htm#New">View suggested values for the New Pricing parameters</a>
+        </p>
+        <h3 MadCap:conditions="">Exposure</h3>
+        <div class="no_break">
+            <p>
+                <a name="exposure_threshold">
+                </a>The Exposure Thresholds are reflected in the Pricing Trend Report as High Exposure and Low Exposure bands. </p>
+            <div class="indent">
+                <p>
+                    <a href="parameters_list.htm#param71">71 Low Exposure Threshold</a>
+                </p>
+                <p>
+                    <a href="parameters_list.htm#param72">72 High Exposure Threshold</a>
+                </p>
+            </div>
+        </div>
+        <p>The Exposure Thresholds should be evaluated before changing <span class="bold">parameter 153</span>, the <a href="adjustments_param_overview.htm#ExposedUnitsRange">Exposed Units Range</a> parameter.</p>
+        <div class="no_break">
+            <p>Brake Factors determine to what extent the <MadCap:variable name="Variables.LRO" /> system will respond to growing exposure.</p>
+            <div class="indent">
+                <p>
+                    <a href="parameters_list.htm#param74">74 Brake Factors High</a>
+                </p>
+                <p>
+                    <a href="parameters_list.htm#param75">75 Brake Factors Medium</a>
+                </p>
+            </div>
+        </div>
+        <div class="no_break">
+            <p>If you have unit types with low unit counts, for statistical purposes, you may want the DRRC to use exposure at the unit category level instead of the unit type level. You can set the low unit count threshold to determine when exposure at the unit category level should be used.</p>
+            <div class="indent">
+                <p>
+                    <a href="parameters_list.htm#param84">84 Threshold for low UT count (DRRC)</a>
+                </p>
+            </div>
+        </div>
+        <h3>Reference Rent</h3>
+        <div class="no_break">
+            <p>The Aggressive Factor is the % increase applied to the reference rent in times of low exposure and good leasing velocity.</p>
+            <div class="indent">
+                <p>
+                    <a href="parameters_list.htm#param73">73 Aggressive Factor</a>
+                </p>
+            </div>
+        </div>
+        <div class="no_break">
+            <p>You can specify the  maximum reference rent decrease allowed in a week (assuming the DRRC is run on a weekly basis).</p>
+            <div class="indent">
+                <p>
+                    <a href="parameters_list.htm#param152">152 Max Ref Rent Decrease</a>
+                </p>
+            </div>
+        </div>
+        <p>Reference rent can be adjusted by business rules involving weeks of zero recent leasing. <a href="adjustments_param_overview.htm#ZeroRecentLeasing" MadCap:conditions="Default.NotPrint">Learn about <span class="bold">parameter 110</span> Weeks of Zero RL</a></p>
+        <h3>Leasing Velocity</h3>
+        <div class="no_break">
+            <p>You can set upper and lower boundaries for leasing velocity. </p>
+            <div class="indent">
+                <p>
+                    <a href="parameters_list.htm#param107">107 Low Leasing Velocity Threshold</a>
+                </p>
+                <p>
+                    <a href="parameters_list.htm#param108">108 High Leasing Velocity Threshold</a>
+                </p>
+            </div>
+        </div>
+        <p MadCap:conditions="Default.NotPrint">
+            <a href="timeframe_param_overview.htm#LeasingVelocity">Learn about <span class="bold">parameters 88 and 104</span> which can also affect leasing velocity</a>
+        </p>
+        <h3>Maximum Price Reduction</h3>
+        <div class="no_break">
+            <p>The Max Price Reduction parameter gives the <MadCap:variable name="Variables.LRO" /> optimizer some flexibility to go below the average competitor rents in an effort to re-stabilize the community or to discount units based on availability date when supply exceeds demand.</p>
+            <div class="indent">
+                <p>
+                    <a href="parameters_list.htm#param41">41 Max Price Reduction</a>
+                </p>
+            </div>
+            <p class="note">If you define parameter 41 at the unit type level, <a href="parameters_list.htm#param243">parameter 243</a> is used to determine how parameter 41 will be propagated to the unit category level for optimization.</p>
+        </div>
+        <h3>New Demand</h3>
+        <div class="no_break">
+            <p MadCap:conditions="">Parameter 182  controls whether only new demand or both renewals and new demand  are used in the new pricing calculation. </p>
+            <p MadCap:conditions="Default.ExternalOnly">You should consult with a <MadCap:variable name="Variables.ShortCompanyName" /> support or implementation specialist before changing this parameter.</p>
+            <div class="indent">
+                <p>
+                    <a href="parameters_list.htm#param182">182 New Demand</a>
+                </p>
+            </div>
+        </div>
+        <p class="more_space">
+            <MadCap:relatedTopics>
+                <MadCap:relatedTopic src="parameters_recipe_card.htm" />
+                <MadCap:relatedTopic src="parameters_at_work_exposure.htm" />
+                <MadCap:relatedTopic src="parameters_at_work_break_factors.htm" />
+                <MadCap:relatedTopic src="parameters_at_work_aggressive_factor.htm" />
+            </MadCap:relatedTopics>
+        </p>
+    </body>
+</html>

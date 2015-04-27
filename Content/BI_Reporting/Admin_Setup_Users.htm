@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="1173" MadCap:lastWidth="1157">
+    <head>
+    </head>
+    <body>
+        <h1>
+            <MadCap:keyword term="reporting admin:users;business intelligence reporting admin:users" />
+            <MadCap:conditionalText MadCap:conditions="Default.NotPrint">Business Intelligence Reporting </MadCap:conditionalText>Admin and Setup: Users</h1>
+        <p>On the Reporting Admin Users screen, you can add and edit the roles that users have concerning the reports under the Reporting tab. </p>
+        <p class="note">User information comes from the <MadCap:variable name="Variables.LRO" /> database as part of the nightly processes. Users that appear under the Reporting Admin tab have REPORTING.MODULE rights and REPORTING Report Access All Properties property rights and/or REPORTINGADMIN.ReportingAdmin rights.  They also have valid email addresses. </p>
+        <div class="no_break">
+            <p class="less_space">In the <MadCap:variable name="Variables.LRO" /> Web UI, go to <span class="bold">Reporting Admin</span>&gt;<span class="bold">User</span>.</p>
+            <p>
+                <img src="../Resources/Images/BI/RA_users.png" title="Click to view larger" />
+            </p>
+        </div>
+        <div class="no_break">
+            <h2>Roles</h2>
+            <div class="indent">
+                <p><span class="bold">Admin</span>: This role gives users access to view and change information on the Reporting Admin tab. Most users will not have this role.</p>
+                <p><span class="bold">MGT Content Viewer</span>: This role  allows <MadCap:conditionalText MadCap:conditions="Default.ExternalOnly">users</MadCap:conditionalText> to view the management reports and dashboards under the Reporting tab. </p>
+                <p><span class="bold">Pricing Revenue Manager:</span> This role is for <MadCap:conditionalText MadCap:conditions="Default.ExternalOnly">users</MadCap:conditionalText> who are responsible for pricing and revenue management in their organization. <span class="bold">Currently, assigning this role to a user won't do anything.</span></p>
+            </div>
+        </div>
+        <p MadCap:conditions="" class="note">This screen was set up to have the option for more roles in the future. This screen should currently be used to see which users can access the Reports and/or Reporting Admin tab. <a href="../Basics/setting_up_reporting_users.htm" MadCap:conditions="Default.NotPrint">Learn how to set up users with Reporting access</a></p>
+        <h2>Properties and Property Groups</h2>
+        <div class="no_break">
+            <p>Properties and property groups are assigned to <MadCap:variable name="Variables.LRO" /> customer users under the  Admin tab.  You can see which properties and/or property groups are assigned to a user by viewing the user's details. </p>
+            <p>
+                <img src="../Resources/Images/BI/RA_users_view_details.png" title="Click to view larger" />
+            </p>
+        </div>
+        <p>
+            <img src="../Resources/Images/BI/RA_user_details_properties.png" title="Click to view larger" />
+        </p>
+        <h2>Troubleshooting</h2>
+        <h3>I don't see a user on the Users screen.</h3>
+        <p class="less_space">Possible Reasons:</p>
+        <ul>
+            <li>The nightly processes haven't run since the user was set up or updated.</li>
+            <li>The user doesn't have a valid email address.</li>
+            <li>The user hasn't been set up with the necessary rights.</li>
+        </ul>
+        <p>Users come over from the <MadCap:variable name="Variables.LRO" /> database as part of the nightly processes. If you set up a user under the  Admin tab, it should show up on the Users screen under the Reporting Admin tab the next day.</p>
+        <p>In order for users to appear on the Reporting Admin Users screen, they must be set up with at least one of the following rights: REPORTINGADMIN.ReportingAdmin, REPORTING.MODULE, REPORTING.* property rights (REPORTING Report Access All Properties). Users also must have a valid email address.</p>
+        <p class="more_space">&#160;</p>
+    </body>
+</html>

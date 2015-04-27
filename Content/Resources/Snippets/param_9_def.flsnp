@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="2" MadCap:lastHeight="146" MadCap:lastWidth="1280">
+    <body>
+        <p>The percentage of guest cards to be included in unconstrained demand before adjustments for the guest card-to-lease ratio and guest card-to-occupancy regression.    This is  a multiplicative parameter which is applied to the portion of unconstrained demand that is derived from guest cards which are not associated with leases.  For example, if this value is 0.5 on 10 traffic and 6 leases, then .5*4 = 2 will be included in the unrestrained demand. </p>
+        <p>Values: &gt;=0</p>
+        <p>Default: 0.5</p>
+    </body>
+</html>

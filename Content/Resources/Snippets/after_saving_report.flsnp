@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="3" MadCap:lastHeight="100" MadCap:lastWidth="1195">
+    <body>
+        <li MadCap:conditions="">
+            <p>To see where the file was saved (Downloads folder), click <span class="bold">Open Folder</span> on the message confirming the download was completed.</p>
+            <p>
+                <img src="../Images/BI/open_folder_after_download.png" title="" class="NoThumbnail" />
+            </p>
+            <p>After you open the folder, you can open the file, rename the file, or copy the file to another location.</p>
+        </li>
+    </body>
+</html>

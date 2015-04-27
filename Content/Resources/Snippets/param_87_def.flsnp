@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="2" MadCap:lastHeight="125" MadCap:lastWidth="1280">
+    <body>
+        <p>The maximum number of shopper periods to be used in proration.  Parameters 73, 74, 75, and 152 are affected by this. For example, if DRRC runs less frequently than the shopper period, this parameter clips proration.</p>
+        <p>Values: Integer</p>
+        <p>Default: 2</p>
+    </body>
+</html>

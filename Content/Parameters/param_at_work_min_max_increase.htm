@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="3" MadCap:lastHeight="1433" MadCap:lastWidth="1162">
+    <head>
+    </head>
+    <body>
+        <h1>Parameters at Work: Min Increase and Max Increase</h1>
+        <h3>Min Increase and Max Increase</h3>
+        <p>The Min Increase and Max Increase parameters have a significant effect on the calculation of renewal offers. These parameters are set on the Renewal Config Parameters screen which you can find at <span class="bold">Admin</span>&gt;<span class="bold">Parameters</span>&gt;<span class="bold">Renewal Config</span>.</p>
+        <p class="note">These parameters are entered in the Min Increase and Max Increase fields.</p>
+        <h2>
+            <MadCap:keyword term="parameters at work:min increase;min increase:parameters at work" />Min Increase</h2>
+        <h3>Purpose</h3>
+        <p>Min Increase sets a minimum percentage increase of the resident's current rent. In an inverted lease situation (new move-in rent is less than what the resident is currently paying), the Min Increase sets a cap on how much the resident's current rent can be decreased. If this is set to 0%, it means no decrease in the current rent is allowed.</p>
+        <h3>Example</h3>
+        <div class="indent">
+            <p class="less_space">Increase Rate: 25%</p>
+            <p class="less_space">Min Increase: 5%</p>
+            <p class="less_space">Resident's Current Rent: $1500</p>
+            <p class="less_space">
+                <MadCap:variable name="Variables.LRO" /> New Move-In Rent $1700</p>
+            <p class="less_space">Difference between Resident's Current Rent and the New Move-In Rent: $200 ($1700 - $1500)</p>
+            <p class="less_space">Renewal Increase: $50 ($200 X 25%)</p>
+            <p class="less_space">Min Increase Amount: $75 ($1500 X 5%)</p>
+            <p class="less_space">Renewal Offer: $1575 ($1500 + $75)</p>
+        </div>
+        <p class="less_space">Although the renewal increase is $50 based on the Increase Rate, the minimum increase is $75.</p>
+        <p class="less_space">&#160;</p>
+        <p class="less_space">Example of the Min Increase in an Inverted Lease Situation:</p>
+        <div class="indent">
+            <p class="less_space">Drop Rate: 30%</p>
+            <p class="less_space">Min Increase: 5%</p>
+            <p class="less_space">Resident's Current Rent: $1500</p>
+            <p class="less_space">
+                <MadCap:variable name="Variables.LRO" /> New Move-In Rent $1200</p>
+            <p class="less_space">Difference between Resident's Current Rent and the New Move-In Rent: $300 ($1500 - $1200)</p>
+            <p class="less_space">Renewal Decrease: $90 ($300 X 30%)</p>
+            <p class="less_space">Min Increase Amount: $75 ($1500 X 5%)</p>
+            <p class="less_space">Renewal Offer: $1425 ($1500 - $75)</p>
+        </div>
+        <p class="less_space">Although the renewal decrease is $90 based on the Drop Rate, the cap on the decrease in rent is $75.</p>
+        <h2>
+            <MadCap:keyword term="parameters at work:max increase;max increase:parameters at work" />Max Increase</h2>
+        <h3>Purpose</h3>
+        <p>Max Increase limits the amount that a resident's rent can increase. This is a percentage of the resident's current rent and serves as a cap to the Increase Rate. If this is set to 0%, it means no increase in the current rent is allowed.</p>
+        <p class="note">The Max Increase does not come into play in the case of an inverted lease (new move-in rate is less than what the current resident is paying). It also does not apply to premium leases (short term and MTM leases).</p>
+        <h3>Example</h3>
+        <div class="indent">
+            <p class="less_space">Increase Rate: 70%</p>
+            <p class="less_space">Max Increase: 5%</p>
+            <p class="less_space">Resident's Current Rent: $1500</p>
+            <p class="less_space">
+                <MadCap:variable name="Variables.LRO">
+                </MadCap:variable> New Move-In Rent $1800</p>
+            <p class="less_space">Difference between Resident's Current Rent and the New Move-In Rent: $300 ($1800 - $1500)</p>
+            <p class="less_space">Renewal Increase: $210 ($300 X 70%)</p>
+            <p class="less_space">Max Increase Amount: $75 ($1500 X 5%)</p>
+            <p class="less_space">Renewal Offer: $1575 ($1500 + $75)</p>
+        </div>
+        <p class="less_space">Although the renewal increase is $210 based on the Increase Rate, it is limited by the Max Increase parameter to $75.</p>
+        <p class="more_space">
+            <MadCap:relatedTopics>
+                <MadCap:relatedTopic src="renewal_param_overview.htm" />
+                <MadCap:relatedTopic src="parameters_at_work_increase_rate.htm" />
+                <MadCap:relatedTopic src="param_at_work_drop_rate.htm" />
+                <MadCap:relatedTopic src="../Screens/renewal_pricing_screen.htm" />
+                <MadCap:relatedTopic src="parameters_recipe_card.htm" />
+            </MadCap:relatedTopics>
+        </p>
+    </body>
+</html>
